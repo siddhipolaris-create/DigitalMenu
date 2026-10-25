@@ -5,7 +5,7 @@
 class SynexaApp {
   constructor() {
     this.data = JSON.parse(JSON.stringify(INITIAL_DATA));
-    this.currentMode = 'phone'; // 'phone', 'fullscreen', 'admin'
+    this.currentMode = 'menu'; // 'menu', 'admin'
     this.currentAdminTab = 'menu'; // 'menu', 'qr', 'branding', 'kds'
     this.currentDietFilter = 'all';
     this.searchQuery = '';
@@ -83,35 +83,42 @@ class SynexaApp {
   }
 
   // --------------------------------------------------------------------------
-  // VIEW MODE SWITCHING (Phone Simulator / Fullscreen / Admin)
+  // VIEW MODE SWITCHING (Responsive Diner Menu vs Admin Dashboard)
   // --------------------------------------------------------------------------
   setMode(mode) {
     this.currentMode = mode;
     const body = document.body;
     const customerViewport = document.getElementById('customerViewport');
     const adminViewport = document.getElementById('adminViewport');
-
-    // Update buttons
-    document.getElementById('btnModePhone').classList.toggle('active', mode === 'phone');
-    document.getElementById('btnModeFullscreen').classList.toggle('active', mode === 'fullscreen');
-    document.getElementById('btnModeAdmin').classList.toggle('active', mode === 'admin');
+    const adminToggleLabel = document.getElementById('adminToggleLabel');
+    const btnAdmin = document.getElementById('btnModeAdmin');
 
     if (mode === 'admin') {
       body.className = 'admin-mode-active';
-      customerViewport.style.display = 'none';
-      adminViewport.style.display = 'flex';
+      if (customerViewport) customerViewport.style.display = 'none';
+      if (adminViewport) adminViewport.style.display = 'block';
+      if (adminToggleLabel) adminToggleLabel.textContent = 'Diner Menu';
+      if (btnAdmin) btnAdmin.classList.add('active');
       this.renderAdminMetrics();
       this.renderAdminTable();
       this.renderKdsOrders();
       this.updateTentCard();
-    } else if (mode === 'fullscreen') {
-      body.className = 'fullscreen-mode-active';
-      customerViewport.style.display = 'flex';
-      adminViewport.style.display = 'none';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      body.className = 'phone-mode-active';
-      customerViewport.style.display = 'flex';
-      adminViewport.style.display = 'none';
+      body.className = 'menu-mode-active';
+      if (customerViewport) customerViewport.style.display = 'block';
+      if (adminViewport) adminViewport.style.display = 'none';
+      if (adminToggleLabel) adminToggleLabel.textContent = 'Staff / Admin';
+      if (btnAdmin) btnAdmin.classList.remove('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  toggleAdminMode() {
+    if (this.currentMode === 'admin') {
+      this.setMode('menu');
+    } else {
+      this.setMode('admin');
     }
   }
 
@@ -379,22 +386,28 @@ class SynexaApp {
     const bar = document.getElementById('floatingCartBar');
     const badge = document.getElementById('cartCountBadge');
     const totalEl = document.getElementById('cartTotalAmount');
+    const navBtn = document.getElementById('navCartBtn');
+    const navCount = document.getElementById('navCartCount');
 
     const totalQty = this.cart.reduce((sum, i) => sum + i.qty, 0);
     const subtotal = this.cart.reduce((sum, i) => sum + (i.price * i.qty), 0);
 
     if (totalQty > 0) {
-      bar.style.display = 'flex';
-      badge.textContent = totalQty;
-      totalEl.textContent = `₹${subtotal}`;
+      if (bar) bar.style.display = 'flex';
+      if (badge) badge.textContent = totalQty;
+      if (totalEl) totalEl.textContent = `₹${subtotal}`;
+      if (navBtn) navBtn.style.display = 'inline-flex';
+      if (navCount) navCount.textContent = totalQty;
     } else {
-      bar.style.display = 'none';
+      if (bar) bar.style.display = 'none';
+      if (navBtn) navBtn.style.display = 'none';
       this.closeCart();
     }
   }
 
   openCart() {
     const drawer = document.getElementById('cartDrawer');
+    const backdrop = document.getElementById('cartDrawerBackdrop');
     const list = document.getElementById('cartItemsList');
     list.innerHTML = '';
 
@@ -424,11 +437,15 @@ class SynexaApp {
     document.getElementById('billGst').textContent = `₹${gst}`;
     document.getElementById('billGrandTotal').textContent = `₹${grandTotal}`;
 
+    if (backdrop) backdrop.style.display = 'block';
     drawer.style.display = 'flex';
   }
 
   closeCart() {
-    document.getElementById('cartDrawer').style.display = 'none';
+    const drawer = document.getElementById('cartDrawer');
+    if (drawer) drawer.style.display = 'none';
+    const backdrop = document.getElementById('cartDrawerBackdrop');
+    if (backdrop) backdrop.style.display = 'none';
   }
 
   changeCartQty(itemId, delta) {

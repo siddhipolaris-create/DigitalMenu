@@ -3,59 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Synexa Solutions — Multi-Tenant QR Digital Menu & Hospitality Platform</title>
-  <meta name="description" content="Next-generation multi-tenant QR digital menu, kitchen order dispatch, and hospitality management platform for restaurants and hotels.">
+  <title>Shiv Sagar Pure Veg Restaurant — Digital QR Menu (Pune)</title>
+  <meta name="description" content="Shiv Sagar Pure Veg Restaurant Digital QR Menu · JM Road, Shivajinagar, Pune · Authentic multi-cuisine vegetarian dining since 1981.">
   <link rel="stylesheet" href="styles.css">
   <!-- Local QR Code generation library -->
   <script src="assets/qrcode.min.js"></script>
 </head>
-<body class="phone-mode-active">
+<body class="menu-mode-active">
 
   <!-- ========================================================================
-       TOP MASTER PLATFORM BAR (Synexa SaaS Engine)
+       TOP RESTAURANT HEADER & NAVBAR
        ======================================================================== -->
-  <header class="synexa-master-bar">
-    <div class="synexa-brand">
-      <div class="synexa-logo-badge">S</div>
-      <div class="synexa-title-group">
-        <h1>SYNEXA SOLUTIONS</h1>
-        <span>Hospitality QR Platform · SaaS Engine</span>
+  <header class="restaurant-nav-bar">
+    <div class="nav-container">
+      <div class="nav-brand" onclick="app.setMode('menu')">
+        <div class="restaurant-nav-logo">SS</div>
+        <div class="restaurant-nav-info">
+          <span class="restaurant-nav-title">SHIV SAGAR</span>
+          <span class="restaurant-nav-subtitle">Pure Veg Restaurant · Since 1981 · Pune</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Center Mode Switcher -->
-    <div class="platform-center-controls">
-      <button class="mode-btn active" id="btnModePhone" onclick="app.setMode('phone')">
-        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-        Phone Simulator
-      </button>
-      <button class="mode-btn" id="btnModeFullscreen" onclick="app.setMode('fullscreen')">
-        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
-        Fullscreen Menu
-      </button>
-      <button class="mode-btn" id="btnModeAdmin" onclick="app.setMode('admin')">
-        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-        Admin Dashboard
-      </button>
-      <button class="mode-btn" onclick="app.openArchitectureModal()">
-        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        Architecture & Guide
-      </button>
-    </div>
+      <div class="nav-actions">
+        <!-- Table indicator badge -->
+        <div class="table-picker-badge" id="tableBadgeTrigger" onclick="app.cycleTable()" title="Click to cycle dining table">
+          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span id="headerTableLabel">Table 04</span>
+        </div>
 
-    <!-- Right Tenant & Table Switchers -->
-    <div class="platform-right-controls">
-      <div class="tenant-select-wrapper">
-        <label for="tenantSelect">Tenant:</label>
-        <select id="tenantSelect" onchange="app.switchTenant(this.value)">
+        <!-- Header Cart Trigger (visible when items added) -->
+        <button class="nav-cart-btn" id="navCartBtn" onclick="app.openCart()" style="display: none;">
+          <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          <span>Order</span>
+          <span class="nav-cart-count" id="navCartCount">0</span>
+        </button>
+
+        <!-- Admin / Staff switch button -->
+        <button class="nav-admin-btn" id="btnModeAdmin" onclick="app.toggleAdminMode()" title="Staff Portal / Live Kitchen">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span id="adminToggleLabel">Staff / Admin</span>
+        </button>
+
+        <!-- Hidden selector for tenant compatibility -->
+        <select id="tenantSelect" style="display: none;" onchange="app.switchTenant(this.value)">
           <option value="tenant_olive">Shiv Sagar Pure Veg Restaurant (Pune)</option>
           <option value="tenant_royal">Royal Amber Palace Hotel</option>
         </select>
-      </div>
-
-      <div class="table-picker-badge" id="tableBadgeTrigger" onclick="app.cycleTable()">
-        <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-        <span id="headerTableLabel">Table 04</span>
       </div>
     </div>
   </header>
@@ -65,120 +58,107 @@
        ======================================================================== -->
   <main class="view-container">
 
-    <!-- 1. CUSTOMER MOBILE MENU VIEWPORT (inside Phone Simulator or Fullscreen) -->
-    <div class="phone-simulator" id="customerViewport">
-      <!-- Simulated iPhone Bezel Island & Status -->
-      <div class="phone-notch-bar">
-        <span>12:45</span>
-        <div class="dynamic-island">
-          <div class="camera-lens"></div>
-          <div class="island-sensor"></div>
+    <!-- 1. RESPONSIVE CUSTOMER DIGITAL MENU (Fluid for Mobile & Desktop) -->
+    <div class="customer-menu-viewport" id="customerViewport">
+      <div class="menu-app-content">
+
+        <!-- Hero Cover Banner -->
+        <div class="menu-hero-header" id="menuHeroHeader">
+          <div class="menu-hero-overlay"></div>
+          <div class="menu-hero-info">
+            <img id="menuHeroLogo" src="" alt="Restaurant Logo" class="restaurant-avatar-logo">
+            <div class="restaurant-meta-details">
+              <h1 class="restaurant-name-title" id="menuHeroName">Shiv Sagar Pure Veg</h1>
+              <p class="restaurant-sub-meta" id="menuHeroTagline">Pure Veg Multi-Cuisine Since 1981 · JM Road, Shivajinagar, Pune</p>
+              <div class="restaurant-rating-pill">
+                ⭐ <span id="menuHeroRating">4.8</span> (<span id="menuHeroReviews">1,420</span>)
+                <span class="pure-veg-tag">🟢 Pure Veg</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div style="display: flex; gap: 4px; align-items: center;">
-          <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/></svg>
-          <svg width="13" height="13" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.076-5.077 13.308-5.077 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM9 16a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
-          <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+
+        <!-- Table Context Strip -->
+        <div class="table-context-strip">
+          <div class="table-indicator">
+            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span id="currentDinerTable">Table 04 • Indoor Dining</span>
+          </div>
+          <div class="wifi-callout" id="wifiSnippet">
+            <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+            <span>Guest Wi-Fi Available</span>
+          </div>
         </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="menu-controls-wrapper">
+          <div class="search-box">
+            <svg width="15" height="15" fill="none" stroke="#94a3b8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <input type="text" id="menuSearchInput" placeholder="Search dishes, ingredients, or allergens..." oninput="app.handleSearch(this.value)">
+          </div>
+          <div class="dietary-filters-row">
+            <button class="diet-pill active" onclick="app.setDietFilter('all', this)">All Items</button>
+            <button class="diet-pill" onclick="app.setDietFilter('veg', this)">🟢 Pure Veg</button>
+            <button class="diet-pill" onclick="app.setDietFilter('vegan', this)">🌱 Vegan</button>
+            <button class="diet-pill" onclick="app.setDietFilter('featured', this)">⭐ Chef's Specials</button>
+          </div>
+        </div>
+
+        <!-- Sticky Category Nav Bar -->
+        <div class="category-nav-bar" id="categoryNavBar">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Dishes Container -->
+        <div class="menu-sections-container" id="menuSectionsContainer">
+          <!-- Categorized Dish Cards dynamically rendered -->
+        </div>
+
+        <!-- Floating Cart Bar -->
+        <div class="floating-cart-bar" id="floatingCartBar" style="display: none;" onclick="app.openCart()">
+          <div class="cart-bar-left">
+            <div class="cart-items-count-badge" id="cartCountBadge">0</div>
+            <div class="cart-bar-text">View Table Order</div>
+          </div>
+          <div class="cart-bar-amount" id="cartTotalAmount">₹0</div>
+        </div>
+
       </div>
+    </div>
 
-      <div class="phone-screen" id="phoneScreen">
-        <div class="menu-app-content">
+    <!-- Cart Drawer Backdrop -->
+    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" onclick="app.closeCart()"></div>
 
-          <!-- Hero Cover Banner -->
-          <div class="menu-hero-header" id="menuHeroHeader">
-            <div class="menu-hero-overlay"></div>
-            <div class="menu-hero-info">
-              <img id="menuHeroLogo" src="" alt="Restaurant Logo" class="restaurant-avatar-logo">
-              <div class="restaurant-meta-details">
-                <h1 class="restaurant-name-title" id="menuHeroName">Shiv Sagar Pure Veg</h1>
-                <p class="restaurant-sub-meta" id="menuHeroTagline">Pure Veg Multi-Cuisine Since 1981 · JM Road, Shivajinagar, Pune</p>
-                <div class="restaurant-rating-pill">
-                  ⭐ <span id="menuHeroRating">4.9</span> (<span id="menuHeroReviews">348</span>)
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Table Context Strip -->
-          <div class="table-context-strip">
-            <div class="table-indicator">
-              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <span id="currentDinerTable">Table 04 • Indoor Dining</span>
-            </div>
-            <div class="wifi-callout" id="wifiSnippet">
-              <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
-              <span>Guest Wi-Fi Available</span>
-            </div>
-          </div>
-
-          <!-- Search & Filter Controls -->
-          <div class="menu-controls-wrapper">
-            <div class="search-box">
-              <svg width="15" height="15" fill="none" stroke="#94a3b8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-              <input type="text" id="menuSearchInput" placeholder="Search dishes, ingredients, or allergens..." oninput="app.handleSearch(this.value)">
-            </div>
-            <div class="dietary-filters-row">
-              <button class="diet-pill active" onclick="app.setDietFilter('all', this)">All Items</button>
-              <button class="diet-pill" onclick="app.setDietFilter('veg', this)">🟢 Pure Veg</button>
-              <button class="diet-pill" onclick="app.setDietFilter('non-veg', this)">🔴 Non-Veg</button>
-              <button class="diet-pill" onclick="app.setDietFilter('vegan', this)">🌱 Vegan</button>
-              <button class="diet-pill" onclick="app.setDietFilter('featured', this)">⭐ Chef's Specials</button>
-            </div>
-          </div>
-
-          <!-- Sticky Category Nav Bar -->
-          <div class="category-nav-bar" id="categoryNavBar">
-            <!-- Rendered dynamically -->
-          </div>
-
-          <!-- Dishes Container -->
-          <div class="menu-sections-container" id="menuSectionsContainer">
-            <!-- Categorized Dish Cards dynamically rendered -->
-          </div>
-
-          <!-- Floating Cart Bar (Phase 2 Preview) -->
-          <div class="floating-cart-bar" id="floatingCartBar" style="display: none;" onclick="app.openCart()">
-            <div class="cart-bar-left">
-              <div class="cart-items-count-badge" id="cartCountBadge">0</div>
-              <div class="cart-bar-text">View Table Order</div>
-            </div>
-            <div class="cart-bar-amount" id="cartTotalAmount">₹0</div>
-          </div>
-
-          <!-- Cart & Table Order Drawer -->
-          <div class="cart-drawer" id="cartDrawer" style="display: none;">
-            <div class="cart-header">
-              <h3>Your Table Order (<span id="cartDrawerTable">Table 04</span>)</h3>
-              <button class="modal-close-btn" style="position: static; background: #e2e8f0; color: #000;" onclick="app.closeCart()">✕</button>
-            </div>
-            <div class="cart-items-list" id="cartItemsList">
-              <!-- Cart rows rendered dynamically -->
-            </div>
-            <div style="padding: 0 16px;">
-              <label style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase;">Cooking Instructions / Chef Notes</label>
-              <input type="text" class="order-notes-input" id="orderSpecialNotes" placeholder="e.g. Less spicy, dressing on the side, extra napkins...">
-            </div>
-            <div class="cart-bill-summary">
-              <div class="bill-line">
-                <span>Subtotal</span>
-                <span id="billSubtotal">₹0</span>
-              </div>
-              <div class="bill-line">
-                <span>GST (5%)</span>
-                <span id="billGst">₹0</span>
-              </div>
-              <div class="bill-line total">
-                <span>Total Payable</span>
-                <span id="billGrandTotal">₹0</span>
-              </div>
-              <button class="primary-add-button" style="margin-top: 14px;" onclick="app.placeOrder()">
-                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-                Send Order to Kitchen Display
-              </button>
-            </div>
-          </div>
-
+    <!-- Cart & Table Order Drawer -->
+    <div class="cart-drawer" id="cartDrawer" style="display: none;">
+      <div class="cart-header">
+        <h3>Your Table Order (<span id="cartDrawerTable">Table 04</span>)</h3>
+        <button class="modal-close-btn" style="position: static; background: #e2e8f0; color: #000;" onclick="app.closeCart()">✕</button>
+      </div>
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Cart rows rendered dynamically -->
+      </div>
+      <div style="padding: 0 16px;">
+        <label style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase;">Cooking Instructions / Chef Notes</label>
+        <input type="text" class="order-notes-input" id="orderSpecialNotes" placeholder="e.g. Less spicy, extra butter pav, no onion in salad...">
+      </div>
+      <div class="cart-bill-summary">
+        <div class="bill-line">
+          <span>Subtotal</span>
+          <span id="billSubtotal">₹0</span>
         </div>
+        <div class="bill-line">
+          <span>GST (5%)</span>
+          <span id="billGst">₹0</span>
+        </div>
+        <div class="bill-line total">
+          <span>Total Payable</span>
+          <span id="billGrandTotal">₹0</span>
+        </div>
+        <button class="primary-add-button" style="margin-top: 14px;" onclick="app.placeOrder()">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          Send Order to Kitchen Display
+        </button>
       </div>
     </div>
 
@@ -187,12 +167,12 @@
       <div class="admin-top-banner">
         <div class="admin-banner-title">
           <h2 id="adminBannerTenantName">Shiv Sagar Pure Veg Restaurant</h2>
-          <p>Synexa Multi-Tenant Portal · Reusable Restaurant & Hotel Management</p>
+          <p>Multi-Tenant Portal · Restaurant & Kitchen Order Management</p>
         </div>
         <div style="display: flex; gap: 10px;">
-          <button class="action-btn-primary" onclick="app.setMode('phone')">
+          <button class="action-btn-primary" onclick="app.setMode('menu')">
             <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-            Preview Live Diner Menu
+            Back to Diner Menu
           </button>
         </div>
       </div>
