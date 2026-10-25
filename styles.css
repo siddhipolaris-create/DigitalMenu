@@ -1,0 +1,1610 @@
+/* ==========================================================================
+   SYNEXA SOLUTIONS - MULTI-TENANT QR MENU & HOSPITALITY PLATFORM
+   Design System: Modern Culinary Glassmorphism, Responsive & Micro-animated
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+  /* Dynamic Tenant Brand Color (overridden per restaurant) */
+  --primary: #1b4332;
+  --primary-light: #2d6a4f;
+  --primary-dark: #081c15;
+  --primary-gradient: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+  --accent: #d4a373;
+  --accent-light: #faedcd;
+  
+  /* Neutral System Colors */
+  --bg-main: #f8faf9;
+  --bg-card: #ffffff;
+  --bg-alt: #f1f5f3;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+  --border-subtle: #e5e7eb;
+  --border-focus: #10b981;
+  
+  /* Status & Dietary Badges */
+  --veg-green: #10b981;
+  --veg-bg: #ecfdf5;
+  --nonveg-red: #ef4444;
+  --nonveg-bg: #fef2f2;
+  --vegan-purple: #8b5cf6;
+  --vegan-bg: #f5f3ff;
+  --warning-amber: #f59e0b;
+  --sold-out-gray: #4b5563;
+
+  /* Elevation Shadows & Glassmorphism */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --shadow-float: 0 20px 40px -10px rgba(0, 0, 0, 0.14);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', 'Playfair Display', Georgia, serif;
+}
+
+/* Reset & Global Defaults */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #0d1312;
+  color: var(--text-main);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   TOP UNIVERSAL CONTROL BAR (Platform Switcher, Device Modes, Table Picker)
+   ========================================================================== */
+.synexa-master-bar {
+  background: rgba(18, 26, 24, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 16px;
+}
+
+.synexa-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.synexa-logo-badge {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.4);
+}
+
+.synexa-title-group h1 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+}
+
+.synexa-title-group span {
+  font-size: 11px;
+  color: #94a3b8;
+  display: block;
+}
+
+.platform-center-controls {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 4px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 4px;
+}
+
+.mode-btn {
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.mode-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mode-btn.active {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.platform-right-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tenant-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+.tenant-select-wrapper label {
+  color: #94a3b8;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.tenant-select-wrapper select {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.tenant-select-wrapper select option {
+  background: #1e293b;
+  color: white;
+}
+
+.table-picker-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.table-picker-badge:hover {
+  background: rgba(16, 185, 129, 0.25);
+}
+
+/* ==========================================================================
+   VIEWPORT WRAPPERS (Phone Simulator vs Fullscreen vs Admin)
+   ========================================================================== */
+.view-container {
+  min-height: calc(100vh - 55px);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* 1. Phone Simulator Frame */
+.phone-mode-active .view-container {
+  background: radial-gradient(circle at 50% 30%, #172420 0%, #0a0f0e 100%);
+  align-items: center;
+  padding: 20px 0 40px;
+}
+
+.phone-simulator {
+  width: 412px;
+  height: 840px;
+  max-height: 90vh;
+  background: #000;
+  border-radius: 54px;
+  padding: 12px;
+  box-shadow: 
+    0 0 0 2px #263530,
+    0 0 0 6px #131c19,
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    0 10px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-screen {
+  flex: 1;
+  background: var(--bg-main);
+  border-radius: 44px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+}
+
+.phone-screen::-webkit-scrollbar {
+  width: 4px;
+}
+.phone-screen::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* Phone Bezel Dynamic Island & Status Bar */
+.phone-notch-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #111;
+  z-index: 200;
+  background: transparent;
+  pointer-events: none;
+}
+
+.dynamic-island {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 108px;
+  height: 26px;
+  background: #000;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.camera-lens {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #111;
+  border: 1px solid #222;
+}
+
+.island-sensor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0f172a;
+}
+
+/* 2. Fullscreen Customer Mode */
+.fullscreen-mode-active .view-container {
+  background: #f8faf9;
+  padding: 0;
+}
+.fullscreen-mode-active .phone-simulator {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  max-height: 100vh;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: var(--shadow-lg);
+  border: none;
+}
+.fullscreen-mode-active .phone-screen {
+  border-radius: 0;
+}
+.fullscreen-mode-active .phone-notch-bar {
+  display: none;
+}
+
+/* ==========================================================================
+   CUSTOMER DIGITAL MENU STYLES
+   ========================================================================== */
+.menu-app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+/* Header & Cover Banner */
+.menu-hero-header {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  color: white;
+}
+
+.menu-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.menu-hero-info {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.restaurant-avatar-logo {
+  width: 62px;
+  height: 62px;
+  border-radius: var(--radius-md);
+  border: 2px solid #ffffff;
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+  background: #fff;
+}
+
+.restaurant-meta-details {
+  flex: 1;
+}
+
+.restaurant-name-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.restaurant-sub-meta {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 2px;
+}
+
+.restaurant-rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 4px;
+  color: #fde047;
+}
+
+/* Table Context & Status Strip */
+.table-context-strip {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.table-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.table-indicator svg {
+  color: var(--primary);
+}
+
+.wifi-callout {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+/* Search & Dietary Filters */
+.menu-controls-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 12px 16px 8px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 8px 14px;
+  transition: all 0.2s ease;
+}
+
+.search-box:focus-within {
+  background: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  margin-left: 8px;
+  font-size: 13px;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+}
+
+.dietary-filters-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.dietary-filters-row::-webkit-scrollbar {
+  display: none;
+}
+
+.diet-pill {
+  white-space: nowrap;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s ease;
+}
+
+.diet-pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.diet-pill.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Category Navigation Carousel */
+.category-nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  overflow-x: auto;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+  scrollbar-width: none;
+}
+
+.category-nav-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-nav-item {
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cat-nav-item:hover {
+  color: var(--primary);
+  background: var(--bg-alt);
+}
+
+.cat-nav-item.active {
+  color: var(--primary);
+  background: rgba(27, 67, 50, 0.08);
+  border-bottom: 2px solid var(--primary);
+}
+
+/* ==========================================================================
+   MENU DISH CARDS & LISTING
+   ========================================================================== */
+.menu-sections-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.category-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.category-section-title h2 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-badge-count {
+  font-size: 11px;
+  background: var(--bg-alt);
+  color: var(--text-muted);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+.dishes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dish-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  padding: 12px;
+  display: flex;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.dish-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.dish-card.is-sold-out {
+  opacity: 0.65;
+  filter: grayscale(40%);
+}
+
+.dish-media-container {
+  position: relative;
+  width: 105px;
+  height: 105px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f1f5f9;
+}
+
+.dish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.dish-card:hover .dish-image {
+  transform: scale(1.05);
+}
+
+.diet-dot-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.diet-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.diet-dot.veg {
+  background: var(--veg-green);
+}
+
+.diet-dot.non-veg {
+  background: var(--nonveg-red);
+}
+
+.diet-dot.vegan {
+  background: var(--vegan-purple);
+}
+
+.sold-out-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
+
+.dish-details-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dish-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dish-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.dish-featured-star {
+  color: #f59e0b;
+  font-size: 12px;
+}
+
+.dish-description {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dish-meta-pills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.macro-tag {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--bg-alt);
+  color: var(--text-muted);
+}
+
+.macro-tag.calories {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.macro-tag.protein {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.dish-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.dish-price {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.add-btn {
+  background: #ffffff;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.add-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(27, 67, 50, 0.25);
+}
+
+.add-btn:disabled {
+  border-color: #d1d5db;
+  color: #9ca3af;
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+   FLOATING CART BAR (Phase 2 Ordering Preview)
+   ========================================================================== */
+.floating-cart-bar {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  right: 16px;
+  background: var(--primary);
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 150;
+  cursor: pointer;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.cart-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-items-count-badge {
+  background: #ffffff;
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-bar-text {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cart-bar-amount {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+/* ==========================================================================
+   NUTRITION FACTS & DISH DETAIL MODAL
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.dish-modal-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-float);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from { transform: scale(0.92) translateY(20px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  transition: all 0.2s;
+}
+
+.modal-close-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-hero-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: #f1f5f9;
+}
+
+.modal-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-body-content {
+  padding: 20px;
+}
+
+.modal-dish-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.modal-dish-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.modal-dish-price {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.modal-dish-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Nutrition Panel Block (Fine Dining & Health Standard) */
+.nutrition-panel-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-top: 18px;
+}
+
+.nutrition-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.nutrition-panel-header h4 {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #0f172a;
+}
+
+.calories-large-display {
+  font-size: 20px;
+  font-weight: 800;
+  color: #c2410c;
+}
+
+.macros-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.macro-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-sm);
+  padding: 8px 4px;
+}
+
+.macro-box .macro-val {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.macro-box .macro-lbl {
+  font-size: 10px;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Allergens & Ingredients tags */
+.allergens-wrap {
+  margin-top: 14px;
+}
+
+.section-sub-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 6px;
+}
+
+.allergen-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.allergen-badge {
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+}
+
+.ingredient-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ingredient-tag {
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.modal-action-footer {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.primary-add-button {
+  flex: 1;
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.primary-add-button:hover {
+  box-shadow: 0 4px 12px rgba(27, 67, 50, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   CART & ORDERING DRAWER (Phase 2 Preview)
+   ========================================================================== */
+.cart-drawer {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  animation: slideInRight 0.25s ease;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.cart-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cart-items-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-subtle);
+}
+
+.cart-item-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.cart-item-price {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.qty-counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-alt);
+  padding: 4px 8px;
+  border-radius: var(--radius-full);
+}
+
+.qty-btn {
+  border: none;
+  background: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.qty-val {
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 16px;
+  text-align: center;
+}
+
+.order-notes-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  outline: none;
+  margin-top: 10px;
+}
+
+.cart-bill-summary {
+  padding: 16px;
+  background: #f8fafc;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.bill-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.bill-line.total {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-main);
+  border-top: 1px solid #e2e8f0;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   REUSABLE MULTI-TENANT ADMIN DASHBOARD STYLES
+   ========================================================================== */
+.admin-mode-active .view-container {
+  background: #0b100f;
+  padding: 24px;
+  justify-content: center;
+}
+
+.admin-layout-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  background: #111a18;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #e2e8f0;
+}
+
+.admin-top-banner {
+  background: linear-gradient(135deg, #1b4332 0%, #11221b 100%);
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.admin-banner-title h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.admin-banner-title p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.admin-tabs-nav {
+  display: flex;
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0 30px;
+}
+
+.admin-tab-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.admin-tab-btn:hover {
+  color: #ffffff;
+}
+
+.admin-tab-btn.active {
+  color: #10b981;
+  border-bottom-color: #10b981;
+}
+
+.admin-content-area {
+  padding: 30px;
+}
+
+/* Metric KPI Cards */
+.kpi-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.kpi-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.kpi-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.kpi-icon-wrap.green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.kpi-icon-wrap.blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.kpi-icon-wrap.amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.kpi-icon-wrap.purple { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
+
+.kpi-number {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.kpi-label {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Menu Management Table & Controls */
+.admin-table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  gap: 16px;
+}
+
+.action-btn-primary {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.action-btn-primary:hover {
+  background: #059669;
+}
+
+.admin-menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.admin-menu-table th {
+  text-align: left;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #94a3b8;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.admin-menu-table td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  vertical-align: middle;
+}
+
+.table-dish-thumb {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+/* Real-time Toggle Switch for Stock Availability */
+.switch-wrap {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.switch-wrap input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #334155;
+  transition: .3s;
+  border-radius: 24px;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+input:checked + .switch-slider {
+  background-color: #10b981;
+}
+
+input:checked + .switch-slider:before {
+  transform: translateX(20px);
+}
+
+/* ==========================================================================
+   TABLE & ROOM QR CODE STUDIO & PRINT TENT CARD
+   ========================================================================== */
+.qr-studio-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 30px;
+}
+
+.qr-config-panel {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.form-control {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: #10b981;
+}
+
+/* Printable Table Tent Card Mockup */
+.tent-card-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tent-card-sheet {
+  width: 320px;
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border: 2px solid #e2e8f0;
+}
+
+.tent-card-header h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.tent-card-header p {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.tent-qr-box {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.tent-location-badge {
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.tent-instructions {
+  font-size: 12px;
+  color: #334155;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.tent-wifi-box {
+  background: #f1f5f9;
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  margin-top: 12px;
+  font-size: 10px;
+  color: #64748b;
+}
+
+.tent-wifi-box strong {
+  color: #0f172a;
+}
+
+.tent-powered-by {
+  font-size: 9px;
+  color: #94a3b8;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* ==========================================================================
+   PRINT STYLES FOR TABLE TENT CARDS
+   ========================================================================== */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .synexa-master-bar,
+  .admin-top-banner,
+  .admin-tabs-nav,
+  .qr-config-panel,
+  .kpi-metrics-grid,
+  .action-btn-primary,
+  .platform-center-controls {
+    display: none !important;
+  }
+  .admin-layout-wrapper {
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+  }
+  .tent-card-sheet {
+    box-shadow: none !important;
+    border: 1px dashed #94a3b8 !important;
+    margin: 40px auto !important;
+    page-break-inside: avoid;
+  }
+}
