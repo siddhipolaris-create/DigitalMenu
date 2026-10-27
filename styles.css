@@ -5,6 +5,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
 
+@font-face {
+  font-family: 'Recoleta Black';
+  src: local('Recoleta Black'),
+       url('assets/fonts/Recoleta-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
   /* Dynamic Tenant Brand Color (overridden per restaurant) */
   --primary: #1b4332;
@@ -45,8 +55,8 @@
   --radius-full: 9999px;
 
   /* Typography */
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-display: 'Outfit', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Recoleta Black', 'Recoleta', Georgia, serif;
+  --font-display: 'Recoleta Black', 'Recoleta', Georgia, serif;
 }
 
 /* Reset & Global Defaults */
@@ -55,6 +65,13 @@
   margin: 0;
   padding: 0;
 }
+
+
+/* Apply Recoleta Black throughout the entire website, including form controls. */
+*, *::before, *::after {
+  font-family: 'Recoleta Black', 'Recoleta', Georgia, serif !important;
+}
+
 
 body {
   font-family: var(--font-sans);
