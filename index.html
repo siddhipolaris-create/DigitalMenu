@@ -25,25 +25,6 @@
       </div>
 
       <div class="nav-actions">
-        <!-- Table indicator badge -->
-        <div class="table-picker-badge" id="tableBadgeTrigger" onclick="app.cycleTable()" title="Click to cycle dining table">
-          <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          <span id="headerTableLabel">Table 04</span>
-        </div>
-
-        <!-- Header Cart Trigger (visible when items added) -->
-        <button class="nav-cart-btn" id="navCartBtn" onclick="app.openCart()" style="display: none;">
-          <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-          <span>Order</span>
-          <span class="nav-cart-count" id="navCartCount">0</span>
-        </button>
-
-        <!-- Admin / Staff switch button -->
-        <button class="nav-admin-btn" id="btnModeAdmin" onclick="app.toggleAdminMode()" title="Staff Portal / Live Kitchen">
-          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-          <span id="adminToggleLabel">Staff / Admin</span>
-        </button>
-
         <!-- Hidden selector for tenant compatibility -->
         <select id="tenantSelect" style="display: none;" onchange="app.switchTenant(this.value)">
           <option value="tenant_olive">Shiv Sagar Pure Veg Restaurant (Pune)</option>
@@ -114,51 +95,6 @@
           <!-- Categorized Dish Cards dynamically rendered -->
         </div>
 
-        <!-- Floating Cart Bar -->
-        <div class="floating-cart-bar" id="floatingCartBar" style="display: none;" onclick="app.openCart()">
-          <div class="cart-bar-left">
-            <div class="cart-items-count-badge" id="cartCountBadge">0</div>
-            <div class="cart-bar-text">View Table Order</div>
-          </div>
-          <div class="cart-bar-amount" id="cartTotalAmount">₹0</div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Cart Drawer Backdrop -->
-    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop" onclick="app.closeCart()"></div>
-
-    <!-- Cart & Table Order Drawer -->
-    <div class="cart-drawer" id="cartDrawer" style="display: none;">
-      <div class="cart-header">
-        <h3>Your Table Order (<span id="cartDrawerTable">Table 04</span>)</h3>
-        <button class="modal-close-btn" style="position: static; background: #e2e8f0; color: #000;" onclick="app.closeCart()">✕</button>
-      </div>
-      <div class="cart-items-list" id="cartItemsList">
-        <!-- Cart rows rendered dynamically -->
-      </div>
-      <div style="padding: 0 16px;">
-        <label style="font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase;">Cooking Instructions / Chef Notes</label>
-        <input type="text" class="order-notes-input" id="orderSpecialNotes" placeholder="e.g. Less spicy, extra butter pav, no onion in salad...">
-      </div>
-      <div class="cart-bill-summary">
-        <div class="bill-line">
-          <span>Subtotal</span>
-          <span id="billSubtotal">₹0</span>
-        </div>
-        <div class="bill-line">
-          <span>GST (5%)</span>
-          <span id="billGst">₹0</span>
-        </div>
-        <div class="bill-line total">
-          <span>Total Payable</span>
-          <span id="billGrandTotal">₹0</span>
-        </div>
-        <button class="primary-add-button" style="margin-top: 14px;" onclick="app.placeOrder()">
-          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-          Send Order to Kitchen Display
-        </button>
       </div>
     </div>
 
@@ -419,9 +355,8 @@
         </div>
 
         <div class="modal-action-footer">
-          <button class="primary-add-button" id="modalAddToCartBtn" onclick="app.addModalItemToCart()">
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
-            Add to Table Order
+          <button class="modal-dismiss-btn" onclick="app.closeDishModal()">
+            Close
           </button>
         </div>
       </div>

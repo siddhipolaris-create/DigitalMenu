@@ -1252,6 +1252,27 @@ body {
   transition: all 0.2s ease;
 }
 
+.modal-dismiss-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--bg-alt);
+  color: var(--text-main);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dismiss-btn:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
 .primary-add-button:hover {
   box-shadow: 0 4px 12px rgba(27, 67, 50, 0.35);
   transform: translateY(-1px);

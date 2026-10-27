@@ -72,9 +72,12 @@ class SynexaApp {
     this.data.activeLocation = loc;
 
     const label = `${loc.label} • ${loc.type === 'room' ? 'Room Service' : 'Indoor Dining'}`;
-    document.getElementById('headerTableLabel').textContent = loc.label;
-    document.getElementById('currentDinerTable').textContent = label;
-    document.getElementById('cartDrawerTable').textContent = loc.label;
+    const headerTableLabel = document.getElementById('headerTableLabel');
+    if (headerTableLabel) headerTableLabel.textContent = loc.label;
+    const currentDinerTable = document.getElementById('currentDinerTable');
+    if (currentDinerTable) currentDinerTable.textContent = label;
+    const cartDrawerTable = document.getElementById('cartDrawerTable');
+    if (cartDrawerTable) cartDrawerTable.textContent = loc.label;
     
     // Also update QR generator input
     const qrNumInput = document.getElementById('qrNumberInput');
@@ -133,9 +136,10 @@ class SynexaApp {
     document.getElementById('menuHeroName').textContent = tenant.name;
     document.getElementById('menuHeroTagline').textContent = tenant.tagline;
     document.getElementById('menuHeroRating').textContent = tenant.rating;
-    document.getElementById('menuHeroReviews').textContent = tenant.reviewsCount;
-    document.getElementById('headerTableLabel').textContent = this.data.activeLocation.label;
-    document.getElementById('currentDinerTable').textContent = `${this.data.activeLocation.label} • ${this.data.activeLocation.type === 'room' ? 'Room Service' : 'Indoor Dining'}`;
+    const headerTableLabel = document.getElementById('headerTableLabel');
+    if (headerTableLabel) headerTableLabel.textContent = this.data.activeLocation.label;
+    const currentDinerTable = document.getElementById('currentDinerTable');
+    if (currentDinerTable) currentDinerTable.textContent = `${this.data.activeLocation.label} • ${this.data.activeLocation.type === 'room' ? 'Room Service' : 'Indoor Dining'}`;
     
     // Admin settings fields
     const sName = document.getElementById('settingNameInput');
@@ -222,10 +226,8 @@ class SynexaApp {
       catDishes.forEach(item => {
         const card = document.createElement('div');
         card.className = `dish-card ${!item.isAvailable ? 'is-sold-out' : ''}`;
-        card.onclick = (e) => {
-          if (!e.target.closest('.add-btn')) {
-            this.openDishModal(item.id);
-          }
+        card.onclick = () => {
+          this.openDishModal(item.id);
         };
 
         const dietClass = item.dietary === 'veg' ? 'veg' : (item.dietary === 'non-veg' ? 'non-veg' : 'vegan');
@@ -252,9 +254,6 @@ class SynexaApp {
             </div>
             <div class="dish-footer-row">
               <span class="dish-price">₹${item.price}</span>
-              <button class="add-btn" ${!item.isAvailable ? 'disabled' : ''} onclick="app.quickAddToCart('${item.id}', event)">
-                ${item.isAvailable ? '+ Add' : 'Unavailable'}
-              </button>
             </div>
           </div>
         `;
@@ -331,16 +330,18 @@ class SynexaApp {
       ingPills.appendChild(tag);
     });
 
-    // Add to cart button state
+    // Add to cart button state (if present in DOM)
     const btn = document.getElementById('modalAddToCartBtn');
-    if (!item.isAvailable) {
-      btn.disabled = true;
-      btn.textContent = 'Currently Sold Out';
-      btn.style.opacity = '0.5';
-    } else {
-      btn.disabled = false;
-      btn.innerHTML = `<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg> Add to Table Order (₹${item.price})`;
-      btn.style.opacity = '1';
+    if (btn) {
+      if (!item.isAvailable) {
+        btn.disabled = true;
+        btn.textContent = 'Currently Sold Out';
+        btn.style.opacity = '0.5';
+      } else {
+        btn.disabled = false;
+        btn.innerHTML = `<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg> Add to Table Order (₹${item.price})`;
+        btn.style.opacity = '1';
+      }
     }
 
     document.getElementById('dishModalOverlay').style.display = 'flex';
