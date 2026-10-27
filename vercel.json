@@ -3,6 +3,10 @@
     {
       "source": "/Shivsagar",
       "destination": "/index.html"
+    },
+    {
+      "source": "/shivsagar",
+      "destination": "/index.html"
     }
   ]
 }
