@@ -34,6 +34,7 @@ class SynexaApp {
     this.renderAdminTable();
     this.renderKdsOrders();
     this.initQrStudio();
+    this.initScrollSpy();
   }
 
   // --------------------------------------------------------------------------
@@ -45,8 +46,9 @@ class SynexaApp {
 
   applyTenantBrand() {
     const tenant = this.getTenant();
+    if (!tenant) return;
     document.documentElement.style.setProperty('--primary', tenant.primaryColor);
-    document.documentElement.style.setProperty('--primary-gradient', `linear-gradient(135deg, ${tenant.primaryColor} 0%, #0f2c20 100%)`);
+    document.documentElement.style.setProperty('--primary-gradient', `linear-gradient(135deg, #f04f22 0%, ${tenant.primaryColor} 100%)`);
     document.documentElement.style.setProperty('--accent', tenant.accentColor);
   }
 
@@ -155,20 +157,58 @@ class SynexaApp {
   renderCategoryNav() {
     const categories = this.data.categories[this.data.activeTenantId] || [];
     const container = document.getElementById('categoryNavBar');
+    if (!container) return;
     container.innerHTML = '';
 
     categories.forEach((cat, idx) => {
       const btn = document.createElement('button');
       btn.className = `cat-nav-item ${idx === 0 ? 'active' : ''}`;
-      btn.innerHTML = `${cat.icon || '🍽️'} ${cat.name}`;
+      btn.setAttribute('data-category-id', cat.id);
+      btn.innerHTML = `<span class="cat-icon">${cat.icon || '🍽️'}</span><span class="cat-name">${cat.name}</span>`;
       btn.onclick = () => {
         document.querySelectorAll('.cat-nav-item').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
+        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
         const section = document.getElementById(`cat_sec_${cat.id}`);
-        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (section) {
+          const yOffset = -120;
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
       };
       container.appendChild(btn);
     });
+  }
+
+  initScrollSpy() {
+    let isScrolling = false;
+    window.addEventListener('scroll', () => {
+      if (isScrolling) return;
+      isScrolling = true;
+      requestAnimationFrame(() => {
+        const sections = document.querySelectorAll('[id^="cat_sec_"]');
+        let currentCatId = null;
+        const scrollPos = window.pageYOffset + 160;
+
+        sections.forEach(sec => {
+          const top = sec.offsetTop;
+          const height = sec.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            currentCatId = sec.id.replace('cat_sec_', '');
+          }
+        });
+
+        if (currentCatId) {
+          const activeBtn = document.querySelector(`.cat-nav-item[data-category-id="${currentCatId}"]`);
+          if (activeBtn && !activeBtn.classList.contains('active')) {
+            document.querySelectorAll('.cat-nav-item').forEach(b => b.classList.remove('active'));
+            activeBtn.classList.add('active');
+            activeBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+          }
+        }
+        isScrolling = false;
+      });
+    }, { passive: true });
   }
 
   renderDishes() {
@@ -176,6 +216,7 @@ class SynexaApp {
     const categories = this.data.categories[tenantId] || [];
     const dishes = this.data.menuItems[tenantId] || [];
     const container = document.getElementById('menuSectionsContainer');
+    if (!container) return;
     container.innerHTML = '';
 
     // Apply dietary & search filters
@@ -198,10 +239,11 @@ class SynexaApp {
 
     if (filteredDishes.length === 0) {
       container.innerHTML = `
-        <div style="text-align: center; padding: 40px 20px; color: #64748b;">
-          <div style="font-size: 32px; margin-bottom: 8px;">🔍</div>
-          <div style="font-weight: 700; color: #1e293b;">No dishes found</div>
-          <div style="font-size: 12px; margin-top: 4px;">Try searching for another ingredient or reset your filter.</div>
+        <div style="text-align: center; padding: 48px 20px; color: #64748b;">
+          <div style="font-size: 36px; margin-bottom: 10px;">🔍</div>
+          <div style="font-weight: 700; color: #1e293b; font-size: 16px;">No matching dishes found</div>
+          <div style="font-size: 13px; margin-top: 6px; color: #64748b;">Try searching for another dish or clear your filters.</div>
+          <button onclick="app.clearSearch(); app.setDietFilter('all', document.querySelector('.diet-pill'))" style="margin-top: 14px; background: var(--primary); color: #fff; border: none; padding: 8px 18px; border-radius: 9999px; font-weight: 700; cursor: pointer; font-size: 12.5px;">View All Items</button>
         </div>
       `;
       return;
@@ -266,7 +308,20 @@ class SynexaApp {
 
   handleSearch(val) {
     this.searchQuery = val;
+    const clearBtn = document.getElementById('searchClearBtn');
+    if (clearBtn) {
+      clearBtn.style.display = val && val.trim().length > 0 ? 'flex' : 'none';
+    }
     this.renderDishes();
+  }
+
+  clearSearch() {
+    const input = document.getElementById('menuSearchInput');
+    if (input) {
+      input.value = '';
+      this.handleSearch('');
+      input.focus();
+    }
   }
 
   setDietFilter(type, btn) {

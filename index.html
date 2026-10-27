@@ -17,7 +17,7 @@
   <header class="restaurant-nav-bar">
     <div class="nav-container">
       <div class="nav-brand" onclick="app.setMode('menu')">
-        <div class="restaurant-nav-logo">SS</div>
+        <img src="assets/shiv-sagar-emblem.png" alt="Shiv Sagar Pure Veg" class="restaurant-nav-logo-img">
         <div class="restaurant-nav-info">
           <span class="restaurant-nav-title">SHIV SAGAR</span>
           <span class="restaurant-nav-subtitle">Pure Veg Restaurant · Since 1981 · Pune</span>
@@ -59,24 +59,38 @@
           </div>
         </div>
 
-
         <!-- Search & Filter Controls -->
         <div class="menu-controls-wrapper">
           <div class="search-box">
-            <svg width="15" height="15" fill="none" stroke="#94a3b8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-            <input type="text" id="menuSearchInput" placeholder="Search dishes, ingredients, or allergens..." oninput="app.handleSearch(this.value)">
+            <svg class="search-icon" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <input type="text" id="menuSearchInput" placeholder="Search dishes, ingredients (e.g. Pav Bhaji, Dosa, Paneer)..." oninput="app.handleSearch(this.value)">
+            <button id="searchClearBtn" class="search-clear-btn" aria-label="Clear search" onclick="app.clearSearch()" style="display: none;">✕</button>
           </div>
           <div class="dietary-filters-row">
-            <button class="diet-pill active" onclick="app.setDietFilter('all', this)">All Items</button>
-            <button class="diet-pill" onclick="app.setDietFilter('veg', this)">🟢 Pure Veg</button>
-            <button class="diet-pill" onclick="app.setDietFilter('vegan', this)">🌱 Vegan</button>
-            <button class="diet-pill" onclick="app.setDietFilter('featured', this)">⭐ Chef's Specials</button>
+            <button class="diet-pill active" onclick="app.setDietFilter('all', this)">
+              <span class="diet-pill-icon">✨</span>
+              <span>All Dishes</span>
+            </button>
+            <button class="diet-pill" onclick="app.setDietFilter('veg', this)">
+              <span class="diet-pill-dot veg-dot-inline"></span>
+              <span>Pure Veg</span>
+            </button>
+            <button class="diet-pill" onclick="app.setDietFilter('vegan', this)">
+              <span class="diet-pill-icon">🌱</span>
+              <span>Vegan</span>
+            </button>
+            <button class="diet-pill" onclick="app.setDietFilter('featured', this)">
+              <span class="diet-pill-icon">⭐</span>
+              <span>Chef's Specials</span>
+            </button>
           </div>
         </div>
 
         <!-- Sticky Category Nav Bar -->
-        <div class="category-nav-bar" id="categoryNavBar">
-          <!-- Rendered dynamically -->
+        <div class="category-nav-wrapper" id="categoryNavWrapper">
+          <div class="category-nav-bar" id="categoryNavBar">
+            <!-- Rendered dynamically -->
+          </div>
         </div>
 
         <!-- Dishes Container -->
