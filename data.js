@@ -94,7 +94,7 @@ const INITIAL_DATA = {
       },
       {
         "id": "cat_chinese_starters",
-        "name": "Chinese Soups & Starters",
+        "name": "Chinese Soups",
         "icon": "🥢"
       },
       {
@@ -1672,7 +1672,7 @@ const INITIAL_DATA = {
         "name": "Manchow Soup",
         "description": "Indo-Chinese dark brown soup with shredded cabbage, carrots, ginger, garlic, and fresh coriander, served with crunchy fried noodles.",
         "price": 160,
-        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Chinese Soups/manchow soup.jpg",
         "dietary": "veg",
         "isFeatured": true,
         "isAvailable": true,
@@ -1700,10 +1700,10 @@ const INITIAL_DATA = {
       {
         "id": "ss_sweet_corn_veg_soup",
         "categoryId": "cat_chinese_starters",
-        "name": "Sweet Corn Veg Soup",
+        "name": "Sweet Corn Soup",
         "description": "Smooth, comforting broth made with crushed American sweet corn kernels, tender diced carrots, and beans.",
         "price": 150,
-        "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Chinese Soups/sweet corn soup.jpg",
         "dietary": "vegan",
         "isFeatured": false,
         "isAvailable": true,
