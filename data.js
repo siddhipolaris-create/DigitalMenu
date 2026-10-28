@@ -99,7 +99,7 @@ const INITIAL_DATA = {
       },
       {
         "id": "cat_chinese_mains",
-        "name": "Chinese Noodles, Rice & Gravies",
+        "name": "Chinese Noodles",
         "icon": "🥡"
       },
       {
@@ -1726,140 +1726,12 @@ const INITIAL_DATA = {
         ]
       },
       {
-        "id": "ss_special_spring_roll",
-        "categoryId": "cat_chinese_starters",
-        "name": "Shiv Sagar Special Spring Roll",
-        "description": "Golden shatteringly-crisp rolls stuffed with glass noodles, paneer, shredded cabbage, carrots, and special herbs, served with sweet chilli sauce.",
-        "price": 220,
-        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
-        "dietary": "veg",
-        "isFeatured": true,
-        "isAvailable": true,
-        "spicyLevel": 1,
-        "prepTime": "10 mins",
-        "nutrition": {
-          "calories": 380,
-          "protein": 9.5,
-          "carbs": 48.0,
-          "fat": 17.0,
-          "fiber": 4.0,
-          "sodium": 590
-        },
-        "allergens": [
-          "Gluten",
-          "Dairy"
-        ],
-        "ingredients": [
-          "Crispy Wonton Wrapper",
-          "Julienned Vegetables",
-          "Paneer",
-          "Sweet Chilli Dip"
-        ]
-      },
-      {
-        "id": "ss_paneer_chilly_dry",
-        "categoryId": "cat_chinese_starters",
-        "name": "Paneer Chilly Dry",
-        "description": "Wok-tossed battered cottage cheese cubes with crunchy capsicum, sliced onions, fresh green chillies, garlic, and savory soy-chilli glaze.",
-        "price": 255,
-        "image": "assets/paneer-tikka.jpg",
-        "dietary": "veg",
-        "isFeatured": true,
-        "isAvailable": true,
-        "spicyLevel": 2,
-        "prepTime": "10-12 mins",
-        "nutrition": {
-          "calories": 420,
-          "protein": 21.0,
-          "carbs": 24.0,
-          "fat": 28.0,
-          "fiber": 3.0,
-          "sodium": 710
-        },
-        "allergens": [
-          "Dairy",
-          "Soy",
-          "Gluten"
-        ],
-        "ingredients": [
-          "Fresh Cottage Cheese",
-          "Bell Peppers",
-          "Onions",
-          "Green Chillies",
-          "Soy Sauce"
-        ]
-      },
-      {
-        "id": "ss_chinese_bhel",
-        "categoryId": "cat_chinese_starters",
-        "name": "Chinese Bhel",
-        "description": "Crispy fried noodles tossed with shredded cabbage, capsicum, spring onion greens, and sweet-spicy Schezwan chutney.",
-        "price": 205,
-        "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
-        "dietary": "veg",
-        "isFeatured": false,
-        "isAvailable": true,
-        "spicyLevel": 2,
-        "prepTime": "6 mins",
-        "nutrition": {
-          "calories": 340,
-          "protein": 6.0,
-          "carbs": 52.0,
-          "fat": 12.0,
-          "fiber": 4.0,
-          "sodium": 620
-        },
-        "allergens": [
-          "Gluten",
-          "Soy"
-        ],
-        "ingredients": [
-          "Crispy Noodles",
-          "Schezwan Sauce",
-          "Cabbage",
-          "Capsicum",
-          "Spring Onions"
-        ]
-      },
-      {
-        "id": "ss_paneer_hot_pan",
-        "categoryId": "cat_chinese_starters",
-        "name": "Paneer Hot Pan",
-        "description": "Fiery sizzling hot pan starter of crispy paneer chunks tossed with ginger, roasted garlic, spring onions, and spicy red pepper glaze.",
-        "price": 300,
-        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
-        "dietary": "veg",
-        "isFeatured": true,
-        "isAvailable": true,
-        "spicyLevel": 3,
-        "prepTime": "12 mins",
-        "nutrition": {
-          "calories": 460,
-          "protein": 22.5,
-          "carbs": 26.0,
-          "fat": 31.0,
-          "fiber": 3.5,
-          "sodium": 760
-        },
-        "allergens": [
-          "Dairy",
-          "Soy"
-        ],
-        "ingredients": [
-          "Paneer",
-          "Garlic",
-          "Ginger",
-          "Red Chilli Paste",
-          "Spring Onion"
-        ]
-      },
-      {
         "id": "ss_hakka_noodles",
         "categoryId": "cat_chinese_mains",
         "name": "Hakka Noodles",
         "description": "Wok-tossed noodles with shredded cabbage, crunchy carrots, bell peppers, spring onions, and light soy-white pepper seasoning.",
         "price": 280,
-        "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Chinese Noodles/Hakka Noodles.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
@@ -1892,7 +1764,7 @@ const INITIAL_DATA = {
         "name": "Schezwan Noodles",
         "description": "Long noodles wok-fried over roaring flame in house-pounded spicy garlic Schezwan chili paste with shredded vegetables.",
         "price": 285,
-        "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Chinese Noodles/Schezwan Noodles.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
@@ -1916,102 +1788,6 @@ const INITIAL_DATA = {
           "Garlic",
           "Vegetables",
           "Sesame Oil"
-        ]
-      },
-      {
-        "id": "ss_veg_fried_rice",
-        "categoryId": "cat_chinese_mains",
-        "name": "Veg. Fried Rice",
-        "description": "Steamed basmati rice wok-tossed with finely diced garden vegetables, spring onions, and delicate Chinese seasoning.",
-        "price": 245,
-        "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80",
-        "dietary": "veg",
-        "isFeatured": false,
-        "isAvailable": true,
-        "spicyLevel": 1,
-        "prepTime": "10 mins",
-        "nutrition": {
-          "calories": 460,
-          "protein": 9.0,
-          "carbs": 80.0,
-          "fat": 11.0,
-          "fiber": 4.0,
-          "sodium": 590
-        },
-        "allergens": [
-          "Soy"
-        ],
-        "ingredients": [
-          "Basmati Rice",
-          "Carrots",
-          "Beans",
-          "Spring Onions",
-          "Soy Sauce"
-        ]
-      },
-      {
-        "id": "ss_triple_schezwan_rice",
-        "categoryId": "cat_chinese_mains",
-        "name": "Triple Schezwan Rice",
-        "description": "Ultimate Indo-Chinese combo! Spicy Schezwan fried rice and noodles tossed together, served with a pot of rich vegetable Schezwan gravy and crispy fried noodles.",
-        "price": 335,
-        "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80",
-        "dietary": "veg",
-        "isFeatured": true,
-        "isAvailable": true,
-        "spicyLevel": 3,
-        "prepTime": "15 mins",
-        "nutrition": {
-          "calories": 680,
-          "protein": 15.0,
-          "carbs": 104.0,
-          "fat": 22.0,
-          "fiber": 7.0,
-          "sodium": 920
-        },
-        "allergens": [
-          "Gluten",
-          "Soy"
-        ],
-        "ingredients": [
-          "Basmati Rice",
-          "Noodles",
-          "Schezwan Gravy",
-          "Crispy Noodles",
-          "Vegetables"
-        ]
-      },
-      {
-        "id": "ss_paneer_chilly_gravy",
-        "categoryId": "cat_chinese_mains",
-        "name": "Paneer Chilly (Gravy)",
-        "description": "Golden battered paneer cubes simmered in a rich garlic, ginger, and green chilli soy gravy with diced bell peppers and onions.",
-        "price": 305,
-        "image": "assets/paneer-tikka.jpg",
-        "dietary": "veg",
-        "isFeatured": false,
-        "isAvailable": true,
-        "spicyLevel": 2,
-        "prepTime": "12 mins",
-        "nutrition": {
-          "calories": 480,
-          "protein": 22.0,
-          "carbs": 32.0,
-          "fat": 29.0,
-          "fiber": 3.5,
-          "sodium": 820
-        },
-        "allergens": [
-          "Dairy",
-          "Soy",
-          "Gluten"
-        ],
-        "ingredients": [
-          "Paneer Cubes",
-          "Chilli Gravy",
-          "Capsicum",
-          "Onion",
-          "Dark Soy"
         ]
       },
       {
