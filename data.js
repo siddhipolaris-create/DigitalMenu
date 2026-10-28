@@ -89,7 +89,7 @@ const INITIAL_DATA = {
       },
       {
         "id": "cat_sizzlers",
-        "name": "Sizzlers & Garlic Breads",
+        "name": "Sizzlers",
         "icon": "🔥"
       },
       {
@@ -1576,7 +1576,7 @@ const INITIAL_DATA = {
         "name": "Shivsagar Special Pasta Sizzler",
         "description": "Smoking hot cast-iron sizzler with mixed pasta, diced onion, diced capsicum, baby corn, oregano, sizzling brown gravy, french fries, and cutlet.",
         "price": 495,
-        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Sizzlers/shivsagar special sizzler.jpg",
         "dietary": "veg",
         "isFeatured": true,
         "isAvailable": true,
@@ -1609,7 +1609,7 @@ const INITIAL_DATA = {
         "name": "Paneer Sizzler",
         "description": "Sizzling platter served with golden fried paneer slabs, aromatic butter rice, crispy french fries, vegetable cutlet, and piping hot barbecue gravy.",
         "price": 355,
-        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Sizzlers/paneer sizzler.jpg",
         "dietary": "veg",
         "isFeatured": true,
         "isAvailable": true,
@@ -1641,7 +1641,7 @@ const INITIAL_DATA = {
         "name": "Noodles Sizzler",
         "description": "Wok-tossed noodles served on a fiery hot plate with crispy french fries, vegetable cutlet, and rich oriental brown gravy.",
         "price": 330,
-        "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Sizzlers/noodles sizzler.jpg",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
@@ -1664,37 +1664,6 @@ const INITIAL_DATA = {
           "French Fries",
           "Veg Cutlet",
           "Oriental Sizzler Gravy"
-        ]
-      },
-      {
-        "id": "ss_garlic_bread_cheese",
-        "categoryId": "cat_sizzlers",
-        "name": "Garlic Bread with Cheese",
-        "description": "Oven-baked crusty French baguette slices smothered with aromatic roasted garlic butter and bubbly melted mozzarella cheese.",
-        "price": 265,
-        "image": "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=600&q=80",
-        "dietary": "veg",
-        "isFeatured": false,
-        "isAvailable": true,
-        "spicyLevel": 0,
-        "prepTime": "10 mins",
-        "nutrition": {
-          "calories": 380,
-          "protein": 14.0,
-          "carbs": 44.0,
-          "fat": 17.0,
-          "fiber": 2.5,
-          "sodium": 590
-        },
-        "allergens": [
-          "Gluten",
-          "Dairy"
-        ],
-        "ingredients": [
-          "Baguette Bread",
-          "Garlic Butter Chutney",
-          "Mozzarella Cheese",
-          "Oregano"
         ]
       },
       {
