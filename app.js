@@ -12,6 +12,9 @@ class SynexaApp {
     this.cart = [];
     this.activeModalDish = null;
     this.qrCodeInstance = null;
+    this.isDrawerOpen = false;
+    this.drawerSearchQuery = '';
+    this.expandedDrawerCategories = new Set();
 
     // Available sample tables/rooms for cycling
     this.locations = [
@@ -30,11 +33,18 @@ class SynexaApp {
     this.renderCustomerHeader();
     this.renderCategoryNav();
     this.renderDishes();
+    this.renderMenuDrawer();
     this.renderAdminMetrics();
     this.renderAdminTable();
     this.renderKdsOrders();
     this.initQrStudio();
     this.initScrollSpy();
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && this.isDrawerOpen) {
+        this.closeMenuDrawer();
+      }
+    });
   }
 
   // --------------------------------------------------------------------------
@@ -59,6 +69,7 @@ class SynexaApp {
     this.renderCustomerHeader();
     this.renderCategoryNav();
     this.renderDishes();
+    this.renderMenuDrawer();
     this.renderAdminMetrics();
     this.renderAdminTable();
     this.updateTentCard();
@@ -332,6 +343,184 @@ class SynexaApp {
   }
 
   // --------------------------------------------------------------------------
+  // MOBILE MENU DISHES DRAWER (FULL DISH NAVIGATION & JUMP)
+  // --------------------------------------------------------------------------
+  toggleMenuDrawer() {
+    if (this.isDrawerOpen) {
+      this.closeMenuDrawer();
+    } else {
+      this.openMenuDrawer();
+    }
+  }
+
+  openMenuDrawer() {
+    this.isDrawerOpen = true;
+    const backdrop = document.getElementById('menuDrawerBackdrop');
+    const panel = document.getElementById('menuDrawerPanel');
+    const hamburger = document.getElementById('mobileNavMenuBtn');
+    if (backdrop) backdrop.classList.add('is-open');
+    if (panel) panel.classList.add('is-open');
+    if (hamburger) hamburger.classList.add('is-active');
+    document.body.classList.add('drawer-open-lock');
+    this.renderMenuDrawer();
+  }
+
+  closeMenuDrawer() {
+    this.isDrawerOpen = false;
+    const backdrop = document.getElementById('menuDrawerBackdrop');
+    const panel = document.getElementById('menuDrawerPanel');
+    const hamburger = document.getElementById('mobileNavMenuBtn');
+    if (backdrop) backdrop.classList.remove('is-open');
+    if (panel) panel.classList.remove('is-open');
+    if (hamburger) hamburger.classList.remove('is-active');
+    document.body.classList.remove('drawer-open-lock');
+  }
+
+  renderMenuDrawer() {
+    const container = document.getElementById('menuDrawerContent');
+    if (!container) return;
+    const tenantId = this.data.activeTenantId;
+    const categories = this.data.categories[tenantId] || [];
+    const allDishes = this.data.menuItems[tenantId] || [];
+
+    const countElem = document.getElementById('drawerDishCount');
+    if (countElem) {
+      countElem.textContent = `${categories.length} Categories · ${allDishes.length} Dishes`;
+    }
+    const countBadge = document.getElementById('drawerDishCountBadge');
+    if (countBadge) {
+      countBadge.textContent = `${categories.length} Categories · ${allDishes.length} Dishes`;
+    }
+    const toggleAllBtn = document.getElementById('drawerToggleAllBtn');
+    if (toggleAllBtn) {
+      toggleAllBtn.textContent = (this.expandedDrawerCategories.size === categories.length) ? 'Collapse All' : 'Expand All';
+    }
+
+    const query = (this.drawerSearchQuery || '').trim().toLowerCase();
+    
+    // By default, expand all categories so all dishes are visible immediately
+    if (!this._drawerInitialized && categories.length > 0) {
+      categories.forEach(cat => this.expandedDrawerCategories.add(cat.id));
+      this._drawerInitialized = true;
+    }
+
+    container.innerHTML = '';
+
+    categories.forEach(cat => {
+      let catDishes = allDishes.filter(d => d.categoryId === cat.id);
+      if (query) {
+        catDishes = catDishes.filter(d => 
+          d.name.toLowerCase().includes(query) || 
+          d.description.toLowerCase().includes(query)
+        );
+        if (catDishes.length === 0) return;
+      }
+
+      const isExpanded = query ? true : this.expandedDrawerCategories.has(cat.id);
+      const group = document.createElement('div');
+      group.className = `drawer-category-group ${isExpanded ? 'is-expanded' : ''}`;
+
+      group.innerHTML = `
+        <div class="drawer-category-header" onclick="app.toggleDrawerCategory('${cat.id}')">
+          <div class="drawer-cat-main">
+            <span class="drawer-cat-icon">${cat.icon || '🍽️'}</span>
+            <span class="drawer-cat-name">${cat.name}</span>
+            <span class="drawer-cat-count">${catDishes.length}</span>
+          </div>
+          <div class="drawer-cat-toggle" aria-label="Toggle ${cat.name} dishes">
+            <svg class="drawer-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </div>
+        ${isExpanded ? `
+          <div class="drawer-dishes-list">
+            ${catDishes.map(dish => `
+              <div class="drawer-dish-item ${!dish.isAvailable ? 'is-sold' : ''}" onclick="app.jumpToDish('${dish.id}', '${cat.id}')">
+                <div class="drawer-dish-title-row">
+                  <span class="drawer-dish-diet-dot ${dish.dietary || 'veg'}"></span>
+                  <span class="drawer-dish-name">${dish.name}</span>
+                </div>
+                <span class="drawer-dish-price">₹${dish.price}</span>
+              </div>
+            `).join('')}
+          </div>
+        ` : ''}
+      `;
+      container.appendChild(group);
+    });
+
+    if (container.children.length === 0) {
+      container.innerHTML = `
+        <div style="text-align: center; padding: 40px 16px; color: #64748b;">
+          <div style="font-size: 28px; margin-bottom: 8px;">🔍</div>
+          <div style="font-weight: 700; color: #1e293b;">No dishes match "${this.drawerSearchQuery}"</div>
+          <div style="font-size: 12px; margin-top: 4px;">Try searching for another dish.</div>
+        </div>
+      `;
+    }
+  }
+
+  filterDrawerDishes(val) {
+    this.drawerSearchQuery = val;
+    this.renderMenuDrawer();
+  }
+
+  toggleDrawerCategory(catId, event) {
+    if (event) event.stopPropagation();
+    if (this.expandedDrawerCategories.has(catId)) {
+      this.expandedDrawerCategories.delete(catId);
+    } else {
+      this.expandedDrawerCategories.add(catId);
+    }
+    this.renderMenuDrawer();
+  }
+
+  toggleAllDrawerCategories() {
+    const tenantId = this.data.activeTenantId;
+    const categories = this.data.categories[tenantId] || [];
+    if (this.expandedDrawerCategories.size === categories.length) {
+      this.expandedDrawerCategories.clear();
+    } else {
+      categories.forEach(cat => this.expandedDrawerCategories.add(cat.id));
+    }
+    this.renderMenuDrawer();
+  }
+
+  jumpToCategory(catId) {
+    this.closeMenuDrawer();
+    const section = document.getElementById(`cat_sec_${catId}`);
+    if (section) {
+      const yOffset = -120;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    const catBtn = document.querySelector(`.cat-nav-item[data-category-id="${catId}"]`);
+    if (catBtn) {
+      document.querySelectorAll('.cat-nav-item').forEach(b => b.classList.remove('active'));
+      catBtn.classList.add('active');
+      catBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  }
+
+  jumpToDish(dishId, catId) {
+    this.closeMenuDrawer();
+    const section = document.getElementById(`cat_sec_${catId}`);
+    if (section) {
+      const yOffset = -120;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    const catBtn = document.querySelector(`.cat-nav-item[data-category-id="${catId}"]`);
+    if (catBtn) {
+      document.querySelectorAll('.cat-nav-item').forEach(b => b.classList.remove('active'));
+      catBtn.classList.add('active');
+      catBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+    setTimeout(() => {
+      this.openDishModal(dishId);
+    }, 450);
+  }
+
+  // --------------------------------------------------------------------------
   // DISH DETAILS & NUTRITION FACTS MODAL
   // --------------------------------------------------------------------------
   openDishModal(itemId) {
@@ -345,11 +534,12 @@ class SynexaApp {
     document.getElementById('modalDishPrice').textContent = `₹${item.price}`;
     document.getElementById('modalDishDesc').textContent = item.description;
 
-    // Diet Badge
-    const dietClass = item.dietary === 'veg' ? 'veg' : (item.dietary === 'non-veg' ? 'non-veg' : 'vegan');
-    const dietLabel = item.dietary === 'veg' ? '🟢 Pure Vegetarian' : (item.dietary === 'non-veg' ? '🔴 Non-Vegetarian' : '🌱 100% Vegan');
+    // Main Category Badge (e.g. Pav Bhaji & Fast Food)
+    const categories = this.data.categories[this.data.activeTenantId] || [];
+    const cat = categories.find(c => c.id === item.categoryId);
+    const categoryName = cat ? cat.name : '';
     document.getElementById('modalDietBadge').innerHTML = `
-      <span style="font-size: 11px; font-weight: 700; color: #475569; display: inline-block; margin-bottom: 4px;">${dietLabel}</span>
+      <span style="font-size: 12px; font-weight: 700; color: var(--primary, #e64a19); display: inline-block; margin-bottom: 4px;">${categoryName}</span>
     `;
 
     // Nutrition values

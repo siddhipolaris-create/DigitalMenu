@@ -30,6 +30,16 @@
           <option value="tenant_olive">Shiv Sagar Pure Veg Restaurant (Pune)</option>
           <option value="tenant_royal">Royal Amber Palace Hotel</option>
         </select>
+
+        <!-- Mobile/Desktop Menu Drawer Toggle Button -->
+        <button class="nav-hamburger-btn" id="mobileNavMenuBtn" aria-label="Open Menu Dishes" onclick="app.toggleMenuDrawer()">
+          <span class="nav-hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="nav-hamburger-text">Menu</span>
+        </button>
       </div>
     </div>
   </header>
@@ -459,6 +469,46 @@
       <button class="action-btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;" onclick="app.closeArchitectureModal()">Got It!</button>
     </div>
   </div>
+
+  <!-- ========================================================================
+       SLIDE-IN MOBILE MENU DRAWER (ALL MENU DISHES & CATEGORIES)
+       ======================================================================== -->
+  <div class="menu-drawer-backdrop" id="menuDrawerBackdrop" onclick="app.closeMenuDrawer()"></div>
+  <aside class="menu-drawer-panel" id="menuDrawerPanel" aria-label="All Menu Dishes & Categories">
+    <div class="menu-drawer-header">
+      <div class="drawer-header-brand">
+        <img src="assets/shiv-sagar-emblem.png" alt="Shiv Sagar" class="drawer-brand-logo">
+        <div>
+          <h3 class="drawer-title">Shiv Sagar Menu</h3>
+          <span class="drawer-subtitle" id="drawerDishCount">All Categories & Dishes</span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" onclick="app.closeMenuDrawer()" aria-label="Close menu drawer">✕</button>
+    </div>
+
+    <!-- Quick Search & Actions in Drawer -->
+    <div class="drawer-search-wrapper">
+      <div class="drawer-search-box">
+        <svg width="15" height="15" fill="none" stroke="#f04f22" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" id="drawerSearchInput" placeholder="Quick search dishes in menu..." oninput="app.filterDrawerDishes(this.value)">
+      </div>
+      <div class="drawer-subbar">
+        <span class="drawer-subbar-count" id="drawerDishCountBadge">All Categories & Dishes</span>
+        <button class="drawer-toggle-all-btn" id="drawerToggleAllBtn" onclick="app.toggleAllDrawerCategories()">Collapse All</button>
+      </div>
+    </div>
+
+    <!-- Drawer Content: Categories with Dishes -->
+    <div class="menu-drawer-content" id="menuDrawerContent">
+      <!-- Dynamically rendered -->
+    </div>
+
+    <div class="menu-drawer-footer">
+      <button class="drawer-view-all-btn" onclick="app.closeMenuDrawer(); window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <span>↑ Back to Top</span>
+      </button>
+    </div>
+  </aside>
 
   <!-- Application Scripts -->
   <script src="data.js"></script>
