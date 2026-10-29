@@ -1,5 +1,5 @@
 // Initial Multi-Tenant Database Simulation
-// Updated with Shiv Sagar Pure Veg Restaurant, JM Road, Pune menu as per PDF
+// Updated with complete Shiv Sagar Pure Veg Restaurant, JM Road, Pune menu as per PDF (34 categories, 557 dishes)
 
 const INITIAL_DATA = {
   "activeTenantId": "tenant_olive",
@@ -53,19 +53,19 @@ const INITIAL_DATA = {
   "categories": {
     "tenant_olive": [
       {
-  "id": "cat_pav_bhaji",
-  "name": "Pav Bhaji",
-  "icon": "🍞"
-},
+        "id": "cat_pav_bhaji",
+        "name": "Pav Bhaji & Fast Food",
+        "icon": "🍲"
+      },
       {
-  "id": "cat_idli_wada",
-  "name": "South Indian Idli & Wada",
-  "icon": "🍘"
-},
+        "id": "cat_idli_wada",
+        "name": "South Indian Idli & Wada",
+        "icon": "🥞"
+      },
       {
         "id": "cat_dosa_uttappa",
         "name": "Crispy Dosas & Uttappas",
-        "icon": "🫓"
+        "icon": "🌮"
       },
       {
         "id": "cat_sandwiches",
@@ -73,150 +73,154 @@ const INITIAL_DATA = {
         "icon": "🥪"
       },
       {
-  "id": "cat_wood_fired_pan_pizzas",
-  "name": "Wood-Fired & Pan Pizzas",
-  "icon": "🍕"
-},
-      {
-  "id": "cat_pastas",
-  "name": "Pastas (Indian Style)",
-  "icon": "🍝"
-},
-      {
-  "id": "cat_indian_mexican",
-  "name": "Indian Mexican",
-  "icon": "🌮"
-},
-      {
-  "id": "cat_sizzlers",
-  "name": "Sizzlers",
-  "icon": "🍽️"
-},
-   {
-  id: "cat_fruit_dishes",
-  name: "Fruit Dishes",
-  icon: "🍓"
-},   
-{
-  "id": "cat_special_fruit_dishes",
-  "name": "Special Fruit Dishes",
-  "icon": "🍓"
-},
-{
-  "id": "cat_fruit_plates",
-  "name": "Fruit Plates",
-  "icon": "🍉"
-},
-{
-  "id": "cat_fruit_salad",
-  "name": "Fruit Salad",
-  "icon": "🍨"
-},
-{
-  "id": "cat_garlic_breads",
-  "name": "Garlic Breads",
-  "icon": "🍞"
-},
-{
-  "id": "cat_chinese_soups",
-  "name": "Chinese Soups",
-  "icon": "🍲"
-},
-      {
-       "id": "cat_chinese_gravy",
-       "name": "Chinese Gravy",
-       "icon": "🥡"
+        "id": "cat_wood_fired_pan_pizzas",
+        "name": "Wood-Fired & Pan Pizzas",
+        "icon": "🍕"
       },
       {
-       "id": "cat_chinese_noodles",
-       "name": "Chinese Noodles",
-       "icon": "🍜"
+        "id": "cat_pastas",
+        "name": "Pastas (Indian Style)",
+        "icon": "🍝"
       },
-      
-{
-  "id": "cat_chinese_rice",
-  "name": "Chinese Rice",
-  "icon": "🍚"
-},
-{
-  "id": "cat_chinese_starters",
-  "name": "Chinese Starters",
-  "icon": "🥢"
-},
-{
-  "id": "cat_indian_snacks",
-  "name": "Indian Snacks",
-  "icon": "🍢"
-},
-{
-  "id": "cat_ice_creams",
-  "name": "Ice Creams",
-  "icon": "🍦"
-},
       {
-  "id": "cat_tokhri_khana",
-  "name": "Tokhri Khana",
-  "icon": "🫓"
-},
+        "id": "cat_indian_mexican",
+        "name": "Indian Mexican",
+        "icon": "🌯"
+      },
       {
-        "id": "cat_biryanis",
-        "name": "Biryani, Pulav & Rice",
+        "id": "cat_sizzlers",
+        "name": "Sizzlers",
+        "icon": "🔥"
+      },
+      {
+        "id": "cat_garlic_breads",
+        "name": "Garlic Breads",
+        "icon": "🥖"
+      },
+      {
+        "id": "cat_chinese_soups",
+        "name": "Chinese Soups",
+        "icon": "🥣"
+      },
+      {
+        "id": "cat_chinese_starters",
+        "name": "Chinese Starters",
+        "icon": "🥢"
+      },
+      {
+        "id": "cat_chinese_gravy",
+        "name": "Chinese Gravy",
+        "icon": "🥡"
+      },
+      {
+        "id": "cat_chinese_noodles",
+        "name": "Chinese Noodles",
+        "icon": "🍜"
+      },
+      {
+        "id": "cat_chinese_rice",
+        "name": "Chinese Rice",
         "icon": "🍚"
       },
       {
-  "id": "cat_nawabi_kadhai",
-  "name": "Nawabi Kadhai",
-  "icon": "🍛"
-},
-      {
-  "id": "cat_salads_raitas",
-  "name": "Salads & Raitas",
-  "icon": "🥗"
-},
-{
-  "id": "cat_shiv_sagar_desserts",
-  "name": "Shiv Sagar Desserts",
-  "icon": "🍨"
-},
-{
-  "id": "cat_special_dry_fruit_milk",
-  "name": "Special Dry Fruit Milk",
-  "icon": "🥛"
-},
-      {
-  "id": "cat_juices",
-  "name": "Juices",
-  "icon": "🥤"
-},
-{
-  "id": "cat_lassi",
-  "name": "Lassi",
-  "icon": "🥛"
-},
-{
-  "id": "cat_milk_shakes",
-  "name": "Milk Shakes",
-  "icon": "🥤"
-},
-      {
-        "id": "cat_mocktails",
-        "name": "Mocktails ",
-        "icon": "🍹"
+        "id": "cat_indian_snacks",
+        "name": "Indian Snacks & Tandoori",
+        "icon": "🍢"
       },
       {
-  "id": "cat_cold_beverages",
-  "name": "Cold Beverages",
-  "icon": "🥤"
-},
+        "id": "cat_indian_gravy",
+        "name": "Indian Gravy",
+        "icon": "🍛"
+      },
       {
-  "id": "cat_faloodas",
-  "name": "Faloodas",
-  "icon": "🍨"
-},
+        "id": "cat_tokhri_khana",
+        "name": "Tokhri Khana (Roti & Naan)",
+        "icon": "🫓"
+      },
+      {
+        "id": "cat_biryanis",
+        "name": "Biryani, Pulav & Rice",
+        "icon": "🥘"
+      },
+      {
+        "id": "cat_nawabi_kadhai",
+        "name": "Nawabi Kadhai",
+        "icon": "🍲"
+      },
+      {
+        "id": "cat_salads_raitas",
+        "name": "Salads & Raitas",
+        "icon": "🥗"
+      },
+      {
+        "id": "cat_juices",
+        "name": "Fresh Juices",
+        "icon": "🥤"
+      },
+      {
+        "id": "cat_milk_shakes",
+        "name": "Milk Shakes",
+        "icon": "🧋"
+      },
+      {
+        "id": "cat_special_dry_fruit_milk",
+        "name": "Special Dry Fruit Milk Shakes",
+        "icon": "🥛"
+      },
+      {
+        "id": "cat_faloodas",
+        "name": "Faloodas",
+        "icon": "🍨"
+      },
+      {
+        "id": "cat_lassi",
+        "name": "Lassi & Buttermilk",
+        "icon": "🥛"
+      },
       {
         "id": "cat_hot_beverages",
-        "name": "Hot Beverages ",
+        "name": "Hot Beverages",
         "icon": "☕"
+      },
+      {
+        "id": "cat_cold_beverages",
+        "name": "Cold Beverages",
+        "icon": "🥤"
+      },
+      {
+        "id": "cat_fruit_salad",
+        "name": "Fruit Salad",
+        "icon": "🍧"
+      },
+      {
+        "id": "cat_special_fruit_dishes",
+        "name": "Special Fruit Dishes",
+        "icon": "🍓"
+      },
+      {
+        "id": "cat_fruit_dishes",
+        "name": "Fruit Dishes with Cream",
+        "icon": "🍒"
+      },
+      {
+        "id": "cat_fruit_plates",
+        "name": "Fruit Plates",
+        "icon": "🍉"
+      },
+      {
+        "id": "cat_ice_creams",
+        "name": "Ice Creams",
+        "icon": "🍦"
+      },
+      {
+        "id": "cat_shiv_sagar_desserts",
+        "name": "Shiv Sagar Desserts & Sundaes",
+        "icon": "🍨"
+      },
+      {
+        "id": "cat_mocktails",
+        "name": "Mocktails",
+        "icon": "🍹"
       }
     ],
     "tenant_royal": [
@@ -249,6878 +253,10509 @@ const INITIAL_DATA = {
   },
   "menuItems": {
     "tenant_olive": [
-      
       {
-  "id": "ss_nachos",
-  "categoryId": "cat_indian_mexican",
-  "name": "Nachos",
-  "description": "Crispy nachos served with refried beans and salsa.",
-  "price": 370,
-  "image": "assets/Indian Mexican/nachis.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 400, "protein": 10, "carbs": 50, "fat": 18, "fiber": 6 },
-  "allergens": [],
-  "ingredients": ["Nachos", "Refried Beans", "Salsa"]
-},
-{
-  "id": "ss_nachos_special",
-  "categoryId": "cat_indian_mexican",
-  "name": "Nachos Special",
-  "description": "Tortilla chips topped with three types of cheese and salsa.",
-  "price": 385,
-  "image": "assets/Indian Mexican/nachos special.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 480, "protein": 16, "carbs": 48, "fat": 25, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Tortilla Chips", "Three Types of Cheese", "Salsa"]
-},
-{
-  "id": "ss_nachos_cheese_sauce",
-  "categoryId": "cat_indian_mexican",
-  "name": "Nachos with Cheese Sauce",
-  "description": "Crispy nachos served with creamy cheese sauce.",
-  "price": 375,
-  "image": "assets/Indian Mexican/nachos with cheese sauce.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 450, "protein": 12, "carbs": 48, "fat": 23, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Nachos", "Cheese Sauce"]
-},
-{
-  "id": "ss_nachos_roasted_capsicum_cheese",
-  "categoryId": "cat_indian_mexican",
-  "name": "Nachos with Roasted Capsicum & Cheese",
-  "description": "Nachos topped with roasted capsicum and melted cheese.",
-  "price": 400,
-  "image": "assets/Indian Mexican/nachos with roasted capsicum and cheese.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 470, "protein": 14, "carbs": 50, "fat": 24, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Nachos", "Roasted Capsicum", "Cheese"]
-},
-{
-  "id": "ss_nachos_corn_mushroom_cheese",
-  "categoryId": "cat_indian_mexican",
-  "name": "Nachos with American Corn Fried Mushroom & Cheese",
-  "description": "Nachos topped with American corn, fried mushrooms, and cheese.",
-  "price": 400,
-  "image": "assets/Indian Mexican/abc.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 480, "protein": 14, "carbs": 52, "fat": 24, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Nachos", "American Corn", "Fried Mushroom", "Cheese"]
-},
-{
-  "id": "ss_italian_nachos",
-  "categoryId": "cat_indian_mexican",
-  "name": "Italian Nachos",
-  "description": "Nachos prepared with Italian sauce, macaroni, mushroom, capsicum, spicy salsa sauce, and Italian herbs.",
-  "price": 390,
-  "image": "assets/Indian Mexican/italian nachos.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 490, "protein": 14, "carbs": 58, "fat": 22, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Italian Sauce", "Macaroni", "Mushroom", "Capsicum", "Spicy Salsa Sauce", "Italian Herbs"]
-},
-{
-  "id": "ss_taco",
-  "categoryId": "cat_indian_mexican",
-  "name": "Taco",
-  "description": "Taco filled with beans, onion, capsicum, tomato, salsa sauce, and cheese.",
-  "price": 290,
-  "image": "assets/Indian Mexican/taco.jog.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 350, "protein": 12, "carbs": 42, "fat": 14, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Beans", "Onion", "Capsicum", "Tomato", "Salsa Sauce", "Cheese"]
-},
-{
-  "id": "ss_taco_special",
-  "categoryId": "cat_indian_mexican",
-  "name": "Taco Special",
-  "description": "Taco filled with beans, mushroom, American corn, roasted capsicum, and cheese.",
-  "price": 305,
-  "image": "assets/Indian Mexican/taco special.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 380, "protein": 13, "carbs": 44, "fat": 16, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Beans", "Mushroom", "American Corn", "Roasted Capsicum", "Cheese"]
-},
-{
-  "id": "ss_italian_taco",
-  "categoryId": "cat_indian_mexican",
-  "name": "Italian Taco",
-  "description": "Taco with macaroni, white sauce, capsicum, salsa sauce, and cheese.",
-  "price": 305,
-  "image": "assets/Indian Mexican/italian taco.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 390, "protein": 13, "carbs": 45, "fat": 17, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Macaroni", "White Sauce", "Capsicum", "Salsa Sauce", "Cheese"]
-},
-{
-  "id": "ss_italian_taco_special",
-  "categoryId": "cat_indian_mexican",
-  "name": "Italian Taco Special",
-  "description": "Italian-style taco with mushroom, white sauce, capsicum, salsa, and Italian cheese.",
-  "price": 330,
-  "image": "assets/Indian Mexican/italian taco special.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 420, "protein": 15, "carbs": 46, "fat": 19, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mushroom", "White Sauce", "Capsicum", "Salsa", "Italian Cheese", "Italian Herbs"]
-},
-{
-  "id": "ss_chicago_taco",
-  "categoryId": "cat_indian_mexican",
-  "name": "Chicago Taco",
-  "description": "Taco with American corn, macaroni, spring onion, salsa, paneer, and cheese.",
-  "price": 330,
-  "image": "assets/Indian Mexican/chicago taco.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 420, "protein": 16, "carbs": 48, "fat": 18, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["American Corn", "Macaroni", "Spring Onion", "Salsa", "Paneer", "Cheese"]
-},
-{
-  "id": "ss_pineapple_taco",
-  "categoryId": "cat_indian_mexican",
-  "name": "Pineapple Taco",
-  "description": "Taco with pineapple, white sauce, and Mexican spicy salsa sauce.",
-  "price": 330,
-  "image": "assets/Indian Mexican/pineapple taco.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 380, "protein": 9, "carbs": 50, "fat": 16, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pineapple", "White Sauce", "Mexican Spicy Salsa Sauce"]
-},
-{
-  "id": "ss_cheese_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Cheese Enchilada",
-  "description": "Soft tortilla rolled with cheese, beans, and corn, baked with extra cheese.",
-  "price": 425,
-  "image": "assets/Indian Mexican/cheese enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 470, "protein": 17, "carbs": 48, "fat": 23, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Soft Tortilla", "Cheese", "Beans", "Corn", "Extra Cheese"]
-},
-{
-  "id": "ss_indiana_cheese_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Indiana Cheese Enchilada",
-  "description": "Enchilada filled with beans, chopped onion, and cheese.",
-  "price": 425,
-  "image": "assets/Indian Mexican/indian cheese enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 450, "protein": 16, "carbs": 46, "fat": 22, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Beans", "Chopped Onion", "Cheese"]
-},
-{
-  "id": "ss_recipe_special_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Recipe Special Enchilada",
-  "description": "Soft tortilla rolled with cheese, beans, corn, and mushroom, baked with three types of cheese.",
-  "price": 440,
-  "image": "assets/Indian Mexican/recipe special enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 520, "protein": 20, "carbs": 50, "fat": 27, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Soft Tortilla", "Cheese", "Beans", "Corn", "Mushroom", "Three Types of Cheese"]
-},
-{
-  "id": "ss_american_cheese_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "American Cheese Enchilada",
-  "description": "Enchilada prepared with American corn, capsicum, mushroom, and beans.",
-  "price": 425,
-  "image": "assets/Indian Mexican/american cheese enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 460, "protein": 17, "carbs": 48, "fat": 22, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["American Corn", "Capsicum", "Mushroom", "Beans", "Cheese"]
-},
-{
-  "id": "ss_italian_cheese_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Italian Cheese Enchilada",
-  "description": "Enchilada with mushroom, macaroni, capsicum, white sauce, and Italian dressing.",
-  "price": 425,
-  "image": "assets/Indian Mexican/italian cheese enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 480, "protein": 17, "carbs": 50, "fat": 23, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mushroom", "Macaroni", "Capsicum", "White Sauce", "Italian Dressing"]
-},
-{
-  "id": "ss_paneer_cheese_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Paneer Cheese Enchilada",
-  "description": "Enchilada filled with paneer, palak, till, cheese, and green peas.",
-  "price": 440,
-  "image": "assets/Indian Mexican/paneer cheese enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 500, "protein": 21, "carbs": 48, "fat": 25, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten", "Sesame"],
-  "ingredients": ["Paneer", "Palak", "Till", "Cheese", "Green Peas"]
-},
-{
-  "id": "ss_pineapple_cheese_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Pineapple Cheese Enchilada",
-  "description": "Pineapple enchilada with Mexican sauce, green peas, salsa sauce, and three types of cheese.",
-  "price": 425,
-  "image": "assets/Indian Mexican/pineapple cheese enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 480, "protein": 17, "carbs": 52, "fat": 22, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pineapple", "Mexican Sauce", "Green Peas", "Salsa Sauce", "Three Types of Cheese"]
-},
-{
-  "id": "ss_shivsagar_special_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Shivsagar Special Enchilada",
-  "description": "Special enchilada with baby corn, capsicum, mushroom, salsa, and cheese.",
-  "price": 440,
-  "image": "assets/Indian Mexican/shivsagar special enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 490, "protein": 18, "carbs": 49, "fat": 24, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Baby Corn", "Capsicum", "Mushroom", "Salsa", "Cheese"]
-},
-{
-  "id": "ss_half_half_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Half & Half Enchilada",
-  "description": "Enchilada with paneer tikka, regular paneer, onion, capsicum, and mozzarella cheese.",
-  "price": 430,
-  "image": "assets/Indian Mexican/images (1).jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 500, "protein": 21, "carbs": 46, "fat": 25, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Paneer Tikka", "Paneer", "Onion", "Capsicum", "Mozzarella Cheese"]
-},
-{
-  "id": "ss_chimi_changa_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Chimi Changa Enchilada",
-  "description": "Enchilada with baby corn, rajma, capsicum, spring onion, salsa sauce, and cheese.",
-  "price": 425,
-  "image": "assets/Indian Mexican/chimi changa enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 470, "protein": 17, "carbs": 50, "fat": 22, "fiber": 8 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Baby Corn", "Rajma", "Capsicum", "Spring Onion", "Salsa Sauce", "Cheese"]
-},
-{
-  "id": "ss_spicy_mushroom_enchilada",
-  "categoryId": "cat_indian_mexican",
-  "name": "Spicy Mushroom Enchilada",
-  "description": "Spicy mushroom enchilada with barbecue sauce.",
-  "price": 425,
-  "image": "assets/Indian Mexican/spicy mushroom enchilada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 450, "protein": 15, "carbs": 46, "fat": 22, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mushroom", "Barbecue Sauce", "Tortilla", "Cheese"]
-},
-{
-  "id": "ss_burritos",
-  "categoryId": "cat_indian_mexican",
-  "name": "Burritos",
-  "description": "Soft tortilla filled with beans, salsa sauce, cheese, spring onion, and sour cream.",
-  "price": 430,
-  "image": "assets/Indian Mexican/burritos.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 500, "protein": 17, "carbs": 58, "fat": 21, "fiber": 9 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Beans", "Salsa Sauce", "Cheese", "Spring Onion", "Sour Cream", "Soft Tortilla"]
-},
-{
-  "id": "ss_burritos_supreme",
-  "categoryId": "cat_indian_mexican",
-  "name": "Burritos Supreme",
-  "description": "Large soft tortilla stuffed with Mexican beans, Mexican rice, and spring onion, topped with sour cream, salsa, and melted cheese.",
-  "price": 440,
-  "image": "assets/Indian Mexican/burritos supreme.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 560, "protein": 19, "carbs": 66, "fat": 23, "fiber": 10 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Soft Tortilla", "Mexican Beans", "Mexican Rice", "Spring Onion", "Sour Cream", "Salsa", "Melted Cheese"]
-},
-{
-  "id": "ss_quesadilla",
-  "categoryId": "cat_indian_mexican",
-  "name": "Quesadilla",
-  "description": "Soft tortilla filled with peas and cheese.",
-  "price": 425,
-  "image": "assets/Indian Mexican/quesadilla.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 450, "protein": 17, "carbs": 44, "fat": 22, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Soft Tortilla", "Peas", "Cheese"]
-},
-{
-  "id": "ss_cheese_macaroni",
-  "categoryId": "cat_indian_mexican",
-  "name": "Cheese Macaroni",
-  "description": "Macaroni with cheese, capsicum, and red sauce.",
-  "price": 440,
-  "image": "assets/Indian Mexican/cheese macaroni.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 520, "protein": 18, "carbs": 62, "fat": 22, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Cheese", "Macaroni", "Capsicum", "Red Sauce"]
-},
-{
-  "id": "ss_cheese_chilli_macaroni",
-  "categoryId": "cat_indian_mexican",
-  "name": "Cheese Chilli Macaroni",
-  "description": "Macaroni prepared with Italian sauce, Italian herbs, salsa, and cheese in white sauce.",
-  "price": 430,
-  "image": "assets/Indian Mexican/cheese chilli macroni.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 510, "protein": 17, "carbs": 60, "fat": 22, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Italian Sauce", "Italian Herbs", "Salsa", "Cheese", "White Sauce", "Macaroni"]
-},
-{
-  "id": "ss_taco_salad",
-  "categoryId": "cat_indian_mexican",
-  "name": "Taco Salad",
-  "description": "Salad with beans, cabbage, cauliflower, carrots, green peas, tortilla chips, tomato, onion, black olive, and cheese.",
-  "price": 340,
-  "image": "assets/Indian Mexican/taco salad.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 350, "protein": 12, "carbs": 42, "fat": 15, "fiber": 8 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Beans", "Cabbage", "Cauliflower", "Carrots", "Green Peas", "Tortilla Chips", "Tomato", "Onion", "Black Olive", "Cheese"]
-},
-{
-  "id": "ss_mexican_salad",
-  "categoryId": "cat_indian_mexican",
-  "name": "Mexican Salad (Cold)",
-  "description": "Cold salad with kidney beans, corn, tomato, cheese, paneer, capsicum, and spring onion.",
-  "price": 340,
-  "image": "assets/Indian Mexican/mexican salad.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 320, "protein": 15, "carbs": 35, "fat": 12, "fiber": 8 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Kidney Beans", "Corn", "Tomato", "Cheese", "Paneer", "Capsicum", "Spring Onion"]
-},
-{
-  "id": "ss_mexican_pasta_salad",
-  "categoryId": "cat_indian_mexican",
-  "name": "Mexican Pasta Salad (Hot)",
-  "description": "Hot pasta salad with Italian sauce, capsicum, spring onion, spicy tomato sauce, olive, and cheese.",
-  "price": 335,
-  "image": "assets/Indian Mexican/mexican pasta salad.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 400, "protein": 13, "carbs": 52, "fat": 15, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pasta", "Italian Sauce", "Capsicum", "Spring Onion", "Spicy Tomato Sauce", "Olive", "Cheese"]
-},
-{
-  "id": "ss_kidney_bean_salad",
-  "categoryId": "cat_indian_mexican",
-  "name": "Kidney Bean Salad (Cold)",
-  "description": "Cold salad with kidney beans, onion, tomato, cheese, lemon juice, spring onion, pineapple, paneer, and capsicum.",
-  "price": 350,
-  "image": "assets/Indian Mexican/kidney bean salad.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 360, "protein": 17, "carbs": 42, "fat": 12, "fiber": 10 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Kidney Beans", "Onion", "Tomato", "Cheese", "Lemon Juice", "Spring Onion", "Pineapple", "Paneer", "Capsicum"]
-},
-{
-  "id": "ss_spaghetti",
-  "categoryId": "cat_indian_mexican",
-  "name": "Spaghetti",
-  "description": "Spaghetti with mushroom, capsicum, red sauce, and cheese.",
-  "price": 395,
-  "image": "assets/Indian Mexican/spaghetti.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 470, "protein": 16, "carbs": 60, "fat": 17, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Spaghetti", "Mushroom", "Capsicum", "Red Sauce", "Cheese"]
-},
-{
-  "id": "ss_lasagna",
-  "categoryId": "cat_indian_mexican",
-  "name": "Lasagna",
-  "description": "Layered pasta dish with soft wonton, paneer, palak, til, red sauce, cheese, and spinach sauce.",
-  "price": 385,
-  "image": "assets/Indian Mexican/lasagna.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "25 mins",
-  "nutrition": { "calories": 500, "protein": 20, "carbs": 48, "fat": 24, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten", "Sesame"],
-  "ingredients": ["Soft Wonton", "Paneer", "Palak", "Til", "Red Sauce", "Cheese", "Spinach Sauce"]
-},
-{
-  "id": "ss_mexican_rice",
-  "categoryId": "cat_indian_mexican",
-  "name": "Mexican Rice",
-  "description": "Rice prepared with Mexican sauce, onion, American corn, carrot, green peas, and paneer.",
-  "price": 300,
-  "image": "assets/Indian Mexican/mexican rice.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 380, "protein": 12, "carbs": 58, "fat": 11, "fiber": 6 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Rice", "Mexican Sauce", "Onion", "American Corn", "Carrot", "Green Peas", "Paneer"]
-},
-{
-  "id": "ss_italian_rice",
-  "categoryId": "cat_indian_mexican",
-  "name": "Italian Rice",
-  "description": "Rice with white sauce, mushroom, capsicum, and macaroni.",
-  "price": 310,
-  "image": "assets/Indian Mexican/italian rice.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 390, "protein": 12, "carbs": 56, "fat": 13, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Rice", "White Sauce", "Mushroom", "Capsicum", "Macaroni"]
-},
-{
-  "id": "ss_italian_cheese_roll",
-  "categoryId": "cat_indian_mexican",
-  "name": "Italian Cheese Roll",
-  "description": "Soft tortilla roll filled with macaroni, capsicum, and onion.",
-  "price": 300,
-  "image": "assets/Indian Mexican/italian chheese roll.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 380, "protein": 12, "carbs": 45, "fat": 16, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Soft Tortilla Roll", "Macaroni", "Capsicum", "Onion", "Cheese"]
-},
-{
-  "id": "ss_paneer_cheese_roll",
-  "categoryId": "cat_indian_mexican",
-  "name": "Paneer Cheese Roll",
-  "description": "Soft tortilla roll with paneer tikka, capsicum, and onion.",
-  "price": 310,
-  "image": "assets/Indian Mexican/paneer cheese roll.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 410, "protein": 18, "carbs": 42, "fat": 18, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Soft Tortilla Roll", "Paneer Tikka", "Capsicum", "Onion"]
-},
-{
-  "id": "ss_pasta_cheese_roll",
-  "categoryId": "cat_indian_mexican",
-  "name": "Pasta Cheese Roll",
-  "description": "Roll filled with pasta, American corn, and mixed sauce.",
-  "price": 310,
-  "image": "assets/Indian Mexican/pasta cheese roll.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 400, "protein": 13, "carbs": 48, "fat": 17, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pasta", "American Corn", "Mixed Sauce", "Cheese"]
-},
-{
-  "id": "ss_huevos_rancheros",
-  "categoryId": "cat_indian_mexican",
-  "name": "Huevos Rancheros",
-  "description": "A four-piece platter with four different toppings: tortilla with beans, American corn, capsicum, mushroom, tomato, cheese, and green olive; green peas, tomato, onion, salsa, and cheese; beans, cabbage, carrot, and three types of cheese; spinach, paneer, processed cheese, and olives.",
-  "price": 500,
-  "image": "assets/Indian Mexican/images (2).jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "25 mins",
-  "nutrition": { "calories": 600, "protein": 22, "carbs": 65, "fat": 27, "fiber": 10 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Tortilla", "Beans", "American Corn", "Capsicum", "Mushroom", "Tomato", "Cheese", "Green Olive", "Green Peas", "Onion", "Salsa", "Cabbage", "Carrot", "Spinach", "Paneer", "Processed Cheese", "Olives"]
-},
+        "id": "ss_nachos",
+        "categoryId": "cat_indian_mexican",
+        "name": "Nachos",
+        "description": "Crispy nachos served with refried beans and salsa.",
+        "price": 370,
+        "image": "assets/Indian Mexican/nachis.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 10,
+          "carbs": 50,
+          "fat": 18,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Nachos",
+          "Refried Beans",
+          "Salsa"
+        ]
+      },
       {
-  "id": "ss_special_falooda",
-  "categoryId": "cat_faloodas",
-  "name": "Special Falooda",
-  "description": "A rich falooda dessert with vermicelli, sweet basil seeds, milk, and ice cream.",
-  "price": 230,
-  "image": "assets/Faloodas/Special Falooda.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": {
-    "calories": 420,
-    "protein": 8,
-    "carbs": 62,
-    "fat": 15,
-    "fiber": 2
-  },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Falooda Vermicelli", "Basil Seeds", "Ice Cream", "Sweet Syrup"]
-},
-{
-  "id": "ss_kesar_falooda",
-  "categoryId": "cat_faloodas",
-  "name": "Kesar Falooda",
-  "description": "A creamy falooda flavoured with aromatic saffron.",
-  "price": 195,
-  "image": "assets/Faloodas/Kesar Falooda.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": {
-    "calories": 380,
-    "protein": 7,
-    "carbs": 58,
-    "fat": 12,
-    "fiber": 2
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Falooda Vermicelli", "Basil Seeds", "Saffron", "Sweet Syrup"]
-},
-{
-  "id": "ss_royal_falooda",
-  "categoryId": "cat_faloodas",
-  "name": "Royal Falooda",
-  "description": "A royal-style falooda with milk, vermicelli, basil seeds, and sweet toppings.",
-  "price": 195,
-  "image": "assets/Faloodas/Royal Falooda.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": {
-    "calories": 400,
-    "protein": 8,
-    "carbs": 60,
-    "fat": 14,
-    "fiber": 2
-  },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Falooda Vermicelli", "Basil Seeds", "Sweet Syrup", "Assorted Toppings"]
-},
+        "id": "ss_nachos_special",
+        "categoryId": "cat_indian_mexican",
+        "name": "Nachos Special",
+        "description": "Tortilla chips topped with three types of cheese and salsa.",
+        "price": 385,
+        "image": "assets/Indian Mexican/nachos special.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 25,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Tortilla Chips",
+          "Three Types of Cheese",
+          "Salsa"
+        ]
+      },
       {
-  "id": "ss_roti",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Roti",
-  "description": "Freshly prepared Indian flatbread.",
-  "price": 40,
-  "image": "assets/Tokhri Khana/Roti.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 100, "protein": 3, "carbs": 20, "fat": 1, "fiber": 2 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Wheat Flour", "Water", "Salt"]
-},
-{
-  "id": "ss_butter_roti",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Butter Roti",
-  "description": "Soft Indian flatbread brushed with butter.",
-  "price": 50,
-  "image": "assets/Tokhri Khana/Butter Roti.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 130, "protein": 3, "carbs": 20, "fat": 4, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Butter", "Water"]
-},
-{
-  "id": "ss_paratha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Paratha",
-  "description": "Traditional Indian layered flatbread.",
-  "price": 45,
-  "image": "assets/Tokhri Khana/Paratha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 180, "protein": 4, "carbs": 27, "fat": 6, "fiber": 3 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Wheat Flour", "Oil", "Water", "Salt"]
-},
-{
-  "id": "ss_butter_paratha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Butter Paratha",
-  "description": "Paratha finished with a generous layer of butter.",
-  "price": 55,
-  "image": "assets/Tokhri Khana/Butter Paratha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 220, "protein": 4, "carbs": 27, "fat": 10, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Butter", "Water", "Salt"]
-},
-{
-  "id": "ss_stuffed_paratha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Stuffed Paratha",
-  "description": "Indian flatbread filled with a savoury stuffing.",
-  "price": 135,
-  "image": "assets/Tokhri Khana/Stuffed Paratha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 280, "protein": 7, "carbs": 38, "fat": 10, "fiber": 4 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Wheat Flour", "Vegetable Stuffing", "Spices", "Oil"]
-},
-{
-  "id": "ss_alu_paratha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Alu Paratha",
-  "description": "Paratha stuffed with a seasoned potato filling.",
-  "price": 110,
-  "image": "assets/Tokhri Khana/Alu Paratha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 260, "protein": 6, "carbs": 40, "fat": 8, "fiber": 4 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Wheat Flour", "Potatoes", "Spices", "Oil"]
-},
-{
-  "id": "ss_pudina_paratha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Pudina Paratha",
-  "description": "Flaky flatbread flavoured with fresh mint.",
-  "price": 120,
-  "image": "assets/Tokhri Khana/Pudina Paratha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 220, "protein": 5, "carbs": 32, "fat": 8, "fiber": 3 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Wheat Flour", "Mint", "Spices", "Oil"]
-},
-{
-  "id": "ss_methi_paratha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Methi Paratha",
-  "description": "Indian flatbread flavoured with fenugreek leaves.",
-  "price": 120,
-  "image": "assets/Tokhri Khana/Methi Paratha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 220, "protein": 5, "carbs": 31, "fat": 8, "fiber": 4 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Wheat Flour", "Fenugreek Leaves", "Spices", "Oil"]
-},
-{
-  "id": "ss_cheese_paratha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Cheese Paratha",
-  "description": "Paratha filled with melted cheese.",
-  "price": 160,
-  "image": "assets/Tokhri Khana/Cheese Paratha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 320, "protein": 12, "carbs": 32, "fat": 16, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Cheese", "Spices", "Oil"]
-},
-{
-  "id": "ss_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Naan",
-  "description": "Soft, traditional Indian naan bread.",
-  "price": 60,
-  "image": "assets/Tokhri Khana/Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 220, "protein": 6, "carbs": 38, "fat": 4, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Curd", "Yeast", "Salt"]
-},
-{
-  "id": "ss_butter_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Butter Naan",
-  "description": "Soft naan brushed with butter.",
-  "price": 75,
-  "image": "assets/Tokhri Khana/Butter Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 260, "protein": 6, "carbs": 38, "fat": 8, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Curd", "Butter", "Yeast"]
-},
-{
-  "id": "ss_kashmiri_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Kashmiri Naan",
-  "description": "A rich naan with a sweet-style fruit and nut filling.",
-  "price": 155,
-  "image": "assets/Tokhri Khana/Kashmiri Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 330, "protein": 8, "carbs": 48, "fat": 11, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy", "Nuts"],
-  "ingredients": ["Wheat Flour", "Dry Fruits", "Nuts", "Sweet Filling"]
-},
-{
-  "id": "ss_kabuli_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Kabuli Naan",
-  "description": "Naan prepared with a rich, savoury filling.",
-  "price": 140,
-  "image": "assets/Tokhri Khana/Kabuli Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 310, "protein": 8, "carbs": 44, "fat": 10, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy", "Nuts"],
-  "ingredients": ["Wheat Flour", "Filling", "Spices"]
-},
-{
-  "id": "ss_garlic_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Garlic Naan",
-  "description": "Naan topped with aromatic garlic.",
-  "price": 95,
-  "image": "assets/Tokhri Khana/Garlic Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 240, "protein": 6, "carbs": 38, "fat": 6, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Garlic", "Butter", "Yeast"]
-},
-{
-  "id": "ss_garlic_butter_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Garlic Butter Naan",
-  "description": "Garlic naan finished with butter.",
-  "price": 115,
-  "image": "assets/Tokhri Khana/Garlic Butter Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 280, "protein": 6, "carbs": 38, "fat": 10, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Garlic", "Butter", "Yeast"]
-},
-{
-  "id": "ss_cheese_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Cheese Naan",
-  "description": "Soft naan filled or topped with cheese.",
-  "price": 150,
-  "image": "assets/Tokhri Khana/Cheese Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 320, "protein": 12, "carbs": 40, "fat": 13, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Cheese", "Butter"]
-},
-{
-  "id": "ss_cheese_butter_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Cheese Butter Naan",
-  "description": "Cheese naan finished with a layer of butter.",
-  "price": 170,
-  "image": "assets/Tokhri Khana/Cheese Butter Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 360, "protein": 13, "carbs": 40, "fat": 17, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Cheese", "Butter"]
-},
-{
-  "id": "ss_cheese_garlic_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Cheese Garlic Naan",
-  "description": "Garlic naan topped with cheese.",
-  "price": 180,
-  "image": "assets/Tokhri Khana/Cheese Garlic Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 350, "protein": 13, "carbs": 40, "fat": 16, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Garlic", "Cheese", "Butter"]
-},
-{
-  "id": "ss_cheese_garlic_butter_naan",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Cheese Garlic Butter Naan",
-  "description": "Garlic naan topped with cheese and finished with butter.",
-  "price": 195,
-  "image": "assets/Tokhri Khana/Cheese Garlic Butter Naan.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 390, "protein": 14, "carbs": 40, "fat": 19, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Garlic", "Cheese", "Butter"]
-},
-{
-  "id": "ss_plain_kulcha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Plain Kulcha",
-  "description": "Soft, lightly baked Indian kulcha bread.",
-  "price": 45,
-  "image": "assets/Tokhri Khana/Plain Kulcha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "7 mins",
-  "nutrition": { "calories": 190, "protein": 5, "carbs": 34, "fat": 4, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Curd", "Salt"]
-},
-{
-  "id": "ss_butter_kulcha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Butter Kulcha",
-  "description": "Soft kulcha bread brushed with butter.",
-  "price": 55,
-  "image": "assets/Tokhri Khana/Butter Kulcha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "7 mins",
-  "nutrition": { "calories": 230, "protein": 5, "carbs": 34, "fat": 8, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Curd", "Butter"]
-},
-{
-  "id": "ss_masala_kulcha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Masala Kulcha",
-  "description": "Kulcha prepared with a savoury spiced filling.",
-  "price": 105,
-  "image": "assets/Tokhri Khana/Masala Kulcha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 270, "protein": 7, "carbs": 38, "fat": 9, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Spiced Filling", "Curd", "Oil"]
-},
-{
-  "id": "ss_onion_kulcha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Onion Kulcha",
-  "description": "Kulcha stuffed with seasoned onions.",
-  "price": 110,
-  "image": "assets/Tokhri Khana/Onion Kulcha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 250, "protein": 6, "carbs": 37, "fat": 8, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Onion", "Spices", "Oil"]
-},
-{
-  "id": "ss_paneer_kulcha",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Paneer Kulcha",
-  "description": "Kulcha stuffed with paneer and mild spices.",
-  "price": 120,
-  "image": "assets/Tokhri Khana/Paneer Kulcha.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 290, "protein": 11, "carbs": 36, "fat": 10, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Paneer", "Spices", "Oil"]
-},
-{
-  "id": "ss_bhatura",
-  "categoryId": "cat_tokhri_khana",
-  "name": "Bhatura (1 PC)",
-  "description": "One fluffy, deep-fried bhatura.",
-  "price": 85,
-  "image": "assets/Tokhri Khana/Bhatura.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 300, "protein": 6, "carbs": 42, "fat": 12, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Wheat Flour", "Curd", "Oil", "Salt"]
-},
+        "id": "ss_nachos_cheese_sauce",
+        "categoryId": "cat_indian_mexican",
+        "name": "Nachos with Cheese Sauce",
+        "description": "Crispy nachos served with creamy cheese sauce.",
+        "price": 375,
+        "image": "assets/Indian Mexican/nachos with cheese sauce.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 12,
+          "carbs": 48,
+          "fat": 23,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Nachos",
+          "Cheese Sauce"
+        ]
+      },
       {
-  "id": "ss_cheese_capsicum_onion_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Pizza (Cheese Capsicum Onion)",
-  "description": "A classic pizza topped with cheese, capsicum, and onion.",
-  "price": 265,
-  "image": "assets/Wood-Fired & Pan Pizzas/Pizza (Cheese Capsicum Onion).jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 420, "protein": 15, "carbs": 48, "fat": 18, "fiber": 3 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Cheese", "Capsicum", "Onion", "Pizza Sauce"]
-},
-{
-  "id": "ss_onion_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Onion Pizza",
-  "description": "A simple pizza topped with onions, cheese, and pizza sauce.",
-  "price": 245,
-  "image": "assets/Wood-Fired & Pan Pizzas/Onion Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 380, "protein": 12, "carbs": 46, "fat": 15, "fiber": 3 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Onion", "Cheese", "Pizza Sauce"]
-},
-{
-  "id": "ss_capsicum_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Capsicum Pizza",
-  "description": "A cheesy pizza topped with fresh capsicum and pizza sauce.",
-  "price": 245,
-  "image": "assets/Wood-Fired & Pan Pizzas/Capsicum Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 380, "protein": 12, "carbs": 46, "fat": 15, "fiber": 3 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Capsicum", "Cheese", "Pizza Sauce"]
-},
-{
-  "id": "ss_special_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Special Pizza",
-  "description": "A special pizza topped with a combination of vegetables and cheese.",
-  "price": 275,
-  "image": "assets/Wood-Fired & Pan Pizzas/Special Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 440, "protein": 16, "carbs": 49, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Mixed Vegetables", "Cheese", "Pizza Sauce"]
-},
-{
-  "id": "ss_washington_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Washington Pizza",
-  "description": "A flavourful pizza prepared with cheese and assorted toppings.",
-  "price": 265,
-  "image": "assets/Wood-Fired & Pan Pizzas/Washington Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 430, "protein": 15, "carbs": 48, "fat": 18, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Cheese", "Pizza Sauce", "Assorted Toppings"]
-},
-{
-  "id": "ss_cheese_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Cheese Pizza (Cheese only)",
-  "description": "A classic cheese-only pizza with melted cheese and pizza sauce.",
-  "price": 250,
-  "image": "assets/Wood-Fired & Pan Pizzas/Cheese Pizza (Cheese only).jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 400, "protein": 15, "carbs": 44, "fat": 17, "fiber": 2 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Cheese", "Pizza Sauce"]
-},
-{
-  "id": "ss_mexican_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Mexican Pizza",
-  "description": "A Mexican-inspired pizza with spicy sauce, vegetables, and cheese.",
-  "price": 285,
-  "image": "assets/Wood-Fired & Pan Pizzas/Mexican Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 450, "protein": 16, "carbs": 50, "fat": 19, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Mexican Sauce", "Vegetables", "Cheese"]
-},
-{
-  "id": "ss_italian_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Italian Pizza",
-  "description": "An Italian-style pizza topped with cheese and Italian-inspired flavours.",
-  "price": 285,
-  "image": "assets/Wood-Fired & Pan Pizzas/Italian Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 440, "protein": 16, "carbs": 49, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Cheese", "Pizza Sauce", "Italian Seasoning"]
-},
-{
-  "id": "ss_sizzling_barbecue_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Sizzling Barbecue Pizza",
-  "description": "A barbecue-style pizza topped with cheese and savoury toppings.",
-  "price": 285,
-  "image": "assets/Wood-Fired & Pan Pizzas/Sizzling Barbecue Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 450, "protein": 16, "carbs": 50, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Barbecue Sauce", "Cheese", "Vegetables"]
-},
-{
-  "id": "ss_paneer_wala_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Paneer Wala Pizza",
-  "description": "A vegetarian pizza topped with paneer, cheese, and pizza sauce.",
-  "price": 300,
-  "image": "assets/Wood-Fired & Pan Pizzas/Paneer Wala Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 470, "protein": 20, "carbs": 48, "fat": 21, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Paneer", "Cheese", "Pizza Sauce"]
-},
-{
-  "id": "ss_hot_n_spicy_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Hot 'N' Spicy Pizza",
-  "description": "A spicy pizza topped with cheese, sauce, and flavourful seasonings.",
-  "price": 290,
-  "image": "assets/Wood-Fired & Pan Pizzas/Hot _N_ Spicy Pizza.webp",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 450, "protein": 16, "carbs": 49, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Spicy Sauce", "Cheese", "Spices"]
-},
-{
-  "id": "ss_veg_lover_pizza",
-  "categoryId": "cat_wood_fired_pan_pizzas",
-  "name": "Veg Lover Pizza",
-  "description": "A vegetable-loaded pizza with cheese and pizza sauce.",
-  "price": 290,
-  "image": "assets/Wood-Fired & Pan Pizzas/Veg Lover Pizza.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 440, "protein": 15, "carbs": 50, "fat": 18, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pizza Base", "Mixed Vegetables", "Cheese", "Pizza Sauce"]
-},
+        "id": "ss_nachos_roasted_capsicum_cheese",
+        "categoryId": "cat_indian_mexican",
+        "name": "Nachos with Roasted Capsicum & Cheese",
+        "description": "Nachos topped with roasted capsicum and melted cheese.",
+        "price": 400,
+        "image": "assets/Indian Mexican/nachos with roasted capsicum and cheese.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 470,
+          "protein": 14,
+          "carbs": 50,
+          "fat": 24,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Nachos",
+          "Roasted Capsicum",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_mango_with_cream",
-  "categoryId": "cat_special_fruit_dishes",
-  "name": "Mango with Cream",
-  "description": "Sweet seasonal mango served with fresh cream.",
-  "price": 245,
-  "image": "assets/Special Fruit Dishes/Mango with Cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 4, "carbs": 35, "fat": 13, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mango", "Fresh Cream"]
-},
-{
-  "id": "ss_mango_special",
-  "categoryId": "cat_special_fruit_dishes",
-  "name": "Mango Special",
-  "description": "A special seasonal mango dessert.",
-  "price": 275,
-  "image": "assets/Special Fruit Dishes/Mango Special.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 4, "carbs": 40, "fat": 13, "fiber": 3 },
-  "allergens": [],
-  "ingredients": ["Mango", "Sweet Toppings"]
-},
-{
-  "id": "ss_strawberry_with_cream",
-  "categoryId": "cat_special_fruit_dishes",
-  "name": "Strawberry with Cream",
-  "description": "Sweet strawberries served with fresh cream.",
-  "price": 245,
-  "image": "assets/Special Fruit Dishes/Strawberry with Cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 260, "protein": 4, "carbs": 28, "fat": 14, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Strawberries", "Fresh Cream"]
-},
-{
-  "id": "ss_strawberry_special",
-  "categoryId": "cat_special_fruit_dishes",
-  "name": "Strawberry Special",
-  "description": "A special seasonal strawberry dessert.",
-  "price": 275,
-  "image": "assets/Special Fruit Dishes/Strawberry Special.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 290, "protein": 4, "carbs": 38, "fat": 13, "fiber": 3 },
-  "allergens": [],
-  "ingredients": ["Strawberries", "Sweet Toppings"]
-},
-{
-  "id": "ss_sitaphal_with_cream",
-  "categoryId": "cat_special_fruit_dishes",
-  "name": "Sitaphal with Cream",
-  "description": "Sweet custard apple pulp served with fresh cream.",
-  "price": 265,
-  "image": "assets/Special Fruit Dishes/Sitaphal with Cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 4, "carbs": 38, "fat": 14, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Sitaphal (Custard Apple)", "Fresh Cream"]
-},
-{
-  "id": "ss_sitaphal_special",
-  "categoryId": "cat_special_fruit_dishes",
-  "name": "Sitaphal Special",
-  "description": "A special seasonal custard apple dessert.",
-  "price": 285,
-  "image": "assets/Special Fruit Dishes/Sitaphal Special.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 320, "protein": 4, "carbs": 42, "fat": 14, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Sitaphal (Custard Apple)", "Sweet Toppings"]
-},
+        "id": "ss_nachos_corn_mushroom_cheese",
+        "categoryId": "cat_indian_mexican",
+        "name": "Nachos with American Corn Fried Mushroom & Cheese",
+        "description": "Nachos topped with American corn, fried mushrooms, and cheese.",
+        "price": 400,
+        "image": "assets/Indian Mexican/abc.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 14,
+          "carbs": 52,
+          "fat": 24,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Nachos",
+          "American Corn",
+          "Fried Mushroom",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_dry_fruits_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Dry Fruits",
-  "description": "A rich and creamy milkshake blended with assorted dry fruits.",
-  "price": 330,
-  "image": "assets/Special Dry Fruit Milk/Dry fruits.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 420, "protein": 12, "carbs": 45, "fat": 22, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Mixed Dry Fruits", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kesar_dry_fruits_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Kesar Dry Fruits",
-  "description": "A creamy dry fruit milkshake infused with aromatic saffron.",
-  "price": 330,
-  "image": "assets/Special Dry Fruit Milk/Kesar dry fruits.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 430, "protein": 12, "carbs": 46, "fat": 23, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Dry Fruits", "Saffron", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kesar_pista_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Kesar Pista",
-  "description": "A smooth pistachio milkshake flavoured with saffron.",
-  "price": 330,
-  "image": "assets/Special Dry Fruit Milk/Kesar Pista.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 410, "protein": 11, "carbs": 43, "fat": 22, "fiber": 2 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Pistachios", "Saffron", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kesar_badam_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Kesar Badam",
-  "description": "A rich almond milkshake infused with saffron.",
-  "price": 330,
-  "image": "assets/Special Dry Fruit Milk/Kesar Badam.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 420, "protein": 12, "carbs": 44, "fat": 22, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Almonds", "Saffron", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kesar_badam_pista_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Kesar Badam Pista",
-  "description": "A luxurious milkshake combining almonds, pistachios, and saffron.",
-  "price": 340,
-  "image": "assets/Special Dry Fruit Milk/Kesar Badam Pista.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 440, "protein": 13, "carbs": 45, "fat": 24, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Almonds", "Pistachios", "Saffron", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_pista_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Pista",
-  "description": "A creamy milkshake prepared with pistachios.",
-  "price": 315,
-  "image": "assets/Special Dry Fruit Milk/Pista.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 400, "protein": 11, "carbs": 42, "fat": 21, "fiber": 2 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Pistachios", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_badam_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Badam",
-  "description": "A smooth and creamy almond milkshake.",
-  "price": 315,
-  "image": "assets/Special Dry Fruit Milk/Badam.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 400, "protein": 12, "carbs": 42, "fat": 21, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Almonds", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_badam_pista_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Badam Pista",
-  "description": "A rich milkshake made with almonds and pistachios.",
-  "price": 315,
-  "image": "assets/Special Dry Fruit Milk/Badam Pista.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 420, "protein": 12, "carbs": 43, "fat": 23, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Almonds", "Pistachios", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kaju_badam_milk",
-  "categoryId": "cat_special_dry_fruit_milk",
-  "name": "Kaju Badam",
-  "description": "A creamy dry fruit milkshake blending cashews and almonds.",
-  "price": 315,
-  "image": "assets/Special Dry Fruit Milk/Kaju Badam.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 420, "protein": 12, "carbs": 42, "fat": 23, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Cashews", "Almonds", "Sugar", "Ice Cream"]
-},
+        "id": "ss_italian_nachos",
+        "categoryId": "cat_indian_mexican",
+        "name": "Italian Nachos",
+        "description": "Nachos prepared with Italian sauce, macaroni, mushroom, capsicum, spicy salsa sauce, and Italian herbs.",
+        "price": 390,
+        "image": "assets/Indian Mexican/italian nachos.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 14,
+          "carbs": 58,
+          "fat": 22,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Italian Sauce",
+          "Macaroni",
+          "Mushroom",
+          "Capsicum",
+          "Spicy Salsa Sauce",
+          "Italian Herbs"
+        ]
+      },
       {
-  "id": "ss_steam_idli",
-  "categoryId": "cat_idli_wada",
-  "name": "Steam Idli",
-  "description": "Soft, fluffy steamed idlis served with traditional accompaniments.",
-  "price": 85,
-  "image": "assets/South Indian Idli & Wada/steam-idli.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 180, "protein": 5, "carbs": 36, "fat": 1, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Rice", "Urad Dal", "Salt"]
-},
-{
-  "id": "ss_butter_idli",
-  "categoryId": "cat_idli_wada",
-  "name": "Butter Idli",
-  "description": "Soft steamed idlis served with butter.",
-  "price": 100,
-  "image": "assets/South Indian Idli & Wada/butter-idli .jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 240, "protein": 5, "carbs": 36, "fat": 8, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Rice", "Urad Dal", "Butter", "Salt"]
-},
-{
-  "id": "ss_rava_idli",
-  "categoryId": "cat_idli_wada",
-  "name": "Rava Idli",
-  "description": "Soft savoury idlis prepared with semolina.",
-  "price": 90,
-  "image": "assets/South Indian Idli & Wada/rava-idli.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 210, "protein": 5, "carbs": 34, "fat": 5, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Rava", "Curd", "Spices"]
-},
-{
-  "id": "ss_kanchi_puram_idli",
-  "categoryId": "cat_idli_wada",
-  "name": "Kanchi Puram Idli",
-  "description": "Traditional Kanchipuram-style idli seasoned with aromatic spices.",
-  "price": 110,
-  "image": "assets/South Indian Idli & Wada/Kanchi Puram-idli.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 220, "protein": 6, "carbs": 35, "fat": 5, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Rice", "Urad Dal", "Pepper", "Cumin", "Ginger"]
-},
-{
-  "id": "ss_tava_idli",
-  "categoryId": "cat_idli_wada",
-  "name": "Tava Idli",
-  "description": "Idlis cooked on a tava with a lightly spiced seasoning.",
-  "price": 120,
-  "image": "assets/South Indian Idli & Wada/Tava-idli.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 230, "protein": 5, "carbs": 34, "fat": 7, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Idli", "Spices", "Oil"]
-},
-{
-  "id": "ss_dahi_idli",
-  "categoryId": "cat_idli_wada",
-  "name": "Dahi Idli",
-  "description": "Soft idlis served with seasoned curd.",
-  "price": 110,
-  "image": "assets/South Indian Idli & Wada/Dahi-idli.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 220, "protein": 7, "carbs": 32, "fat": 5, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Idli", "Curd", "Spices"]
-},
-{
-  "id": "ss_medu_wada",
-  "categoryId": "cat_idli_wada",
-  "name": "Medu Wada",
-  "description": "Crispy, golden urad dal fritters.",
-  "price": 100,
-  "image": "assets/South Indian Idli & Wada/Medu Wada.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 250, "protein": 8, "carbs": 28, "fat": 12, "fiber": 4 },
-  "allergens": [],
-  "ingredients": ["Urad Dal", "Pepper", "Curry Leaves", "Oil"]
-},
-{
-  "id": "ss_idli_medu_wada_plate",
-  "categoryId": "cat_idli_wada",
-  "name": "Idli Medu Wada Plate",
-  "description": "A combination plate of idli and medu wada.",
-  "price": 95,
-  "image": "assets/South Indian Idli & Wada/Idli Medu Wada Plate.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 300, "protein": 9, "carbs": 45, "fat": 9, "fiber": 4 },
-  "allergens": [],
-  "ingredients": ["Idli", "Medu Wada", "Rice", "Urad Dal"]
-},
-{
-  "id": "ss_single_idli_wada",
-  "categoryId": "cat_idli_wada",
-  "name": "Single Idli/Wada",
-  "description": "One serving of idli or wada.",
-  "price": 50,
-  "image": "assets/South Indian Idli & Wada/Single Idli-Wada.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 150, "protein": 4, "carbs": 24, "fat": 4, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Idli or Wada", "Rice", "Urad Dal"]
-},
-{
-  "id": "ss_dahi_wada",
-  "categoryId": "cat_idli_wada",
-  "name": "Dahi Wada",
-  "description": "Soft wada soaked in curd and served with mild seasoning.",
-  "price": 135,
-  "image": "assets/South Indian Idli & Wada/Dahi Wada.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 280, "protein": 8, "carbs": 35, "fat": 11, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Urad Dal", "Curd", "Spices"]
-},
+        "id": "ss_taco",
+        "categoryId": "cat_indian_mexican",
+        "name": "Taco",
+        "description": "Taco filled with beans, onion, capsicum, tomato, salsa sauce, and cheese.",
+        "price": 290,
+        "image": "assets/Indian Mexican/taco.jog.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 12,
+          "carbs": 42,
+          "fat": 14,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Beans",
+          "Onion",
+          "Capsicum",
+          "Tomato",
+          "Salsa Sauce",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_mexican_pasta_sizzler",
-  "categoryId": "cat_sizzlers",
-  "name": "Mexican Pasta Sizzler",
-  "description": "A sizzling combination of paneer, pasta, kidney beans, mushrooms, spring onion, American corn, and fusilli pasta.",
-  "price": 470,
-  "image": "assets/Sizzlers/mexican cheese  sizzler.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "25 mins",
-  "nutrition": { "calories": 520, "protein": 18, "carbs": 62, "fat": 22, "fiber": 8 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Paneer", "Pasta", "Kidney Beans", "Mushroom", "Spring Onion", "American Corn", "Fusilli Pasta"]
-},
-{
-  "id": "ss_mexican_fajita_pasta_sizzler",
-  "categoryId": "cat_sizzlers",
-  "name": "Mexican Fajita Pasta Sizzler",
-  "description": "A sizzling pasta dish with mushrooms, capsicum, paneer, baby corn, and penne pasta.",
-  "price": 475,
-  "image": "assets/Sizzlers/mexican cheese  sizzler.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "25 mins",
-  "nutrition": { "calories": 510, "protein": 17, "carbs": 60, "fat": 21, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mushroom", "Capsicum", "Paneer", "Baby Corn", "Penne Pasta"]
-},
-{
-  "id": "ss_italian_pasta_sizzler",
-  "categoryId": "cat_sizzlers",
-  "name": "Italian Pasta Sizzler",
-  "description": "Farfalle pasta served sizzling with white sauce, red sauce, and mixed vegetables.",
-  "price": 470,
-  "image": "assets/Sizzlers/italian pasta sizzler.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "25 mins",
-  "nutrition": { "calories": 500, "protein": 15, "carbs": 63, "fat": 20, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["White Sauce", "Red Sauce", "Mixed Vegetables", "Farfalle Pasta"]
-},
-{
-  "id": "ss_shivsagar_special_pasta_sizzler",
-  "categoryId": "cat_sizzlers",
-  "name": "Shivsagar Special Pasta Sizzler",
-  "description": "A special sizzling pasta preparation with diced onion, capsicum, baby corn, oregano, and mixed pasta.",
-  "price": 495,
-  "image": "assets/Sizzlers/shivsagar special sizzler.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "25 mins",
-  "nutrition": { "calories": 530, "protein": 16, "carbs": 65, "fat": 22, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Diced Onion", "Diced Capsicum", "Baby Corn", "Oregano", "Mixed Pasta"]
-},
-{
-  "id": "ss_noodles_sizzler",
-  "categoryId": "cat_sizzlers",
-  "name": "Noodles Sizzler",
-  "description": "A sizzling serving of noodles with gravy, French fries, and a cutlet.",
-  "price": 330,
-  "image": "assets/Sizzlers/noodles sizzler.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 480, "protein": 12, "carbs": 65, "fat": 19, "fiber": 5 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Noodles", "Gravy", "French Fries", "Cutlet"]
-},
-{
-  "id": "ss_rice_sizzler",
-  "categoryId": "cat_sizzlers",
-  "name": "Rice Sizzler",
-  "description": "A sizzling rice dish served with gravy, French fries, and a cutlet.",
-  "price": 330,
-  "image": "assets/Sizzlers/rice sizzler.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 460, "protein": 10, "carbs": 68, "fat": 16, "fiber": 4 },
-  "allergens": [],
-  "ingredients": ["Rice", "Gravy", "French Fries", "Cutlet"]
-},
-{
-  "id": "ss_paneer_sizzler",
-  "categoryId": "cat_sizzlers",
-  "name": "Paneer Sizzler",
-  "description": "A sizzling combination of fried paneer, rice, French fries, and a cutlet.",
-  "price": 355,
-  "image": "assets/Sizzlers/paneer sizzler.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 510, "protein": 18, "carbs": 56, "fat": 24, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Fried Paneer", "Rice", "French Fries", "Cutlet"]
-},
+        "id": "ss_taco_special",
+        "categoryId": "cat_indian_mexican",
+        "name": "Taco Special",
+        "description": "Taco filled with beans, mushroom, American corn, roasted capsicum, and cheese.",
+        "price": 305,
+        "image": "assets/Indian Mexican/taco special.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 13,
+          "carbs": 44,
+          "fat": 16,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Beans",
+          "Mushroom",
+          "American Corn",
+          "Roasted Capsicum",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_golden_cherry",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Golden Cherry",
-  "description": "A delightful dessert made with ice cream and cherry toppings.",
-  "price": 240,
-  "image": "assets/Shiv Sagar Desserts/Golden Cherry.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 5, "carbs": 42, "fat": 12, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Cherry", "Syrup"]
-},
-{
-  "id": "ss_honey_moon_special",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Honey Moon Special",
-  "description": "A special ice cream dessert with sweet toppings.",
-  "price": 240,
-  "image": "assets/Shiv Sagar Desserts/Honey Moon Special.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 350, "protein": 6, "carbs": 48, "fat": 15, "fiber": 1 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Ice Cream", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_my_darling",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "My Darling",
-  "description": "A creamy dessert featuring ice cream and sweet toppings.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/My Darling.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 320, "protein": 5, "carbs": 44, "fat": 13, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_triple_sundae",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Triple Sundae",
-  "description": "A sundae featuring three scoops of ice cream with sweet toppings.",
-  "price": 225,
-  "image": "assets/Shiv Sagar Desserts/Triple Sundae.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 380, "protein": 7, "carbs": 50, "fat": 16, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Chocolate Sauce", "Toppings"]
-},
-{
-  "id": "ss_special_double",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Special Double",
-  "description": "A rich double ice cream dessert with sweet toppings.",
-  "price": 220,
-  "image": "assets/Shiv Sagar Desserts/Special Double.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 350, "protein": 6, "carbs": 46, "fat": 15, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_garfunkle_special",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Garfunkle Special",
-  "description": "A signature dessert made with creamy ice cream and assorted toppings.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Garfunkle Special.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 340, "protein": 6, "carbs": 45, "fat": 14, "fiber": 1 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Ice Cream", "Nuts", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_callison_special",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Callison Special",
-  "description": "A special ice cream dessert with a variety of sweet toppings.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Callison Special.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 340, "protein": 6, "carbs": 45, "fat": 14, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_fruit_sundae",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Fruit Sundae",
-  "description": "Ice cream served with a mix of fruits and sweet toppings.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Fruit Sundae.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 320, "protein": 5, "carbs": 48, "fat": 11, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Mixed Fruits", "Syrup"]
-},
-{
-  "id": "ss_fruit_cocktail",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Fruit Cocktail",
-  "description": "A fruity dessert combining mixed fruits and creamy ice cream.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Fruit Cocktail.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 5, "carbs": 46, "fat": 10, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mixed Fruits", "Ice Cream", "Fruit Syrup"]
-},
-{
-  "id": "ss_lichee_ice_cream",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Lichee with Ice cream",
-  "description": "Sweet lychee served with creamy ice cream.",
-  "price": 190,
-  "image": "assets/Shiv Sagar Desserts/Lichee with Ice cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 260, "protein": 4, "carbs": 38, "fat": 9, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Lychee", "Ice Cream"]
-},
-{
-  "id": "ss_lichee_with_cream",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Lichee with Cream",
-  "description": "Sweet lychee served with smooth fresh cream.",
-  "price": 190,
-  "image": "assets/Shiv Sagar Desserts/Lichee with Cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 270, "protein": 3, "carbs": 35, "fat": 13, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Lychee", "Fresh Cream"]
-},
-{
-  "id": "ss_apricot_ice_cream",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Apricot with Ice cream",
-  "description": "Sweet apricot served with a scoop of creamy ice cream.",
-  "price": 210,
-  "image": "assets/Shiv Sagar Desserts/Apricot with Ice cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 4, "carbs": 40, "fat": 10, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Apricot", "Ice Cream"]
-},
-{
-  "id": "ss_fruit_bowl_cream_honey",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Fruit Bowl with Cream/Honey",
-  "description": "A bowl of mixed fruits served with fresh cream and honey.",
-  "price": 255,
-  "image": "assets/Shiv Sagar Desserts/Fruit Bowl with Cream & Honey.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 4, "carbs": 42, "fat": 13, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mixed Fruits", "Fresh Cream", "Honey"]
-},
-{
-  "id": "ss_rocco_borocco",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Rocco Borocco",
-  "description": "A signature ice cream dessert with rich sweet toppings.",
-  "price": 285,
-  "image": "assets/Shiv Sagar Desserts/Rocco Borocco.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 400, "protein": 7, "carbs": 52, "fat": 18, "fiber": 2 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Ice Cream", "Chocolate Sauce", "Nuts", "Toppings"]
-},
-{
-  "id": "ss_ice_cream_bowl_special",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Ice Cream Bowl Special",
-  "description": "A generous bowl of assorted ice cream with sweet toppings.",
-  "price": 325,
-  "image": "assets/Shiv Sagar Desserts/Ice Cream Bowl Special.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 450, "protein": 8, "carbs": 58, "fat": 20, "fiber": 2 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Assorted Ice Cream", "Chocolate Sauce", "Nuts", "Toppings"]
-},
-{
-  "id": "ss_bloody_merry_ice_cream",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Bloody Merry Ice cream",
-  "description": "A creamy ice cream dessert with rich sweet toppings.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Bloody Merry Ice cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 340, "protein": 6, "carbs": 46, "fat": 14, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_vanilla_sundae",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Vanilla Sundae",
-  "description": "Vanilla ice cream served with sweet sundae toppings.",
-  "price": 220,
-  "image": "assets/Shiv Sagar Desserts/Vanilla Sundae.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 5, "carbs": 40, "fat": 12, "fiber": 0 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Vanilla Ice Cream", "Syrup"]
-},
-{
-  "id": "ss_vanilla_chocolate_sauce",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Vanilla with Chocolate Sauce",
-  "description": "Vanilla ice cream topped with rich chocolate sauce.",
-  "price": 190,
-  "image": "assets/Shiv Sagar Desserts/Vanilla with Chocolate Sauce.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 5, "carbs": 38, "fat": 11, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Vanilla Ice Cream", "Chocolate Sauce"]
-},
-{
-  "id": "ss_chocolate_nut_sundae",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Chocolate Nut Sundae",
-  "description": "Chocolate ice cream dessert topped with crunchy nuts.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Chocolate Nut Sundae.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 360, "protein": 7, "carbs": 42, "fat": 17, "fiber": 2 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Chocolate Ice Cream", "Mixed Nuts", "Chocolate Sauce"]
-},
-{
-  "id": "ss_butter_scotch_sundae",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Butter Scotch Sundae",
-  "description": "Butterscotch ice cream served with sweet sundae toppings.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Butter Scotch Sundae.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 350, "protein": 5, "carbs": 45, "fat": 15, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Butterscotch Ice Cream", "Caramel Sauce", "Toppings"]
-},
-{
-  "id": "ss_banana_split",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Banana Split",
-  "description": "A classic banana split served with ice cream and sweet sauces.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Banana Split.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 380, "protein": 6, "carbs": 50, "fat": 16, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Banana", "Ice Cream", "Chocolate Sauce", "Toppings"]
-},
-{
-  "id": "ss_anamica",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Anamica",
-  "description": "A signature dessert served with creamy ice cream and sweet toppings.",
-  "price": 230,
-  "image": "assets/Shiv Sagar Desserts/Anamica.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 330, "protein": 5, "carbs": 44, "fat": 14, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Ice Cream", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_gadbad_special",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Gadbad Special",
-  "description": "A layered dessert featuring assorted ice creams and sweet toppings.",
-  "price": 285,
-  "image": "assets/Shiv Sagar Desserts/Gadbad Special.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 400, "protein": 7, "carbs": 52, "fat": 18, "fiber": 2 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Assorted Ice Cream", "Fruit", "Syrup", "Toppings"]
-},
-{
-  "id": "ss_sizzling_brownie_sundae",
-  "categoryId": "cat_shiv_sagar_desserts",
-  "name": "Sizzling Brownie Sundae",
-  "description": "A warm brownie dessert served with ice cream and chocolate sauce.",
-  "price": 255,
-  "image": "assets/Shiv Sagar Desserts/Sizzling Brownie Sundae.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 430, "protein": 7, "carbs": 55, "fat": 20, "fiber": 3 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Brownie", "Vanilla Ice Cream", "Chocolate Sauce"]
-},
+        "id": "ss_italian_taco",
+        "categoryId": "cat_indian_mexican",
+        "name": "Italian Taco",
+        "description": "Taco with macaroni, white sauce, capsicum, salsa sauce, and cheese.",
+        "price": 305,
+        "image": "assets/Indian Mexican/italian taco.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 390,
+          "protein": 13,
+          "carbs": 45,
+          "fat": 17,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Macaroni",
+          "White Sauce",
+          "Capsicum",
+          "Salsa Sauce",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_green_salad",
-  "categoryId": "cat_salads_raitas",
-  "name": "Green Salad",
-  "description": "A refreshing salad made with fresh green vegetables.",
-  "price": 115,
-  "image": "assets/Salads & Raitas/Green Salad.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 80,
-    "protein": 3,
-    "carbs": 12,
-    "fat": 2,
-    "fiber": 4
-  },
-  "allergens": [],
-  "ingredients": ["Cucumber", "Carrot", "Onion", "Tomato", "Lemon"]
-},
-{
-  "id": "ss_tomato_salad",
-  "categoryId": "cat_salads_raitas",
-  "name": "Tomato Salad",
-  "description": "Freshly sliced tomatoes served as a light salad.",
-  "price": 80,
-  "image": "assets/Salads & Raitas/Tomato Salad.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 35,
-    "protein": 2,
-    "carbs": 7,
-    "fat": 0,
-    "fiber": 2
-  },
-  "allergens": [],
-  "ingredients": ["Tomatoes", "Lemon", "Salt"]
-},
-{
-  "id": "ss_kakdi_salad",
-  "categoryId": "cat_salads_raitas",
-  "name": "Kakdi Salad",
-  "description": "A simple, refreshing cucumber salad.",
-  "price": 80,
-  "image": "assets/Salads & Raitas/Kakdi Salad.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 25,
-    "protein": 1,
-    "carbs": 5,
-    "fat": 0,
-    "fiber": 1
-  },
-  "allergens": [],
-  "ingredients": ["Cucumber", "Salt", "Lemon"]
-},
-{
-  "id": "ss_veg_raita",
-  "categoryId": "cat_salads_raitas",
-  "name": "Veg. Raita",
-  "description": "Cooling yogurt mixed with fresh vegetables and mild seasoning.",
-  "price": 105,
-  "image": "assets/Salads & Raitas/Veg Raita.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 110,
-    "protein": 5,
-    "carbs": 10,
-    "fat": 5,
-    "fiber": 1
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd", "Cucumber", "Carrot", "Spices"]
-},
-{
-  "id": "ss_boondi_raita",
-  "categoryId": "cat_salads_raitas",
-  "name": "Boondi Raita",
-  "description": "Creamy yogurt mixed with crunchy boondi and mild spices.",
-  "price": 115,
-  "image": "assets/Salads & Raitas/Boondi Raita.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 160,
-    "protein": 5,
-    "carbs": 15,
-    "fat": 8,
-    "fiber": 1
-  },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Curd", "Boondi", "Roasted Cumin", "Salt"]
-},
-{
-  "id": "ss_pineapple_raita",
-  "categoryId": "cat_salads_raitas",
-  "name": "Pineapple Raita",
-  "description": "A sweet and refreshing yogurt preparation with pineapple pieces.",
-  "price": 125,
-  "image": "assets/Salads & Raitas/Pineapple Raita.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 130,
-    "protein": 4,
-    "carbs": 18,
-    "fat": 5,
-    "fiber": 1
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd", "Pineapple", "Sugar", "Roasted Cumin"]
-},
+        "id": "ss_italian_taco_special",
+        "categoryId": "cat_indian_mexican",
+        "name": "Italian Taco Special",
+        "description": "Italian-style taco with mushroom, white sauce, capsicum, salsa, and Italian cheese.",
+        "price": 330,
+        "image": "assets/Indian Mexican/italian taco special.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 15,
+          "carbs": 46,
+          "fat": 19,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mushroom",
+          "White Sauce",
+          "Capsicum",
+          "Salsa",
+          "Italian Cheese",
+          "Italian Herbs"
+        ]
+      },
       {
-  "id": "ss_pav_bhaji",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Pav Bhaji",
-  "description": "A classic Mumbai-style spiced vegetable bhaji served with buttered pav.",
-  "price": 175,
-  "image": "assets/pav_bhaji/Pav-bhaji.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 380, "protein": 8, "carbs": 52, "fat": 15, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Potatoes", "Mixed Vegetables", "Pav Bhaji Masala", "Butter", "Pav"]
-},
-{
-  "id": "ss_jain_pav_bhaji",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Jain Pav Bhaji",
-  "description": "A Jain-style vegetable bhaji prepared without onion, garlic, or root vegetables.",
-  "price": 185,
-  "image": "assets/pav_bhaji/Jain-PavBhaji.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 350, "protein": 7, "carbs": 50, "fat": 13, "fiber": 6 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Jain-Approved Vegetables", "Pav Bhaji Masala", "Butter", "Pav"]
-},
-{
-  "id": "ss_cheese_pav_bhaji",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Cheese Pav Bhaji",
-  "description": "Classic pav bhaji topped with melted cheese.",
-  "price": 220,
-  "image": "assets/pav_bhaji/cheese_pav_bhaji.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 450, "protein": 14, "carbs": 53, "fat": 21, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Pav Bhaji Masala", "Cheese", "Butter", "Pav"]
-},
-{
-  "id": "ss_kada_handi_pav_bhaji",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Kada Handi Pav Bhaji",
-  "description": "Spiced vegetable bhaji prepared and served in a traditional kadai-style preparation.",
-  "price": 205,
-  "image": "assets/pav_bhaji/kada Handi pavbhaji.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 400, "protein": 8, "carbs": 54, "fat": 17, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Pav Bhaji Masala", "Butter", "Pav"]
-},
-{
-  "id": "ss_palak_pav_bhaji",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Palak Pav Bhaji",
-  "description": "A flavourful vegetable bhaji enriched with spinach and served with pav.",
-  "price": 175,
-  "image": "assets/pav_bhaji/palakpavbhaji.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 360, "protein": 9, "carbs": 49, "fat": 14, "fiber": 8 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Spinach", "Mixed Vegetables", "Pav Bhaji Masala", "Butter", "Pav"]
-},
-{
-  "id": "ss_paneer_pav_bhaji",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Paneer Pav Bhaji",
-  "description": "Spiced vegetable bhaji topped with paneer and served with pav.",
-  "price": 200,
-  "image": "assets/pav_bhaji/paneer-pavbhaji.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 430, "protein": 15, "carbs": 50, "fat": 19, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Paneer", "Pav Bhaji Masala", "Butter", "Pav"]
-},
-{
-  "id": "ss_bhaji_only",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Bhaji Only",
-  "description": "A serving of spicy mashed vegetable bhaji without pav.",
-  "price": 145,
-  "image": "assets/pav_bhaji/bhaji-only.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 280, "protein": 6, "carbs": 35, "fat": 13, "fiber": 7 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Potatoes", "Mixed Vegetables", "Pav Bhaji Masala", "Butter"]
-},
-{
-  "id": "ss_pav",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Pav (2 pcs.)",
-  "description": "Two soft bread rolls served warm.",
-  "price": 35,
-  "image": "assets/pav_bhaji/pav-only.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": { "calories": 220, "protein": 6, "carbs": 40, "fat": 4, "fiber": 2 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Pav", "Butter"]
-},
-{
-  "id": "ss_masala_pav",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Masala Pav (2 pcs.)",
-  "description": "Two pav rolls toasted with a spicy onion-tomato masala.",
-  "price": 135,
-  "image": "assets/pav_bhaji/masala-pav.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 320, "protein": 7, "carbs": 43, "fat": 13, "fiber": 3 },
-  "allergens": ["Gluten", "Dairy"],
-  "ingredients": ["Pav", "Onions", "Tomatoes", "Pav Bhaji Masala", "Butter"]
-},
-{
-  "id": "ss_cheese_masala_pav",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Cheese Masala Pav",
-  "description": "Masala-coated pav topped with melted cheese.",
-  "price": 165,
-  "image": "assets/pav_bhaji/cheese-masalapav.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 380, "protein": 12, "carbs": 44, "fat": 17, "fiber": 3 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pav", "Onions", "Tomatoes", "Cheese", "Butter", "Spices"]
-},
-{
-  "id": "ss_roasted_papad",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Roasted Papad",
-  "description": "Crispy papad roasted until light and crunchy.",
-  "price": 35,
-  "image": "assets/pav_bhaji/rosted papd.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": { "calories": 60, "protein": 3, "carbs": 9, "fat": 1, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Papad"]
-},
-{
-  "id": "ss_fried_papad",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Fried Papad",
-  "description": "Papad deep-fried until crisp.",
-  "price": 35,
-  "image": "assets/pav_bhaji/friedpapd.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": { "calories": 100, "protein": 3, "carbs": 9, "fat": 6, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Papad", "Oil"]
-},
-{
-  "id": "ss_roasted_masala_papad",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Roasted Masala Papad",
-  "description": "Roasted crispy papad topped with a tangy masala mixture.",
-  "price": 40,
-  "image": "assets/pav_bhaji/Rosted MasalaPapad.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "4 mins",
-  "nutrition": { "calories": 90, "protein": 3, "carbs": 12, "fat": 3, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Papad", "Onions", "Tomatoes", "Spices", "Lemon"]
-},
-{
-  "id": "ss_fried_masala_papad",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Fried Masala Papad",
-  "description": "Crispy fried papad topped with tangy masala.",
-  "price": 45,
-  "image": "assets/pav_bhaji/Fried-MasalaPapad.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "4 mins",
-  "nutrition": { "calories": 130, "protein": 3, "carbs": 12, "fat": 8, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Papad", "Oil", "Onions", "Tomatoes", "Spices"]
-},
-{
-  "id": "ss_fried_onion",
-  "categoryId": "cat_pav_bhaji",
-  "name": "Fried Onion",
-  "description": "Sliced onions fried until golden and crispy.",
-  "price": 45,
-  "image": "assets/pav_bhaji/fried-onion.jpg",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 150, "protein": 2, "carbs": 14, "fat": 10, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Onions", "Oil"]
-},
+        "id": "ss_chicago_taco",
+        "categoryId": "cat_indian_mexican",
+        "name": "Chicago Taco",
+        "description": "Taco with American corn, macaroni, spring onion, salsa, paneer, and cheese.",
+        "price": 330,
+        "image": "assets/Indian Mexican/chicago taco.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 16,
+          "carbs": 48,
+          "fat": 18,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "American Corn",
+          "Macaroni",
+          "Spring Onion",
+          "Salsa",
+          "Paneer",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_cream_cola",
-  "categoryId": "cat_mocktails",
-  "name": "Cream Cola",
-  "description": "A creamy cola mocktail blended with vanilla ice cream and cream.",
-  "price": 200,
-  "image": "assets/Mocktails/Cream Cola.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 5, "carbs": 38, "fat": 12, "fiber": 0 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Vanilla Ice Cream", "Cream", "Thums Up", "Sugar"]
-},
-{
-  "id": "ss_cinderella",
-  "categoryId": "cat_mocktails",
-  "name": "Cinderella",
-  "description": "A fruity combination of orange and pineapple juices with vanilla ice cream and khus sharbat.",
-  "price": 220,
-  "image": "assets/Mocktails/Cinderella.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 260, "protein": 4, "carbs": 42, "fat": 8, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Orange Juice", "Pineapple Juice", "Vanilla Ice Cream", "Khus Sharbat"]
-},
-{
-  "id": "ss_blue_lemon",
-  "categoryId": "cat_mocktails",
-  "name": "Blue Lemon",
-  "description": "A colourful blue mocktail with blue curaçao syrup, lemon soda, and vanilla ice cream.",
-  "price": 220,
-  "image": "assets/Mocktails/Blue Lemon.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 250, "protein": 3, "carbs": 40, "fat": 8, "fiber": 0 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curacao Syrup", "7 Up", "Vanilla Ice Cream"]
-},
-{
-  "id": "ss_fruit_punch",
-  "categoryId": "cat_mocktails",
-  "name": "Fruit Punch",
-  "description": "A fruity blend of orange and pineapple juices, mango pulp, ice cream, and refreshing syrups.",
-  "price": 220,
-  "image": "assets/Mocktails/Fruit Punch.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 290, "protein": 4, "carbs": 48, "fat": 9, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Orange Juice", "Pineapple Juice", "Mango Pulp", "Khus Sharbat", "Ice Cream", "Rooh Afza"]
-},
-{
-  "id": "ss_special_mocktail",
-  "categoryId": "cat_mocktails",
-  "name": "Special Mocktail",
-  "description": "A house-special combination of fruit juices, mixed ice cream, dry fruits, jelly, tutti frutti, and syrups.",
-  "price": 230,
-  "image": "assets/Mocktails/Special Mocktail.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "7 mins",
-  "nutrition": { "calories": 380, "protein": 7, "carbs": 55, "fat": 15, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Orange Juice", "Pineapple Juice", "Mixed Ice Cream", "Dry Fruits", "Jelly", "Tutti Frutti", "Red Syrup", "Rooh Afza"]
-},
-{
-  "id": "ss_orange_blossom",
-  "categoryId": "cat_mocktails",
-  "name": "Orange Blossom",
-  "description": "A smooth orange juice mocktail topped with vanilla ice cream.",
-  "price": 220,
-  "image": "assets/Mocktails/Orange Blossom.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 240, "protein": 4, "carbs": 36, "fat": 8, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Orange Juice", "Vanilla Ice Cream"]
-},
-{
-  "id": "ss_pineapple_blossom",
-  "categoryId": "cat_mocktails",
-  "name": "Pineapple Blossom",
-  "description": "A refreshing pineapple juice mocktail blended with vanilla ice cream.",
-  "price": 220,
-  "image": "assets/Mocktails/Pineapple Blossom.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 240, "protein": 4, "carbs": 38, "fat": 8, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Pineapple Juice", "Vanilla Ice Cream"]
-},
-{
-  "id": "ss_water_melon_blossoms",
-  "categoryId": "cat_mocktails",
-  "name": "Water melon Blossoms",
-  "description": "A chilled watermelon juice mocktail topped with vanilla ice cream.",
-  "price": 220,
-  "image": "assets/Mocktails/Water melon Blossoms.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 230, "protein": 4, "carbs": 35, "fat": 8, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Watermelon Juice", "Vanilla Ice Cream"]
-},
-{
-  "id": "ss_pina_colada",
-  "categoryId": "cat_mocktails",
-  "name": "Pina Colada",
-  "description": "A tropical pineapple drink blended with fresh cream, ice cream, and soda.",
-  "price": 220,
-  "image": "assets/Mocktails/Pina Colada.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 4, "carbs": 40, "fat": 13, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Pineapple Juice", "Fresh Cream", "Ice Cream", "Soda"]
-},
-{
-  "id": "ss_pinkish_lady",
-  "categoryId": "cat_mocktails",
-  "name": "Pinkish Lady",
-  "description": "A pink tropical mocktail made with pineapple juice, strawberry ice cream, and rose syrup.",
-  "price": 220,
-  "image": "assets/Mocktails/Pinkish Lady.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 270, "protein": 4, "carbs": 40, "fat": 10, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Pineapple Juice", "Strawberry Ice Cream", "Rose Syrup"]
-},
-{
-  "id": "ss_dream_girl",
-  "categoryId": "cat_mocktails",
-  "name": "Dream Girl",
-  "description": "A fruity mocktail combining strawberry crush, pineapple juice, fresh juice, and crushed ice.",
-  "price": 220,
-  "image": "assets/Mocktails/Dream Girl.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 180, "protein": 2, "carbs": 40, "fat": 1, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Strawberry Crush", "Pineapple Juice", "Fresh Juice", "Crushed Ice"]
-},
-{
-  "id": "ss_love_bird",
-  "categoryId": "cat_mocktails",
-  "name": "Love Bird",
-  "description": "A refreshing pineapple mocktail with kesar pista syrup and vanilla ice cream.",
-  "price": 220,
-  "image": "assets/Mocktails/Love Bird.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 260, "protein": 4, "carbs": 40, "fat": 9, "fiber": 1 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Kesar Pista Syrup", "Vanilla Ice Cream", "Pineapple Juice"]
-},
-{
-  "id": "ss_strawberry_delight",
-  "categoryId": "cat_mocktails",
-  "name": "Strawberry Delight",
-  "description": "A strawberry-flavoured mocktail with strawberry ice cream, khus syrup, pineapple juice, and strawberry crush.",
-  "price": 220,
-  "image": "assets/Mocktails/Strawberry Delight.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 4, "carbs": 43, "fat": 10, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Strawberry Ice Cream", "Khus Syrup", "Pineapple Juice", "Strawberry Crush"]
-},
-{
-  "id": "ss_strawberry_moment",
-  "categoryId": "cat_mocktails",
-  "name": "Strawberry Moment",
-  "description": "A fruity blend of fresh milk, pineapple juice, and strawberry crush.",
-  "price": 220,
-  "image": "assets/Mocktails/Strawberry Moment.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 250, "protein": 6, "carbs": 38, "fat": 7, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Fresh Milk", "Pineapple Juice", "Strawberry Crush"]
-},
+        "id": "ss_pineapple_taco",
+        "categoryId": "cat_indian_mexican",
+        "name": "Pineapple Taco",
+        "description": "Taco with pineapple, white sauce, and Mexican spicy salsa sauce.",
+        "price": 330,
+        "image": "assets/Indian Mexican/pineapple taco.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 9,
+          "carbs": 50,
+          "fat": 16,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pineapple",
+          "White Sauce",
+          "Mexican Spicy Salsa Sauce"
+        ]
+      },
       {
-  "id": "ss_chikku_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Chikku",
-  "description": "A creamy milkshake made with sweet chikku (sapodilla).",
-  "price": 165,
-  "image": "assets/Milk Shakes/Chikku.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 7, "carbs": 38, "fat": 11, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Chikku", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_anjeer_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Anjeer (Fig)",
-  "description": "A rich, creamy milkshake blended with sweet figs.",
-  "price": 220,
-  "image": "assets/Milk Shakes/Anjeer.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 320, "protein": 8, "carbs": 42, "fat": 13, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Anjeer (Figs)", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_chocolate_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Chocolate",
-  "description": "A smooth chocolate milkshake blended with chilled milk.",
-  "price": 190,
-  "image": "assets/Milk Shakes/Chocolate.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 300, "protein": 8, "carbs": 40, "fat": 12, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Chocolate", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_chocolate_with_nuts_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Chocolate with nuts",
-  "description": "A chocolate milkshake enriched with crunchy nuts.",
-  "price": 220,
-  "image": "assets/Milk Shakes/Chocolate with nuts.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 360, "protein": 10, "carbs": 42, "fat": 17, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Chocolate", "Mixed Nuts", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kesar_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Kesar",
-  "description": "A creamy milkshake flavoured with aromatic saffron.",
-  "price": 165,
-  "image": "assets/Milk Shakes/Kesar.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 290, "protein": 7, "carbs": 38, "fat": 11, "fiber": 0 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Saffron", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kaju_anjeer_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Kaju Anjeer",
-  "description": "A rich milkshake combining cashews and sweet figs.",
-  "price": 245,
-  "image": "assets/Milk Shakes/Kaju anjeer.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 370, "protein": 10, "carbs": 43, "fat": 18, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Cashews", "Anjeer", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_banana_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Banana",
-  "description": "A thick banana milkshake with a naturally sweet flavour.",
-  "price": 135,
-  "image": "assets/Milk Shakes/Banana.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 7, "carbs": 40, "fat": 9, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Banana", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_apple_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Apple",
-  "description": "A refreshing apple milkshake blended with chilled milk.",
-  "price": 165,
-  "image": "assets/Milk Shakes/Apple.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 270, "protein": 7, "carbs": 39, "fat": 9, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Apple", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_pineapple_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Pineapple",
-  "description": "A chilled milkshake with a sweet, tropical pineapple flavour.",
-  "price": 160,
-  "image": "assets/Milk Shakes/Pineapple.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 270, "protein": 6, "carbs": 38, "fat": 10, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Pineapple", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_rose_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Rose",
-  "description": "A creamy milkshake infused with a delicate rose flavour.",
-  "price": 165,
-  "image": "assets/Milk Shakes/Rose.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 7, "carbs": 39, "fat": 10, "fiber": 0 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Rose Syrup", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kaju_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Kaju",
-  "description": "A rich, creamy milkshake blended with cashews.",
-  "price": 230,
-  "image": "assets/Milk Shakes/Kaju.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 350, "protein": 9, "carbs": 38, "fat": 17, "fiber": 2 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Cashews", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_vanilla_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Vanilla",
-  "description": "A classic vanilla milkshake with a smooth, creamy texture.",
-  "price": 165,
-  "image": "assets/Milk Shakes/Vanilla.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 280, "protein": 7, "carbs": 38, "fat": 10, "fiber": 0 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Vanilla", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_kesar_thandai_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Kesar Thandai",
-  "description": "A creamy milkshake with saffron and aromatic thandai flavours.",
-  "price": 220,
-  "image": "assets/Milk Shakes/Kesar thandai.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 330, "protein": 8, "carbs": 40, "fat": 14, "fiber": 1 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Saffron", "Thandai Masala", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_thandai_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Thandai",
-  "description": "A chilled milkshake flavoured with traditional thandai spices.",
-  "price": 195,
-  "image": "assets/Milk Shakes/Thandai.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 310, "protein": 7, "carbs": 39, "fat": 12, "fiber": 1 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Thandai Masala", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_badam_chocolate_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Badam Chocolate",
-  "description": "A rich chocolate milkshake blended with almonds.",
-  "price": 250,
-  "image": "assets/Milk Shakes/Badam chocolate.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 380, "protein": 10, "carbs": 42, "fat": 19, "fiber": 3 },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Almonds", "Chocolate", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_cold_coffee",
-  "categoryId": "cat_milk_shakes",
-  "name": "Cold Coffee",
-  "description": "A chilled coffee milkshake with a smooth, creamy finish.",
-  "price": 135,
-  "image": "assets/Milk Shakes/Cold Coffee.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 250, "protein": 7, "carbs": 32, "fat": 9, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Coffee", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_watermelon_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Water Melon (Seasonal)",
-  "description": "A refreshing seasonal watermelon milkshake.",
-  "price": 140,
-  "image": "assets/Milk Shakes/Watermelon.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 230, "protein": 6, "carbs": 34, "fat": 8, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Watermelon", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_sitaphal_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Sitaphal (Custard Apple)",
-  "description": "A creamy milkshake made with sweet custard apple.",
-  "price": 220,
-  "image": "assets/Milk Shakes/Sitaphal.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 320, "protein": 7, "carbs": 42, "fat": 12, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Custard Apple", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_strawberry_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Strawberry",
-  "description": "A sweet strawberry milkshake blended with chilled milk.",
-  "price": 220,
-  "image": "assets/Milk Shakes/Strawberry.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 290, "protein": 7, "carbs": 40, "fat": 10, "fiber": 1 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Strawberries", "Milk", "Sugar", "Ice Cream"]
-},
-{
-  "id": "ss_mango_milkshake",
-  "categoryId": "cat_milk_shakes",
-  "name": "Mango",
-  "description": "A thick and creamy mango milkshake.",
-  "price": 230,
-  "image": "assets/Milk Shakes/Mango.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 320, "protein": 7, "carbs": 44, "fat": 11, "fiber": 2 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mango", "Milk", "Sugar", "Ice Cream"]
-},
+        "id": "ss_cheese_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Cheese Enchilada",
+        "description": "Soft tortilla rolled with cheese, beans, and corn, baked with extra cheese.",
+        "price": 425,
+        "image": "assets/Indian Mexican/cheese enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 470,
+          "protein": 17,
+          "carbs": 48,
+          "fat": 23,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Soft Tortilla",
+          "Cheese",
+          "Beans",
+          "Corn",
+          "Extra Cheese"
+        ]
+      },
       {
-  "id": "ss_mango_lassi",
-  "categoryId": "cat_lassi",
-  "name": "Mango Lassi",
-  "description": "A creamy, refreshing lassi blended with sweet mango.",
-  "price": 135,
-  "image": "assets/Lassi/Mango Lassi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 220,
-    "protein": 6,
-    "carbs": 35,
-    "fat": 6,
-    "fiber": 1
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd", "Mango", "Sugar"]
-},
-{
-  "id": "ss_special_lassi",
-  "categoryId": "cat_lassi",
-  "name": "Special Lassi",
-  "description": "A rich, thick and creamy special lassi.",
-  "price": 145,
-  "image": "assets/Lassi/Special Lassi.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 250,
-    "protein": 7,
-    "carbs": 36,
-    "fat": 8,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd", "Milk", "Sugar", "Cream"]
-},
-{
-  "id": "ss_sweet_lassi",
-  "categoryId": "cat_lassi",
-  "name": "Sweet Lassi",
-  "description": "Traditional sweetened curd drink served chilled.",
-  "price": 115,
-  "image": "assets/Lassi/Sweet Lassi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 190,
-    "protein": 6,
-    "carbs": 28,
-    "fat": 5,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd", "Water", "Sugar"]
-},
-{
-  "id": "ss_salted_lassi",
-  "categoryId": "cat_lassi",
-  "name": "Salted Lassi",
-  "description": "A cooling savoury yogurt drink lightly seasoned with salt.",
-  "price": 105,
-  "image": "assets/Lassi/Salted Lassi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 120,
-    "protein": 6,
-    "carbs": 10,
-    "fat": 5,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd", "Water", "Salt"]
-},
-{
-  "id": "ss_butter_milk",
-  "categoryId": "cat_lassi",
-  "name": "Butter Milk",
-  "description": "A light, refreshing buttermilk drink served chilled.",
-  "price": 75,
-  "image": "assets/Lassi/Butter Milk.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": {
-    "calories": 60,
-    "protein": 3,
-    "carbs": 5,
-    "fat": 3,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd", "Water", "Salt"]
-},
-{
-  "id": "ss_curds",
-  "categoryId": "cat_lassi",
-  "name": "Curds",
-  "description": "Fresh plain curd served chilled.",
-  "price": 55,
-  "image": "assets/Lassi/Curd.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 100,
-    "protein": 5,
-    "carbs": 7,
-    "fat": 5,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Curd"]
-},
+        "id": "ss_indiana_cheese_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Indiana Cheese Enchilada",
+        "description": "Enchilada filled with beans, chopped onion, and cheese.",
+        "price": 425,
+        "image": "assets/Indian Mexican/indian cheese enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 16,
+          "carbs": 46,
+          "fat": 22,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Beans",
+          "Chopped Onion",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_mosambi_juice",
-  "categoryId": "cat_juices",
-  "name": "Mosambi (Sweet Lime)",
-  "description": "Freshly squeezed sweet lime juice served chilled.",
-  "price": 155,
-  "image": "assets/Juices/Mosambi.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 110, "protein": 2, "carbs": 25, "fat": 0, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Mosambi"]
-},
-{
-  "id": "ss_orange_juice",
-  "categoryId": "cat_juices",
-  "name": "Orange",
-  "description": "Fresh orange juice with a naturally sweet and tangy flavour.",
-  "price": 155,
-  "image": "assets/Juices/Orange.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 110, "protein": 2, "carbs": 26, "fat": 0, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Oranges"]
-},
-{
-  "id": "ss_ganga_jamuna",
-  "categoryId": "cat_juices",
-  "name": "Ganga Jamuna (Orange + Mosambi)",
-  "description": "A refreshing blend of orange and sweet lime juices.",
-  "price": 155,
-  "image": "assets/Juices/Ganga Jamuna.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 110, "protein": 2, "carbs": 26, "fat": 0, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Orange", "Mosambi"]
-},
-{
-  "id": "ss_maramari",
-  "categoryId": "cat_juices",
-  "name": "Maramari (Pineapple + Mosambi)",
-  "description": "A tropical combination of pineapple and sweet lime juice.",
-  "price": 155,
-  "image": "assets/Juices/Maramari.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 115, "protein": 1, "carbs": 27, "fat": 0, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Pineapple", "Mosambi"]
-},
-{
-  "id": "ss_pineapple_juice",
-  "categoryId": "cat_juices",
-  "name": "Pineapple",
-  "description": "Fresh pineapple juice with a sweet tropical flavour.",
-  "price": 145,
-  "image": "assets/Juices/Pineapple.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 130, "protein": 1, "carbs": 32, "fat": 0, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Pineapple"]
-},
-{
-  "id": "ss_apple_juice",
-  "categoryId": "cat_juices",
-  "name": "Apple",
-  "description": "Fresh apple juice served chilled.",
-  "price": 145,
-  "image": "assets/Juices/Apple.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 115, "protein": 0.5, "carbs": 28, "fat": 0, "fiber": 0.5 },
-  "allergens": [],
-  "ingredients": ["Apple"]
-},
-{
-  "id": "ss_tomato_juice",
-  "categoryId": "cat_juices",
-  "name": "Tomato",
-  "description": "Fresh tomato juice with a light, savoury flavour.",
-  "price": 90,
-  "image": "assets/Juices/Tomato.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 40, "protein": 2, "carbs": 9, "fat": 0, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Tomatoes"]
-},
-{
-  "id": "ss_mango_juice",
-  "categoryId": "cat_juices",
-  "name": "Mango (Seasonal)",
-  "description": "Sweet mango juice prepared with seasonal mangoes.",
-  "price": 175,
-  "image": "assets/Juices/Mango.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 150, "protein": 1, "carbs": 36, "fat": 0.5, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Mango"]
-},
-{
-  "id": "ss_strawberry_juice",
-  "categoryId": "cat_juices",
-  "name": "Strawberry (Seasonal)",
-  "description": "Refreshing strawberry juice made with seasonal strawberries.",
-  "price": 175,
-  "image": "assets/Juices/Strawberry.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 100, "protein": 1, "carbs": 24, "fat": 0.5, "fiber": 2 },
-  "allergens": [],
-  "ingredients": ["Strawberries"]
-},
-{
-  "id": "ss_watermelon_juice",
-  "categoryId": "cat_juices",
-  "name": "Water Melon (Seasonal)",
-  "description": "Light and refreshing watermelon juice served chilled.",
-  "price": 120,
-  "image": "assets/Juices/Watermelon.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 85, "protein": 1.5, "carbs": 21, "fat": 0, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Watermelon"]
-},
-{
-  "id": "ss_litchee_juice",
-  "categoryId": "cat_juices",
-  "name": "Lichee (Seasonal)",
-  "description": "Sweet and fragrant lychee juice served chilled.",
-  "price": 175,
-  "image": "assets/Juices/Litchee.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 125, "protein": 1, "carbs": 31, "fat": 0, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Lychee"]
-},
-{
-  "id": "ss_dalam_juice",
-  "categoryId": "cat_juices",
-  "name": "Dalam (Pomegranate)",
-  "description": "Fresh pomegranate juice with a rich, fruity flavour.",
-  "price": 220,
-  "image": "assets/Juices/Dalam.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": { "calories": 135, "protein": 2, "carbs": 33, "fat": 1, "fiber": 1 },
-  "allergens": [],
-  "ingredients": ["Pomegranate"]
-},
-{
-  "id": "ss_fresh_lime_juice",
-  "categoryId": "cat_juices",
-  "name": "Fresh Lime Juice",
-  "description": "A refreshing lime drink made with freshly squeezed lime.",
-  "price": 80,
-  "image": "assets/Juices/Fresh Lime Juice.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": { "calories": 50, "protein": 0.5, "carbs": 12, "fat": 0, "fiber": 0.5 },
-  "allergens": [],
-  "ingredients": ["Fresh Lime", "Water", "Sugar"]
-},
-{
-  "id": "ss_fresh_lime_soda",
-  "categoryId": "cat_juices",
-  "name": "Fresh Lime Soda",
-  "description": "A fizzy lime drink served chilled.",
-  "price": 100,
-  "image": "assets/Juices/Fresh Lime Soda.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": { "calories": 70, "protein": 0, "carbs": 18, "fat": 0, "fiber": 0 },
-  "allergens": [],
-  "ingredients": ["Fresh Lime", "Soda Water", "Sugar"]
-},
-{
-  "id": "ss_ginger_lemon_juice",
-  "categoryId": "cat_juices",
-  "name": "Ginger Lemon Juice",
-  "description": "A tangy lemon drink with a refreshing hint of ginger.",
-  "price": 80,
-  "image": "assets/Juices/Ginger Lemon Juice.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": { "calories": 45, "protein": 0.5, "carbs": 11, "fat": 0, "fiber": 0.5 },
-  "allergens": [],
-  "ingredients": ["Lemon", "Ginger", "Water", "Sugar"]
-},
-{
-  "id": "ss_ginger_lemon_soda",
-  "categoryId": "cat_juices",
-  "name": "Ginger Lemon Soda",
-  "description": "A sparkling lemon soda with a refreshing ginger flavour.",
-  "price": 110,
-  "image": "assets/Juices/Ginger Lemon Soda.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": { "calories": 65, "protein": 0, "carbs": 16, "fat": 0, "fiber": 0 },
-  "allergens": [],
-  "ingredients": ["Lemon", "Ginger", "Soda Water", "Sugar"]
-},
+        "id": "ss_recipe_special_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Recipe Special Enchilada",
+        "description": "Soft tortilla rolled with cheese, beans, corn, and mushroom, baked with three types of cheese.",
+        "price": 440,
+        "image": "assets/Indian Mexican/recipe special enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 520,
+          "protein": 20,
+          "carbs": 50,
+          "fat": 27,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Soft Tortilla",
+          "Cheese",
+          "Beans",
+          "Corn",
+          "Mushroom",
+          "Three Types of Cheese"
+        ]
+      },
       {
-  "id": "ss_paneer_pakoda",
-  "categoryId": "cat_indian_snacks",
-  "name": "Paneer Pakoda",
-  "description": "Crispy paneer fritters coated in a seasoned gram flour batter.",
-  "price": 175,
-  "image": "assets/Indian Snacks/Paneer Pakoda.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 320,
-    "protein": 12,
-    "carbs": 25,
-    "fat": 19,
-    "fiber": 3
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Paneer", "Gram Flour", "Spices", "Oil"]
-},
-{
-  "id": "ss_mix_pakoda",
-  "categoryId": "cat_indian_snacks",
-  "name": "Mix. Pakoda",
-  "description": "Assorted vegetable fritters coated in spiced gram flour batter and fried until crisp.",
-  "price": 155,
-  "image": "assets/Indian Snacks/Mix Pakoda.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 300,
-    "protein": 7,
-    "carbs": 32,
-    "fat": 16,
-    "fiber": 4
-  },
-  "allergens": [],
-  "ingredients": ["Mixed Vegetables", "Gram Flour", "Spices", "Oil"]
-},
-{
-  "id": "ss_cheese_pakoda",
-  "categoryId": "cat_indian_snacks",
-  "name": "Cheese Pakoda",
-  "description": "Cheese pieces coated in a savoury batter and fried until golden and crispy.",
-  "price": 230,
-  "image": "assets/Indian Snacks/Cheese Pakoda.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 360,
-    "protein": 13,
-    "carbs": 27,
-    "fat": 23,
-    "fiber": 2
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Cheese", "Gram Flour", "Spices", "Oil"]
-},
-{
-  "id": "ss_finger_chips",
-  "categoryId": "cat_indian_snacks",
-  "name": "Finger Chips",
-  "description": "Golden, crispy potato fries served hot.",
-  "price": 110,
-  "image": "assets/Indian Snacks/Finger Chips.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 310,
-    "protein": 4,
-    "carbs": 41,
-    "fat": 15,
-    "fiber": 4
-  },
-  "allergens": [],
-  "ingredients": ["Potatoes", "Oil", "Salt"]
-},
-{
-  "id": "ss_veg_seekh_kebab",
-  "categoryId": "cat_indian_snacks",
-  "name": "Veg. Seekh Kebab",
-  "description": "Spiced mixed vegetable kebabs grilled until golden and flavourful.",
-  "price": 245,
-  "image": "assets/Indian Snacks/Veg. Seekh Kebab.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": {
-    "calories": 280,
-    "protein": 8,
-    "carbs": 30,
-    "fat": 14,
-    "fiber": 5
-  },
-  "allergens": [],
-  "ingredients": ["Mixed Vegetables", "Spices", "Herbs"]
-},
-{
-  "id": "ss_paneer_tikka_dry",
-  "categoryId": "cat_indian_snacks",
-  "name": "Paneer Tikka Dry",
-  "description": "Paneer cubes marinated in aromatic spices and grilled with vegetables.",
-  "price": 310,
-  "image": "assets/Indian Snacks/Paneer Tikka Dry.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": {
-    "calories": 350,
-    "protein": 18,
-    "carbs": 16,
-    "fat": 23,
-    "fiber": 3
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Paneer", "Yogurt", "Indian Spices", "Capsicum", "Onions"]
-},
-{
-  "id": "ss_tandoor_gobi",
-  "categoryId": "cat_indian_snacks",
-  "name": "Tandoor Gobi",
-  "description": "Cauliflower florets marinated in spiced yogurt and roasted tandoor-style.",
-  "price": 250,
-  "image": "assets/Indian Snacks/Tandoori gobi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": {
-    "calories": 240,
-    "protein": 7,
-    "carbs": 20,
-    "fat": 14,
-    "fiber": 5
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Cauliflower", "Yogurt", "Spices"]
-},
-{
-  "id": "ss_hariyali_kebab",
-  "categoryId": "cat_indian_snacks",
-  "name": "Hariyali Kebab",
-  "description": "Green herb-marinated vegetarian kebabs grilled with fragrant spices.",
-  "price": 265,
-  "image": "assets/Indian Snacks/Hariyali Kebab.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": {
-    "calories": 280,
-    "protein": 10,
-    "carbs": 22,
-    "fat": 15,
-    "fiber": 4
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Vegetables", "Fresh Herbs", "Yogurt", "Spices"]
-},
-{
-  "id": "ss_mushroom_tikka_dry",
-  "categoryId": "cat_indian_snacks",
-  "name": "Mushroom Tikka Dry",
-  "description": "Mushrooms marinated in aromatic spices and grilled until tender.",
-  "price": 285,
-  "image": "assets/Indian Snacks/Mushroom Tikka Dry.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": {
-    "calories": 260,
-    "protein": 9,
-    "carbs": 16,
-    "fat": 16,
-    "fiber": 4
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mushrooms", "Yogurt", "Indian Spices"]
-},
+        "id": "ss_american_cheese_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "American Cheese Enchilada",
+        "description": "Enchilada prepared with American corn, capsicum, mushroom, and beans.",
+        "price": 425,
+        "image": "assets/Indian Mexican/american cheese enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 460,
+          "protein": 17,
+          "carbs": 48,
+          "fat": 22,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "American Corn",
+          "Capsicum",
+          "Mushroom",
+          "Beans",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_vanilla_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Vanilla",
-  "description": "Classic vanilla ice cream with a smooth, creamy texture.",
-  "price": 75,
-  "image": "assets/Ice Creams/Vanilla.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 140,
-    "protein": 3,
-    "carbs": 18,
-    "fat": 6,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Vanilla"]
-},
-{
-  "id": "ss_mango_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Mango",
-  "description": "Creamy ice cream with a sweet, fruity mango flavour.",
-  "price": 75,
-  "image": "assets/Ice Creams/Mango.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 150,
-    "protein": 3,
-    "carbs": 21,
-    "fat": 6,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Mango"]
-},
-{
-  "id": "ss_chocolate_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Chocolate",
-  "description": "Rich chocolate ice cream for a deliciously indulgent treat.",
-  "price": 75,
-  "image": "assets/Ice Creams/Chocolate.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 160,
-    "protein": 3,
-    "carbs": 20,
-    "fat": 8,
-    "fiber": 1
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Chocolate"]
-},
-{
-  "id": "ss_pista_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Pista",
-  "description": "Smooth pistachio-flavoured ice cream with a nutty taste.",
-  "price": 75,
-  "image": "assets/Ice Creams/Pista.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 155,
-    "protein": 4,
-    "carbs": 18,
-    "fat": 8,
-    "fiber": 1
-  },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Pistachio"]
-},
-{
-  "id": "ss_kesar_pista_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Kesar Pista",
-  "description": "Creamy ice cream infused with saffron and pistachio flavours.",
-  "price": 75,
-  "image": "assets/Ice Creams/Kesar Pista.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 160,
-    "protein": 4,
-    "carbs": 19,
-    "fat": 8,
-    "fiber": 1
-  },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Saffron", "Pistachio"]
-},
-{
-  "id": "ss_roasted_badam_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Roasted Badam",
-  "description": "Creamy almond ice cream with a roasted almond flavour.",
-  "price": 75,
-  "image": "assets/Ice Creams/Roasted Almond.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 170,
-    "protein": 4,
-    "carbs": 17,
-    "fat": 10,
-    "fiber": 1
-  },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Roasted Almonds"]
-},
-{
-  "id": "ss_anjeer_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Anjeer",
-  "description": "Creamy fig-flavoured ice cream with a naturally sweet taste.",
-  "price": 75,
-  "image": "assets/Ice Creams/Anjeer.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 160,
-    "protein": 3,
-    "carbs": 22,
-    "fat": 7,
-    "fiber": 1
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Figs"]
-},
-{
-  "id": "ss_pineapple_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Pineapple",
-  "description": "Refreshing ice cream with a sweet pineapple flavour.",
-  "price": 75,
-  "image": "assets/Ice Creams/Pineapple.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 145,
-    "protein": 3,
-    "carbs": 20,
-    "fat": 6,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Pineapple"]
-},
-{
-  "id": "ss_sitaphal_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Sitaphal (Seasonal)",
-  "description": "Seasonal custard apple ice cream with a sweet, fruity flavour.",
-  "price": 75,
-  "image": "assets/Ice Creams/Custard apple.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 165,
-    "protein": 3,
-    "carbs": 23,
-    "fat": 7,
-    "fiber": 1
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Custard Apple"]
-},
-{
-  "id": "ss_strawberry_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Strawberry (Seasonal)",
-  "description": "Sweet and creamy strawberry ice cream, available seasonally.",
-  "price": 75,
-  "image": "assets/Ice Creams/Strawberry.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 145,
-    "protein": 3,
-    "carbs": 20,
-    "fat": 6,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Strawberry"]
-},
-{
-  "id": "ss_butterscotch_ice_cream",
-  "categoryId": "cat_ice_creams",
-  "name": "Butter Scotch",
-  "description": "Creamy butterscotch ice cream with a rich caramelised flavour.",
-  "price": 75,
-  "image": "assets/Ice Creams/Butterscotch.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 165,
-    "protein": 3,
-    "carbs": 21,
-    "fat": 8,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Cream", "Sugar", "Butterscotch"]
-},
+        "id": "ss_italian_cheese_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Italian Cheese Enchilada",
+        "description": "Enchilada with mushroom, macaroni, capsicum, white sauce, and Italian dressing.",
+        "price": 425,
+        "image": "assets/Indian Mexican/italian cheese enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 17,
+          "carbs": 50,
+          "fat": 23,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mushroom",
+          "Macaroni",
+          "Capsicum",
+          "White Sauce",
+          "Italian Dressing"
+        ]
+      },
       {
-  "id": "ss_tea",
-  "categoryId": "cat_hot_beverages",
-  "name": "Tea",
-  "description": "A freshly brewed cup of hot tea.",
-  "price": 50,
-  "image": "assets/Hot Beverages/Tea.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 60,
-    "protein": 1,
-    "carbs": 10,
-    "fat": 2,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Tea Leaves", "Water", "Milk", "Sugar"]
-},
-{
-  "id": "ss_filter_coffee",
-  "categoryId": "cat_hot_beverages",
-  "name": "Filter Coffee",
-  "description": "Traditional filter coffee with a rich aroma and creamy taste.",
-  "price": 60,
-  "image": "assets/Hot Beverages/Filter Coffee.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 90,
-    "protein": 3,
-    "carbs": 10,
-    "fat": 4,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Coffee Decoction", "Milk", "Sugar"]
-},
-{
-  "id": "ss_nescafe",
-  "categoryId": "cat_hot_beverages",
-  "name": "Nescafe",
-  "description": "A hot instant coffee prepared with Nescafe coffee powder.",
-  "price": 70,
-  "image": "assets/Hot Beverages/Nescafe.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 80,
-    "protein": 3,
-    "carbs": 9,
-    "fat": 3,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Nescafe Coffee Powder", "Milk", "Sugar"]
-},
-{
-  "id": "ss_expresso_coffee",
-  "categoryId": "cat_hot_beverages",
-  "name": "Expresso Coffee",
-  "description": "A coffee beverage made with Nescafe and chocolate powder.",
-  "price": 70,
-  "image": "assets/Hot Beverages/Expresso Coffee.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 100,
-    "protein": 3,
-    "carbs": 12,
-    "fat": 4,
-    "fiber": 1
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Nescafe Coffee Powder", "Chocolate Powder", "Milk", "Sugar"]
-},
-{
-  "id": "ss_milk",
-  "categoryId": "cat_hot_beverages",
-  "name": "Milk",
-  "description": "A warm cup of milk served fresh.",
-  "price": 40,
-  "image": "assets/Hot Beverages/Milk.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "3 mins",
-  "nutrition": {
-    "calories": 120,
-    "protein": 6,
-    "carbs": 9,
-    "fat": 6,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk"]
-},
-{
-  "id": "ss_hot_chocolate",
-  "categoryId": "cat_hot_beverages",
-  "name": "Hot Chocolate",
-  "description": "A warm, smooth chocolate drink served hot.",
-  "price": 70,
-  "image": "assets/Hot Beverages/Hot Chocolate.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 160,
-    "protein": 5,
-    "carbs": 24,
-    "fat": 5,
-    "fiber": 2
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Milk", "Chocolate Powder", "Sugar"]
-},
+        "id": "ss_paneer_cheese_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Paneer Cheese Enchilada",
+        "description": "Enchilada filled with paneer, palak, till, cheese, and green peas.",
+        "price": 440,
+        "image": "assets/Indian Mexican/paneer cheese enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 500,
+          "protein": 21,
+          "carbs": 48,
+          "fat": 25,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten",
+          "Sesame"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Palak",
+          "Till",
+          "Cheese",
+          "Green Peas"
+        ]
+      },
       {
-  "id": "ss_garlic_bread",
-  "categoryId": "cat_garlic_breads",
-  "name": "Garlic Bread",
-  "description": "Toasted bread flavoured with garlic and served with garlic chutney.",
-  "price": 250,
-  "image": "assets/Garlic Breads/garlic bread.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": {
-    "calories": 300,
-    "protein": 8,
-    "carbs": 40,
-    "fat": 12,
-    "fiber": 2
-  },
-  "allergens": ["Gluten"],
-  "ingredients": ["Bread", "Garlic", "Garlic Chutney", "Butter"]
-},
-{
-  "id": "ss_cheese_garlic_bread",
-  "categoryId": "cat_garlic_breads",
-  "name": "Garlic Bread with Cheese",
-  "description": "Garlic-flavoured toasted bread topped with melted cheese.",
-  "price": 265,
-  "image": "assets/Garlic Breads/cheese garlic bread.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 380,
-    "protein": 13,
-    "carbs": 42,
-    "fat": 18,
-    "fiber": 2
-  },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Bread", "Garlic", "Cheese", "Butter"]
-},
-{
-  "id": "ss_garlic_bread_mushroom_cheese",
-  "categoryId": "cat_garlic_breads",
-  "name": "Garlic Bread with Mushroom & Cheese",
-  "description": "Toasted garlic bread topped with mushrooms and melted cheese.",
-  "price": 295,
-  "image": "assets/Garlic Breads/garlic bread with mushroom and cheese.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 420,
-    "protein": 16,
-    "carbs": 44,
-    "fat": 21,
-    "fiber": 3
-  },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Bread", "Garlic", "Mushrooms", "Cheese", "Butter"]
-},
-{
-  "id": "ss_garlic_bread_salad_cheese",
-  "categoryId": "cat_garlic_breads",
-  "name": "Garlic Bread with Salad and Cheese",
-  "description": "Garlic bread topped with cheese and served with a fresh salad.",
-  "price": 305,
-  "image": "assets/Garlic Breads/garlic bread with cheese and salad.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 430,
-    "protein": 15,
-    "carbs": 46,
-    "fat": 21,
-    "fiber": 4
-  },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Bread", "Garlic", "Cheese", "Fresh Salad", "Butter"]
-},
+        "id": "ss_pineapple_cheese_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Pineapple Cheese Enchilada",
+        "description": "Pineapple enchilada with Mexican sauce, green peas, salsa sauce, and three types of cheese.",
+        "price": 425,
+        "image": "assets/Indian Mexican/pineapple cheese enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 17,
+          "carbs": 52,
+          "fat": 22,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pineapple",
+          "Mexican Sauce",
+          "Green Peas",
+          "Salsa Sauce",
+          "Three Types of Cheese"
+        ]
+      },
       {
-  "id": "ss_fruit_salad",
-  "categoryId": "cat_fruit_salad",
-  "name": "Fruit Salad",
-  "description": "A refreshing bowl of fresh fruit salad.",
-  "price": 145,
-  "image": "assets/Fruit Salad/Fruit Salad.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 150,
-    "protein": 2,
-    "carbs": 32,
-    "fat": 2,
-    "fiber": 4
-  },
-  "allergens": [],
-  "ingredients": ["Assorted Fruits"]
-},
-{
-  "id": "ss_fruit_salad_ice_cream",
-  "categoryId": "cat_fruit_salad",
-  "name": "Fruit Salad with Ice Cream",
-  "description": "Fresh fruit salad served with a scoop of creamy ice cream.",
-  "price": 175,
-  "image": "assets/Fruit Salad/Fruit Salad with ice cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 260,
-    "protein": 4,
-    "carbs": 40,
-    "fat": 9,
-    "fiber": 4
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Assorted Fruits", "Ice Cream"]
-},
-{
-  "id": "ss_fruit_salad_jelly_ice_cream",
-  "categoryId": "cat_fruit_salad",
-  "name": "Fruit Salad with Jelly & Ice Cream",
-  "description": "A colourful combination of fresh fruits, jelly, and creamy ice cream.",
-  "price": 210,
-  "image": "assets/Fruit Salad/Fruit Salad with Jelly & ice cream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 320,
-    "protein": 4,
-    "carbs": 52,
-    "fat": 10,
-    "fiber": 4
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Assorted Fruits", "Jelly", "Ice Cream"]
-},
-{
-  "id": "ss_fruit_salad_jelly",
-  "categoryId": "cat_fruit_salad",
-  "name": "Fruit Salad with Jelly",
-  "description": "Fresh fruit salad combined with sweet, colourful jelly.",
-  "price": 175,
-  "image": "assets/Fruit Salad/Fruit Salad with Jelly.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 220,
-    "protein": 3,
-    "carbs": 45,
-    "fat": 2,
-    "fiber": 4
-  },
-  "allergens": [],
-  "ingredients": ["Assorted Fruits", "Jelly"]
-},
-{
-  "id": "ss_jelly",
-  "categoryId": "cat_fruit_salad",
-  "name": "Jelly",
-  "description": "A serving of sweet, colourful jelly.",
-  "price": 155,
-  "image": "assets/Fruit Salad/Jelly.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 160,
-    "protein": 2,
-    "carbs": 38,
-    "fat": 0,
-    "fiber": 0
-  },
-  "allergens": [],
-  "ingredients": ["Jelly"]
-},
-{
-  "id": "ss_jelly_ice_cream",
-  "categoryId": "cat_fruit_salad",
-  "name": "Jelly with Ice Cream",
-  "description": "Sweet jelly served with a scoop of creamy ice cream.",
-  "price": 190,
-  "image": "assets/Fruit Salad/Jelly with icecream.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 270,
-    "protein": 4,
-    "carbs": 42,
-    "fat": 9,
-    "fiber": 0
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Jelly", "Ice Cream"]
-},
+        "id": "ss_shivsagar_special_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Shivsagar Special Enchilada",
+        "description": "Special enchilada with baby corn, capsicum, mushroom, salsa, and cheese.",
+        "price": 440,
+        "image": "assets/Indian Mexican/shivsagar special enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 49,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Baby Corn",
+          "Capsicum",
+          "Mushroom",
+          "Salsa",
+          "Cheese"
+        ]
+      },
       {
-  "id": "ss_apple",
-  "categoryId": "cat_fruit_plates",
-  "name": "Apple",
-  "description": "Fresh apple served as a light and refreshing fruit plate.",
-  "price": 145,
-  "image": "assets/Fruit Plates/Apple.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 95,
-    "protein": 0.5,
-    "carbs": 25,
-    "fat": 0.3,
-    "fiber": 4
-  },
-  "allergens": [],
-  "ingredients": ["Apple"]
-},
-{
-  "id": "ss_mixed_fruits",
-  "categoryId": "cat_fruit_plates",
-  "name": "Mixed Fruits",
-  "description": "A refreshing plate of assorted fresh seasonal fruits.",
-  "price": 165,
-  "image": "assets/Fruit Plates/Mixed Fruit.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 120,
-    "protein": 2,
-    "carbs": 30,
-    "fat": 0.5,
-    "fiber": 4
-  },
-  "allergens": [],
-  "ingredients": ["Assorted Seasonal Fruits"]
-},
-{
-  "id": "ss_pineapple",
-  "categoryId": "cat_fruit_plates",
-  "name": "Pineapple",
-  "description": "Fresh pineapple pieces served chilled.",
-  "price": 110,
-  "image": "assets/Fruit Plates/Pineapple.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 82,
-    "protein": 0.9,
-    "carbs": 22,
-    "fat": 0.2,
-    "fiber": 2.3
-  },
-  "allergens": [],
-  "ingredients": ["Pineapple"]
-},
-{
-  "id": "ss_watermelon",
-  "categoryId": "cat_fruit_plates",
-  "name": "Water Melon",
-  "description": "Fresh, juicy watermelon slices served chilled.",
-  "price": 110,
-  "image": "assets/Fruit Plates/Watermelon.png",
-  "dietary": "vegan",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 85,
-    "protein": 1.7,
-    "carbs": 21,
-    "fat": 0.4,
-    "fiber": 1
-  },
-  "allergens": [],
-  "ingredients": ["Watermelon"]
-},
+        "id": "ss_half_half_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Half & Half Enchilada",
+        "description": "Enchilada with paneer tikka, regular paneer, onion, capsicum, and mozzarella cheese.",
+        "price": 430,
+        "image": "assets/Indian Mexican/images (1).jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 500,
+          "protein": 21,
+          "carbs": 46,
+          "fat": 25,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Paneer Tikka",
+          "Paneer",
+          "Onion",
+          "Capsicum",
+          "Mozzarella Cheese"
+        ]
+      },
       {
-  "id": "ss_anjeer_cream",
-  "categoryId": "cat_fruit_dishes",
-  "name": "Anjeer Cream",
-  "description": "A rich, creamy fruit dessert featuring the naturally sweet flavour of figs.",
-  "price": 220,
-  "image": "assets/Fruit Dishes/Anjeer.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 350,
-    "protein": 7,
-    "carbs": 42,
-    "fat": 18,
-    "fiber": 3
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Anjeer (Figs)", "Cream", "Sugar"]
-},
-{
-  "id": "ss_mixed_fruit_cream",
-  "categoryId": "cat_fruit_dishes",
-  "name": "Mixed Fruit Cream",
-  "description": "A refreshing blend of assorted fruits folded into smooth, chilled cream.",
-  "price": 195,
-  "image": "assets/Fruit Dishes/Mixed Fruit.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 300,
-    "protein": 5,
-    "carbs": 38,
-    "fat": 14,
-    "fiber": 4
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mixed Fruits", "Cream", "Sugar"]
-},
-{
-  "id": "ss_dry_fruit_cream",
-  "categoryId": "cat_fruit_dishes",
-  "name": "Dry Fruit Cream",
-  "description": "A creamy dessert enriched with a selection of chopped dry fruits.",
-  "price": 230,
-  "image": "assets/Fruit Dishes/Dry Fruit.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 420,
-    "protein": 9,
-    "carbs": 40,
-    "fat": 25,
-    "fiber": 4
-  },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Mixed Dry Fruits", "Cream", "Sugar"]
-},
-{
-  "id": "ss_banana_cream",
-  "categoryId": "cat_fruit_dishes",
-  "name": "Banana Cream",
-  "description": "Sweet banana pieces served with smooth, chilled cream.",
-  "price": 195,
-  "image": "assets/Fruit Dishes/Banana.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 320,
-    "protein": 5,
-    "carbs": 39,
-    "fat": 15,
-    "fiber": 3
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Banana", "Cream", "Sugar"]
-},
-{
-  "id": "ss_chikku_cream",
-  "categoryId": "cat_fruit_dishes",
-  "name": "Chikku Cream",
-  "description": "A creamy fruit dessert featuring the naturally sweet flavour of chikku (sapodilla).",
-  "price": 195,
-  "image": "assets/Fruit Dishes/Chikku.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 330,
-    "protein": 5,
-    "carbs": 42,
-    "fat": 15,
-    "fiber": 5
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Chikku (Sapodilla)", "Cream", "Sugar"]
-},
-{
-  "id": "ss_pineapple_cream",
-  "categoryId": "cat_fruit_dishes",
-  "name": "Pineapple Cream",
-  "description": "Juicy pineapple pieces combined with smooth, refreshing cream.",
-  "price": 195,
-  "image": "assets/Fruit Dishes/Pineapple.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "5 mins",
-  "nutrition": {
-    "calories": 300,
-    "protein": 4,
-    "carbs": 36,
-    "fat": 14,
-    "fiber": 3
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Pineapple", "Cream", "Sugar"]
-},
-      
-{
-  "id": "ss_veg_spring_roll",
-  "categoryId": "cat_chinese_starters",
-  "name": "Veg Spring Roll",
-  "description": "Crispy golden rolls filled with seasoned vegetables and served with dipping sauce.",
-  "price": 195,
-  "image": "assets/Chinese Starters/spring roll.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 280, "protein": 6, "carbs": 34, "fat": 13, "fiber": 4 },
-  "ingredients": ["Spring Roll Sheets", "Cabbage", "Carrots", "Capsicum", "Seasonings"]
-},
-{
-  "id": "ss_shiv_sagar_special_spring_roll",
-  "categoryId": "cat_chinese_starters",
-  "name": "Shiv Sagar Special Spring Roll",
-  "description": "House-special crispy spring rolls packed with a flavourful vegetable filling.",
-  "price": 220,
-  "image": "assets/Chinese Starters/shiv sagar special spring roll.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 320, "protein": 7, "carbs": 38, "fat": 15, "fiber": 4 },
-  "ingredients": ["Spring Roll Sheets", "Mixed Vegetables", "Garlic", "Chinese Seasonings"]
-},
-{
-  "id": "ss_paneer_spring_roll",
-  "categoryId": "cat_chinese_starters",
-  "name": "Paneer Spring Roll",
-  "description": "Crispy spring rolls stuffed with crumbled paneer, vegetables, and aromatic spices.",
-  "price": 240,
-  "image": "assets/Chinese Starters/paneer spring roll.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 350, "protein": 11, "carbs": 32, "fat": 19, "fiber": 3 },
-  "ingredients": ["Paneer", "Spring Roll Sheets", "Mixed Vegetables", "Seasonings"]
-},
-{
-  "id": "ss_chinese_bhel",
-  "categoryId": "cat_chinese_starters",
-  "name": "Chinese Bhel",
-  "description": "Crunchy noodles tossed with chopped vegetables and tangy, spicy Indo-Chinese sauces.",
-  "price": 205,
-  "image": "assets/Chinese Starters/chinese bhel.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 360, "protein": 7, "carbs": 45, "fat": 16, "fiber": 4 },
-  "ingredients": ["Crispy Noodles", "Cabbage", "Capsicum", "Spring Onions", "Chinese Sauces"]
-},
-{
-  "id": "ss_idli_chilly_fry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Idli Chilly Dry",
-  "description": "Bite-sized idli pieces tossed with capsicum, onions, and spicy Indo-Chinese seasoning.",
-  "price": 195,
-  "image": "assets/Chinese Starters/idli chilli fry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 290, "protein": 7, "carbs": 42, "fat": 10, "fiber": 3 },
-  "ingredients": ["Idli", "Capsicum", "Onions", "Garlic", "Chilli Sauce"]
-},
-{
-  "id": "ss_schezwan_idli",
-  "categoryId": "cat_chinese_starters",
-  "name": "Schezwan Idli",
-  "description": "Soft idli pieces stir-fried with fiery Schezwan sauce and crunchy vegetables.",
-  "price": 195,
-  "image": "assets/Chinese Starters/schezwan idli.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 300, "protein": 7, "carbs": 43, "fat": 11, "fiber": 3 },
-  "ingredients": ["Idli", "Schezwan Sauce", "Garlic", "Capsicum", "Spring Onions"]
-},
-{
-  "id": "ss_chilly_babycorn_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Chilly Babycorn Dry",
-  "description": "Crispy baby corn tossed with chillies, capsicum, garlic, and a savoury Chinese sauce.",
-  "price": 205,
-  "image": "assets/Chinese Starters/chilly babycorn dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 310, "protein": 6, "carbs": 36, "fat": 16, "fiber": 5 },
-  "ingredients": ["Baby Corn", "Capsicum", "Garlic", "Chilli Sauce", "Seasonings"]
-},
-{
-  "id": "ss_gobi_lollypop_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Gobi Lollypop Dry",
-  "description": "Crispy cauliflower florets coated in a spiced batter and tossed in Chinese sauces.",
-  "price": 190,
-  "image": "assets/Chinese Starters/gobi lollypop dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 300, "protein": 6, "carbs": 35, "fat": 15, "fiber": 5 },
-  "ingredients": ["Cauliflower", "Cornflour", "Garlic", "Chilli Sauce", "Seasonings"]
-},
-{
-  "id": "ss_paneer_chilly_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Paneer Chilly Dry",
-  "description": "Paneer cubes tossed with green chillies, capsicum, onions, and Indo-Chinese sauces.",
-  "price": 255,
-  "image": "assets/Chinese Starters/paneer chilli dru.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 390, "protein": 16, "carbs": 24, "fat": 25, "fiber": 3 },
-  "ingredients": ["Paneer", "Capsicum", "Onions", "Green Chillies", "Soy Sauce"]
-},
-{
-  "id": "ss_paneer_manchurian_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Paneer Manchurian Dry",
-  "description": "Golden paneer pieces coated in a bold Manchurian sauce with garlic and spring onions.",
-  "price": 255,
-  "image": "assets/Chinese Starters/paneer manchurian dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 380, "protein": 15, "carbs": 27, "fat": 23, "fiber": 3 },
-  "ingredients": ["Paneer", "Cornflour", "Garlic", "Spring Onions", "Manchurian Sauce"]
-},
-{
-  "id": "ss_babycorn_paneer_chilly_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Baby Corn Paneer Chilly Dry",
-  "description": "Paneer and baby corn tossed with capsicum, chillies, and spicy Chinese sauces.",
-  "price": 255,
-  "image": "assets/Chinese Starters/babycorn paneer chilly dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 370, "protein": 14, "carbs": 31, "fat": 21, "fiber": 4 },
-  "ingredients": ["Paneer", "Baby Corn", "Capsicum", "Garlic", "Chilli Sauce"]
-},
-{
-  "id": "ss_paneer_hot_pan",
-  "categoryId": "cat_chinese_starters",
-  "name": "Paneer Hot Pan",
-  "description": "Sizzling-style paneer served with vegetables and a bold, spicy house sauce.",
-  "price": 300,
-  "image": "assets/Chinese Starters/paneer hot pan.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 430, "protein": 17, "carbs": 28, "fat": 27, "fiber": 4 },
-  "ingredients": ["Paneer", "Capsicum", "Onions", "Garlic", "House Sauce"]
-},
-{
-  "id": "ss_veg_65_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Veg. '65' Dry",
-  "description": "Crispy vegetable bites coated in a spicy, aromatic 65-style seasoning.",
-  "price": 210,
-  "image": "assets/Chinese Starters/veg 65 dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 330, "protein": 7, "carbs": 36, "fat": 17, "fiber": 4 },
-  "ingredients": ["Mixed Vegetables", "Cornflour", "Garlic", "Chilli", "Seasonings"]
-},
-{
-  "id": "ss_veg_hot_pan",
-  "categoryId": "cat_chinese_starters",
-  "name": "Veg Hot Pan",
-  "description": "A hot-pan vegetable speciality with capsicum, onions, and a savoury spicy sauce.",
-  "price": 265,
-  "image": "assets/Chinese Starters/veg hot pan.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 350, "protein": 8, "carbs": 34, "fat": 19, "fiber": 5 },
-  "ingredients": ["Mixed Vegetables", "Capsicum", "Onions", "Garlic", "House Sauce"]
-},
-{
-  "id": "ss_babycorn_mushroom_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Baby Corn Mushroom Dry",
-  "description": "Baby corn and mushrooms tossed together with garlic and Chinese seasonings.",
-  "price": 275,
-  "image": "assets/Chinese Starters/babycorn mushroom dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 350, "protein": 9, "carbs": 32, "fat": 19, "fiber": 5 },
-  "ingredients": ["Baby Corn", "Mushrooms", "Garlic", "Capsicum", "Chinese Sauces"]
-},
-{
-  "id": "ss_mushroom_chilli_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Mushroom Chilli Dry",
-  "description": "Mushrooms stir-fried with chillies, onions, capsicum, and spicy Indo-Chinese sauce.",
-  "price": 255,
-  "image": "assets/Chinese Starters/mushroom chilly dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 320, "protein": 8, "carbs": 29, "fat": 18, "fiber": 4 },
-  "ingredients": ["Mushrooms", "Capsicum", "Onions", "Garlic", "Chilli Sauce"]
-},
-{
-  "id": "ss_green_pepper_chilli_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Green Pepper Chilli Dry",
-  "description": "Green peppers tossed with chillies, garlic, and a bold Chinese-style seasoning.",
-  "price": 265,
-  "image": "assets/Chinese Starters/green pepper chillt dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 300, "protein": 6, "carbs": 28, "fat": 17, "fiber": 5 },
-  "ingredients": ["Green Peppers", "Green Chillies", "Garlic", "Onions", "Chinese Sauce"]
-},
-{
-  "id": "ss_crispy_vegetable_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Crispy Vegetable Dry",
-  "description": "Crunchy vegetable pieces coated in a crisp batter and tossed with savoury spices.",
-  "price": 250,
-  "image": "assets/Chinese Starters/cripy vegetable dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 340, "protein": 7, "carbs": 39, "fat": 17, "fiber": 5 },
-  "ingredients": ["Mixed Vegetables", "Cornflour", "Garlic", "Seasonings"]
-},
-{
-  "id": "ss_crispy_mushroom_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Crispy Mushroom Dry",
-  "description": "Mushrooms coated in a crunchy batter and seasoned for a savoury, crispy bite.",
-  "price": 275,
-  "image": "assets/Chinese Starters/crispy mushroom dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 360, "protein": 8, "carbs": 34, "fat": 21, "fiber": 4 },
-  "ingredients": ["Mushrooms", "Cornflour", "Garlic", "Seasonings"]
-},
-{
-  "id": "ss_veg_wonton_green_sauce",
-  "categoryId": "cat_chinese_starters",
-  "name": "Veg Wonton with Green Sauce",
-  "description": "Vegetable-filled wontons served with a fresh, tangy green sauce.",
-  "price": 220,
-  "image": "assets/Chinese Starters/veg wonton with green sauce.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 290, "protein": 7, "carbs": 36, "fat": 13, "fiber": 4 },
-  "ingredients": ["Wonton Wrappers", "Mixed Vegetables", "Green Sauce", "Seasonings"]
-},
-{
-  "id": "ss_veg_wonton_garlic_sauce",
-  "categoryId": "cat_chinese_starters",
-  "name": "Veg Wonton with Garlic Sauce",
-  "description": "Crispy or steamed vegetable wontons paired with a flavourful garlic sauce.",
-  "price": 220,
-  "image": "assets/Chinese Starters/veg wonton with garlic sauce.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 300, "protein": 7, "carbs": 35, "fat": 14, "fiber": 4 },
-  "ingredients": ["Wonton Wrappers", "Mixed Vegetables", "Garlic Sauce", "Seasonings"]
-},
-{
-  "id": "ss_gobi_chilli_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Gobi Chilli Dry",
-  "description": "Crispy cauliflower tossed with green chillies, capsicum, and Chinese sauces.",
-  "price": 220,
-  "image": "assets/Chinese Starters/gobi chilli dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 310, "protein": 6, "carbs": 34, "fat": 16, "fiber": 5 },
-  "ingredients": ["Cauliflower", "Capsicum", "Green Chillies", "Garlic", "Soy Sauce"]
-},
-{
-  "id": "ss_onion_ring",
-  "categoryId": "cat_chinese_starters",
-  "name": "Onion Ring",
-  "description": "Golden, crunchy onion rings coated in a crisp seasoned batter.",
-  "price": 225,
-  "image": "assets/Chinese Starters/onion ring.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 320, "protein": 5, "carbs": 38, "fat": 17, "fiber": 3 },
-  "ingredients": ["Onions", "Flour", "Breadcrumbs", "Seasonings"]
-},
-{
-  "id": "ss_veg_manchurian_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Veg Manchurian Dry",
-  "description": "Crispy vegetable balls tossed with garlic, spring onions, and classic Manchurian sauce.",
-  "price": 240,
-  "image": "assets/Chinese Starters/veg manchurian dry.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 330, "protein": 7, "carbs": 37, "fat": 16, "fiber": 5 },
-  "ingredients": ["Mixed Vegetables", "Cornflour", "Garlic", "Spring Onions", "Manchurian Sauce"]
-},
-{
-  "id": "ss_paneer_sesame_schezwan",
-  "categoryId": "cat_chinese_starters",
-  "name": "Paneer Sesame Schezwan",
-  "description": "Paneer tossed in spicy Schezwan sauce and finished with toasted sesame seeds.",
-  "price": 345,
-  "image": "assets/Chinese Starters/paneer sesame schezwan.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "16 mins",
-  "nutrition": { "calories": 450, "protein": 18, "carbs": 29, "fat": 28, "fiber": 3 },
-  "ingredients": ["Paneer", "Schezwan Sauce", "Sesame Seeds", "Garlic", "Capsicum"]
-},
-{
-  "id": "ss_paneer_65_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Paneer 65 Dry",
-  "description": "Crispy paneer bites coated in a spicy 65-style seasoning with curry leaves.",
-  "price": 305,
-  "image": "assets/Chinese Starters/paneer 65 dry.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 420, "protein": 17, "carbs": 27, "fat": 27, "fiber": 3 },
-  "ingredients": ["Paneer", "Cornflour", "Chilli", "Curry Leaves", "Seasonings"]
-},
-{
-  "id": "ss_mushroom_manchurian_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Mushroom Manchurian Dry",
-  "description": "Mushrooms tossed with garlic, spring onions, and a rich Manchurian coating.",
-  "price": 255,
-  "image": "assets/Chinese Starters/mushroom manchurian dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 350, "protein": 8, "carbs": 32, "fat": 19, "fiber": 4 },
-  "ingredients": ["Mushrooms", "Cornflour", "Garlic", "Spring Onions", "Manchurian Sauce"]
-},
-{
-  "id": "ss_gobi_manchurian_dry",
-  "categoryId": "cat_chinese_starters",
-  "name": "Gobi Manchurian Dry",
-  "description": "Crispy cauliflower florets coated in a tangy, spicy Manchurian sauce.",
-  "price": 230,
-  "image": "assets/Chinese Starters/gobi manchurian dry.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": { "calories": 320, "protein": 6, "carbs": 36, "fat": 16, "fiber": 5 },
-  "ingredients": ["Cauliflower", "Cornflour", "Garlic", "Spring Onions", "Manchurian Sauce"]
-},   
-{
-  "id": "ss_veg_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Veg. Fried Rice",
-  "description": "Classic wok-fried rice tossed with fresh vegetables, spring onions, and Chinese seasonings.",
-  "price": 245,
-  "image": "assets/Chinese Rice/Veg. Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 380, "protein": 8, "carbs": 58, "fat": 12, "fiber": 4 },
-  "ingredients": ["Rice", "Carrots", "Capsicum", "Cabbage", "Spring Onions", "Soy Sauce"]
-},
-{
-  "id": "ss_schezwan_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Schezwan Fried Rice",
-  "description": "Spicy fried rice tossed with Schezwan chilli-garlic sauce and crunchy vegetables.",
-  "price": 265,
-  "image": "assets/Chinese Rice/Schezwan Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 410, "protein": 8, "carbs": 59, "fat": 14, "fiber": 4 },
-  "ingredients": ["Rice", "Schezwan Sauce", "Garlic", "Capsicum", "Carrots", "Spring Onions"]
-},
-{
-  "id": "ss_singapore_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Singapore Fried Rice",
-  "description": "Aromatic fried rice with vegetables and a distinctive blend of Singapore-style spices.",
-  "price": 275,
-  "image": "assets/Chinese Rice/Singapore Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "13 mins",
-  "nutrition": { "calories": 400, "protein": 8, "carbs": 57, "fat": 13, "fiber": 4 },
-  "ingredients": ["Rice", "Mixed Vegetables", "Garlic", "Spices", "Soy Sauce"]
-},
-{
-  "id": "ss_peking_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Peking Fried Rice",
-  "description": "Wok-fried rice with crisp vegetables and savoury Peking-style seasoning.",
-  "price": 275,
-  "image": "assets/Chinese Rice/Peking Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 390, "protein": 8, "carbs": 56, "fat": 13, "fiber": 4 },
-  "ingredients": ["Rice", "Mixed Vegetables", "Garlic", "Soy Sauce", "Chinese Seasonings"]
-},
-{
-  "id": "ss_mushroom_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Mushroom Fried Rice",
-  "description": "Fried rice prepared with tender mushrooms, fresh vegetables, and garlic.",
-  "price": 240,
-  "image": "assets/Chinese Rice/Mushroom Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 370, "protein": 9, "carbs": 54, "fat": 12, "fiber": 4 },
-  "ingredients": ["Rice", "Mushrooms", "Garlic", "Spring Onions", "Soy Sauce"]
-},
-{
-  "id": "ss_ginger_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Ginger Fried Rice",
-  "description": "Fragrant fried rice infused with fresh ginger, garlic, and vegetables.",
-  "price": 240,
-  "image": "assets/Chinese Rice/Ginger Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 360, "protein": 7, "carbs": 55, "fat": 11, "fiber": 3 },
-  "ingredients": ["Rice", "Ginger", "Garlic", "Spring Onions", "Mixed Vegetables"]
-},
-{
-  "id": "ss_seven_jewel_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Seven Jewel Rice",
-  "description": "Colourful fried rice combining a variety of vegetables with savoury Chinese seasonings.",
-  "price": 280,
-  "image": "assets/Chinese Rice/Seven Jewel Rice.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "14 mins",
-  "nutrition": { "calories": 420, "protein": 9, "carbs": 60, "fat": 14, "fiber": 6 },
-  "ingredients": ["Rice", "Mixed Vegetables", "Garlic", "Spring Onions", "Soy Sauce"]
-},
-{
-  "id": "ss_taiwan_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Taiwan Fried Rice",
-  "description": "Wok-tossed rice with vegetables and a savoury Taiwan-style seasoning blend.",
-  "price": 245,
-  "image": "assets/Chinese Rice/Taiwan Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 380, "protein": 8, "carbs": 56, "fat": 12, "fiber": 4 },
-  "ingredients": ["Rice", "Mixed Vegetables", "Garlic", "Soy Sauce", "Seasonings"]
-},
-{
-  "id": "ss_hongkong_fried_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Hongkong Fried Rice",
-  "description": "Indo-Chinese fried rice tossed with vegetables, spring onions, and savoury sauces.",
-  "price": 285,
-  "image": "assets/Chinese Rice/Hongkong Fried Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "13 mins",
-  "nutrition": { "calories": 410, "protein": 9, "carbs": 58, "fat": 14, "fiber": 4 },
-  "ingredients": ["Rice", "Mixed Vegetables", "Garlic", "Spring Onions", "Soy Sauce"]
-},
-{
-  "id": "ss_triple_schezwan_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Triple Schezwan Rice",
-  "description": "A hearty, spicy Schezwan rice speciality with bold chilli-garlic flavour.",
-  "price": 335,
-  "image": "assets/Chinese Rice/Triple Schezwan Rice.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 580, "protein": 13, "carbs": 78, "fat": 22, "fiber": 6 },
-  "ingredients": ["Rice", "Schezwan Sauce", "Garlic", "Mixed Vegetables", "Chilli Sauce"]
-},
-{
-  "id": "ss_malaysian_noodles_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Malaysian Noodles Rice",
-  "description": "A fusion-style rice dish with vegetables and aromatic Malaysian-inspired spices.",
-  "price": 290,
-  "image": "assets/Chinese Rice/Malaysian Noodles Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "14 mins",
-  "nutrition": { "calories": 430, "protein": 9, "carbs": 61, "fat": 15, "fiber": 4 },
-  "ingredients": ["Rice", "Mixed Vegetables", "Garlic", "Spices", "Soy Sauce"]
-},
-{
-  "id": "ss_macroni_rice",
-  "categoryId": "cat_chinese_rice",
-  "name": "Macroni Rice",
-  "description": "A fusion preparation combining rice, macaroni, vegetables, and savoury seasonings.",
-  "price": 280,
-  "image": "assets/Chinese Rice/Macroni Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "14 mins",
-  "nutrition": { "calories": 440, "protein": 10, "carbs": 65, "fat": 14, "fiber": 4 },
-  "ingredients": ["Rice", "Macaroni", "Mixed Vegetables", "Garlic", "Seasonings"]
-},
-
-{
-  "id": "ss_cold_beverages",
-  "categoryId": "cat_cold_beverages",
-  "name": "Cold Beverages",
-  "description": "Refreshing chilled beverages to complement your meal.",
-  "price": 45,
-  "image": "assets/Cold Beverages/Cold Beverages.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "2 mins",
-  "nutrition": {
-    "calories": 120,
-    "protein": 1,
-    "carbs": 28,
-    "fat": 0,
-    "fiber": 0
-  },
-  "ingredients": ["Chilled Beverage"]
-},
-{
-  "id": "ss_soda",
-  "categoryId": "cat_cold_beverages",
-  "name": "Soda",
-  "description": "A chilled, fizzy soda served cold.",
-  "price": 30,
-  "image": "assets/Cold Beverages/Soda.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "1 min",
-  "nutrition": {
-    "calories": 0,
-    "protein": 0,
-    "carbs": 0,
-    "fat": 0,
-    "fiber": 0
-  },
-  "ingredients": ["Carbonated Water"]
-},
-{
-  "id": "ss_mineral_water",
-  "categoryId": "cat_cold_beverages",
-  "name": "Mineral Water",
-  "description": "Packaged mineral water served chilled.",
-  "price": 35,
-  "image": "assets/Cold Beverages/Mineral Water.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "1 min",
-  "nutrition": {
-    "calories": 0,
-    "protein": 0,
-    "carbs": 0,
-    "fat": 0,
-    "fiber": 0
-  },
-  "ingredients": ["Mineral Water"]
-},
-      
-{
-  "id": "ss_american_chopsuey",
-  "categoryId": "cat_chinese_noodles",
-  "name": "American Chopsuey",
-  "description": "Crispy noodles served with a tangy, sweet-and-sour vegetable sauce.",
-  "price": 250,
-  "image": "assets/Chinese Noodles/American Chopsuey.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "15 mins",
-  "nutrition": {
-    "calories": 480,
-    "protein": 10,
-    "carbs": 68,
-    "fat": 18,
-    "fiber": 5,
-    "sodium": 850
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Crispy Noodles", "Mixed Vegetables", "Tomato Sauce", "Vinegar", "Seasonings"]
-},
-{
-  "id": "ss_chinese_chopsuey",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Chinese Chopsuey",
-  "description": "Crispy noodles topped with a savoury Chinese-style vegetable sauce.",
-  "price": 240,
-  "image": "assets/Chinese Noodles/Chinese Chopsuey.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": {
-    "calories": 450,
-    "protein": 9,
-    "carbs": 62,
-    "fat": 17,
-    "fiber": 5,
-    "sodium": 820
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Mixed Vegetables", "Garlic", "Soy Sauce", "Chinese Seasonings"]
-},
-{
-  "id": "ss_mixed_veg_fried_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Mixed Veg. Fried Noodles",
-  "description": "Wok-tossed noodles with cabbage, carrots, capsicum, and spring onions.",
-  "price": 285,
-  "image": "assets/Chinese Noodles/Mixed Veg. Fried Noodles.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 420,
-    "protein": 11,
-    "carbs": 58,
-    "fat": 15,
-    "fiber": 6,
-    "sodium": 780
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Cabbage", "Carrots", "Capsicum", "Spring Onions", "Soy Sauce"]
-},
-{
-  "id": "ss_hakka_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Hakka Noodles",
-  "description": "Classic Indo-Chinese noodles tossed with crunchy vegetables, garlic, and light seasonings.",
-  "price": 280,
-  "image": "assets/Chinese Noodles/Hakka Noodles.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 400,
-    "protein": 10,
-    "carbs": 56,
-    "fat": 14,
-    "fiber": 5,
-    "sodium": 750
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Hakka Noodles", "Cabbage", "Carrots", "Capsicum", "Garlic", "Soy Sauce"]
-},
-{
-  "id": "ss_singapore_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Singapore Noodles",
-  "description": "Fragrant stir-fried noodles with vegetables and aromatic curry-style spices.",
-  "price": 280,
-  "image": "assets/Chinese Noodles/Singapore Noodles.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "13 mins",
-  "nutrition": {
-    "calories": 430,
-    "protein": 10,
-    "carbs": 59,
-    "fat": 16,
-    "fiber": 5,
-    "sodium": 790
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Mixed Vegetables", "Curry Spices", "Garlic", "Soy Sauce"]
-},
-{
-  "id": "ss_schezwan_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Schezwan Noodles",
-  "description": "Spicy wok-fried noodles tossed in bold Schezwan chilli-garlic sauce and vegetables.",
-  "price": 285,
-  "image": "assets/Chinese Noodles/Schezwan Noodles.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 440,
-    "protein": 11,
-    "carbs": 58,
-    "fat": 17,
-    "fiber": 5,
-    "sodium": 900
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Schezwan Sauce", "Garlic", "Chillies", "Capsicum", "Spring Onions"]
-},
-{
-  "id": "ss_mushroom_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Mushroom Noodles",
-  "description": "Wok-tossed noodles with tender mushrooms, vegetables, garlic, and savoury seasonings.",
-  "price": 275,
-  "image": "assets/Chinese Noodles/Mushroom Noodles.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 410,
-    "protein": 12,
-    "carbs": 55,
-    "fat": 15,
-    "fiber": 5,
-    "sodium": 760
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Mushrooms", "Cabbage", "Garlic", "Soy Sauce"]
-},
-{
-  "id": "ss_mushroom_noodles_gravy",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Mushroom Noodles (With Gravy)",
-  "description": "Noodles with mushrooms and vegetables served with a rich, savoury Chinese-style gravy.",
-  "price": 285,
-  "image": "assets/Chinese Noodles/Mushroom Noodles(with gravy).png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": {
-    "calories": 450,
-    "protein": 12,
-    "carbs": 61,
-    "fat": 16,
-    "fiber": 5,
-    "sodium": 850
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Mushrooms", "Mixed Vegetables", "Garlic", "Soy Sauce", "Gravy"]
-},
-{
-  "id": "ss_peking_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Peking Noodles",
-  "description": "Stir-fried noodles with crisp vegetables and a rich, savoury Peking-style sauce.",
-  "price": 285,
-  "image": "assets/Chinese Noodles/Peking Noodles.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "13 mins",
-  "nutrition": {
-    "calories": 420,
-    "protein": 10,
-    "carbs": 57,
-    "fat": 15,
-    "fiber": 5,
-    "sodium": 780
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Mixed Vegetables", "Garlic", "Peking-Style Sauce", "Soy Sauce"]
-},
-{
-  "id": "ss_pan_fried_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Pan Fried Noodles",
-  "description": "Pan-fried noodles with golden edges, crunchy vegetables, and a savoury stir-fry sauce.",
-  "price": 290,
-  "image": "assets/Chinese Noodles/Pan Fried Noodles.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "14 mins",
-  "nutrition": {
-    "calories": 460,
-    "protein": 11,
-    "carbs": 59,
-    "fat": 19,
-    "fiber": 5,
-    "sodium": 820
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Mixed Vegetables", "Garlic", "Soy Sauce", "Cooking Oil"]
-},
-{
-  "id": "ss_malaysian_noodles",
-  "categoryId": "cat_chinese_noodles",
-  "name": "Malaysian Noodles",
-  "description": "Aromatic stir-fried noodles with vegetables and a bold, mildly spicy Malaysian-style seasoning.",
-  "price": 280,
-  "image": "assets/Chinese Noodles/Malaysian Noodles.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "13 mins",
-  "nutrition": {
-    "calories": 430,
-    "protein": 10,
-    "carbs": 57,
-    "fat": 16,
-    "fiber": 5,
-    "sodium": 800
-  },
-  "allergens": ["Gluten", "Soy"],
-  "ingredients": ["Noodles", "Mixed Vegetables", "Garlic", "Chilli Seasoning", "Soy Sauce"]
-},
+        "id": "ss_chimi_changa_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Chimi Changa Enchilada",
+        "description": "Enchilada with baby corn, rajma, capsicum, spring onion, salsa sauce, and cheese.",
+        "price": 425,
+        "image": "assets/Indian Mexican/chimi changa enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 470,
+          "protein": 17,
+          "carbs": 50,
+          "fat": 22,
+          "fiber": 8
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Baby Corn",
+          "Rajma",
+          "Capsicum",
+          "Spring Onion",
+          "Salsa Sauce",
+          "Cheese"
+        ]
+      },
       {
-        "id": "ss_sada_dosa",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Sada Dosa",
-        "description": "Thin, golden, paper-crisp crepe crafted from fermented rice & lentil batter, served folded with warm spiced sambar and coconut chutney.",
-        "price": 100,
-        "image": "assets/Crispy Dosas & Uttappas/Sada Dosa.jpg",
+        "id": "ss_spicy_mushroom_enchilada",
+        "categoryId": "cat_indian_mexican",
+        "name": "Spicy Mushroom Enchilada",
+        "description": "Spicy mushroom enchilada with barbecue sauce.",
+        "price": 425,
+        "image": "assets/Indian Mexican/spicy mushroom enchilada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 15,
+          "carbs": 46,
+          "fat": 22,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mushroom",
+          "Barbecue Sauce",
+          "Tortilla",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_burritos",
+        "categoryId": "cat_indian_mexican",
+        "name": "Burritos",
+        "description": "Soft tortilla filled with beans, salsa sauce, cheese, spring onion, and sour cream.",
+        "price": 430,
+        "image": "assets/Indian Mexican/burritos.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 500,
+          "protein": 17,
+          "carbs": 58,
+          "fat": 21,
+          "fiber": 9
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Beans",
+          "Salsa Sauce",
+          "Cheese",
+          "Spring Onion",
+          "Sour Cream",
+          "Soft Tortilla"
+        ]
+      },
+      {
+        "id": "ss_burritos_supreme",
+        "categoryId": "cat_indian_mexican",
+        "name": "Burritos Supreme",
+        "description": "Large soft tortilla stuffed with Mexican beans, Mexican rice, and spring onion, topped with sour cream, salsa, and melted cheese.",
+        "price": 440,
+        "image": "assets/Indian Mexican/burritos supreme.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 560,
+          "protein": 19,
+          "carbs": 66,
+          "fat": 23,
+          "fiber": 10
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Soft Tortilla",
+          "Mexican Beans",
+          "Mexican Rice",
+          "Spring Onion",
+          "Sour Cream",
+          "Salsa",
+          "Melted Cheese"
+        ]
+      },
+      {
+        "id": "ss_quesadilla",
+        "categoryId": "cat_indian_mexican",
+        "name": "Quesadilla",
+        "description": "Soft tortilla filled with peas and cheese.",
+        "price": 425,
+        "image": "assets/Indian Mexican/quesadilla.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 17,
+          "carbs": 44,
+          "fat": 22,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Soft Tortilla",
+          "Peas",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_cheese_macaroni",
+        "categoryId": "cat_indian_mexican",
+        "name": "Cheese Macaroni",
+        "description": "Macaroni with cheese, capsicum, and red sauce.",
+        "price": 440,
+        "image": "assets/Indian Mexican/cheese macaroni.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 520,
+          "protein": 18,
+          "carbs": 62,
+          "fat": 22,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Cheese",
+          "Macaroni",
+          "Capsicum",
+          "Red Sauce"
+        ]
+      },
+      {
+        "id": "ss_cheese_chilli_macaroni",
+        "categoryId": "cat_indian_mexican",
+        "name": "Cheese Chilli Macaroni",
+        "description": "Macaroni prepared with Italian sauce, Italian herbs, salsa, and cheese in white sauce.",
+        "price": 430,
+        "image": "assets/Indian Mexican/cheese chilli macroni.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 510,
+          "protein": 17,
+          "carbs": 60,
+          "fat": 22,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Italian Sauce",
+          "Italian Herbs",
+          "Salsa",
+          "Cheese",
+          "White Sauce",
+          "Macaroni"
+        ]
+      },
+      {
+        "id": "ss_taco_salad",
+        "categoryId": "cat_indian_mexican",
+        "name": "Taco Salad",
+        "description": "Salad with beans, cabbage, cauliflower, carrots, green peas, tortilla chips, tomato, onion, black olive, and cheese.",
+        "price": 340,
+        "image": "assets/Indian Mexican/taco salad.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 12,
+          "carbs": 42,
+          "fat": 15,
+          "fiber": 8
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Beans",
+          "Cabbage",
+          "Cauliflower",
+          "Carrots",
+          "Green Peas",
+          "Tortilla Chips",
+          "Tomato",
+          "Onion",
+          "Black Olive",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_mexican_salad",
+        "categoryId": "cat_indian_mexican",
+        "name": "Mexican Salad (Cold)",
+        "description": "Cold salad with kidney beans, corn, tomato, cheese, paneer, capsicum, and spring onion.",
+        "price": 340,
+        "image": "assets/Indian Mexican/mexican salad.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 15,
+          "carbs": 35,
+          "fat": 12,
+          "fiber": 8
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Kidney Beans",
+          "Corn",
+          "Tomato",
+          "Cheese",
+          "Paneer",
+          "Capsicum",
+          "Spring Onion"
+        ]
+      },
+      {
+        "id": "ss_mexican_pasta_salad",
+        "categoryId": "cat_indian_mexican",
+        "name": "Mexican Pasta Salad (Hot)",
+        "description": "Hot pasta salad with Italian sauce, capsicum, spring onion, spicy tomato sauce, olive, and cheese.",
+        "price": 335,
+        "image": "assets/Indian Mexican/mexican pasta salad.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 13,
+          "carbs": 52,
+          "fat": 15,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pasta",
+          "Italian Sauce",
+          "Capsicum",
+          "Spring Onion",
+          "Spicy Tomato Sauce",
+          "Olive",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_kidney_bean_salad",
+        "categoryId": "cat_indian_mexican",
+        "name": "Kidney Bean Salad (Cold)",
+        "description": "Cold salad with kidney beans, onion, tomato, cheese, lemon juice, spring onion, pineapple, paneer, and capsicum.",
+        "price": 350,
+        "image": "assets/Indian Mexican/kidney bean salad.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 17,
+          "carbs": 42,
+          "fat": 12,
+          "fiber": 10
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Kidney Beans",
+          "Onion",
+          "Tomato",
+          "Cheese",
+          "Lemon Juice",
+          "Spring Onion",
+          "Pineapple",
+          "Paneer",
+          "Capsicum"
+        ]
+      },
+      {
+        "id": "ss_spaghetti",
+        "categoryId": "cat_indian_mexican",
+        "name": "Spaghetti",
+        "description": "Spaghetti with mushroom, capsicum, red sauce, and cheese.",
+        "price": 395,
+        "image": "assets/Indian Mexican/spaghetti.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 470,
+          "protein": 16,
+          "carbs": 60,
+          "fat": 17,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Spaghetti",
+          "Mushroom",
+          "Capsicum",
+          "Red Sauce",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_lasagna",
+        "categoryId": "cat_indian_mexican",
+        "name": "Lasagna",
+        "description": "Layered pasta dish with soft wonton, paneer, palak, til, red sauce, cheese, and spinach sauce.",
+        "price": 385,
+        "image": "assets/Indian Mexican/lasagna.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "25 mins",
+        "nutrition": {
+          "calories": 500,
+          "protein": 20,
+          "carbs": 48,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten",
+          "Sesame"
+        ],
+        "ingredients": [
+          "Soft Wonton",
+          "Paneer",
+          "Palak",
+          "Til",
+          "Red Sauce",
+          "Cheese",
+          "Spinach Sauce"
+        ]
+      },
+      {
+        "id": "ss_mexican_rice",
+        "categoryId": "cat_indian_mexican",
+        "name": "Mexican Rice",
+        "description": "Rice prepared with Mexican sauce, onion, American corn, carrot, green peas, and paneer.",
+        "price": 300,
+        "image": "assets/Indian Mexican/mexican rice.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 11,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Rice",
+          "Mexican Sauce",
+          "Onion",
+          "American Corn",
+          "Carrot",
+          "Green Peas",
+          "Paneer"
+        ]
+      },
+      {
+        "id": "ss_italian_rice",
+        "categoryId": "cat_indian_mexican",
+        "name": "Italian Rice",
+        "description": "Rice with white sauce, mushroom, capsicum, and macaroni.",
+        "price": 310,
+        "image": "assets/Indian Mexican/italian rice.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 390,
+          "protein": 12,
+          "carbs": 56,
+          "fat": 13,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Rice",
+          "White Sauce",
+          "Mushroom",
+          "Capsicum",
+          "Macaroni"
+        ]
+      },
+      {
+        "id": "ss_italian_cheese_roll",
+        "categoryId": "cat_indian_mexican",
+        "name": "Italian Cheese Roll",
+        "description": "Soft tortilla roll filled with macaroni, capsicum, and onion.",
+        "price": 300,
+        "image": "assets/Indian Mexican/italian chheese roll.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 12,
+          "carbs": 45,
+          "fat": 16,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Soft Tortilla Roll",
+          "Macaroni",
+          "Capsicum",
+          "Onion",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_paneer_cheese_roll",
+        "categoryId": "cat_indian_mexican",
+        "name": "Paneer Cheese Roll",
+        "description": "Soft tortilla roll with paneer tikka, capsicum, and onion.",
+        "price": 310,
+        "image": "assets/Indian Mexican/paneer cheese roll.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 410,
+          "protein": 18,
+          "carbs": 42,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Soft Tortilla Roll",
+          "Paneer Tikka",
+          "Capsicum",
+          "Onion"
+        ]
+      },
+      {
+        "id": "ss_pasta_cheese_roll",
+        "categoryId": "cat_indian_mexican",
+        "name": "Pasta Cheese Roll",
+        "description": "Roll filled with pasta, American corn, and mixed sauce.",
+        "price": 310,
+        "image": "assets/Indian Mexican/pasta cheese roll.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 13,
+          "carbs": 48,
+          "fat": 17,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pasta",
+          "American Corn",
+          "Mixed Sauce",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_huevos_rancheros",
+        "categoryId": "cat_indian_mexican",
+        "name": "Huevos Rancheros",
+        "description": "A four-piece platter with four different toppings: tortilla with beans, American corn, capsicum, mushroom, tomato, cheese, and green olive; green peas, tomato, onion, salsa, and cheese; beans, cabbage, carrot, and three types of cheese; spinach, paneer, processed cheese, and olives.",
+        "price": 500,
+        "image": "assets/Indian Mexican/images (2).jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "25 mins",
+        "nutrition": {
+          "calories": 600,
+          "protein": 22,
+          "carbs": 65,
+          "fat": 27,
+          "fiber": 10
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Tortilla",
+          "Beans",
+          "American Corn",
+          "Capsicum",
+          "Mushroom",
+          "Tomato",
+          "Cheese",
+          "Green Olive",
+          "Green Peas",
+          "Onion",
+          "Salsa",
+          "Cabbage",
+          "Carrot",
+          "Spinach",
+          "Paneer",
+          "Processed Cheese",
+          "Olives"
+        ]
+      },
+      {
+        "id": "ss_special_falooda",
+        "categoryId": "cat_faloodas",
+        "name": "Special Falooda",
+        "description": "A rich falooda dessert with vermicelli, sweet basil seeds, milk, and ice cream.",
+        "price": 230,
+        "image": "assets/Faloodas/Special Falooda.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 8,
+          "carbs": 62,
+          "fat": 15,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Falooda Vermicelli",
+          "Basil Seeds",
+          "Ice Cream",
+          "Sweet Syrup"
+        ]
+      },
+      {
+        "id": "ss_kesar_falooda",
+        "categoryId": "cat_faloodas",
+        "name": "Kesar Falooda",
+        "description": "A creamy falooda flavoured with aromatic saffron.",
+        "price": 195,
+        "image": "assets/Faloodas/Kesar Falooda.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 7,
+          "carbs": 58,
+          "fat": 12,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Falooda Vermicelli",
+          "Basil Seeds",
+          "Saffron",
+          "Sweet Syrup"
+        ]
+      },
+      {
+        "id": "ss_royal_falooda",
+        "categoryId": "cat_faloodas",
+        "name": "Royal Falooda",
+        "description": "A royal-style falooda with milk, vermicelli, basil seeds, and sweet toppings.",
+        "price": 195,
+        "image": "assets/Faloodas/Royal Falooda.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 8,
+          "carbs": 60,
+          "fat": 14,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Falooda Vermicelli",
+          "Basil Seeds",
+          "Sweet Syrup",
+          "Assorted Toppings"
+        ]
+      },
+      {
+        "id": "ss_roti",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Roti",
+        "description": "Freshly prepared Indian flatbread.",
+        "price": 40,
+        "image": "assets/Tokhri Khana/Roti.png",
         "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 100,
+          "protein": 3,
+          "carbs": 20,
+          "fat": 1,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Water",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_butter_roti",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Butter Roti",
+        "description": "Soft Indian flatbread brushed with butter.",
+        "price": 50,
+        "image": "assets/Tokhri Khana/Butter Roti.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 130,
+          "protein": 3,
+          "carbs": 20,
+          "fat": 4,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Butter",
+          "Water"
+        ]
+      },
+      {
+        "id": "ss_paratha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Paratha",
+        "description": "Traditional Indian layered flatbread.",
+        "price": 45,
+        "image": "assets/Tokhri Khana/Paratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 180,
+          "protein": 4,
+          "carbs": 27,
+          "fat": 6,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Oil",
+          "Water",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_butter_paratha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Butter Paratha",
+        "description": "Paratha finished with a generous layer of butter.",
+        "price": 55,
+        "image": "assets/Tokhri Khana/Butter Paratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 4,
+          "carbs": 27,
+          "fat": 10,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Butter",
+          "Water",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_stuffed_paratha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Stuffed Paratha",
+        "description": "Indian flatbread filled with a savoury stuffing.",
+        "price": 135,
+        "image": "assets/Tokhri Khana/Stuffed Paratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 10,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Vegetable Stuffing",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_alu_paratha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Alu Paratha",
+        "description": "Paratha stuffed with a seasoned potato filling.",
+        "price": 110,
+        "image": "assets/Tokhri Khana/Alu Paratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 6,
+          "carbs": 40,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Potatoes",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_pudina_paratha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Pudina Paratha",
+        "description": "Flaky flatbread flavoured with fresh mint.",
+        "price": 120,
+        "image": "assets/Tokhri Khana/Pudina Paratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 5,
+          "carbs": 32,
+          "fat": 8,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Mint",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_methi_paratha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Methi Paratha",
+        "description": "Indian flatbread flavoured with fenugreek leaves.",
+        "price": 120,
+        "image": "assets/Tokhri Khana/Methi Paratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 5,
+          "carbs": 31,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Fenugreek Leaves",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_cheese_paratha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Cheese Paratha",
+        "description": "Paratha filled with melted cheese.",
+        "price": 160,
+        "image": "assets/Tokhri Khana/Cheese Paratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 12,
+          "carbs": 32,
+          "fat": 16,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Cheese",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Naan",
+        "description": "Soft, traditional Indian naan bread.",
+        "price": 60,
+        "image": "assets/Tokhri Khana/Naan.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 6,
+          "carbs": 38,
+          "fat": 4,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Curd",
+          "Yeast",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_butter_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Butter Naan",
+        "description": "Soft naan brushed with butter.",
+        "price": 75,
+        "image": "assets/Tokhri Khana/Butter Naan.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 6,
+          "carbs": 38,
+          "fat": 8,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Curd",
+          "Butter",
+          "Yeast"
+        ]
+      },
+      {
+        "id": "ss_kashmiri_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Kashmiri Naan",
+        "description": "A rich naan with a sweet-style fruit and nut filling.",
+        "price": 155,
+        "image": "assets/Tokhri Khana/Kashmiri Naan.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 8,
+          "carbs": 48,
+          "fat": 11,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Dry Fruits",
+          "Nuts",
+          "Sweet Filling"
+        ]
+      },
+      {
+        "id": "ss_kabuli_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Kabuli Naan",
+        "description": "Naan prepared with a rich, savoury filling.",
+        "price": 140,
+        "image": "assets/Tokhri Khana/Kabuli Naan.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 310,
+          "protein": 8,
+          "carbs": 44,
+          "fat": 10,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Filling",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_garlic_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Garlic Naan",
+        "description": "Naan topped with aromatic garlic.",
+        "price": 95,
+        "image": "assets/Tokhri Khana/Garlic Naan.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 240,
+          "protein": 6,
+          "carbs": 38,
+          "fat": 6,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Garlic",
+          "Butter",
+          "Yeast"
+        ]
+      },
+      {
+        "id": "ss_garlic_butter_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Garlic Butter Naan",
+        "description": "Garlic naan finished with butter.",
+        "price": 115,
+        "image": "assets/Tokhri Khana/Garlic Butter Naan.png",
+        "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
         "spicyLevel": 0,
         "prepTime": "8 mins",
         "nutrition": {
           "calories": 280,
-          "protein": 6.2,
-          "carbs": 48.0,
-          "fat": 7.0,
-          "fiber": 3.2,
-          "sodium": 340
-        },
-        "allergens": [],
-        "ingredients": [
-          "Fermented Dosa Batter",
-          "Coconut Chutney",
-          "Sambar"
-        ]
-      },
-      {
-        "id": "ss_masala_dosa",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Masala Dosa",
-        "description": "Crispy golden crepe wrapped around Shiv Sagar's signature mildly spiced potato bhaji with caramelized onions, mustard seeds, and turmeric.",
-        "price": 135,
-        "image": "assets/Crispy Dosas & Uttappas/Masala -Dosa.jpg",
-        "dietary": "veg",
-        "isFeatured": true,
-        "isAvailable": true,
-        "spicyLevel": 1,
-        "prepTime": "10 mins",
-        "nutrition": {
-          "calories": 390,
-          "protein": 8.5,
-          "carbs": 62.0,
-          "fat": 12.0,
-          "fiber": 5.0,
-          "sodium": 520
+          "protein": 6,
+          "carbs": 38,
+          "fat": 10,
+          "fiber": 2
         },
         "allergens": [
+          "Gluten",
           "Dairy"
         ],
         "ingredients": [
-          "Crisp Dosa Crepe",
-          "Spiced Aloo Bhaji",
-          "Pure Butter",
-          "Coconut Chutney",
-          "Sambar"
+          "Wheat Flour",
+          "Garlic",
+          "Butter",
+          "Yeast"
         ]
       },
       {
-        "id": "ss_mysore_masala_dosa",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Mysore Masala Dosa (Green Chutney)",
-        "description": "Crisp crepe smeared with Shiv Sagar's fiery herbal spicy green chutney and stuffed with spiced potato bhaji and fresh onions.",
-        "price": 135,
-        "image": "assets/Crispy Dosas & Uttappas/Mysore Masala- Dosa(Green Chutney).jpg",
+        "id": "ss_cheese_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Cheese Naan",
+        "description": "Soft naan filled or topped with cheese.",
+        "price": 150,
+        "image": "assets/Tokhri Khana/Cheese Naan.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
-        "spicyLevel": 2,
+        "spicyLevel": 0,
         "prepTime": "10 mins",
         "nutrition": {
-          "calories": 410,
-          "protein": 8.8,
-          "carbs": 63.0,
-          "fat": 13.5,
-          "fiber": 5.2,
-          "sodium": 580
+          "calories": 320,
+          "protein": 12,
+          "carbs": 40,
+          "fat": 13,
+          "fiber": 2
         },
         "allergens": [
+          "Gluten",
           "Dairy"
         ],
         "ingredients": [
-          "Dosa Crepe",
-          "Mysore Green Chutney",
-          "Potato Bhaji",
-          "Butter",
-          "Sambar"
-        ]
-      },
-      {
-        "id": "ss_cheese_mysore_masala",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Cheese Mysore Masala Dosa (Green Chutney)",
-        "description": "Shiv Sagar's all-time bestseller! Crisp roasted dosa lined with piquant Mysore green chutney, stuffed with potato masala and a generous layer of melted cheese.",
-        "price": 230,
-        "image": "assets/Crispy Dosas & Uttappas/Cheese Mysore Masala -Dosa        (Green Chutney).jpg",
-        "dietary": "veg",
-        "isFeatured": true,
-        "isAvailable": true,
-        "spicyLevel": 2,
-        "prepTime": "10-12 mins",
-        "nutrition": {
-          "calories": 520,
-          "protein": 16.0,
-          "carbs": 64.0,
-          "fat": 23.0,
-          "fiber": 5.5,
-          "sodium": 720
-        },
-        "allergens": [
-          "Dairy"
-        ],
-        "ingredients": [
-          "Dosa Crepe",
-          "Mysore Green Chutney",
-          "Processed Cheese",
-          "Aloo Masala",
+          "Wheat Flour",
+          "Cheese",
           "Butter"
         ]
       },
       {
-        "id": "ss_rava_masala_dosa",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Rava Masala Dosa",
-        "description": "Delicate lace-pattern semolina dosa made with peppercorns, cumin, ginger, and green chillies, folded with spicy potato masala inside.",
-        "price": 145,
-        "image": "assets/Crispy Dosas & Uttappas/Rava Masala - Dosa.jpg",
+        "id": "ss_cheese_butter_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Cheese Butter Naan",
+        "description": "Cheese naan finished with a layer of butter.",
+        "price": 170,
+        "image": "assets/Tokhri Khana/Cheese Butter Naan.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
-        "spicyLevel": 1,
-        "prepTime": "12 mins",
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
         "nutrition": {
-          "calories": 430,
-          "protein": 8.2,
-          "carbs": 65.0,
-          "fat": 15.0,
-          "fiber": 4.5,
-          "sodium": 510
+          "calories": 360,
+          "protein": 13,
+          "carbs": 40,
+          "fat": 17,
+          "fiber": 2
         },
         "allergens": [
           "Gluten",
           "Dairy"
         ],
         "ingredients": [
-          "Semolina Rava",
-          "Rice Flour",
-          "Black Peppercorns",
-          "Jeera",
-          "Aloo Masala"
+          "Wheat Flour",
+          "Cheese",
+          "Butter"
         ]
       },
       {
-        "id": "ss_rava_cheese_masala",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Rava Cheese Masala",
-        "description": "Lacy, ultra-crispy semolina crepe loaded with grated cheese, diced onions, and spiced potato filling.",
-        "price": 240,
-        "image": "assets/Crispy Dosas & Uttappas/Rava Cheese Masala-dosa.jpg",
+        "id": "ss_cheese_garlic_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Cheese Garlic Naan",
+        "description": "Garlic naan topped with cheese.",
+        "price": 180,
+        "image": "assets/Tokhri Khana/Cheese Garlic Naan.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
-        "spicyLevel": 1,
-        "prepTime": "12 mins",
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
         "nutrition": {
-          "calories": 540,
-          "protein": 15.5,
-          "carbs": 66.0,
-          "fat": 24.0,
-          "fiber": 4.5,
-          "sodium": 710
+          "calories": 350,
+          "protein": 13,
+          "carbs": 40,
+          "fat": 16,
+          "fiber": 2
         },
         "allergens": [
           "Gluten",
           "Dairy"
         ],
         "ingredients": [
-          "Semolina Rava",
-          "Processed Cheese",
-          "Potato Masala",
-          "Curry Leaves"
+          "Wheat Flour",
+          "Garlic",
+          "Cheese",
+          "Butter"
         ]
       },
       {
-        "id": "ss_paper_masala_dosa",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Paper Masala Dosa",
-        "description": "Extra-large thin wafer-crisp giant dosa roasted with butter, served rolled with aloo bhaji, sambar, and coconut chutney.",
-        "price": 280,
-        "image": "assets/Crispy Dosas & Uttappas/Paper Masala Dosa.jpg",
+        "id": "ss_cheese_garlic_butter_naan",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Cheese Garlic Butter Naan",
+        "description": "Garlic naan topped with cheese and finished with butter.",
+        "price": 195,
+        "image": "assets/Tokhri Khana/Cheese Garlic Butter Naan.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 390,
+          "protein": 14,
+          "carbs": 40,
+          "fat": 19,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Garlic",
+          "Cheese",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_plain_kulcha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Plain Kulcha",
+        "description": "Soft, lightly baked Indian kulcha bread.",
+        "price": 45,
+        "image": "assets/Tokhri Khana/Plain Kulcha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "7 mins",
+        "nutrition": {
+          "calories": 190,
+          "protein": 5,
+          "carbs": 34,
+          "fat": 4,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Curd",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_butter_kulcha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Butter Kulcha",
+        "description": "Soft kulcha bread brushed with butter.",
+        "price": 55,
+        "image": "assets/Tokhri Khana/Butter Kulcha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "7 mins",
+        "nutrition": {
+          "calories": 230,
+          "protein": 5,
+          "carbs": 34,
+          "fat": 8,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Curd",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_masala_kulcha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Masala Kulcha",
+        "description": "Kulcha prepared with a savoury spiced filling.",
+        "price": 105,
+        "image": "assets/Tokhri Khana/Masala Kulcha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 9,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Spiced Filling",
+          "Curd",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_onion_kulcha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Onion Kulcha",
+        "description": "Kulcha stuffed with seasoned onions.",
+        "price": 110,
+        "image": "assets/Tokhri Khana/Onion Kulcha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 250,
+          "protein": 6,
+          "carbs": 37,
+          "fat": 8,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Onion",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_paneer_kulcha",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Paneer Kulcha",
+        "description": "Kulcha stuffed with paneer and mild spices.",
+        "price": 120,
+        "image": "assets/Tokhri Khana/Paneer Kulcha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 11,
+          "carbs": 36,
+          "fat": 10,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Paneer",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_bhatura",
+        "categoryId": "cat_tokhri_khana",
+        "name": "Bhatura (1 PC)",
+        "description": "One fluffy, deep-fried bhatura.",
+        "price": 85,
+        "image": "assets/Tokhri Khana/Bhatura.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 6,
+          "carbs": 42,
+          "fat": 12,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Wheat Flour",
+          "Curd",
+          "Oil",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_cheese_capsicum_onion_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Pizza (Cheese Capsicum Onion)",
+        "description": "A classic pizza topped with cheese, capsicum, and onion.",
+        "price": 265,
+        "image": "assets/Wood-Fired & Pan Pizzas/Pizza (Cheese Capsicum Onion).jpg",
         "dietary": "veg",
         "isFeatured": true,
         "isAvailable": true,
         "spicyLevel": 1,
-        "prepTime": "12-14 mins",
+        "prepTime": "20 mins",
         "nutrition": {
-          "calories": 510,
-          "protein": 9.5,
-          "carbs": 76.0,
-          "fat": 18.0,
-          "fiber": 5.0,
-          "sodium": 560
+          "calories": 420,
+          "protein": 15,
+          "carbs": 48,
+          "fat": 18,
+          "fiber": 3
         },
         "allergens": [
-          "Dairy"
+          "Dairy",
+          "Gluten"
         ],
         "ingredients": [
-          "Paper Dosa Batter",
-          "Pure Butter",
-          "Potato Masala",
-          "Chutney",
-          "Sambar"
+          "Pizza Base",
+          "Cheese",
+          "Capsicum",
+          "Onion",
+          "Pizza Sauce"
         ]
       },
       {
-        "id": "ss_schezwan_cheese_masala",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Schezwan Cheese Masala",
-        "description": "Fusion favorite combining crunchy dosa base with tangy spicy Schezwan sauce, melted cheese, and savoury potato stuffing.",
-        "price": 240,
-        "image": "assets/Crispy Dosas & Uttappas/Schezwan Cheese Masala-dosa.jpg",
+        "id": "ss_onion_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Onion Pizza",
+        "description": "A simple pizza topped with onions, cheese, and pizza sauce.",
+        "price": 245,
+        "image": "assets/Wood-Fired & Pan Pizzas/Onion Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 12,
+          "carbs": 46,
+          "fat": 15,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Onion",
+          "Cheese",
+          "Pizza Sauce"
+        ]
+      },
+      {
+        "id": "ss_capsicum_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Capsicum Pizza",
+        "description": "A cheesy pizza topped with fresh capsicum and pizza sauce.",
+        "price": 245,
+        "image": "assets/Wood-Fired & Pan Pizzas/Capsicum Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 12,
+          "carbs": 46,
+          "fat": 15,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Capsicum",
+          "Cheese",
+          "Pizza Sauce"
+        ]
+      },
+      {
+        "id": "ss_special_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Special Pizza",
+        "description": "A special pizza topped with a combination of vegetables and cheese.",
+        "price": 275,
+        "image": "assets/Wood-Fired & Pan Pizzas/Special Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 440,
+          "protein": 16,
+          "carbs": 49,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Mixed Vegetables",
+          "Cheese",
+          "Pizza Sauce"
+        ]
+      },
+      {
+        "id": "ss_washington_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Washington Pizza",
+        "description": "A flavourful pizza prepared with cheese and assorted toppings.",
+        "price": 265,
+        "image": "assets/Wood-Fired & Pan Pizzas/Washington Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 15,
+          "carbs": 48,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Cheese",
+          "Pizza Sauce",
+          "Assorted Toppings"
+        ]
+      },
+      {
+        "id": "ss_cheese_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Cheese Pizza (Cheese only)",
+        "description": "A classic cheese-only pizza with melted cheese and pizza sauce.",
+        "price": 250,
+        "image": "assets/Wood-Fired & Pan Pizzas/Cheese Pizza (Cheese only).jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 15,
+          "carbs": 44,
+          "fat": 17,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Cheese",
+          "Pizza Sauce"
+        ]
+      },
+      {
+        "id": "ss_mexican_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Mexican Pizza",
+        "description": "A Mexican-inspired pizza with spicy sauce, vegetables, and cheese.",
+        "price": 285,
+        "image": "assets/Wood-Fired & Pan Pizzas/Mexican Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 16,
+          "carbs": 50,
+          "fat": 19,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Mexican Sauce",
+          "Vegetables",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_italian_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Italian Pizza",
+        "description": "An Italian-style pizza topped with cheese and Italian-inspired flavours.",
+        "price": 285,
+        "image": "assets/Wood-Fired & Pan Pizzas/Italian Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 440,
+          "protein": 16,
+          "carbs": 49,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Cheese",
+          "Pizza Sauce",
+          "Italian Seasoning"
+        ]
+      },
+      {
+        "id": "ss_sizzling_barbecue_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Sizzling Barbecue Pizza",
+        "description": "A barbecue-style pizza topped with cheese and savoury toppings.",
+        "price": 285,
+        "image": "assets/Wood-Fired & Pan Pizzas/Sizzling Barbecue Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 16,
+          "carbs": 50,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Barbecue Sauce",
+          "Cheese",
+          "Vegetables"
+        ]
+      },
+      {
+        "id": "ss_paneer_wala_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Paneer Wala Pizza",
+        "description": "A vegetarian pizza topped with paneer, cheese, and pizza sauce.",
+        "price": 300,
+        "image": "assets/Wood-Fired & Pan Pizzas/Paneer Wala Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 470,
+          "protein": 20,
+          "carbs": 48,
+          "fat": 21,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Paneer",
+          "Cheese",
+          "Pizza Sauce"
+        ]
+      },
+      {
+        "id": "ss_hot_n_spicy_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Hot 'N' Spicy Pizza",
+        "description": "A spicy pizza topped with cheese, sauce, and flavourful seasonings.",
+        "price": 290,
+        "image": "assets/Wood-Fired & Pan Pizzas/Hot _N_ Spicy Pizza.webp",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
         "spicyLevel": 3,
-        "prepTime": "10 mins",
+        "prepTime": "20 mins",
         "nutrition": {
-          "calories": 530,
-          "protein": 15.2,
-          "carbs": 65.0,
-          "fat": 23.5,
-          "fiber": 5.0,
-          "sodium": 790
+          "calories": 450,
+          "protein": 16,
+          "carbs": 49,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Spicy Sauce",
+          "Cheese",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_veg_lover_pizza",
+        "categoryId": "cat_wood_fired_pan_pizzas",
+        "name": "Veg Lover Pizza",
+        "description": "A vegetable-loaded pizza with cheese and pizza sauce.",
+        "price": 290,
+        "image": "assets/Wood-Fired & Pan Pizzas/Veg Lover Pizza.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 440,
+          "protein": 15,
+          "carbs": 50,
+          "fat": 18,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pizza Base",
+          "Mixed Vegetables",
+          "Cheese",
+          "Pizza Sauce"
+        ]
+      },
+      {
+        "id": "ss_mango_with_cream",
+        "categoryId": "cat_special_fruit_dishes",
+        "name": "Mango with Cream",
+        "description": "Sweet seasonal mango served with fresh cream.",
+        "price": 245,
+        "image": "assets/Special Fruit Dishes/Mango with Cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 4,
+          "carbs": 35,
+          "fat": 13,
+          "fiber": 3
         },
         "allergens": [
           "Dairy"
         ],
         "ingredients": [
-          "Dosa Batter",
-          "Schezwan Sauce",
-          "Processed Cheese",
-          "Potato Bhaji"
+          "Mango",
+          "Fresh Cream"
         ]
       },
       {
-        "id": "ss_onion_uttappa",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Onion Uttappa",
-        "description": "Thick, soft fermented rice-lentil pancake embedded with sweet caramelized finely chopped red onions and green chillies.",
-        "price": 120,
-        "image": "assets/Crispy Dosas & Uttappas/Onion Uttappa.jpg",
+        "id": "ss_mango_special",
+        "categoryId": "cat_special_fruit_dishes",
+        "name": "Mango Special",
+        "description": "A special seasonal mango dessert.",
+        "price": 275,
+        "image": "assets/Special Fruit Dishes/Mango Special.png",
         "dietary": "veg",
-        "isFeatured": false,
+        "isFeatured": true,
         "isAvailable": true,
-        "spicyLevel": 1,
-        "prepTime": "10 mins",
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
         "nutrition": {
-          "calories": 320,
-          "protein": 7.5,
-          "carbs": 54.0,
-          "fat": 8.5,
-          "fiber": 4.0,
-          "sodium": 420
+          "calories": 300,
+          "protein": 4,
+          "carbs": 40,
+          "fat": 13,
+          "fiber": 3
         },
         "allergens": [],
         "ingredients": [
-          "Uttappa Batter",
-          "Red Onions",
-          "Green Chillies",
-          "Fresh Coriander"
+          "Mango",
+          "Sweet Toppings"
         ]
       },
       {
-        "id": "ss_cheese_tomato_onion_uttappa",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Cheese Tomato Onion Uttappa",
-        "description": "Fluffy golden pancake topped with diced ripe tomatoes, pungent onions, coriander, and finished with a rich layer of melted cheese.",
-        "price": 215,
-        "image": "assets/Crispy Dosas & Uttappas/Cheese Tomato Onion -Uttappa.jpg",
+        "id": "ss_strawberry_with_cream",
+        "categoryId": "cat_special_fruit_dishes",
+        "name": "Strawberry with Cream",
+        "description": "Sweet strawberries served with fresh cream.",
+        "price": 245,
+        "image": "assets/Special Fruit Dishes/Strawberry with Cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 4,
+          "carbs": 28,
+          "fat": 14,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Strawberries",
+          "Fresh Cream"
+        ]
+      },
+      {
+        "id": "ss_strawberry_special",
+        "categoryId": "cat_special_fruit_dishes",
+        "name": "Strawberry Special",
+        "description": "A special seasonal strawberry dessert.",
+        "price": 275,
+        "image": "assets/Special Fruit Dishes/Strawberry Special.png",
         "dietary": "veg",
         "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 4,
+          "carbs": 38,
+          "fat": 13,
+          "fiber": 3
+        },
+        "allergens": [],
+        "ingredients": [
+          "Strawberries",
+          "Sweet Toppings"
+        ]
+      },
+      {
+        "id": "ss_sitaphal_with_cream",
+        "categoryId": "cat_special_fruit_dishes",
+        "name": "Sitaphal with Cream",
+        "description": "Sweet custard apple pulp served with fresh cream.",
+        "price": 265,
+        "image": "assets/Special Fruit Dishes/Sitaphal with Cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 4,
+          "carbs": 38,
+          "fat": 14,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Sitaphal (Custard Apple)",
+          "Fresh Cream"
+        ]
+      },
+      {
+        "id": "ss_sitaphal_special",
+        "categoryId": "cat_special_fruit_dishes",
+        "name": "Sitaphal Special",
+        "description": "A special seasonal custard apple dessert.",
+        "price": 285,
+        "image": "assets/Special Fruit Dishes/Sitaphal Special.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 4,
+          "carbs": 42,
+          "fat": 14,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Sitaphal (Custard Apple)",
+          "Sweet Toppings"
+        ]
+      },
+      {
+        "id": "ss_dry_fruits_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Dry Fruits",
+        "description": "A rich and creamy milkshake blended with assorted dry fruits.",
+        "price": 330,
+        "image": "assets/Special Dry Fruit Milk/Dry fruits.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 12,
+          "carbs": 45,
+          "fat": 22,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Mixed Dry Fruits",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kesar_dry_fruits_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Kesar Dry Fruits",
+        "description": "A creamy dry fruit milkshake infused with aromatic saffron.",
+        "price": 330,
+        "image": "assets/Special Dry Fruit Milk/Kesar dry fruits.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 12,
+          "carbs": 46,
+          "fat": 23,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Dry Fruits",
+          "Saffron",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kesar_pista_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Kesar Pista",
+        "description": "A smooth pistachio milkshake flavoured with saffron.",
+        "price": 330,
+        "image": "assets/Special Dry Fruit Milk/Kesar Pista.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 410,
+          "protein": 11,
+          "carbs": 43,
+          "fat": 22,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Pistachios",
+          "Saffron",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kesar_badam_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Kesar Badam",
+        "description": "A rich almond milkshake infused with saffron.",
+        "price": 330,
+        "image": "assets/Special Dry Fruit Milk/Kesar Badam.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 12,
+          "carbs": 44,
+          "fat": 22,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Almonds",
+          "Saffron",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kesar_badam_pista_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Kesar Badam Pista",
+        "description": "A luxurious milkshake combining almonds, pistachios, and saffron.",
+        "price": 340,
+        "image": "assets/Special Dry Fruit Milk/Kesar Badam Pista.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 440,
+          "protein": 13,
+          "carbs": 45,
+          "fat": 24,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Almonds",
+          "Pistachios",
+          "Saffron",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_pista_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Pista",
+        "description": "A creamy milkshake prepared with pistachios.",
+        "price": 315,
+        "image": "assets/Special Dry Fruit Milk/Pista.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 11,
+          "carbs": 42,
+          "fat": 21,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Pistachios",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_badam_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Badam",
+        "description": "A smooth and creamy almond milkshake.",
+        "price": 315,
+        "image": "assets/Special Dry Fruit Milk/Badam.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 12,
+          "carbs": 42,
+          "fat": 21,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Almonds",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_badam_pista_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Badam Pista",
+        "description": "A rich milkshake made with almonds and pistachios.",
+        "price": 315,
+        "image": "assets/Special Dry Fruit Milk/Badam Pista.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 12,
+          "carbs": 43,
+          "fat": 23,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Almonds",
+          "Pistachios",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kaju_badam_milk",
+        "categoryId": "cat_special_dry_fruit_milk",
+        "name": "Kaju Badam",
+        "description": "A creamy dry fruit milkshake blending cashews and almonds.",
+        "price": 315,
+        "image": "assets/Special Dry Fruit Milk/Kaju Badam.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 12,
+          "carbs": 42,
+          "fat": 23,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cashews",
+          "Almonds",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_steam_idli",
+        "categoryId": "cat_idli_wada",
+        "name": "Steam Idli",
+        "description": "Soft, fluffy steamed idlis served with traditional accompaniments.",
+        "price": 85,
+        "image": "assets/South Indian Idli & Wada/steam-idli.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 180,
+          "protein": 5,
+          "carbs": 36,
+          "fat": 1,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Rice",
+          "Urad Dal",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_butter_idli",
+        "categoryId": "cat_idli_wada",
+        "name": "Butter Idli",
+        "description": "Soft steamed idlis served with butter.",
+        "price": 100,
+        "image": "assets/South Indian Idli & Wada/butter-idli .jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 240,
+          "protein": 5,
+          "carbs": 36,
+          "fat": 8,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Rice",
+          "Urad Dal",
+          "Butter",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_rava_idli",
+        "categoryId": "cat_idli_wada",
+        "name": "Rava Idli",
+        "description": "Soft savoury idlis prepared with semolina.",
+        "price": 90,
+        "image": "assets/South Indian Idli & Wada/rava-idli.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 210,
+          "protein": 5,
+          "carbs": 34,
+          "fat": 5,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Rava",
+          "Curd",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kanchi_puram_idli",
+        "categoryId": "cat_idli_wada",
+        "name": "Kanchi Puram Idli",
+        "description": "Traditional Kanchipuram-style idli seasoned with aromatic spices.",
+        "price": 110,
+        "image": "assets/South Indian Idli & Wada/Kanchi Puram-idli.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 6,
+          "carbs": 35,
+          "fat": 5,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Rice",
+          "Urad Dal",
+          "Pepper",
+          "Cumin",
+          "Ginger"
+        ]
+      },
+      {
+        "id": "ss_tava_idli",
+        "categoryId": "cat_idli_wada",
+        "name": "Tava Idli",
+        "description": "Idlis cooked on a tava with a lightly spiced seasoning.",
+        "price": 120,
+        "image": "assets/South Indian Idli & Wada/Tava-idli.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
         "isAvailable": true,
         "spicyLevel": 1,
         "prepTime": "12 mins",
         "nutrition": {
-          "calories": 460,
-          "protein": 15.0,
-          "carbs": 56.0,
-          "fat": 20.0,
-          "fiber": 4.5,
-          "sodium": 680
+          "calories": 230,
+          "protein": 5,
+          "carbs": 34,
+          "fat": 7,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Idli",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_dahi_idli",
+        "categoryId": "cat_idli_wada",
+        "name": "Dahi Idli",
+        "description": "Soft idlis served with seasoned curd.",
+        "price": 110,
+        "image": "assets/South Indian Idli & Wada/Dahi-idli.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 7,
+          "carbs": 32,
+          "fat": 5,
+          "fiber": 2
         },
         "allergens": [
           "Dairy"
         ],
         "ingredients": [
-          "Uttappa Batter",
-          "Tomatoes",
-          "Onions",
-          "Processed Cheese",
-          "Butter"
+          "Idli",
+          "Curd",
+          "Spices"
         ]
       },
       {
-        "id": "ss_tomato_omlet",
-        "categoryId": "cat_dosa_uttappa",
-        "name": "Tomato Omlet (Pure Veg)",
-        "description": "Shiv Sagar's iconic Maharashtra classic! 100% Pure vegetarian savory spiced gram flour (besan) pancake with tomatoes, onions, and herbs.",
-        "price": 140,
-        "image": "assets/Crispy Dosas & Uttappas/Tomato Omlet.jpg",
+        "id": "ss_medu_wada",
+        "categoryId": "cat_idli_wada",
+        "name": "Medu Wada",
+        "description": "Crispy, golden urad dal fritters.",
+        "price": 100,
+        "image": "assets/South Indian Idli & Wada/Medu Wada.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 250,
+          "protein": 8,
+          "carbs": 28,
+          "fat": 12,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Urad Dal",
+          "Pepper",
+          "Curry Leaves",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_idli_medu_wada_plate",
+        "categoryId": "cat_idli_wada",
+        "name": "Idli Medu Wada Plate",
+        "description": "A combination plate of idli and medu wada.",
+        "price": 95,
+        "image": "assets/South Indian Idli & Wada/Idli Medu Wada Plate.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 9,
+          "carbs": 45,
+          "fat": 9,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Idli",
+          "Medu Wada",
+          "Rice",
+          "Urad Dal"
+        ]
+      },
+      {
+        "id": "ss_single_idli_wada",
+        "categoryId": "cat_idli_wada",
+        "name": "Single Idli/Wada",
+        "description": "One serving of idli or wada.",
+        "price": 50,
+        "image": "assets/South Indian Idli & Wada/Single Idli-Wada.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 150,
+          "protein": 4,
+          "carbs": 24,
+          "fat": 4,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Idli or Wada",
+          "Rice",
+          "Urad Dal"
+        ]
+      },
+      {
+        "id": "ss_dahi_wada",
+        "categoryId": "cat_idli_wada",
+        "name": "Dahi Wada",
+        "description": "Soft wada soaked in curd and served with mild seasoning.",
+        "price": 135,
+        "image": "assets/South Indian Idli & Wada/Dahi Wada.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 8,
+          "carbs": 35,
+          "fat": 11,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Urad Dal",
+          "Curd",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_mexican_pasta_sizzler",
+        "categoryId": "cat_sizzlers",
+        "name": "Mexican Pasta Sizzler",
+        "description": "A sizzling combination of paneer, pasta, kidney beans, mushrooms, spring onion, American corn, and fusilli pasta.",
+        "price": 470,
+        "image": "assets/Sizzlers/mexican cheese  sizzler.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "25 mins",
+        "nutrition": {
+          "calories": 520,
+          "protein": 18,
+          "carbs": 62,
+          "fat": 22,
+          "fiber": 8
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Pasta",
+          "Kidney Beans",
+          "Mushroom",
+          "Spring Onion",
+          "American Corn",
+          "Fusilli Pasta"
+        ]
+      },
+      {
+        "id": "ss_mexican_fajita_pasta_sizzler",
+        "categoryId": "cat_sizzlers",
+        "name": "Mexican Fajita Pasta Sizzler",
+        "description": "A sizzling pasta dish with mushrooms, capsicum, paneer, baby corn, and penne pasta.",
+        "price": 475,
+        "image": "assets/Sizzlers/mexican cheese  sizzler.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "25 mins",
+        "nutrition": {
+          "calories": 510,
+          "protein": 17,
+          "carbs": 60,
+          "fat": 21,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mushroom",
+          "Capsicum",
+          "Paneer",
+          "Baby Corn",
+          "Penne Pasta"
+        ]
+      },
+      {
+        "id": "ss_italian_pasta_sizzler",
+        "categoryId": "cat_sizzlers",
+        "name": "Italian Pasta Sizzler",
+        "description": "Farfalle pasta served sizzling with white sauce, red sauce, and mixed vegetables.",
+        "price": 470,
+        "image": "assets/Sizzlers/italian pasta sizzler.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "25 mins",
+        "nutrition": {
+          "calories": 500,
+          "protein": 15,
+          "carbs": 63,
+          "fat": 20,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "White Sauce",
+          "Red Sauce",
+          "Mixed Vegetables",
+          "Farfalle Pasta"
+        ]
+      },
+      {
+        "id": "ss_shivsagar_special_pasta_sizzler",
+        "categoryId": "cat_sizzlers",
+        "name": "Shivsagar Special Pasta Sizzler",
+        "description": "A special sizzling pasta preparation with diced onion, capsicum, baby corn, oregano, and mixed pasta.",
+        "price": 495,
+        "image": "assets/Sizzlers/shivsagar special sizzler.jpg",
         "dietary": "veg",
         "isFeatured": true,
         "isAvailable": true,
         "spicyLevel": 1,
-        "prepTime": "8 mins",
+        "prepTime": "25 mins",
         "nutrition": {
-          "calories": 290,
-          "protein": 12.0,
-          "carbs": 38.0,
-          "fat": 9.5,
-          "fiber": 6.0,
-          "sodium": 460
+          "calories": 530,
+          "protein": 16,
+          "carbs": 65,
+          "fat": 22,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Diced Onion",
+          "Diced Capsicum",
+          "Baby Corn",
+          "Oregano",
+          "Mixed Pasta"
+        ]
+      },
+      {
+        "id": "ss_noodles_sizzler",
+        "categoryId": "cat_sizzlers",
+        "name": "Noodles Sizzler",
+        "description": "A sizzling serving of noodles with gravy, French fries, and a cutlet.",
+        "price": 330,
+        "image": "assets/Sizzlers/noodles sizzler.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 65,
+          "fat": 19,
+          "fiber": 5
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Gravy",
+          "French Fries",
+          "Cutlet"
+        ]
+      },
+      {
+        "id": "ss_rice_sizzler",
+        "categoryId": "cat_sizzlers",
+        "name": "Rice Sizzler",
+        "description": "A sizzling rice dish served with gravy, French fries, and a cutlet.",
+        "price": 330,
+        "image": "assets/Sizzlers/rice sizzler.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 460,
+          "protein": 10,
+          "carbs": 68,
+          "fat": 16,
+          "fiber": 4
         },
         "allergens": [],
         "ingredients": [
-          "Gram Flour Besan",
-          "Tomatoes",
-          "Onions",
-          "Green Chillies",
-          "Coriander",
-          "Cumin"
+          "Rice",
+          "Gravy",
+          "French Fries",
+          "Cutlet"
         ]
       },
-      
-{
-  "id": "ss_veg_manchurian_gravy",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg. Manchurian",
-  "description": "Crispy vegetable dumplings simmered in a flavourful Indo-Chinese garlic, ginger, and soy-based gravy.",
-  "price": 255,
-  "image": "assets/Chinese Gravy/Veg. Manchurian.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 360,
-    "protein": 8,
-    "carbs": 42,
-    "fat": 17,
-    "fiber": 5,
-    "sodium": 780
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Cornflour", "Garlic", "Ginger", "Soy Sauce"]
-},
-{
-  "id": "ss_veg_manchurian_garlic_sauce",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg. Manchurian with Garlic Sauce",
-  "description": "Vegetable Manchurian balls coated in a bold garlic gravy with spring onions and Indo-Chinese seasonings.",
-  "price": 255,
-  "image": "assets/Chinese Gravy/Veg. Manchurian with Garlic Sauce.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 380,
-    "protein": 9,
-    "carbs": 43,
-    "fat": 18,
-    "fiber": 5,
-    "sodium": 850
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Vegetable Dumplings", "Garlic", "Spring Onions", "Soy Sauce", "Cornflour"]
-},
-{
-  "id": "ss_mushroom_manchurian",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Mushroom Manchurian",
-  "description": "Tender mushrooms tossed in a tangy, savoury Manchurian gravy with garlic, ginger, and peppers.",
-  "price": 275,
-  "image": "assets/Chinese Gravy/Mushroom Manchurian.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 350,
-    "protein": 9,
-    "carbs": 35,
-    "fat": 17,
-    "fiber": 4,
-    "sodium": 760
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mushrooms", "Garlic", "Ginger", "Capsicum", "Soy Sauce"]
-},
-{
-  "id": "ss_gobi_manchurian",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Gobi Manchurian",
-  "description": "Golden cauliflower florets tossed in a spicy, tangy Indo-Chinese gravy with garlic and spring onions.",
-  "price": 240,
-  "image": "assets/Chinese Gravy/Gobi Manchurian.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 340,
-    "protein": 7,
-    "carbs": 40,
-    "fat": 16,
-    "fiber": 5,
-    "sodium": 720
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Cauliflower", "Cornflour", "Garlic", "Ginger", "Soy Sauce"]
-},
-{
-  "id": "ss_paneer_manchurian",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Paneer Manchurian",
-  "description": "Soft paneer cubes coated in a savoury Indo-Chinese sauce with garlic, peppers, and spring onions.",
-  "price": 295,
-  "image": "assets/Chinese Gravy/Paneer Manchurian.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "13 mins",
-  "nutrition": {
-    "calories": 430,
-    "protein": 18,
-    "carbs": 35,
-    "fat": 23,
-    "fiber": 3,
-    "sodium": 780
-  },
-  "allergens": ["Dairy", "Soy", "Gluten"],
-  "ingredients": ["Paneer", "Garlic", "Ginger", "Capsicum", "Soy Sauce"]
-},
-{
-  "id": "ss_paneer_chilly_gravy",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Paneer Chilly",
-  "description": "Paneer cubes simmered in a spicy chilli-garlic gravy with capsicum, onions, and spring onions.",
-  "price": 305,
-  "image": "assets/Chinese Gravy/Paneer Chilly.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "13 mins",
-  "nutrition": {
-    "calories": 450,
-    "protein": 19,
-    "carbs": 36,
-    "fat": 25,
-    "fiber": 3,
-    "sodium": 850
-  },
-  "allergens": ["Dairy", "Soy", "Gluten"],
-  "ingredients": ["Paneer", "Green Chillies", "Capsicum", "Onions", "Garlic", "Soy Sauce"]
-},
-{
-  "id": "ss_veg_ball_garlic_sauce",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg. Ball Garlic Sauce",
-  "description": "Crispy vegetable balls served in a rich, aromatic garlic sauce with a savoury Indo-Chinese finish.",
-  "price": 245,
-  "image": "assets/Chinese Gravy/Veg. Ball Garlic Sauce.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 370,
-    "protein": 8,
-    "carbs": 42,
-    "fat": 18,
-    "fiber": 4,
-    "sodium": 800
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Garlic", "Cornflour", "Soy Sauce", "Spring Onions"]
-},
-{
-  "id": "ss_veg_chow_chow",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg. Chow Chow",
-  "description": "A colourful combination of vegetables tossed in a light, savoury Chinese-style sauce.",
-  "price": 220,
-  "image": "assets/Chinese Gravy/Veg. Chow Chow.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 280,
-    "protein": 6,
-    "carbs": 32,
-    "fat": 13,
-    "fiber": 5,
-    "sodium": 620
-  },
-  "allergens": ["Soy"],
-  "ingredients": ["Mixed Vegetables", "Garlic", "Soy Sauce", "Spring Onions"]
-},
-{
-  "id": "ss_grilled_onion_green_peas",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Grilled Onion Green Peas",
-  "description": "Green peas and grilled onions tossed with aromatic spices and a savoury Chinese-inspired sauce.",
-  "price": 220,
-  "image": "assets/Chinese Gravy/Grilled Onion Green Peas.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 270,
-    "protein": 9,
-    "carbs": 34,
-    "fat": 10,
-    "fiber": 7,
-    "sodium": 490
-  },
-  "allergens": ["Soy"],
-  "ingredients": ["Green Peas", "Onions", "Garlic", "Seasonings", "Soy Sauce"]
-},
-{
-  "id": "ss_veg_cashew_nuts",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg. Cashew Nuts",
-  "description": "Mixed vegetables and crunchy cashews cooked in a rich, mildly spiced savoury gravy.",
-  "price": 290,
-  "image": "assets/Chinese Gravy/Veg. Cashew nuts.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 420,
-    "protein": 11,
-    "carbs": 32,
-    "fat": 28,
-    "fiber": 5,
-    "sodium": 590
-  },
-  "allergens": ["Tree Nuts", "Soy"],
-  "ingredients": ["Cashews", "Mixed Vegetables", "Garlic", "Ginger", "Seasonings"]
-},
-{
-  "id": "ss_fried_veg_garlic_sauce",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Fried Veg. Garlic Sauce",
-  "description": "Fried seasonal vegetables coated in a fragrant garlic sauce with a balanced savoury finish.",
-  "price": 240,
-  "image": "assets/Chinese Gravy/Fried Veg. Garlic Sauce.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 350,
-    "protein": 7,
-    "carbs": 38,
-    "fat": 17,
-    "fiber": 5,
-    "sodium": 790
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Garlic", "Cornflour", "Soy Sauce", "Spring Onions"]
-},
-{
-  "id": "ss_sweet_sour_vegetables",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Sweet & Sour Vegetables",
-  "description": "Crisp vegetables tossed in a glossy sweet-and-sour sauce with a refreshing tangy flavour.",
-  "price": 245,
-  "image": "assets/Chinese Gravy/Sweet & Sour Vegetables.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 310,
-    "protein": 6,
-    "carbs": 43,
-    "fat": 12,
-    "fiber": 5,
-    "sodium": 650
-  },
-  "allergens": ["Soy"],
-  "ingredients": ["Mixed Vegetables", "Vinegar", "Tomato Sauce", "Sugar", "Soy Sauce"]
-},
-{
-  "id": "ss_mixed_veg_schezwan_style",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Mixed Veg Schezwan Style",
-  "description": "Mixed vegetables cooked in a bold, spicy Schezwan chilli-garlic gravy.",
-  "price": 255,
-  "image": "assets/Chinese Gravy/Mixed Veg Schezwan Style.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 340,
-    "protein": 7,
-    "carbs": 38,
-    "fat": 16,
-    "fiber": 5,
-    "sodium": 850
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Schezwan Sauce", "Garlic", "Chillies", "Soy Sauce"]
-},
-{
-  "id": "ss_mixed_veg_hong_kong_style",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Mixed Veg Hong Kong Style",
-  "description": "Mixed vegetables tossed in a fragrant Hong Kong-style sauce with garlic, peppers, and mild spices.",
-  "price": 255,
-  "image": "assets/Chinese Gravy/Mixed Veg Hong Kong Style.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 330,
-    "protein": 7,
-    "carbs": 37,
-    "fat": 15,
-    "fiber": 5,
-    "sodium": 700
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Garlic", "Capsicum", "Soy Sauce", "Seasonings"]
-},
-{
-  "id": "ss_veg_ginger_sauce",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg Ginger Sauce",
-  "description": "Seasonal vegetables simmered in a warming ginger sauce with garlic and light Chinese seasoning.",
-  "price": 220,
-  "image": "assets/Chinese Gravy/Veg Ginger Sauce.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 290,
-    "protein": 6,
-    "carbs": 35,
-    "fat": 13,
-    "fiber": 5,
-    "sodium": 610
-  },
-  "allergens": ["Soy"],
-  "ingredients": ["Mixed Vegetables", "Ginger", "Garlic", "Soy Sauce", "Spring Onions"]
-},
-{
-  "id": "ss_mixed_veg_schezwan_hakka_style",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Mixed Veg Schezwan Hakka Style",
-  "description": "Mixed vegetables prepared Hakka-style in a spicy Schezwan sauce with garlic, chillies, and spring onions.",
-  "price": 270,
-  "image": "assets/Chinese Gravy/Mixed Veg Schezwan Hakka Style.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 360,
-    "protein": 8,
-    "carbs": 40,
-    "fat": 17,
-    "fiber": 5,
-    "sodium": 880
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Schezwan Sauce", "Garlic", "Chillies", "Soy Sauce"]
-},
-{
-  "id": "ss_veg_mongolian_garlic_sauce",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg Mongolian Garlic Sauce",
-  "description": "Mixed vegetables coated in a rich, savoury Mongolian-style garlic sauce with a hint of sweetness.",
-  "price": 270,
-  "image": "assets/Chinese Gravy/Veg Mongolian Garlic Sauce.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 360,
-    "protein": 7,
-    "carbs": 42,
-    "fat": 16,
-    "fiber": 5,
-    "sodium": 820
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Mixed Vegetables", "Garlic", "Soy Sauce", "Vinegar", "Seasonings"]
-},
-{
-  "id": "ss_paneer_65_gravy",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Paneer '65' (Gravy)",
-  "description": "Crispy paneer pieces tossed in a spicy, aromatic Indo-Chinese gravy with curry leaves, garlic, and chillies.",
-  "price": 320,
-  "image": "assets/Chinese Gravy/Paneer _65_ (Gravy).png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "14 mins",
-  "nutrition": {
-    "calories": 470,
-    "protein": 20,
-    "carbs": 38,
-    "fat": 25,
-    "fiber": 3,
-    "sodium": 870
-  },
-  "allergens": ["Dairy", "Soy", "Gluten"],
-  "ingredients": ["Paneer", "Curry Leaves", "Garlic", "Green Chillies", "Spices"]
-},
-{
-  "id": "ss_veg_ball_hot_garlic_sauce",
-  "categoryId": "cat_chinese_gravy",
-  "name": "Veg. Ball Hot Garlic Sauce",
-  "description": "Crispy vegetable balls coated in a fiery hot garlic sauce with chilli, ginger, and spring onions.",
-  "price": 245,
-  "image": "assets/Chinese Gravy/Veg. Ball Hot Garlic Sauce.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 380,
-    "protein": 8,
-    "carbs": 43,
-    "fat": 18,
-    "fiber": 4,
-    "sodium": 880
-  },
-  "allergens": ["Soy", "Gluten"],
-  "ingredients": ["Vegetable Balls", "Garlic", "Chillies", "Soy Sauce", "Spring Onions"]
-},
       {
-        "id": "ss_veg_toast_sandwich",
-        "categoryId": "cat_sandwiches",
-        "name": "Veg. Toast Sandwich (Grilled)",
-        "description": "Golden grilled double-decker sandwich packed with sliced cucumbers, tomatoes, potatoes, beetroot, mint chutney, and butter.",
-        "price": 150,
-        "image": "assets/Sandwiches & Grilled Toasts/Veg. Toast Sandwich (Grilled).jpg",
+        "id": "ss_paneer_sizzler",
+        "categoryId": "cat_sizzlers",
+        "name": "Paneer Sizzler",
+        "description": "A sizzling combination of fried paneer, rice, French fries, and a cutlet.",
+        "price": 355,
+        "image": "assets/Sizzlers/paneer sizzler.jpg",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
         "spicyLevel": 1,
-        "prepTime": "8 mins",
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 510,
+          "protein": 18,
+          "carbs": 56,
+          "fat": 24,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fried Paneer",
+          "Rice",
+          "French Fries",
+          "Cutlet"
+        ]
+      },
+      {
+        "id": "ss_golden_cherry",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Golden Cherry",
+        "description": "A delightful dessert made with ice cream and cherry toppings.",
+        "price": 240,
+        "image": "assets/Shiv Sagar Desserts/Golden Cherry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 5,
+          "carbs": 42,
+          "fat": 12,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Cherry",
+          "Syrup"
+        ]
+      },
+      {
+        "id": "ss_honey_moon_special",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Honey Moon Special",
+        "description": "A special ice cream dessert with sweet toppings.",
+        "price": 240,
+        "image": "assets/Shiv Sagar Desserts/Honey Moon Special.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 6,
+          "carbs": 48,
+          "fat": 15,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_my_darling",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "My Darling",
+        "description": "A creamy dessert featuring ice cream and sweet toppings.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/My Darling.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 5,
+          "carbs": 44,
+          "fat": 13,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_triple_sundae",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Triple Sundae",
+        "description": "A sundae featuring three scoops of ice cream with sweet toppings.",
+        "price": 225,
+        "image": "assets/Shiv Sagar Desserts/Triple Sundae.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 7,
+          "carbs": 50,
+          "fat": 16,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Chocolate Sauce",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_special_double",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Special Double",
+        "description": "A rich double ice cream dessert with sweet toppings.",
+        "price": 220,
+        "image": "assets/Shiv Sagar Desserts/Special Double.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 6,
+          "carbs": 46,
+          "fat": 15,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_garfunkle_special",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Garfunkle Special",
+        "description": "A signature dessert made with creamy ice cream and assorted toppings.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Garfunkle Special.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 6,
+          "carbs": 45,
+          "fat": 14,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Nuts",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_callison_special",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Callison Special",
+        "description": "A special ice cream dessert with a variety of sweet toppings.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Callison Special.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 6,
+          "carbs": 45,
+          "fat": 14,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_fruit_sundae",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Fruit Sundae",
+        "description": "Ice cream served with a mix of fruits and sweet toppings.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Fruit Sundae.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 5,
+          "carbs": 48,
+          "fat": 11,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Mixed Fruits",
+          "Syrup"
+        ]
+      },
+      {
+        "id": "ss_fruit_cocktail",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Fruit Cocktail",
+        "description": "A fruity dessert combining mixed fruits and creamy ice cream.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Fruit Cocktail.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 5,
+          "carbs": 46,
+          "fat": 10,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mixed Fruits",
+          "Ice Cream",
+          "Fruit Syrup"
+        ]
+      },
+      {
+        "id": "ss_lichee_ice_cream",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Lichee with Ice cream",
+        "description": "Sweet lychee served with creamy ice cream.",
+        "price": 190,
+        "image": "assets/Shiv Sagar Desserts/Lichee with Ice cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 4,
+          "carbs": 38,
+          "fat": 9,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Lychee",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_lichee_with_cream",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Lichee with Cream",
+        "description": "Sweet lychee served with smooth fresh cream.",
+        "price": 190,
+        "image": "assets/Shiv Sagar Desserts/Lichee with Cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 3,
+          "carbs": 35,
+          "fat": 13,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Lychee",
+          "Fresh Cream"
+        ]
+      },
+      {
+        "id": "ss_apricot_ice_cream",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Apricot with Ice cream",
+        "description": "Sweet apricot served with a scoop of creamy ice cream.",
+        "price": 210,
+        "image": "assets/Shiv Sagar Desserts/Apricot with Ice cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 4,
+          "carbs": 40,
+          "fat": 10,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Apricot",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_fruit_bowl_cream_honey",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Fruit Bowl with Cream/Honey",
+        "description": "A bowl of mixed fruits served with fresh cream and honey.",
+        "price": 255,
+        "image": "assets/Shiv Sagar Desserts/Fruit Bowl with Cream & Honey.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 4,
+          "carbs": 42,
+          "fat": 13,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mixed Fruits",
+          "Fresh Cream",
+          "Honey"
+        ]
+      },
+      {
+        "id": "ss_rocco_borocco",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Rocco Borocco",
+        "description": "A signature ice cream dessert with rich sweet toppings.",
+        "price": 285,
+        "image": "assets/Shiv Sagar Desserts/Rocco Borocco.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 7,
+          "carbs": 52,
+          "fat": 18,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Chocolate Sauce",
+          "Nuts",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_ice_cream_bowl_special",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Ice Cream Bowl Special",
+        "description": "A generous bowl of assorted ice cream with sweet toppings.",
+        "price": 325,
+        "image": "assets/Shiv Sagar Desserts/Ice Cream Bowl Special.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Assorted Ice Cream",
+          "Chocolate Sauce",
+          "Nuts",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_bloody_merry_ice_cream",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Bloody Merry Ice cream",
+        "description": "A creamy ice cream dessert with rich sweet toppings.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Bloody Merry Ice cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 6,
+          "carbs": 46,
+          "fat": 14,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_vanilla_sundae",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Vanilla Sundae",
+        "description": "Vanilla ice cream served with sweet sundae toppings.",
+        "price": 220,
+        "image": "assets/Shiv Sagar Desserts/Vanilla Sundae.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 5,
+          "carbs": 40,
+          "fat": 12,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Vanilla Ice Cream",
+          "Syrup"
+        ]
+      },
+      {
+        "id": "ss_vanilla_chocolate_sauce",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Vanilla with Chocolate Sauce",
+        "description": "Vanilla ice cream topped with rich chocolate sauce.",
+        "price": 190,
+        "image": "assets/Shiv Sagar Desserts/Vanilla with Chocolate Sauce.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 5,
+          "carbs": 38,
+          "fat": 11,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Vanilla Ice Cream",
+          "Chocolate Sauce"
+        ]
+      },
+      {
+        "id": "ss_chocolate_nut_sundae",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Chocolate Nut Sundae",
+        "description": "Chocolate ice cream dessert topped with crunchy nuts.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Chocolate Nut Sundae.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
         "nutrition": {
           "calories": 360,
-          "protein": 8.0,
-          "carbs": 54.0,
-          "fat": 13.0,
-          "fiber": 4.5,
-          "sodium": 520
+          "protein": 7,
+          "carbs": 42,
+          "fat": 17,
+          "fiber": 2
         },
         "allergens": [
-          "Gluten",
-          "Dairy"
+          "Dairy",
+          "Nuts"
         ],
         "ingredients": [
-          "White Bread",
-          "Cucumber",
-          "Tomato",
-          "Boiled Potato",
-          "Beetroot",
-          "Mint Chutney",
-          "Butter"
+          "Chocolate Ice Cream",
+          "Mixed Nuts",
+          "Chocolate Sauce"
         ]
       },
       {
-        "id": "ss_veg_cheese_sandwich",
-        "categoryId": "cat_sandwiches",
-        "name": "Veg. Cheese Sandwich",
-        "description": "Classic deli sandwich layered with crunchy seasoned garden vegetables, spicy mint green chutney, and thick slices of cheese.",
-        "price": 145,
-        "image": "assets/Sandwiches & Grilled Toasts/Veg. Cheese Sandwichjpp.jpg",
+        "id": "ss_butter_scotch_sundae",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Butter Scotch Sundae",
+        "description": "Butterscotch ice cream served with sweet sundae toppings.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Butter Scotch Sundae.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
-        "spicyLevel": 1,
-        "prepTime": "6 mins",
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
         "nutrition": {
-          "calories": 390,
-          "protein": 13.5,
-          "carbs": 46.0,
-          "fat": 17.5,
-          "fiber": 3.8,
-          "sodium": 640
+          "calories": 350,
+          "protein": 5,
+          "carbs": 45,
+          "fat": 15,
+          "fiber": 1
         },
         "allergens": [
-          "Gluten",
           "Dairy"
         ],
         "ingredients": [
-          "Bread Slices",
-          "Processed Cheese",
-          "Garden Veggies",
-          "Mint Chutney",
-          "Chaat Masala"
+          "Butterscotch Ice Cream",
+          "Caramel Sauce",
+          "Toppings"
         ]
       },
       {
-        "id": "ss_cheese_chilly_toast",
-        "categoryId": "cat_sandwiches",
-        "name": "Cheese Chilly Toast (Grilled)",
-        "description": "Crisp toasted artisan bread crowned with a sizzling blend of molten cheese, spicy green chillies, and crushed black pepper.",
-        "price": 190,
-        "image": "assets/Sandwiches & Grilled Toasts/Cheese Chilly Toast (Grilled),jpg.webp",
+        "id": "ss_banana_split",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Banana Split",
+        "description": "A classic banana split served with ice cream and sweet sauces.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Banana Split.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 6,
+          "carbs": 50,
+          "fat": 16,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Banana",
+          "Ice Cream",
+          "Chocolate Sauce",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_anamica",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Anamica",
+        "description": "A signature dessert served with creamy ice cream and sweet toppings.",
+        "price": 230,
+        "image": "assets/Shiv Sagar Desserts/Anamica.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 5,
+          "carbs": 44,
+          "fat": 14,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Ice Cream",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_gadbad_special",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Gadbad Special",
+        "description": "A layered dessert featuring assorted ice creams and sweet toppings.",
+        "price": 285,
+        "image": "assets/Shiv Sagar Desserts/Gadbad Special.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 7,
+          "carbs": 52,
+          "fat": 18,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Assorted Ice Cream",
+          "Fruit",
+          "Syrup",
+          "Toppings"
+        ]
+      },
+      {
+        "id": "ss_sizzling_brownie_sundae",
+        "categoryId": "cat_shiv_sagar_desserts",
+        "name": "Sizzling Brownie Sundae",
+        "description": "A warm brownie dessert served with ice cream and chocolate sauce.",
+        "price": 255,
+        "image": "assets/Shiv Sagar Desserts/Sizzling Brownie Sundae.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 7,
+          "carbs": 55,
+          "fat": 20,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Brownie",
+          "Vanilla Ice Cream",
+          "Chocolate Sauce"
+        ]
+      },
+      {
+        "id": "ss_green_salad",
+        "categoryId": "cat_salads_raitas",
+        "name": "Green Salad",
+        "description": "A refreshing salad made with fresh green vegetables.",
+        "price": 115,
+        "image": "assets/Salads & Raitas/Green Salad.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 80,
+          "protein": 3,
+          "carbs": 12,
+          "fat": 2,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Cucumber",
+          "Carrot",
+          "Onion",
+          "Tomato",
+          "Lemon"
+        ]
+      },
+      {
+        "id": "ss_tomato_salad",
+        "categoryId": "cat_salads_raitas",
+        "name": "Tomato Salad",
+        "description": "Freshly sliced tomatoes served as a light salad.",
+        "price": 80,
+        "image": "assets/Salads & Raitas/Tomato Salad.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 35,
+          "protein": 2,
+          "carbs": 7,
+          "fat": 0,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Tomatoes",
+          "Lemon",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_kakdi_salad",
+        "categoryId": "cat_salads_raitas",
+        "name": "Kakdi Salad",
+        "description": "A simple, refreshing cucumber salad.",
+        "price": 80,
+        "image": "assets/Salads & Raitas/Kakdi Salad.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 25,
+          "protein": 1,
+          "carbs": 5,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Cucumber",
+          "Salt",
+          "Lemon"
+        ]
+      },
+      {
+        "id": "ss_veg_raita",
+        "categoryId": "cat_salads_raitas",
+        "name": "Veg. Raita",
+        "description": "Cooling yogurt mixed with fresh vegetables and mild seasoning.",
+        "price": 105,
+        "image": "assets/Salads & Raitas/Veg Raita.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 110,
+          "protein": 5,
+          "carbs": 10,
+          "fat": 5,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd",
+          "Cucumber",
+          "Carrot",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_boondi_raita",
+        "categoryId": "cat_salads_raitas",
+        "name": "Boondi Raita",
+        "description": "Creamy yogurt mixed with crunchy boondi and mild spices.",
+        "price": 115,
+        "image": "assets/Salads & Raitas/Boondi Raita.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 160,
+          "protein": 5,
+          "carbs": 15,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Curd",
+          "Boondi",
+          "Roasted Cumin",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_pineapple_raita",
+        "categoryId": "cat_salads_raitas",
+        "name": "Pineapple Raita",
+        "description": "A sweet and refreshing yogurt preparation with pineapple pieces.",
+        "price": 125,
+        "image": "assets/Salads & Raitas/Pineapple Raita.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 130,
+          "protein": 4,
+          "carbs": 18,
+          "fat": 5,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd",
+          "Pineapple",
+          "Sugar",
+          "Roasted Cumin"
+        ]
+      },
+      {
+        "id": "ss_pav_bhaji",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Pav Bhaji",
+        "description": "A classic Mumbai-style spiced vegetable bhaji served with buttered pav.",
+        "price": 175,
+        "image": "assets/pav_bhaji/Pav-bhaji.jpg",
         "dietary": "veg",
         "isFeatured": true,
         "isAvailable": true,
         "spicyLevel": 2,
-        "prepTime": "8 mins",
+        "prepTime": "15 mins",
         "nutrition": {
-          "calories": 440,
-          "protein": 17.0,
-          "carbs": 42.0,
-          "fat": 23.0,
-          "fiber": 2.5,
-          "sodium": 760
+          "calories": 380,
+          "protein": 8,
+          "carbs": 52,
+          "fat": 15,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Potatoes",
+          "Mixed Vegetables",
+          "Pav Bhaji Masala",
+          "Butter",
+          "Pav"
+        ]
+      },
+      {
+        "id": "ss_jain_pav_bhaji",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Jain Pav Bhaji",
+        "description": "A Jain-style vegetable bhaji prepared without onion, garlic, or root vegetables.",
+        "price": 185,
+        "image": "assets/pav_bhaji/Jain-PavBhaji.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 7,
+          "carbs": 50,
+          "fat": 13,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Jain-Approved Vegetables",
+          "Pav Bhaji Masala",
+          "Butter",
+          "Pav"
+        ]
+      },
+      {
+        "id": "ss_cheese_pav_bhaji",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Cheese Pav Bhaji",
+        "description": "Classic pav bhaji topped with melted cheese.",
+        "price": 220,
+        "image": "assets/pav_bhaji/cheese_pav_bhaji.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 14,
+          "carbs": 53,
+          "fat": 21,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Pav Bhaji Masala",
+          "Cheese",
+          "Butter",
+          "Pav"
+        ]
+      },
+      {
+        "id": "ss_kada_handi_pav_bhaji",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Kada Handi Pav Bhaji",
+        "description": "Spiced vegetable bhaji prepared and served in a traditional kadai-style preparation.",
+        "price": 205,
+        "image": "assets/pav_bhaji/kada Handi pavbhaji.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 8,
+          "carbs": 54,
+          "fat": 17,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Pav Bhaji Masala",
+          "Butter",
+          "Pav"
+        ]
+      },
+      {
+        "id": "ss_palak_pav_bhaji",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Palak Pav Bhaji",
+        "description": "A flavourful vegetable bhaji enriched with spinach and served with pav.",
+        "price": 175,
+        "image": "assets/pav_bhaji/palakpavbhaji.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 9,
+          "carbs": 49,
+          "fat": 14,
+          "fiber": 8
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Spinach",
+          "Mixed Vegetables",
+          "Pav Bhaji Masala",
+          "Butter",
+          "Pav"
+        ]
+      },
+      {
+        "id": "ss_paneer_pav_bhaji",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Paneer Pav Bhaji",
+        "description": "Spiced vegetable bhaji topped with paneer and served with pav.",
+        "price": 200,
+        "image": "assets/pav_bhaji/paneer-pavbhaji.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 15,
+          "carbs": 50,
+          "fat": 19,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Paneer",
+          "Pav Bhaji Masala",
+          "Butter",
+          "Pav"
+        ]
+      },
+      {
+        "id": "ss_bhaji_only",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Bhaji Only",
+        "description": "A serving of spicy mashed vegetable bhaji without pav.",
+        "price": 145,
+        "image": "assets/pav_bhaji/bhaji-only.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 6,
+          "carbs": 35,
+          "fat": 13,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Potatoes",
+          "Mixed Vegetables",
+          "Pav Bhaji Masala",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_pav",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Pav (2 pcs.)",
+        "description": "Two soft bread rolls served warm.",
+        "price": 35,
+        "image": "assets/pav_bhaji/pav-only.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 6,
+          "carbs": 40,
+          "fat": 4,
+          "fiber": 2
         },
         "allergens": [
           "Gluten",
           "Dairy"
         ],
         "ingredients": [
-          "Toasted Bread",
-          "Molten Processed Cheese",
-          "Finely Diced Green Chillies",
+          "Pav",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_masala_pav",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Masala Pav (2 pcs.)",
+        "description": "Two pav rolls toasted with a spicy onion-tomato masala.",
+        "price": 135,
+        "image": "assets/pav_bhaji/masala-pav.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 7,
+          "carbs": 43,
+          "fat": 13,
+          "fiber": 3
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Pav",
+          "Onions",
+          "Tomatoes",
+          "Pav Bhaji Masala",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_cheese_masala_pav",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Cheese Masala Pav",
+        "description": "Masala-coated pav topped with melted cheese.",
+        "price": 165,
+        "image": "assets/pav_bhaji/cheese-masalapav.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 12,
+          "carbs": 44,
+          "fat": 17,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pav",
+          "Onions",
+          "Tomatoes",
+          "Cheese",
           "Butter",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_roasted_papad",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Roasted Papad",
+        "description": "Crispy papad roasted until light and crunchy.",
+        "price": 35,
+        "image": "assets/pav_bhaji/rosted papd.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 60,
+          "protein": 3,
+          "carbs": 9,
+          "fat": 1,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Papad"
+        ]
+      },
+      {
+        "id": "ss_fried_papad",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Fried Papad",
+        "description": "Papad deep-fried until crisp.",
+        "price": 35,
+        "image": "assets/pav_bhaji/friedpapd.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 100,
+          "protein": 3,
+          "carbs": 9,
+          "fat": 6,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Papad",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_roasted_masala_papad",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Roasted Masala Papad",
+        "description": "Roasted crispy papad topped with a tangy masala mixture.",
+        "price": 40,
+        "image": "assets/pav_bhaji/Rosted MasalaPapad.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "4 mins",
+        "nutrition": {
+          "calories": 90,
+          "protein": 3,
+          "carbs": 12,
+          "fat": 3,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Papad",
+          "Onions",
+          "Tomatoes",
+          "Spices",
+          "Lemon"
+        ]
+      },
+      {
+        "id": "ss_fried_masala_papad",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Fried Masala Papad",
+        "description": "Crispy fried papad topped with tangy masala.",
+        "price": 45,
+        "image": "assets/pav_bhaji/Fried-MasalaPapad.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "4 mins",
+        "nutrition": {
+          "calories": 130,
+          "protein": 3,
+          "carbs": 12,
+          "fat": 8,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Papad",
+          "Oil",
+          "Onions",
+          "Tomatoes",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_fried_onion",
+        "categoryId": "cat_pav_bhaji",
+        "name": "Fried Onion",
+        "description": "Sliced onions fried until golden and crispy.",
+        "price": 45,
+        "image": "assets/pav_bhaji/fried-onion.jpg",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 150,
+          "protein": 2,
+          "carbs": 14,
+          "fat": 10,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Onions",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_cream_cola",
+        "categoryId": "cat_mocktails",
+        "name": "Cream Cola",
+        "description": "A creamy cola mocktail blended with vanilla ice cream and cream.",
+        "price": 200,
+        "image": "assets/Mocktails/Cream Cola.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 5,
+          "carbs": 38,
+          "fat": 12,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Vanilla Ice Cream",
+          "Cream",
+          "Thums Up",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_cinderella",
+        "categoryId": "cat_mocktails",
+        "name": "Cinderella",
+        "description": "A fruity combination of orange and pineapple juices with vanilla ice cream and khus sharbat.",
+        "price": 220,
+        "image": "assets/Mocktails/Cinderella.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 4,
+          "carbs": 42,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Orange Juice",
+          "Pineapple Juice",
+          "Vanilla Ice Cream",
+          "Khus Sharbat"
+        ]
+      },
+      {
+        "id": "ss_blue_lemon",
+        "categoryId": "cat_mocktails",
+        "name": "Blue Lemon",
+        "description": "A colourful blue mocktail with blue curaçao syrup, lemon soda, and vanilla ice cream.",
+        "price": 220,
+        "image": "assets/Mocktails/Blue Lemon.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 250,
+          "protein": 3,
+          "carbs": 40,
+          "fat": 8,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curacao Syrup",
+          "7 Up",
+          "Vanilla Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_fruit_punch",
+        "categoryId": "cat_mocktails",
+        "name": "Fruit Punch",
+        "description": "A fruity blend of orange and pineapple juices, mango pulp, ice cream, and refreshing syrups.",
+        "price": 220,
+        "image": "assets/Mocktails/Fruit Punch.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 4,
+          "carbs": 48,
+          "fat": 9,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Orange Juice",
+          "Pineapple Juice",
+          "Mango Pulp",
+          "Khus Sharbat",
+          "Ice Cream",
+          "Rooh Afza"
+        ]
+      },
+      {
+        "id": "ss_special_mocktail",
+        "categoryId": "cat_mocktails",
+        "name": "Special Mocktail",
+        "description": "A house-special combination of fruit juices, mixed ice cream, dry fruits, jelly, tutti frutti, and syrups.",
+        "price": 230,
+        "image": "assets/Mocktails/Special Mocktail.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "7 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 7,
+          "carbs": 55,
+          "fat": 15,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Orange Juice",
+          "Pineapple Juice",
+          "Mixed Ice Cream",
+          "Dry Fruits",
+          "Jelly",
+          "Tutti Frutti",
+          "Red Syrup",
+          "Rooh Afza"
+        ]
+      },
+      {
+        "id": "ss_orange_blossom",
+        "categoryId": "cat_mocktails",
+        "name": "Orange Blossom",
+        "description": "A smooth orange juice mocktail topped with vanilla ice cream.",
+        "price": 220,
+        "image": "assets/Mocktails/Orange Blossom.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 240,
+          "protein": 4,
+          "carbs": 36,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Orange Juice",
+          "Vanilla Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_pineapple_blossom",
+        "categoryId": "cat_mocktails",
+        "name": "Pineapple Blossom",
+        "description": "A refreshing pineapple juice mocktail blended with vanilla ice cream.",
+        "price": 220,
+        "image": "assets/Mocktails/Pineapple Blossom.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 240,
+          "protein": 4,
+          "carbs": 38,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Pineapple Juice",
+          "Vanilla Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_water_melon_blossoms",
+        "categoryId": "cat_mocktails",
+        "name": "Water melon Blossoms",
+        "description": "A chilled watermelon juice mocktail topped with vanilla ice cream.",
+        "price": 220,
+        "image": "assets/Mocktails/Water melon Blossoms.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 230,
+          "protein": 4,
+          "carbs": 35,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Watermelon Juice",
+          "Vanilla Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_pina_colada",
+        "categoryId": "cat_mocktails",
+        "name": "Pina Colada",
+        "description": "A tropical pineapple drink blended with fresh cream, ice cream, and soda.",
+        "price": 220,
+        "image": "assets/Mocktails/Pina Colada.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 4,
+          "carbs": 40,
+          "fat": 13,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Pineapple Juice",
+          "Fresh Cream",
+          "Ice Cream",
+          "Soda"
+        ]
+      },
+      {
+        "id": "ss_pinkish_lady",
+        "categoryId": "cat_mocktails",
+        "name": "Pinkish Lady",
+        "description": "A pink tropical mocktail made with pineapple juice, strawberry ice cream, and rose syrup.",
+        "price": 220,
+        "image": "assets/Mocktails/Pinkish Lady.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 4,
+          "carbs": 40,
+          "fat": 10,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Pineapple Juice",
+          "Strawberry Ice Cream",
+          "Rose Syrup"
+        ]
+      },
+      {
+        "id": "ss_dream_girl",
+        "categoryId": "cat_mocktails",
+        "name": "Dream Girl",
+        "description": "A fruity mocktail combining strawberry crush, pineapple juice, fresh juice, and crushed ice.",
+        "price": 220,
+        "image": "assets/Mocktails/Dream Girl.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 180,
+          "protein": 2,
+          "carbs": 40,
+          "fat": 1,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Strawberry Crush",
+          "Pineapple Juice",
+          "Fresh Juice",
+          "Crushed Ice"
+        ]
+      },
+      {
+        "id": "ss_love_bird",
+        "categoryId": "cat_mocktails",
+        "name": "Love Bird",
+        "description": "A refreshing pineapple mocktail with kesar pista syrup and vanilla ice cream.",
+        "price": 220,
+        "image": "assets/Mocktails/Love Bird.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 4,
+          "carbs": 40,
+          "fat": 9,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Kesar Pista Syrup",
+          "Vanilla Ice Cream",
+          "Pineapple Juice"
+        ]
+      },
+      {
+        "id": "ss_strawberry_delight",
+        "categoryId": "cat_mocktails",
+        "name": "Strawberry Delight",
+        "description": "A strawberry-flavoured mocktail with strawberry ice cream, khus syrup, pineapple juice, and strawberry crush.",
+        "price": 220,
+        "image": "assets/Mocktails/Strawberry Delight.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 4,
+          "carbs": 43,
+          "fat": 10,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Strawberry Ice Cream",
+          "Khus Syrup",
+          "Pineapple Juice",
+          "Strawberry Crush"
+        ]
+      },
+      {
+        "id": "ss_strawberry_moment",
+        "categoryId": "cat_mocktails",
+        "name": "Strawberry Moment",
+        "description": "A fruity blend of fresh milk, pineapple juice, and strawberry crush.",
+        "price": 220,
+        "image": "assets/Mocktails/Strawberry Moment.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 250,
+          "protein": 6,
+          "carbs": 38,
+          "fat": 7,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Milk",
+          "Pineapple Juice",
+          "Strawberry Crush"
+        ]
+      },
+      {
+        "id": "ss_chikku_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Chikku",
+        "description": "A creamy milkshake made with sweet chikku (sapodilla).",
+        "price": 165,
+        "image": "assets/Milk Shakes/Chikku.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 11,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Chikku",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_anjeer_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Anjeer (Fig)",
+        "description": "A rich, creamy milkshake blended with sweet figs.",
+        "price": 220,
+        "image": "assets/Milk Shakes/Anjeer.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 8,
+          "carbs": 42,
+          "fat": 13,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Anjeer (Figs)",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_chocolate_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Chocolate",
+        "description": "A smooth chocolate milkshake blended with chilled milk.",
+        "price": 190,
+        "image": "assets/Milk Shakes/Chocolate.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 8,
+          "carbs": 40,
+          "fat": 12,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Chocolate",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_chocolate_with_nuts_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Chocolate with nuts",
+        "description": "A chocolate milkshake enriched with crunchy nuts.",
+        "price": 220,
+        "image": "assets/Milk Shakes/Chocolate with nuts.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 10,
+          "carbs": 42,
+          "fat": 17,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Chocolate",
+          "Mixed Nuts",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kesar_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Kesar",
+        "description": "A creamy milkshake flavoured with aromatic saffron.",
+        "price": 165,
+        "image": "assets/Milk Shakes/Kesar.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 11,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Saffron",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kaju_anjeer_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Kaju Anjeer",
+        "description": "A rich milkshake combining cashews and sweet figs.",
+        "price": 245,
+        "image": "assets/Milk Shakes/Kaju anjeer.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 370,
+          "protein": 10,
+          "carbs": 43,
+          "fat": 18,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Cashews",
+          "Anjeer",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_banana_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Banana",
+        "description": "A thick banana milkshake with a naturally sweet flavour.",
+        "price": 135,
+        "image": "assets/Milk Shakes/Banana.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 40,
+          "fat": 9,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Banana",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_apple_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Apple",
+        "description": "A refreshing apple milkshake blended with chilled milk.",
+        "price": 165,
+        "image": "assets/Milk Shakes/Apple.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 7,
+          "carbs": 39,
+          "fat": 9,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Apple",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_pineapple_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Pineapple",
+        "description": "A chilled milkshake with a sweet, tropical pineapple flavour.",
+        "price": 160,
+        "image": "assets/Milk Shakes/Pineapple.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 6,
+          "carbs": 38,
+          "fat": 10,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Pineapple",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_rose_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Rose",
+        "description": "A creamy milkshake infused with a delicate rose flavour.",
+        "price": 165,
+        "image": "assets/Milk Shakes/Rose.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 39,
+          "fat": 10,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Rose Syrup",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kaju_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Kaju",
+        "description": "A rich, creamy milkshake blended with cashews.",
+        "price": 230,
+        "image": "assets/Milk Shakes/Kaju.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 9,
+          "carbs": 38,
+          "fat": 17,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Cashews",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_vanilla_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Vanilla",
+        "description": "A classic vanilla milkshake with a smooth, creamy texture.",
+        "price": 165,
+        "image": "assets/Milk Shakes/Vanilla.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 10,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Vanilla",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_kesar_thandai_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Kesar Thandai",
+        "description": "A creamy milkshake with saffron and aromatic thandai flavours.",
+        "price": 220,
+        "image": "assets/Milk Shakes/Kesar thandai.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 8,
+          "carbs": 40,
+          "fat": 14,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Saffron",
+          "Thandai Masala",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_thandai_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Thandai",
+        "description": "A chilled milkshake flavoured with traditional thandai spices.",
+        "price": 195,
+        "image": "assets/Milk Shakes/Thandai.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 310,
+          "protein": 7,
+          "carbs": 39,
+          "fat": 12,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Thandai Masala",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_badam_chocolate_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Badam Chocolate",
+        "description": "A rich chocolate milkshake blended with almonds.",
+        "price": 250,
+        "image": "assets/Milk Shakes/Badam chocolate.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 10,
+          "carbs": 42,
+          "fat": 19,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Almonds",
+          "Chocolate",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_cold_coffee",
+        "categoryId": "cat_milk_shakes",
+        "name": "Cold Coffee",
+        "description": "A chilled coffee milkshake with a smooth, creamy finish.",
+        "price": 135,
+        "image": "assets/Milk Shakes/Cold Coffee.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 250,
+          "protein": 7,
+          "carbs": 32,
+          "fat": 9,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Coffee",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_watermelon_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Water Melon (Seasonal)",
+        "description": "A refreshing seasonal watermelon milkshake.",
+        "price": 140,
+        "image": "assets/Milk Shakes/Watermelon.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 230,
+          "protein": 6,
+          "carbs": 34,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Watermelon",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_sitaphal_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Sitaphal (Custard Apple)",
+        "description": "A creamy milkshake made with sweet custard apple.",
+        "price": 220,
+        "image": "assets/Milk Shakes/Sitaphal.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 7,
+          "carbs": 42,
+          "fat": 12,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Custard Apple",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_strawberry_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Strawberry",
+        "description": "A sweet strawberry milkshake blended with chilled milk.",
+        "price": 220,
+        "image": "assets/Milk Shakes/Strawberry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 7,
+          "carbs": 40,
+          "fat": 10,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Strawberries",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_mango_milkshake",
+        "categoryId": "cat_milk_shakes",
+        "name": "Mango",
+        "description": "A thick and creamy mango milkshake.",
+        "price": 230,
+        "image": "assets/Milk Shakes/Mango.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 7,
+          "carbs": 44,
+          "fat": 11,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mango",
+          "Milk",
+          "Sugar",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_mango_lassi",
+        "categoryId": "cat_lassi",
+        "name": "Mango Lassi",
+        "description": "A creamy, refreshing lassi blended with sweet mango.",
+        "price": 135,
+        "image": "assets/Lassi/Mango Lassi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 6,
+          "carbs": 35,
+          "fat": 6,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd",
+          "Mango",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_special_lassi",
+        "categoryId": "cat_lassi",
+        "name": "Special Lassi",
+        "description": "A rich, thick and creamy special lassi.",
+        "price": 145,
+        "image": "assets/Lassi/Special Lassi.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 250,
+          "protein": 7,
+          "carbs": 36,
+          "fat": 8,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd",
+          "Milk",
+          "Sugar",
+          "Cream"
+        ]
+      },
+      {
+        "id": "ss_sweet_lassi",
+        "categoryId": "cat_lassi",
+        "name": "Sweet Lassi",
+        "description": "Traditional sweetened curd drink served chilled.",
+        "price": 115,
+        "image": "assets/Lassi/Sweet Lassi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 190,
+          "protein": 6,
+          "carbs": 28,
+          "fat": 5,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd",
+          "Water",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_salted_lassi",
+        "categoryId": "cat_lassi",
+        "name": "Salted Lassi",
+        "description": "A cooling savoury yogurt drink lightly seasoned with salt.",
+        "price": 105,
+        "image": "assets/Lassi/Salted Lassi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 120,
+          "protein": 6,
+          "carbs": 10,
+          "fat": 5,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd",
+          "Water",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_butter_milk",
+        "categoryId": "cat_lassi",
+        "name": "Butter Milk",
+        "description": "A light, refreshing buttermilk drink served chilled.",
+        "price": 75,
+        "image": "assets/Lassi/Butter Milk.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 60,
+          "protein": 3,
+          "carbs": 5,
+          "fat": 3,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd",
+          "Water",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_curds",
+        "categoryId": "cat_lassi",
+        "name": "Curds",
+        "description": "Fresh plain curd served chilled.",
+        "price": 55,
+        "image": "assets/Lassi/Curd.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 100,
+          "protein": 5,
+          "carbs": 7,
+          "fat": 5,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Curd"
+        ]
+      },
+      {
+        "id": "ss_mosambi_juice",
+        "categoryId": "cat_juices",
+        "name": "Mosambi (Sweet Lime)",
+        "description": "Freshly squeezed sweet lime juice served chilled.",
+        "price": 155,
+        "image": "assets/Juices/Mosambi.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 110,
+          "protein": 2,
+          "carbs": 25,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Mosambi"
+        ]
+      },
+      {
+        "id": "ss_orange_juice",
+        "categoryId": "cat_juices",
+        "name": "Orange",
+        "description": "Fresh orange juice with a naturally sweet and tangy flavour.",
+        "price": 155,
+        "image": "assets/Juices/Orange.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 110,
+          "protein": 2,
+          "carbs": 26,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Oranges"
+        ]
+      },
+      {
+        "id": "ss_ganga_jamuna",
+        "categoryId": "cat_juices",
+        "name": "Ganga Jamuna (Orange + Mosambi)",
+        "description": "A refreshing blend of orange and sweet lime juices.",
+        "price": 155,
+        "image": "assets/Juices/Ganga Jamuna.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 110,
+          "protein": 2,
+          "carbs": 26,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Orange",
+          "Mosambi"
+        ]
+      },
+      {
+        "id": "ss_maramari",
+        "categoryId": "cat_juices",
+        "name": "Maramari (Pineapple + Mosambi)",
+        "description": "A tropical combination of pineapple and sweet lime juice.",
+        "price": 155,
+        "image": "assets/Juices/Maramari.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 115,
+          "protein": 1,
+          "carbs": 27,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Pineapple",
+          "Mosambi"
+        ]
+      },
+      {
+        "id": "ss_pineapple_juice",
+        "categoryId": "cat_juices",
+        "name": "Pineapple",
+        "description": "Fresh pineapple juice with a sweet tropical flavour.",
+        "price": 145,
+        "image": "assets/Juices/Pineapple.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 130,
+          "protein": 1,
+          "carbs": 32,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Pineapple"
+        ]
+      },
+      {
+        "id": "ss_apple_juice",
+        "categoryId": "cat_juices",
+        "name": "Apple",
+        "description": "Fresh apple juice served chilled.",
+        "price": 145,
+        "image": "assets/Juices/Apple.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 115,
+          "protein": 0.5,
+          "carbs": 28,
+          "fat": 0,
+          "fiber": 0.5
+        },
+        "allergens": [],
+        "ingredients": [
+          "Apple"
+        ]
+      },
+      {
+        "id": "ss_tomato_juice",
+        "categoryId": "cat_juices",
+        "name": "Tomato",
+        "description": "Fresh tomato juice with a light, savoury flavour.",
+        "price": 90,
+        "image": "assets/Juices/Tomato.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 40,
+          "protein": 2,
+          "carbs": 9,
+          "fat": 0,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Tomatoes"
+        ]
+      },
+      {
+        "id": "ss_mango_juice",
+        "categoryId": "cat_juices",
+        "name": "Mango (Seasonal)",
+        "description": "Sweet mango juice prepared with seasonal mangoes.",
+        "price": 175,
+        "image": "assets/Juices/Mango.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 150,
+          "protein": 1,
+          "carbs": 36,
+          "fat": 0.5,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Mango"
+        ]
+      },
+      {
+        "id": "ss_strawberry_juice",
+        "categoryId": "cat_juices",
+        "name": "Strawberry (Seasonal)",
+        "description": "Refreshing strawberry juice made with seasonal strawberries.",
+        "price": 175,
+        "image": "assets/Juices/Strawberry.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 100,
+          "protein": 1,
+          "carbs": 24,
+          "fat": 0.5,
+          "fiber": 2
+        },
+        "allergens": [],
+        "ingredients": [
+          "Strawberries"
+        ]
+      },
+      {
+        "id": "ss_watermelon_juice",
+        "categoryId": "cat_juices",
+        "name": "Water Melon (Seasonal)",
+        "description": "Light and refreshing watermelon juice served chilled.",
+        "price": 120,
+        "image": "assets/Juices/Watermelon.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 85,
+          "protein": 1.5,
+          "carbs": 21,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Watermelon"
+        ]
+      },
+      {
+        "id": "ss_litchee_juice",
+        "categoryId": "cat_juices",
+        "name": "Lichee (Seasonal)",
+        "description": "Sweet and fragrant lychee juice served chilled.",
+        "price": 175,
+        "image": "assets/Juices/Litchee.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 125,
+          "protein": 1,
+          "carbs": 31,
+          "fat": 0,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Lychee"
+        ]
+      },
+      {
+        "id": "ss_dalam_juice",
+        "categoryId": "cat_juices",
+        "name": "Dalam (Pomegranate)",
+        "description": "Fresh pomegranate juice with a rich, fruity flavour.",
+        "price": 220,
+        "image": "assets/Juices/Dalam.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 135,
+          "protein": 2,
+          "carbs": 33,
+          "fat": 1,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Pomegranate"
+        ]
+      },
+      {
+        "id": "ss_fresh_lime_juice",
+        "categoryId": "cat_juices",
+        "name": "Fresh Lime Juice",
+        "description": "A refreshing lime drink made with freshly squeezed lime.",
+        "price": 80,
+        "image": "assets/Juices/Fresh Lime Juice.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 50,
+          "protein": 0.5,
+          "carbs": 12,
+          "fat": 0,
+          "fiber": 0.5
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fresh Lime",
+          "Water",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_fresh_lime_soda",
+        "categoryId": "cat_juices",
+        "name": "Fresh Lime Soda",
+        "description": "A fizzy lime drink served chilled.",
+        "price": 100,
+        "image": "assets/Juices/Fresh Lime Soda.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 70,
+          "protein": 0,
+          "carbs": 18,
+          "fat": 0,
+          "fiber": 0
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fresh Lime",
+          "Soda Water",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_ginger_lemon_juice",
+        "categoryId": "cat_juices",
+        "name": "Ginger Lemon Juice",
+        "description": "A tangy lemon drink with a refreshing hint of ginger.",
+        "price": 80,
+        "image": "assets/Juices/Ginger Lemon Juice.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 45,
+          "protein": 0.5,
+          "carbs": 11,
+          "fat": 0,
+          "fiber": 0.5
+        },
+        "allergens": [],
+        "ingredients": [
+          "Lemon",
+          "Ginger",
+          "Water",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_ginger_lemon_soda",
+        "categoryId": "cat_juices",
+        "name": "Ginger Lemon Soda",
+        "description": "A sparkling lemon soda with a refreshing ginger flavour.",
+        "price": 110,
+        "image": "assets/Juices/Ginger Lemon Soda.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 65,
+          "protein": 0,
+          "carbs": 16,
+          "fat": 0,
+          "fiber": 0
+        },
+        "allergens": [],
+        "ingredients": [
+          "Lemon",
+          "Ginger",
+          "Soda Water",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_paneer_pakoda",
+        "categoryId": "cat_indian_snacks",
+        "name": "Paneer Pakoda",
+        "description": "Crispy paneer fritters coated in a seasoned gram flour batter.",
+        "price": 175,
+        "image": "assets/Indian Snacks/Paneer Pakoda.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 12,
+          "carbs": 25,
+          "fat": 19,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Gram Flour",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_mix_pakoda",
+        "categoryId": "cat_indian_snacks",
+        "name": "Mix. Pakoda",
+        "description": "Assorted vegetable fritters coated in spiced gram flour batter and fried until crisp.",
+        "price": 155,
+        "image": "assets/Indian Snacks/Mix Pakoda.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 7,
+          "carbs": 32,
+          "fat": 16,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Gram Flour",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_cheese_pakoda",
+        "categoryId": "cat_indian_snacks",
+        "name": "Cheese Pakoda",
+        "description": "Cheese pieces coated in a savoury batter and fried until golden and crispy.",
+        "price": 230,
+        "image": "assets/Indian Snacks/Cheese Pakoda.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 13,
+          "carbs": 27,
+          "fat": 23,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Cheese",
+          "Gram Flour",
+          "Spices",
+          "Oil"
+        ]
+      },
+      {
+        "id": "ss_finger_chips",
+        "categoryId": "cat_indian_snacks",
+        "name": "Finger Chips",
+        "description": "Golden, crispy potato fries served hot.",
+        "price": 110,
+        "image": "assets/Indian Snacks/Finger Chips.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 310,
+          "protein": 4,
+          "carbs": 41,
+          "fat": 15,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Potatoes",
+          "Oil",
+          "Salt"
+        ]
+      },
+      {
+        "id": "ss_veg_seekh_kebab",
+        "categoryId": "cat_indian_snacks",
+        "name": "Veg. Seekh Kebab",
+        "description": "Spiced mixed vegetable kebabs grilled until golden and flavourful.",
+        "price": 245,
+        "image": "assets/Indian Snacks/Veg. Seekh Kebab.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 8,
+          "carbs": 30,
+          "fat": 14,
+          "fiber": 5
+        },
+        "allergens": [],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Spices",
           "Herbs"
         ]
       },
       {
-        "id": "ss_club_sandwich",
-        "categoryId": "cat_sandwiches",
-        "name": "Club Sandwich",
-        "description": "Triple-layered toasted feast with seasoned vegetable slaw, sliced cheese, tomato slices, cucumber, and house special dressing.",
-        "price": 170,
-        "image": "assets/Sandwiches & Grilled Toasts/Club Sandwich.jpg",
+        "id": "ss_paneer_tikka_dry",
+        "categoryId": "cat_indian_snacks",
+        "name": "Paneer Tikka Dry",
+        "description": "Paneer cubes marinated in aromatic spices and grilled with vegetables.",
+        "price": 310,
+        "image": "assets/Indian Snacks/Paneer Tikka Dry.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 18,
+          "carbs": 16,
+          "fat": 23,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Yogurt",
+          "Indian Spices",
+          "Capsicum",
+          "Onions"
+        ]
+      },
+      {
+        "id": "ss_tandoor_gobi",
+        "categoryId": "cat_indian_snacks",
+        "name": "Tandoor Gobi",
+        "description": "Cauliflower florets marinated in spiced yogurt and roasted tandoor-style.",
+        "price": 250,
+        "image": "assets/Indian Snacks/Tandoori gobi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 240,
+          "protein": 7,
+          "carbs": 20,
+          "fat": 14,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Cauliflower",
+          "Yogurt",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_hariyali_kebab",
+        "categoryId": "cat_indian_snacks",
+        "name": "Hariyali Kebab",
+        "description": "Green herb-marinated vegetarian kebabs grilled with fragrant spices.",
+        "price": 265,
+        "image": "assets/Indian Snacks/Hariyali Kebab.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 10,
+          "carbs": 22,
+          "fat": 15,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Vegetables",
+          "Fresh Herbs",
+          "Yogurt",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_mushroom_tikka_dry",
+        "categoryId": "cat_indian_snacks",
+        "name": "Mushroom Tikka Dry",
+        "description": "Mushrooms marinated in aromatic spices and grilled until tender.",
+        "price": 285,
+        "image": "assets/Indian Snacks/Mushroom Tikka Dry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 9,
+          "carbs": 16,
+          "fat": 16,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mushrooms",
+          "Yogurt",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_vanilla_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Vanilla",
+        "description": "Classic vanilla ice cream with a smooth, creamy texture.",
+        "price": 75,
+        "image": "assets/Ice Creams/Vanilla.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 140,
+          "protein": 3,
+          "carbs": 18,
+          "fat": 6,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Vanilla"
+        ]
+      },
+      {
+        "id": "ss_mango_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Mango",
+        "description": "Creamy ice cream with a sweet, fruity mango flavour.",
+        "price": 75,
+        "image": "assets/Ice Creams/Mango.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 150,
+          "protein": 3,
+          "carbs": 21,
+          "fat": 6,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Mango"
+        ]
+      },
+      {
+        "id": "ss_chocolate_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Chocolate",
+        "description": "Rich chocolate ice cream for a deliciously indulgent treat.",
+        "price": 75,
+        "image": "assets/Ice Creams/Chocolate.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 160,
+          "protein": 3,
+          "carbs": 20,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Chocolate"
+        ]
+      },
+      {
+        "id": "ss_pista_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Pista",
+        "description": "Smooth pistachio-flavoured ice cream with a nutty taste.",
+        "price": 75,
+        "image": "assets/Ice Creams/Pista.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 155,
+          "protein": 4,
+          "carbs": 18,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Pistachio"
+        ]
+      },
+      {
+        "id": "ss_kesar_pista_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Kesar Pista",
+        "description": "Creamy ice cream infused with saffron and pistachio flavours.",
+        "price": 75,
+        "image": "assets/Ice Creams/Kesar Pista.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 160,
+          "protein": 4,
+          "carbs": 19,
+          "fat": 8,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Saffron",
+          "Pistachio"
+        ]
+      },
+      {
+        "id": "ss_roasted_badam_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Roasted Badam",
+        "description": "Creamy almond ice cream with a roasted almond flavour.",
+        "price": 75,
+        "image": "assets/Ice Creams/Roasted Almond.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 170,
+          "protein": 4,
+          "carbs": 17,
+          "fat": 10,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Roasted Almonds"
+        ]
+      },
+      {
+        "id": "ss_anjeer_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Anjeer",
+        "description": "Creamy fig-flavoured ice cream with a naturally sweet taste.",
+        "price": 75,
+        "image": "assets/Ice Creams/Anjeer.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 160,
+          "protein": 3,
+          "carbs": 22,
+          "fat": 7,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Figs"
+        ]
+      },
+      {
+        "id": "ss_pineapple_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Pineapple",
+        "description": "Refreshing ice cream with a sweet pineapple flavour.",
+        "price": 75,
+        "image": "assets/Ice Creams/Pineapple.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 145,
+          "protein": 3,
+          "carbs": 20,
+          "fat": 6,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Pineapple"
+        ]
+      },
+      {
+        "id": "ss_sitaphal_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Sitaphal (Seasonal)",
+        "description": "Seasonal custard apple ice cream with a sweet, fruity flavour.",
+        "price": 75,
+        "image": "assets/Ice Creams/Custard apple.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 165,
+          "protein": 3,
+          "carbs": 23,
+          "fat": 7,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Custard Apple"
+        ]
+      },
+      {
+        "id": "ss_strawberry_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Strawberry (Seasonal)",
+        "description": "Sweet and creamy strawberry ice cream, available seasonally.",
+        "price": 75,
+        "image": "assets/Ice Creams/Strawberry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 145,
+          "protein": 3,
+          "carbs": 20,
+          "fat": 6,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Strawberry"
+        ]
+      },
+      {
+        "id": "ss_butterscotch_ice_cream",
+        "categoryId": "cat_ice_creams",
+        "name": "Butter Scotch",
+        "description": "Creamy butterscotch ice cream with a rich caramelised flavour.",
+        "price": 75,
+        "image": "assets/Ice Creams/Butterscotch.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 165,
+          "protein": 3,
+          "carbs": 21,
+          "fat": 8,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Cream",
+          "Sugar",
+          "Butterscotch"
+        ]
+      },
+      {
+        "id": "ss_tea",
+        "categoryId": "cat_hot_beverages",
+        "name": "Tea",
+        "description": "A freshly brewed cup of hot tea.",
+        "price": 50,
+        "image": "assets/Hot Beverages/Tea.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 60,
+          "protein": 1,
+          "carbs": 10,
+          "fat": 2,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Tea Leaves",
+          "Water",
+          "Milk",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_filter_coffee",
+        "categoryId": "cat_hot_beverages",
+        "name": "Filter Coffee",
+        "description": "Traditional filter coffee with a rich aroma and creamy taste.",
+        "price": 60,
+        "image": "assets/Hot Beverages/Filter Coffee.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 90,
+          "protein": 3,
+          "carbs": 10,
+          "fat": 4,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Coffee Decoction",
+          "Milk",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_nescafe",
+        "categoryId": "cat_hot_beverages",
+        "name": "Nescafe",
+        "description": "A hot instant coffee prepared with Nescafe coffee powder.",
+        "price": 70,
+        "image": "assets/Hot Beverages/Nescafe.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 80,
+          "protein": 3,
+          "carbs": 9,
+          "fat": 3,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Nescafe Coffee Powder",
+          "Milk",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_expresso_coffee",
+        "categoryId": "cat_hot_beverages",
+        "name": "Expresso Coffee",
+        "description": "A coffee beverage made with Nescafe and chocolate powder.",
+        "price": 70,
+        "image": "assets/Hot Beverages/Expresso Coffee.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 100,
+          "protein": 3,
+          "carbs": 12,
+          "fat": 4,
+          "fiber": 1
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Nescafe Coffee Powder",
+          "Chocolate Powder",
+          "Milk",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_milk",
+        "categoryId": "cat_hot_beverages",
+        "name": "Milk",
+        "description": "A warm cup of milk served fresh.",
+        "price": 40,
+        "image": "assets/Hot Beverages/Milk.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "3 mins",
+        "nutrition": {
+          "calories": 120,
+          "protein": 6,
+          "carbs": 9,
+          "fat": 6,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk"
+        ]
+      },
+      {
+        "id": "ss_hot_chocolate",
+        "categoryId": "cat_hot_beverages",
+        "name": "Hot Chocolate",
+        "description": "A warm, smooth chocolate drink served hot.",
+        "price": 70,
+        "image": "assets/Hot Beverages/Hot Chocolate.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 160,
+          "protein": 5,
+          "carbs": 24,
+          "fat": 5,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Milk",
+          "Chocolate Powder",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_garlic_bread",
+        "categoryId": "cat_garlic_breads",
+        "name": "Garlic Bread",
+        "description": "Toasted bread flavoured with garlic and served with garlic chutney.",
+        "price": 250,
+        "image": "assets/Garlic Breads/garlic bread.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 8,
+          "carbs": 40,
+          "fat": 12,
+          "fiber": 2
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Bread",
+          "Garlic",
+          "Garlic Chutney",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_cheese_garlic_bread",
+        "categoryId": "cat_garlic_breads",
+        "name": "Garlic Bread with Cheese",
+        "description": "Garlic-flavoured toasted bread topped with melted cheese.",
+        "price": 265,
+        "image": "assets/Garlic Breads/cheese garlic bread.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 13,
+          "carbs": 42,
+          "fat": 18,
+          "fiber": 2
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Bread",
+          "Garlic",
+          "Cheese",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_garlic_bread_mushroom_cheese",
+        "categoryId": "cat_garlic_breads",
+        "name": "Garlic Bread with Mushroom & Cheese",
+        "description": "Toasted garlic bread topped with mushrooms and melted cheese.",
+        "price": 295,
+        "image": "assets/Garlic Breads/garlic bread with mushroom and cheese.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 16,
+          "carbs": 44,
+          "fat": 21,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Bread",
+          "Garlic",
+          "Mushrooms",
+          "Cheese",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_garlic_bread_salad_cheese",
+        "categoryId": "cat_garlic_breads",
+        "name": "Garlic Bread with Salad and Cheese",
+        "description": "Garlic bread topped with cheese and served with a fresh salad.",
+        "price": 305,
+        "image": "assets/Garlic Breads/garlic bread with cheese and salad.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 15,
+          "carbs": 46,
+          "fat": 21,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Bread",
+          "Garlic",
+          "Cheese",
+          "Fresh Salad",
+          "Butter"
+        ]
+      },
+      {
+        "id": "ss_fruit_salad",
+        "categoryId": "cat_fruit_salad",
+        "name": "Fruit Salad",
+        "description": "A refreshing bowl of fresh fruit salad.",
+        "price": 145,
+        "image": "assets/Fruit Salad/Fruit Salad.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 150,
+          "protein": 2,
+          "carbs": 32,
+          "fat": 2,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Assorted Fruits"
+        ]
+      },
+      {
+        "id": "ss_fruit_salad_ice_cream",
+        "categoryId": "cat_fruit_salad",
+        "name": "Fruit Salad with Ice Cream",
+        "description": "Fresh fruit salad served with a scoop of creamy ice cream.",
+        "price": 175,
+        "image": "assets/Fruit Salad/Fruit Salad with ice cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 4,
+          "carbs": 40,
+          "fat": 9,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Assorted Fruits",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_fruit_salad_jelly_ice_cream",
+        "categoryId": "cat_fruit_salad",
+        "name": "Fruit Salad with Jelly & Ice Cream",
+        "description": "A colourful combination of fresh fruits, jelly, and creamy ice cream.",
+        "price": 210,
+        "image": "assets/Fruit Salad/Fruit Salad with Jelly & ice cream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 4,
+          "carbs": 52,
+          "fat": 10,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Assorted Fruits",
+          "Jelly",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_fruit_salad_jelly",
+        "categoryId": "cat_fruit_salad",
+        "name": "Fruit Salad with Jelly",
+        "description": "Fresh fruit salad combined with sweet, colourful jelly.",
+        "price": 175,
+        "image": "assets/Fruit Salad/Fruit Salad with Jelly.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 220,
+          "protein": 3,
+          "carbs": 45,
+          "fat": 2,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Assorted Fruits",
+          "Jelly"
+        ]
+      },
+      {
+        "id": "ss_jelly",
+        "categoryId": "cat_fruit_salad",
+        "name": "Jelly",
+        "description": "A serving of sweet, colourful jelly.",
+        "price": 155,
+        "image": "assets/Fruit Salad/Jelly.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 160,
+          "protein": 2,
+          "carbs": 38,
+          "fat": 0,
+          "fiber": 0
+        },
+        "allergens": [],
+        "ingredients": [
+          "Jelly"
+        ]
+      },
+      {
+        "id": "ss_jelly_ice_cream",
+        "categoryId": "cat_fruit_salad",
+        "name": "Jelly with Ice Cream",
+        "description": "Sweet jelly served with a scoop of creamy ice cream.",
+        "price": 190,
+        "image": "assets/Fruit Salad/Jelly with icecream.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 4,
+          "carbs": 42,
+          "fat": 9,
+          "fiber": 0
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Jelly",
+          "Ice Cream"
+        ]
+      },
+      {
+        "id": "ss_apple",
+        "categoryId": "cat_fruit_plates",
+        "name": "Apple",
+        "description": "Fresh apple served as a light and refreshing fruit plate.",
+        "price": 145,
+        "image": "assets/Fruit Plates/Apple.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 95,
+          "protein": 0.5,
+          "carbs": 25,
+          "fat": 0.3,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Apple"
+        ]
+      },
+      {
+        "id": "ss_mixed_fruits",
+        "categoryId": "cat_fruit_plates",
+        "name": "Mixed Fruits",
+        "description": "A refreshing plate of assorted fresh seasonal fruits.",
+        "price": 165,
+        "image": "assets/Fruit Plates/Mixed Fruit.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 120,
+          "protein": 2,
+          "carbs": 30,
+          "fat": 0.5,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Assorted Seasonal Fruits"
+        ]
+      },
+      {
+        "id": "ss_pineapple",
+        "categoryId": "cat_fruit_plates",
+        "name": "Pineapple",
+        "description": "Fresh pineapple pieces served chilled.",
+        "price": 110,
+        "image": "assets/Fruit Plates/Pineapple.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 82,
+          "protein": 0.9,
+          "carbs": 22,
+          "fat": 0.2,
+          "fiber": 2.3
+        },
+        "allergens": [],
+        "ingredients": [
+          "Pineapple"
+        ]
+      },
+      {
+        "id": "ss_watermelon",
+        "categoryId": "cat_fruit_plates",
+        "name": "Water Melon",
+        "description": "Fresh, juicy watermelon slices served chilled.",
+        "price": 110,
+        "image": "assets/Fruit Plates/Watermelon.png",
+        "dietary": "vegan",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 85,
+          "protein": 1.7,
+          "carbs": 21,
+          "fat": 0.4,
+          "fiber": 1
+        },
+        "allergens": [],
+        "ingredients": [
+          "Watermelon"
+        ]
+      },
+      {
+        "id": "ss_anjeer_cream",
+        "categoryId": "cat_fruit_dishes",
+        "name": "Anjeer Cream",
+        "description": "A rich, creamy fruit dessert featuring the naturally sweet flavour of figs.",
+        "price": 220,
+        "image": "assets/Fruit Dishes/Anjeer.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 7,
+          "carbs": 42,
+          "fat": 18,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Anjeer (Figs)",
+          "Cream",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_mixed_fruit_cream",
+        "categoryId": "cat_fruit_dishes",
+        "name": "Mixed Fruit Cream",
+        "description": "A refreshing blend of assorted fruits folded into smooth, chilled cream.",
+        "price": 195,
+        "image": "assets/Fruit Dishes/Mixed Fruit.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 5,
+          "carbs": 38,
+          "fat": 14,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mixed Fruits",
+          "Cream",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_dry_fruit_cream",
+        "categoryId": "cat_fruit_dishes",
+        "name": "Dry Fruit Cream",
+        "description": "A creamy dessert enriched with a selection of chopped dry fruits.",
+        "price": 230,
+        "image": "assets/Fruit Dishes/Dry Fruit.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 9,
+          "carbs": 40,
+          "fat": 25,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Mixed Dry Fruits",
+          "Cream",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_banana_cream",
+        "categoryId": "cat_fruit_dishes",
+        "name": "Banana Cream",
+        "description": "Sweet banana pieces served with smooth, chilled cream.",
+        "price": 195,
+        "image": "assets/Fruit Dishes/Banana.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 5,
+          "carbs": 39,
+          "fat": 15,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Banana",
+          "Cream",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_chikku_cream",
+        "categoryId": "cat_fruit_dishes",
+        "name": "Chikku Cream",
+        "description": "A creamy fruit dessert featuring the naturally sweet flavour of chikku (sapodilla).",
+        "price": 195,
+        "image": "assets/Fruit Dishes/Chikku.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 5,
+          "carbs": 42,
+          "fat": 15,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Chikku (Sapodilla)",
+          "Cream",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_pineapple_cream",
+        "categoryId": "cat_fruit_dishes",
+        "name": "Pineapple Cream",
+        "description": "Juicy pineapple pieces combined with smooth, refreshing cream.",
+        "price": 195,
+        "image": "assets/Fruit Dishes/Pineapple.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "5 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 4,
+          "carbs": 36,
+          "fat": 14,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Pineapple",
+          "Cream",
+          "Sugar"
+        ]
+      },
+      {
+        "id": "ss_veg_spring_roll",
+        "categoryId": "cat_chinese_starters",
+        "name": "Veg Spring Roll",
+        "description": "Crispy golden rolls filled with seasoned vegetables and served with dipping sauce.",
+        "price": 195,
+        "image": "assets/Chinese Starters/spring roll.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 6,
+          "carbs": 34,
+          "fat": 13,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Spring Roll Sheets",
+          "Cabbage",
+          "Carrots",
+          "Capsicum",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_shiv_sagar_special_spring_roll",
+        "categoryId": "cat_chinese_starters",
+        "name": "Shiv Sagar Special Spring Roll",
+        "description": "House-special crispy spring rolls packed with a flavourful vegetable filling.",
+        "price": 220,
+        "image": "assets/Chinese Starters/shiv sagar special spring roll.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 15,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Spring Roll Sheets",
+          "Mixed Vegetables",
+          "Garlic",
+          "Chinese Seasonings"
+        ]
+      },
+      {
+        "id": "ss_paneer_spring_roll",
+        "categoryId": "cat_chinese_starters",
+        "name": "Paneer Spring Roll",
+        "description": "Crispy spring rolls stuffed with crumbled paneer, vegetables, and aromatic spices.",
+        "price": 240,
+        "image": "assets/Chinese Starters/paneer spring roll.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 11,
+          "carbs": 32,
+          "fat": 19,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Paneer",
+          "Spring Roll Sheets",
+          "Mixed Vegetables",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_chinese_bhel",
+        "categoryId": "cat_chinese_starters",
+        "name": "Chinese Bhel",
+        "description": "Crunchy noodles tossed with chopped vegetables and tangy, spicy Indo-Chinese sauces.",
+        "price": 205,
+        "image": "assets/Chinese Starters/chinese bhel.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 7,
+          "carbs": 45,
+          "fat": 16,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Crispy Noodles",
+          "Cabbage",
+          "Capsicum",
+          "Spring Onions",
+          "Chinese Sauces"
+        ]
+      },
+      {
+        "id": "ss_idli_chilly_fry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Idli Chilly Dry",
+        "description": "Bite-sized idli pieces tossed with capsicum, onions, and spicy Indo-Chinese seasoning.",
+        "price": 195,
+        "image": "assets/Chinese Starters/idli chilli fry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 7,
+          "carbs": 42,
+          "fat": 10,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Idli",
+          "Capsicum",
+          "Onions",
+          "Garlic",
+          "Chilli Sauce"
+        ]
+      },
+      {
+        "id": "ss_schezwan_idli",
+        "categoryId": "cat_chinese_starters",
+        "name": "Schezwan Idli",
+        "description": "Soft idli pieces stir-fried with fiery Schezwan sauce and crunchy vegetables.",
+        "price": 195,
+        "image": "assets/Chinese Starters/schezwan idli.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 7,
+          "carbs": 43,
+          "fat": 11,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Idli",
+          "Schezwan Sauce",
+          "Garlic",
+          "Capsicum",
+          "Spring Onions"
+        ]
+      },
+      {
+        "id": "ss_chilly_babycorn_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Chilly Babycorn Dry",
+        "description": "Crispy baby corn tossed with chillies, capsicum, garlic, and a savoury Chinese sauce.",
+        "price": 205,
+        "image": "assets/Chinese Starters/chilly babycorn dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 310,
+          "protein": 6,
+          "carbs": 36,
+          "fat": 16,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Baby Corn",
+          "Capsicum",
+          "Garlic",
+          "Chilli Sauce",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_gobi_lollypop_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Gobi Lollypop Dry",
+        "description": "Crispy cauliflower florets coated in a spiced batter and tossed in Chinese sauces.",
+        "price": 190,
+        "image": "assets/Chinese Starters/gobi lollypop dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 6,
+          "carbs": 35,
+          "fat": 15,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Cauliflower",
+          "Cornflour",
+          "Garlic",
+          "Chilli Sauce",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_paneer_chilly_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Paneer Chilly Dry",
+        "description": "Paneer cubes tossed with green chillies, capsicum, onions, and Indo-Chinese sauces.",
+        "price": 255,
+        "image": "assets/Chinese Starters/paneer chilli dru.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 390,
+          "protein": 16,
+          "carbs": 24,
+          "fat": 25,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Paneer",
+          "Capsicum",
+          "Onions",
+          "Green Chillies",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_paneer_manchurian_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Paneer Manchurian Dry",
+        "description": "Golden paneer pieces coated in a bold Manchurian sauce with garlic and spring onions.",
+        "price": 255,
+        "image": "assets/Chinese Starters/paneer manchurian dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 15,
+          "carbs": 27,
+          "fat": 23,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Paneer",
+          "Cornflour",
+          "Garlic",
+          "Spring Onions",
+          "Manchurian Sauce"
+        ]
+      },
+      {
+        "id": "ss_babycorn_paneer_chilly_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Baby Corn Paneer Chilly Dry",
+        "description": "Paneer and baby corn tossed with capsicum, chillies, and spicy Chinese sauces.",
+        "price": 255,
+        "image": "assets/Chinese Starters/babycorn paneer chilly dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 370,
+          "protein": 14,
+          "carbs": 31,
+          "fat": 21,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Paneer",
+          "Baby Corn",
+          "Capsicum",
+          "Garlic",
+          "Chilli Sauce"
+        ]
+      },
+      {
+        "id": "ss_paneer_hot_pan",
+        "categoryId": "cat_chinese_starters",
+        "name": "Paneer Hot Pan",
+        "description": "Sizzling-style paneer served with vegetables and a bold, spicy house sauce.",
+        "price": 300,
+        "image": "assets/Chinese Starters/paneer hot pan.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 17,
+          "carbs": 28,
+          "fat": 27,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Paneer",
+          "Capsicum",
+          "Onions",
+          "Garlic",
+          "House Sauce"
+        ]
+      },
+      {
+        "id": "ss_veg_65_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Veg. '65' Dry",
+        "description": "Crispy vegetable bites coated in a spicy, aromatic 65-style seasoning.",
+        "price": 210,
+        "image": "assets/Chinese Starters/veg 65 dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 7,
+          "carbs": 36,
+          "fat": 17,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Cornflour",
+          "Garlic",
+          "Chilli",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_veg_hot_pan",
+        "categoryId": "cat_chinese_starters",
+        "name": "Veg Hot Pan",
+        "description": "A hot-pan vegetable speciality with capsicum, onions, and a savoury spicy sauce.",
+        "price": 265,
+        "image": "assets/Chinese Starters/veg hot pan.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 8,
+          "carbs": 34,
+          "fat": 19,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Capsicum",
+          "Onions",
+          "Garlic",
+          "House Sauce"
+        ]
+      },
+      {
+        "id": "ss_babycorn_mushroom_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Baby Corn Mushroom Dry",
+        "description": "Baby corn and mushrooms tossed together with garlic and Chinese seasonings.",
+        "price": 275,
+        "image": "assets/Chinese Starters/babycorn mushroom dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 9,
+          "carbs": 32,
+          "fat": 19,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Baby Corn",
+          "Mushrooms",
+          "Garlic",
+          "Capsicum",
+          "Chinese Sauces"
+        ]
+      },
+      {
+        "id": "ss_mushroom_chilli_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Mushroom Chilli Dry",
+        "description": "Mushrooms stir-fried with chillies, onions, capsicum, and spicy Indo-Chinese sauce.",
+        "price": 255,
+        "image": "assets/Chinese Starters/mushroom chilly dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 8,
+          "carbs": 29,
+          "fat": 18,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Mushrooms",
+          "Capsicum",
+          "Onions",
+          "Garlic",
+          "Chilli Sauce"
+        ]
+      },
+      {
+        "id": "ss_green_pepper_chilli_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Green Pepper Chilli Dry",
+        "description": "Green peppers tossed with chillies, garlic, and a bold Chinese-style seasoning.",
+        "price": 265,
+        "image": "assets/Chinese Starters/green pepper chillt dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 6,
+          "carbs": 28,
+          "fat": 17,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Green Peppers",
+          "Green Chillies",
+          "Garlic",
+          "Onions",
+          "Chinese Sauce"
+        ]
+      },
+      {
+        "id": "ss_crispy_vegetable_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Crispy Vegetable Dry",
+        "description": "Crunchy vegetable pieces coated in a crisp batter and tossed with savoury spices.",
+        "price": 250,
+        "image": "assets/Chinese Starters/cripy vegetable dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 7,
+          "carbs": 39,
+          "fat": 17,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Cornflour",
+          "Garlic",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_crispy_mushroom_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Crispy Mushroom Dry",
+        "description": "Mushrooms coated in a crunchy batter and seasoned for a savoury, crispy bite.",
+        "price": 275,
+        "image": "assets/Chinese Starters/crispy mushroom dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 8,
+          "carbs": 34,
+          "fat": 21,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Mushrooms",
+          "Cornflour",
+          "Garlic",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_veg_wonton_green_sauce",
+        "categoryId": "cat_chinese_starters",
+        "name": "Veg Wonton with Green Sauce",
+        "description": "Vegetable-filled wontons served with a fresh, tangy green sauce.",
+        "price": 220,
+        "image": "assets/Chinese Starters/veg wonton with green sauce.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 7,
+          "carbs": 36,
+          "fat": 13,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Wonton Wrappers",
+          "Mixed Vegetables",
+          "Green Sauce",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_veg_wonton_garlic_sauce",
+        "categoryId": "cat_chinese_starters",
+        "name": "Veg Wonton with Garlic Sauce",
+        "description": "Crispy or steamed vegetable wontons paired with a flavourful garlic sauce.",
+        "price": 220,
+        "image": "assets/Chinese Starters/veg wonton with garlic sauce.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 7,
+          "carbs": 35,
+          "fat": 14,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Wonton Wrappers",
+          "Mixed Vegetables",
+          "Garlic Sauce",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_gobi_chilli_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Gobi Chilli Dry",
+        "description": "Crispy cauliflower tossed with green chillies, capsicum, and Chinese sauces.",
+        "price": 220,
+        "image": "assets/Chinese Starters/gobi chilli dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 310,
+          "protein": 6,
+          "carbs": 34,
+          "fat": 16,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Cauliflower",
+          "Capsicum",
+          "Green Chillies",
+          "Garlic",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_onion_ring",
+        "categoryId": "cat_chinese_starters",
+        "name": "Onion Ring",
+        "description": "Golden, crunchy onion rings coated in a crisp seasoned batter.",
+        "price": 225,
+        "image": "assets/Chinese Starters/onion ring.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 5,
+          "carbs": 38,
+          "fat": 17,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Onions",
+          "Flour",
+          "Breadcrumbs",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_veg_manchurian_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Veg Manchurian Dry",
+        "description": "Crispy vegetable balls tossed with garlic, spring onions, and classic Manchurian sauce.",
+        "price": 240,
+        "image": "assets/Chinese Starters/veg manchurian dry.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 7,
+          "carbs": 37,
+          "fat": 16,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Cornflour",
+          "Garlic",
+          "Spring Onions",
+          "Manchurian Sauce"
+        ]
+      },
+      {
+        "id": "ss_paneer_sesame_schezwan",
+        "categoryId": "cat_chinese_starters",
+        "name": "Paneer Sesame Schezwan",
+        "description": "Paneer tossed in spicy Schezwan sauce and finished with toasted sesame seeds.",
+        "price": 345,
+        "image": "assets/Chinese Starters/paneer sesame schezwan.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "16 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 18,
+          "carbs": 29,
+          "fat": 28,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Paneer",
+          "Schezwan Sauce",
+          "Sesame Seeds",
+          "Garlic",
+          "Capsicum"
+        ]
+      },
+      {
+        "id": "ss_paneer_65_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Paneer 65 Dry",
+        "description": "Crispy paneer bites coated in a spicy 65-style seasoning with curry leaves.",
+        "price": 305,
+        "image": "assets/Chinese Starters/paneer 65 dry.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 17,
+          "carbs": 27,
+          "fat": 27,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Paneer",
+          "Cornflour",
+          "Chilli",
+          "Curry Leaves",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_mushroom_manchurian_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Mushroom Manchurian Dry",
+        "description": "Mushrooms tossed with garlic, spring onions, and a rich Manchurian coating.",
+        "price": 255,
+        "image": "assets/Chinese Starters/mushroom manchurian dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 8,
+          "carbs": 32,
+          "fat": 19,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Mushrooms",
+          "Cornflour",
+          "Garlic",
+          "Spring Onions",
+          "Manchurian Sauce"
+        ]
+      },
+      {
+        "id": "ss_gobi_manchurian_dry",
+        "categoryId": "cat_chinese_starters",
+        "name": "Gobi Manchurian Dry",
+        "description": "Crispy cauliflower florets coated in a tangy, spicy Manchurian sauce.",
+        "price": 230,
+        "image": "assets/Chinese Starters/gobi manchurian dry.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 6,
+          "carbs": 36,
+          "fat": 16,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Cauliflower",
+          "Cornflour",
+          "Garlic",
+          "Spring Onions",
+          "Manchurian Sauce"
+        ]
+      },
+      {
+        "id": "ss_veg_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Veg. Fried Rice",
+        "description": "Classic wok-fried rice tossed with fresh vegetables, spring onions, and Chinese seasonings.",
+        "price": 245,
+        "image": "assets/Chinese Rice/Veg. Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 12,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Carrots",
+          "Capsicum",
+          "Cabbage",
+          "Spring Onions",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_schezwan_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Schezwan Fried Rice",
+        "description": "Spicy fried rice tossed with Schezwan chilli-garlic sauce and crunchy vegetables.",
+        "price": 265,
+        "image": "assets/Chinese Rice/Schezwan Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 410,
+          "protein": 8,
+          "carbs": 59,
+          "fat": 14,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Schezwan Sauce",
+          "Garlic",
+          "Capsicum",
+          "Carrots",
+          "Spring Onions"
+        ]
+      },
+      {
+        "id": "ss_singapore_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Singapore Fried Rice",
+        "description": "Aromatic fried rice with vegetables and a distinctive blend of Singapore-style spices.",
+        "price": 275,
+        "image": "assets/Chinese Rice/Singapore Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "13 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 8,
+          "carbs": 57,
+          "fat": 13,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Mixed Vegetables",
+          "Garlic",
+          "Spices",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_peking_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Peking Fried Rice",
+        "description": "Wok-fried rice with crisp vegetables and savoury Peking-style seasoning.",
+        "price": 275,
+        "image": "assets/Chinese Rice/Peking Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 390,
+          "protein": 8,
+          "carbs": 56,
+          "fat": 13,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Mixed Vegetables",
+          "Garlic",
+          "Soy Sauce",
+          "Chinese Seasonings"
+        ]
+      },
+      {
+        "id": "ss_mushroom_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Mushroom Fried Rice",
+        "description": "Fried rice prepared with tender mushrooms, fresh vegetables, and garlic.",
+        "price": 240,
+        "image": "assets/Chinese Rice/Mushroom Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 370,
+          "protein": 9,
+          "carbs": 54,
+          "fat": 12,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Mushrooms",
+          "Garlic",
+          "Spring Onions",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_ginger_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Ginger Fried Rice",
+        "description": "Fragrant fried rice infused with fresh ginger, garlic, and vegetables.",
+        "price": 240,
+        "image": "assets/Chinese Rice/Ginger Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 7,
+          "carbs": 55,
+          "fat": 11,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Rice",
+          "Ginger",
+          "Garlic",
+          "Spring Onions",
+          "Mixed Vegetables"
+        ]
+      },
+      {
+        "id": "ss_seven_jewel_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Seven Jewel Rice",
+        "description": "Colourful fried rice combining a variety of vegetables with savoury Chinese seasonings.",
+        "price": 280,
+        "image": "assets/Chinese Rice/Seven Jewel Rice.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "14 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 9,
+          "carbs": 60,
+          "fat": 14,
+          "fiber": 6
+        },
+        "ingredients": [
+          "Rice",
+          "Mixed Vegetables",
+          "Garlic",
+          "Spring Onions",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_taiwan_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Taiwan Fried Rice",
+        "description": "Wok-tossed rice with vegetables and a savoury Taiwan-style seasoning blend.",
+        "price": 245,
+        "image": "assets/Chinese Rice/Taiwan Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 8,
+          "carbs": 56,
+          "fat": 12,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Mixed Vegetables",
+          "Garlic",
+          "Soy Sauce",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_hongkong_fried_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Hongkong Fried Rice",
+        "description": "Indo-Chinese fried rice tossed with vegetables, spring onions, and savoury sauces.",
+        "price": 285,
+        "image": "assets/Chinese Rice/Hongkong Fried Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "13 mins",
+        "nutrition": {
+          "calories": 410,
+          "protein": 9,
+          "carbs": 58,
+          "fat": 14,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Mixed Vegetables",
+          "Garlic",
+          "Spring Onions",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_triple_schezwan_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Triple Schezwan Rice",
+        "description": "A hearty, spicy Schezwan rice speciality with bold chilli-garlic flavour.",
+        "price": 335,
+        "image": "assets/Chinese Rice/Triple Schezwan Rice.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 580,
+          "protein": 13,
+          "carbs": 78,
+          "fat": 22,
+          "fiber": 6
+        },
+        "ingredients": [
+          "Rice",
+          "Schezwan Sauce",
+          "Garlic",
+          "Mixed Vegetables",
+          "Chilli Sauce"
+        ]
+      },
+      {
+        "id": "ss_malaysian_noodles_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Malaysian Noodles Rice",
+        "description": "A fusion-style rice dish with vegetables and aromatic Malaysian-inspired spices.",
+        "price": 290,
+        "image": "assets/Chinese Rice/Malaysian Noodles Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "14 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 9,
+          "carbs": 61,
+          "fat": 15,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Mixed Vegetables",
+          "Garlic",
+          "Spices",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_macroni_rice",
+        "categoryId": "cat_chinese_rice",
+        "name": "Macroni Rice",
+        "description": "A fusion preparation combining rice, macaroni, vegetables, and savoury seasonings.",
+        "price": 280,
+        "image": "assets/Chinese Rice/Macroni Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "14 mins",
+        "nutrition": {
+          "calories": 440,
+          "protein": 10,
+          "carbs": 65,
+          "fat": 14,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Rice",
+          "Macaroni",
+          "Mixed Vegetables",
+          "Garlic",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_cold_beverages",
+        "categoryId": "cat_cold_beverages",
+        "name": "Cold Beverages",
+        "description": "Refreshing chilled beverages to complement your meal.",
+        "price": 45,
+        "image": "assets/Cold Beverages/Cold Beverages.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "2 mins",
+        "nutrition": {
+          "calories": 120,
+          "protein": 1,
+          "carbs": 28,
+          "fat": 0,
+          "fiber": 0
+        },
+        "ingredients": [
+          "Chilled Beverage"
+        ]
+      },
+      {
+        "id": "ss_soda",
+        "categoryId": "cat_cold_beverages",
+        "name": "Soda",
+        "description": "A chilled, fizzy soda served cold.",
+        "price": 30,
+        "image": "assets/Cold Beverages/Soda.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "1 min",
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "fiber": 0
+        },
+        "ingredients": [
+          "Carbonated Water"
+        ]
+      },
+      {
+        "id": "ss_mineral_water",
+        "categoryId": "cat_cold_beverages",
+        "name": "Mineral Water",
+        "description": "Packaged mineral water served chilled.",
+        "price": 35,
+        "image": "assets/Cold Beverages/Mineral Water.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "1 min",
+        "nutrition": {
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "fiber": 0
+        },
+        "ingredients": [
+          "Mineral Water"
+        ]
+      },
+      {
+        "id": "ss_american_chopsuey",
+        "categoryId": "cat_chinese_noodles",
+        "name": "American Chopsuey",
+        "description": "Crispy noodles served with a tangy, sweet-and-sour vegetable sauce.",
+        "price": 250,
+        "image": "assets/Chinese Noodles/American Chopsuey.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 10,
+          "carbs": 68,
+          "fat": 18,
+          "fiber": 5,
+          "sodium": 850
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Crispy Noodles",
+          "Mixed Vegetables",
+          "Tomato Sauce",
+          "Vinegar",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_chinese_chopsuey",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Chinese Chopsuey",
+        "description": "Crispy noodles topped with a savoury Chinese-style vegetable sauce.",
+        "price": 240,
+        "image": "assets/Chinese Noodles/Chinese Chopsuey.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 9,
+          "carbs": 62,
+          "fat": 17,
+          "fiber": 5,
+          "sodium": 820
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Mixed Vegetables",
+          "Garlic",
+          "Soy Sauce",
+          "Chinese Seasonings"
+        ]
+      },
+      {
+        "id": "ss_mixed_veg_fried_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Mixed Veg. Fried Noodles",
+        "description": "Wok-tossed noodles with cabbage, carrots, capsicum, and spring onions.",
+        "price": 285,
+        "image": "assets/Chinese Noodles/Mixed Veg. Fried Noodles.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 11,
+          "carbs": 58,
+          "fat": 15,
+          "fiber": 6,
+          "sodium": 780
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Cabbage",
+          "Carrots",
+          "Capsicum",
+          "Spring Onions",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_hakka_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Hakka Noodles",
+        "description": "Classic Indo-Chinese noodles tossed with crunchy vegetables, garlic, and light seasonings.",
+        "price": 280,
+        "image": "assets/Chinese Noodles/Hakka Noodles.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 400,
+          "protein": 10,
+          "carbs": 56,
+          "fat": 14,
+          "fiber": 5,
+          "sodium": 750
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Hakka Noodles",
+          "Cabbage",
+          "Carrots",
+          "Capsicum",
+          "Garlic",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_singapore_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Singapore Noodles",
+        "description": "Fragrant stir-fried noodles with vegetables and aromatic curry-style spices.",
+        "price": 280,
+        "image": "assets/Chinese Noodles/Singapore Noodles.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "13 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 10,
+          "carbs": 59,
+          "fat": 16,
+          "fiber": 5,
+          "sodium": 790
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Mixed Vegetables",
+          "Curry Spices",
+          "Garlic",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_schezwan_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Schezwan Noodles",
+        "description": "Spicy wok-fried noodles tossed in bold Schezwan chilli-garlic sauce and vegetables.",
+        "price": 285,
+        "image": "assets/Chinese Noodles/Schezwan Noodles.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 440,
+          "protein": 11,
+          "carbs": 58,
+          "fat": 17,
+          "fiber": 5,
+          "sodium": 900
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Schezwan Sauce",
+          "Garlic",
+          "Chillies",
+          "Capsicum",
+          "Spring Onions"
+        ]
+      },
+      {
+        "id": "ss_mushroom_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Mushroom Noodles",
+        "description": "Wok-tossed noodles with tender mushrooms, vegetables, garlic, and savoury seasonings.",
+        "price": 275,
+        "image": "assets/Chinese Noodles/Mushroom Noodles.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 410,
+          "protein": 12,
+          "carbs": 55,
+          "fat": 15,
+          "fiber": 5,
+          "sodium": 760
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Mushrooms",
+          "Cabbage",
+          "Garlic",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_mushroom_noodles_gravy",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Mushroom Noodles (With Gravy)",
+        "description": "Noodles with mushrooms and vegetables served with a rich, savoury Chinese-style gravy.",
+        "price": 285,
+        "image": "assets/Chinese Noodles/Mushroom Noodles(with gravy).png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 12,
+          "carbs": 61,
+          "fat": 16,
+          "fiber": 5,
+          "sodium": 850
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Mushrooms",
+          "Mixed Vegetables",
+          "Garlic",
+          "Soy Sauce",
+          "Gravy"
+        ]
+      },
+      {
+        "id": "ss_peking_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Peking Noodles",
+        "description": "Stir-fried noodles with crisp vegetables and a rich, savoury Peking-style sauce.",
+        "price": 285,
+        "image": "assets/Chinese Noodles/Peking Noodles.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "13 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 10,
+          "carbs": 57,
+          "fat": 15,
+          "fiber": 5,
+          "sodium": 780
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Mixed Vegetables",
+          "Garlic",
+          "Peking-Style Sauce",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_pan_fried_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Pan Fried Noodles",
+        "description": "Pan-fried noodles with golden edges, crunchy vegetables, and a savoury stir-fry sauce.",
+        "price": 290,
+        "image": "assets/Chinese Noodles/Pan Fried Noodles.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "14 mins",
+        "nutrition": {
+          "calories": 460,
+          "protein": 11,
+          "carbs": 59,
+          "fat": 19,
+          "fiber": 5,
+          "sodium": 820
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Mixed Vegetables",
+          "Garlic",
+          "Soy Sauce",
+          "Cooking Oil"
+        ]
+      },
+      {
+        "id": "ss_malaysian_noodles",
+        "categoryId": "cat_chinese_noodles",
+        "name": "Malaysian Noodles",
+        "description": "Aromatic stir-fried noodles with vegetables and a bold, mildly spicy Malaysian-style seasoning.",
+        "price": 280,
+        "image": "assets/Chinese Noodles/Malaysian Noodles.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "13 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 10,
+          "carbs": 57,
+          "fat": 16,
+          "fiber": 5,
+          "sodium": 800
+        },
+        "allergens": [
+          "Gluten",
+          "Soy"
+        ],
+        "ingredients": [
+          "Noodles",
+          "Mixed Vegetables",
+          "Garlic",
+          "Chilli Seasoning",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_veg_manchurian_gravy",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg. Manchurian",
+        "description": "Crispy vegetable dumplings simmered in a flavourful Indo-Chinese garlic, ginger, and soy-based gravy.",
+        "price": 255,
+        "image": "assets/Chinese Gravy/Veg. Manchurian.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 8,
+          "carbs": 42,
+          "fat": 17,
+          "fiber": 5,
+          "sodium": 780
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Cornflour",
+          "Garlic",
+          "Ginger",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_veg_manchurian_garlic_sauce",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg. Manchurian with Garlic Sauce",
+        "description": "Vegetable Manchurian balls coated in a bold garlic gravy with spring onions and Indo-Chinese seasonings.",
+        "price": 255,
+        "image": "assets/Chinese Gravy/Veg. Manchurian with Garlic Sauce.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 9,
+          "carbs": 43,
+          "fat": 18,
+          "fiber": 5,
+          "sodium": 850
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Vegetable Dumplings",
+          "Garlic",
+          "Spring Onions",
+          "Soy Sauce",
+          "Cornflour"
+        ]
+      },
+      {
+        "id": "ss_mushroom_manchurian",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Mushroom Manchurian",
+        "description": "Tender mushrooms tossed in a tangy, savoury Manchurian gravy with garlic, ginger, and peppers.",
+        "price": 275,
+        "image": "assets/Chinese Gravy/Mushroom Manchurian.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 9,
+          "carbs": 35,
+          "fat": 17,
+          "fiber": 4,
+          "sodium": 760
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mushrooms",
+          "Garlic",
+          "Ginger",
+          "Capsicum",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_gobi_manchurian",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Gobi Manchurian",
+        "description": "Golden cauliflower florets tossed in a spicy, tangy Indo-Chinese gravy with garlic and spring onions.",
+        "price": 240,
+        "image": "assets/Chinese Gravy/Gobi Manchurian.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 7,
+          "carbs": 40,
+          "fat": 16,
+          "fiber": 5,
+          "sodium": 720
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Cauliflower",
+          "Cornflour",
+          "Garlic",
+          "Ginger",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_paneer_manchurian",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Paneer Manchurian",
+        "description": "Soft paneer cubes coated in a savoury Indo-Chinese sauce with garlic, peppers, and spring onions.",
+        "price": 295,
+        "image": "assets/Chinese Gravy/Paneer Manchurian.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "13 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 18,
+          "carbs": 35,
+          "fat": 23,
+          "fiber": 3,
+          "sodium": 780
+        },
+        "allergens": [
+          "Dairy",
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Garlic",
+          "Ginger",
+          "Capsicum",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_paneer_chilly_gravy",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Paneer Chilly",
+        "description": "Paneer cubes simmered in a spicy chilli-garlic gravy with capsicum, onions, and spring onions.",
+        "price": 305,
+        "image": "assets/Chinese Gravy/Paneer Chilly.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "13 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 19,
+          "carbs": 36,
+          "fat": 25,
+          "fiber": 3,
+          "sodium": 850
+        },
+        "allergens": [
+          "Dairy",
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Green Chillies",
+          "Capsicum",
+          "Onions",
+          "Garlic",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_veg_ball_garlic_sauce",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg. Ball Garlic Sauce",
+        "description": "Crispy vegetable balls served in a rich, aromatic garlic sauce with a savoury Indo-Chinese finish.",
+        "price": 245,
+        "image": "assets/Chinese Gravy/Veg. Ball Garlic Sauce.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 370,
+          "protein": 8,
+          "carbs": 42,
+          "fat": 18,
+          "fiber": 4,
+          "sodium": 800
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Garlic",
+          "Cornflour",
+          "Soy Sauce",
+          "Spring Onions"
+        ]
+      },
+      {
+        "id": "ss_veg_chow_chow",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg. Chow Chow",
+        "description": "A colourful combination of vegetables tossed in a light, savoury Chinese-style sauce.",
+        "price": 220,
+        "image": "assets/Chinese Gravy/Veg. Chow Chow.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
         "spicyLevel": 1,
         "prepTime": "10 mins",
         "nutrition": {
-          "calories": 480,
-          "protein": 14.0,
-          "carbs": 62.0,
-          "fat": 20.0,
-          "fiber": 5.0,
-          "sodium": 690
+          "calories": 280,
+          "protein": 6,
+          "carbs": 32,
+          "fat": 13,
+          "fiber": 5,
+          "sodium": 620
         },
         "allergens": [
-          "Gluten",
-          "Dairy"
+          "Soy"
         ],
         "ingredients": [
-          "Three Bread Slices",
-          "Coleslaw Slaw",
-          "Cheese",
-          "Cucumber",
-          "Tomato",
-          "Butter"
+          "Mixed Vegetables",
+          "Garlic",
+          "Soy Sauce",
+          "Spring Onions"
         ]
       },
       {
-        "id": "ss_italian_sandwich_cheese",
-        "categoryId": "cat_sandwiches",
-        "name": "Italian Sandwich with Cheese",
-        "description": "Toasted sandwich stuffed with Italian herb-tossed vegetables, sweet corn, black olives, bell peppers, and melted mozzarella.",
-        "price": 155,
-        "image": "assets/Sandwiches & Grilled Toasts/Itallian Sandwich with Cheese.jpg",
+        "id": "ss_grilled_onion_green_peas",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Grilled Onion Green Peas",
+        "description": "Green peas and grilled onions tossed with aromatic spices and a savoury Chinese-inspired sauce.",
+        "price": 220,
+        "image": "assets/Chinese Gravy/Grilled Onion Green Peas.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
         "spicyLevel": 1,
-        "prepTime": "8 mins",
+        "prepTime": "10 mins",
         "nutrition": {
-          "calories": 420,
-          "protein": 15.0,
-          "carbs": 48.0,
-          "fat": 19.0,
-          "fiber": 4.0,
-          "sodium": 670
+          "calories": 270,
+          "protein": 9,
+          "carbs": 34,
+          "fat": 10,
+          "fiber": 7,
+          "sodium": 490
         },
         "allergens": [
-          "Gluten",
-          "Dairy"
+          "Soy"
         ],
         "ingredients": [
-          "Bread",
-          "Italian Dressing",
-          "Bell Peppers",
-          "Sweet Corn",
+          "Green Peas",
+          "Onions",
+          "Garlic",
+          "Seasonings",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_veg_cashew_nuts",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg. Cashew Nuts",
+        "description": "Mixed vegetables and crunchy cashews cooked in a rich, mildly spiced savoury gravy.",
+        "price": 290,
+        "image": "assets/Chinese Gravy/Veg. Cashew nuts.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 11,
+          "carbs": 32,
+          "fat": 28,
+          "fiber": 5,
+          "sodium": 590
+        },
+        "allergens": [
+          "Tree Nuts",
+          "Soy"
+        ],
+        "ingredients": [
+          "Cashews",
+          "Mixed Vegetables",
+          "Garlic",
+          "Ginger",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_fried_veg_garlic_sauce",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Fried Veg. Garlic Sauce",
+        "description": "Fried seasonal vegetables coated in a fragrant garlic sauce with a balanced savoury finish.",
+        "price": 240,
+        "image": "assets/Chinese Gravy/Fried Veg. Garlic Sauce.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 17,
+          "fiber": 5,
+          "sodium": 790
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Garlic",
+          "Cornflour",
+          "Soy Sauce",
+          "Spring Onions"
+        ]
+      },
+      {
+        "id": "ss_sweet_sour_vegetables",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Sweet & Sour Vegetables",
+        "description": "Crisp vegetables tossed in a glossy sweet-and-sour sauce with a refreshing tangy flavour.",
+        "price": 245,
+        "image": "assets/Chinese Gravy/Sweet & Sour Vegetables.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 310,
+          "protein": 6,
+          "carbs": 43,
+          "fat": 12,
+          "fiber": 5,
+          "sodium": 650
+        },
+        "allergens": [
+          "Soy"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Vinegar",
+          "Tomato Sauce",
+          "Sugar",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_mixed_veg_schezwan_style",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Mixed Veg Schezwan Style",
+        "description": "Mixed vegetables cooked in a bold, spicy Schezwan chilli-garlic gravy.",
+        "price": 255,
+        "image": "assets/Chinese Gravy/Mixed Veg Schezwan Style.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 7,
+          "carbs": 38,
+          "fat": 16,
+          "fiber": 5,
+          "sodium": 850
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Schezwan Sauce",
+          "Garlic",
+          "Chillies",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_mixed_veg_hong_kong_style",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Mixed Veg Hong Kong Style",
+        "description": "Mixed vegetables tossed in a fragrant Hong Kong-style sauce with garlic, peppers, and mild spices.",
+        "price": 255,
+        "image": "assets/Chinese Gravy/Mixed Veg Hong Kong Style.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 7,
+          "carbs": 37,
+          "fat": 15,
+          "fiber": 5,
+          "sodium": 700
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Garlic",
+          "Capsicum",
+          "Soy Sauce",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_veg_ginger_sauce",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg Ginger Sauce",
+        "description": "Seasonal vegetables simmered in a warming ginger sauce with garlic and light Chinese seasoning.",
+        "price": 220,
+        "image": "assets/Chinese Gravy/Veg Ginger Sauce.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 6,
+          "carbs": 35,
+          "fat": 13,
+          "fiber": 5,
+          "sodium": 610
+        },
+        "allergens": [
+          "Soy"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Ginger",
+          "Garlic",
+          "Soy Sauce",
+          "Spring Onions"
+        ]
+      },
+      {
+        "id": "ss_mixed_veg_schezwan_hakka_style",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Mixed Veg Schezwan Hakka Style",
+        "description": "Mixed vegetables prepared Hakka-style in a spicy Schezwan sauce with garlic, chillies, and spring onions.",
+        "price": 270,
+        "image": "assets/Chinese Gravy/Mixed Veg Schezwan Hakka Style.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 8,
+          "carbs": 40,
+          "fat": 17,
+          "fiber": 5,
+          "sodium": 880
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Schezwan Sauce",
+          "Garlic",
+          "Chillies",
+          "Soy Sauce"
+        ]
+      },
+      {
+        "id": "ss_veg_mongolian_garlic_sauce",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg Mongolian Garlic Sauce",
+        "description": "Mixed vegetables coated in a rich, savoury Mongolian-style garlic sauce with a hint of sweetness.",
+        "price": 270,
+        "image": "assets/Chinese Gravy/Veg Mongolian Garlic Sauce.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 7,
+          "carbs": 42,
+          "fat": 16,
+          "fiber": 5,
+          "sodium": 820
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Garlic",
+          "Soy Sauce",
+          "Vinegar",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_paneer_65_gravy",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Paneer '65' (Gravy)",
+        "description": "Crispy paneer pieces tossed in a spicy, aromatic Indo-Chinese gravy with curry leaves, garlic, and chillies.",
+        "price": 320,
+        "image": "assets/Chinese Gravy/Paneer _65_ (Gravy).png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "14 mins",
+        "nutrition": {
+          "calories": 470,
+          "protein": 20,
+          "carbs": 38,
+          "fat": 25,
+          "fiber": 3,
+          "sodium": 870
+        },
+        "allergens": [
+          "Dairy",
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Curry Leaves",
+          "Garlic",
+          "Green Chillies",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_veg_ball_hot_garlic_sauce",
+        "categoryId": "cat_chinese_gravy",
+        "name": "Veg. Ball Hot Garlic Sauce",
+        "description": "Crispy vegetable balls coated in a fiery hot garlic sauce with chilli, ginger, and spring onions.",
+        "price": 245,
+        "image": "assets/Chinese Gravy/Veg. Ball Hot Garlic Sauce.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 8,
+          "carbs": 43,
+          "fat": 18,
+          "fiber": 4,
+          "sodium": 880
+        },
+        "allergens": [
+          "Soy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Vegetable Balls",
+          "Garlic",
+          "Chillies",
+          "Soy Sauce",
+          "Spring Onions"
+        ]
+      },
+      {
+        "id": "ss_tomato_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Tomato Pasta",
+        "description": "Fettuccine pasta tossed with mushrooms and cheese in a flavourful pasta sauce.",
+        "price": 425,
+        "image": "assets/Pastas (Indian Style)/tomato-pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 55,
+          "fat": 16,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fettuccine Pasta",
+          "Mushroom",
           "Cheese",
+          "Pasta Sauce"
+        ]
+      },
+      {
+        "id": "ss_paneer_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Paneer Pasta",
+        "description": "Fusilli pasta with paneer tikka, capsicum, and oregano.",
+        "price": 440,
+        "image": "assets/Pastas (Indian Style)/paneer pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 460,
+          "protein": 18,
+          "carbs": 52,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Paneer Tikka",
+          "Capsicum",
+          "Fusilli Pasta",
           "Oregano"
         ]
       },
-      
       {
-  "id": "ss_tomato_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Tomato Pasta",
-  "description": "Fettuccine pasta tossed with mushrooms and cheese in a flavourful pasta sauce.",
-  "price": 425,
-  "image": "assets/Pastas (Indian Style)/tomato-pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 420, "protein": 14, "carbs": 55, "fat": 16, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Fettuccine Pasta", "Mushroom", "Cheese", "Pasta Sauce"]
-},
-{
-  "id": "ss_paneer_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Paneer Pasta",
-  "description": "Fusilli pasta with paneer tikka, capsicum, and oregano.",
-  "price": 440,
-  "image": "assets/Pastas (Indian Style)/paneer pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 460, "protein": 18, "carbs": 52, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Paneer Tikka", "Capsicum", "Fusilli Pasta", "Oregano"]
-},
-{
-  "id": "ss_cheese_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Cheese Pasta",
-  "description": "Fettuccine pasta with spring onion and three types of cheese in white sauce.",
-  "price": 385,
-  "image": "assets/Pastas (Indian Style)/cheese pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 480, "protein": 18, "carbs": 50, "fat": 23, "fiber": 3 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Spring Onion", "Fettuccine Pasta", "Three Types of Cheese", "White Sauce"]
-},
-{
-  "id": "ss_deleacasa_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Deleacasa Pasta",
-  "description": "Penne pasta with beans, American corn, and carrots.",
-  "price": 425,
-  "image": "assets/Pastas (Indian Style)/deleacasa pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 410, "protein": 13, "carbs": 60, "fat": 12, "fiber": 7 },
-  "allergens": ["Gluten"],
-  "ingredients": ["Beans", "American Corn", "Carrots", "Penne Pasta"]
-},
-{
-  "id": "ss_italian_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Italian Pasta",
-  "description": "Farfalle pasta tossed with mixed vegetables and cheese.",
-  "price": 425,
-  "image": "assets/Pastas (Indian Style)/italian pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 430, "protein": 15, "carbs": 56, "fat": 15, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Farfalle Pasta", "Mixed Vegetables", "Cheese"]
-},
-{
-  "id": "ss_washington_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Washington Pasta",
-  "description": "Shell pasta with Mexican sauce, mixed pasta sauce, American corn, and cheese.",
-  "price": 425,
-  "image": "assets/Pastas (Indian Style)/washington pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 450, "protein": 15, "carbs": 59, "fat": 16, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Shell Pasta", "Mexican Sauce", "Mixed Pasta Sauce", "American Corn", "Cheese"]
-},
-{
-  "id": "ss_veryveg_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Veryveg Pasta",
-  "description": "Mixed pasta with paneer, green peas, carrots, beans, and mushrooms.",
-  "price": 430,
-  "image": "assets/Pastas (Indian Style)/very veg pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 440, "protein": 17, "carbs": 54, "fat": 16, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mixed Pasta", "Paneer", "Green Peas", "Carrots", "Beans", "Mushrooms"]
-},
-{
-  "id": "ss_corny_cheese_mushroom_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Corny Cheese Mushroom Pasta",
-  "description": "A hearty pasta with mushrooms, capsicum, paneer, spring onion, olives, spinach, kidney beans, and corn.",
-  "price": 440,
-  "image": "assets/Pastas (Indian Style)/corn cheese mushroom pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 470, "protein": 19, "carbs": 55, "fat": 18, "fiber": 8 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Mushroom", "Capsicum", "Paneer", "Spring Onion", "Green Olive", "Spinach", "Kidney Beans", "Corn", "Fusilli Pasta"]
-},
-{
-  "id": "ss_primavera_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Primavera Pasta",
-  "description": "Penne pasta with corn, capsicum, pineapple, paneer, and oregano.",
-  "price": 425,
-  "image": "assets/Pastas (Indian Style)/primavera pasta.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 430, "protein": 15, "carbs": 58, "fat": 14, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Penne Pasta", "Corn", "Capsicum", "Pineapple", "Paneer", "Oregano"]
-},
-{
-  "id": "ss_mexican_pasta_delight",
-  "categoryId": "cat_pastas",
-  "name": "Mexican Pasta Delight",
-  "description": "Spaghetti with mushrooms, kidney beans, and cheese in a Mexican-inspired style.",
-  "price": 440,
-  "image": "assets/Pastas (Indian Style)/mexicxan pasta delight.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 460, "protein": 17, "carbs": 57, "fat": 17, "fiber": 7 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Spaghetti", "Mushrooms", "Kidney Beans", "Cheese"]
-},
-{
-  "id": "ss_four_cheese_pasta",
-  "categoryId": "cat_pastas",
-  "name": "Four Cheese Pasta",
-  "description": "Pasta coated in a rich white cheese sauce.",
-  "price": 440,
-  "image": "assets/Pastas (Indian Style)/four-cheese-pasta-white-cheese-sauce.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 500, "protein": 20, "carbs": 48, "fat": 25, "fiber": 3 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Pasta", "Four Cheese Sauce"]
-},
-{
-  "id": "ss_sweet_corn_plain_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Sweet Corn Plain Soup",
-  "description": "A light, comforting soup with sweet corn kernels in a delicate savoury broth.",
-  "price": 150,
-  "image": "assets/Chinese Soups/sweet corn plain soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 120, "protein": 3, "carbs": 20, "fat": 3, "fiber": 2 },
-  "ingredients": ["Sweet Corn", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_sweet_corn_veg_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Sweet Corn Veg Soup",
-  "description": "Sweet corn simmered with finely chopped vegetables in a warm, flavourful broth.",
-  "price": 150,
-  "image": "assets/Chinese Soups/sweet corn soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 135, "protein": 4, "carbs": 21, "fat": 3, "fiber": 3 },
-  "ingredients": ["Sweet Corn", "Mixed Vegetables", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_hot_sour_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Hot & Sour Soup",
-  "description": "A tangy, spicy Indo-Chinese soup with vegetables, pepper, and vinegar.",
-  "price": 150,
-  "image": "assets/Chinese Soups/hot and sour soup.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 110, "protein": 3, "carbs": 15, "fat": 4, "fiber": 2 },
-  "ingredients": ["Mixed Vegetables", "Vinegar", "Pepper", "Soy Sauce", "Seasonings"]
-},
-{
-  "id": "ss_manchow_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Manchow Soup",
-  "description": "A rich Indo-Chinese vegetable soup with garlic, pepper, and a savoury finish.",
-  "price": 160,
-  "image": "assets/Chinese Soups/manchow soup.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 140, "protein": 4, "carbs": 18, "fat": 5, "fiber": 3 },
-  "ingredients": ["Mixed Vegetables", "Garlic", "Ginger", "Pepper", "Vegetable Stock"]
-},
-{
-  "id": "ss_talumein_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Talumein Soup",
-  "description": "A hearty Chinese-style soup with noodles, vegetables, and a seasoned broth.",
-  "price": 150,
-  "image": "assets/Chinese Soups/talumein soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 150, "protein": 5, "carbs": 22, "fat": 4, "fiber": 3 },
-  "ingredients": ["Noodles", "Mixed Vegetables", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_lung_fung_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Lung Fung Soup",
-  "description": "A savoury Chinese-style soup with vegetables and a gently seasoned, rich broth.",
-  "price": 150,
-  "image": "assets/Chinese Soups/lung fung soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 130, "protein": 4, "carbs": 17, "fat": 4, "fiber": 2 },
-  "ingredients": ["Mixed Vegetables", "Vegetable Stock", "Ginger", "Garlic", "Seasonings"]
-},
-{
-  "id": "ss_sweet_corn_mushroom_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Sweet Corn Mushroom Soup",
-  "description": "Sweet corn and mushrooms combined in a smooth, comforting savoury soup.",
-  "price": 150,
-  "image": "assets/Chinese Soups/sweet corn mushroom soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 145, "protein": 5, "carbs": 19, "fat": 5, "fiber": 3 },
-  "ingredients": ["Sweet Corn", "Mushrooms", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_mixed_veg_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Mixed Veg Soup",
-  "description": "A simple, nourishing soup made with assorted fresh vegetables and herbs.",
-  "price": 140,
-  "image": "assets/Chinese Soups/mixed veg soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 100, "protein": 3, "carbs": 14, "fat": 3, "fiber": 3 },
-  "ingredients": ["Carrots", "Cabbage", "Beans", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_veg_clear_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Veg Clear Soup",
-  "description": "A light, clear vegetable broth with fresh vegetables and delicate seasonings.",
-  "price": 140,
-  "image": "assets/Chinese Soups/veg clear soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": { "calories": 75, "protein": 2, "carbs": 10, "fat": 2, "fiber": 2 },
-  "ingredients": ["Vegetable Stock", "Mixed Vegetables", "Ginger", "Seasonings"]
-},
-{
-  "id": "ss_veg_clear_noodle_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Veg Clear Noodle Soup",
-  "description": "Clear vegetable broth served with noodles and finely chopped vegetables.",
-  "price": 140,
-  "image": "assets/Chinese Soups/veg clear noodle soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 125, "protein": 4, "carbs": 20, "fat": 3, "fiber": 2 },
-  "ingredients": ["Noodles", "Vegetable Stock", "Carrots", "Cabbage", "Seasonings"]
-},
-{
-  "id": "ss_spicy_green_peas_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Spicy Green Peas Soup",
-  "description": "A warming green pea soup with pepper, spices, and a gentle chilli kick.",
-  "price": 140,
-  "image": "assets/Chinese Soups/spicy green peas soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 125, "protein": 6, "carbs": 18, "fat": 3, "fiber": 5 },
-  "ingredients": ["Green Peas", "Vegetable Stock", "Pepper", "Chilli", "Seasonings"]
-},
-{
-  "id": "ss_tomato_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Tomato Soup",
-  "description": "A classic tomato soup with a smooth texture and balanced tangy flavour.",
-  "price": 140,
-  "image": "assets/Chinese Soups/tomato soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 100, "protein": 3, "carbs": 15, "fat": 3, "fiber": 2 },
-  "ingredients": ["Tomatoes", "Vegetable Stock", "Garlic", "Seasonings"]
-},
-{
-  "id": "ss_cream_tomato_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Cream of Tomato Soup",
-  "description": "A creamy tomato soup with a smooth consistency and mild, savoury flavour.",
-  "price": 155,
-  "image": "assets/Chinese Soups/cream of tomato soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 165, "protein": 4, "carbs": 18, "fat": 8, "fiber": 2 },
-  "ingredients": ["Tomatoes", "Cream", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_cream_mushroom_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Cream of Mushroom Soup",
-  "description": "A rich, velvety mushroom soup finished with cream and gentle seasoning.",
-  "price": 175,
-  "image": "assets/Chinese Soups/cream of mushroom soup.jpg",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 190, "protein": 5, "carbs": 15, "fat": 12, "fiber": 2 },
-  "ingredients": ["Mushrooms", "Cream", "Vegetable Stock", "Garlic", "Seasonings"]
-},
-{
-  "id": "ss_cream_veg_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Cream of Veg Soup",
-  "description": "A smooth creamy soup prepared with vegetables and a mild savoury seasoning.",
-  "price": 150,
-  "image": "assets/Chinese Soups/cream of veg soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 170, "protein": 4, "carbs": 18, "fat": 9, "fiber": 3 },
-  "ingredients": ["Mixed Vegetables", "Cream", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_palak_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Palak Soup",
-  "description": "A comforting spinach soup with a smooth texture and delicate seasoning.",
-  "price": 150,
-  "image": "assets/Chinese Soups/palak soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 115, "protein": 4, "carbs": 13, "fat": 4, "fiber": 4 },
-  "ingredients": ["Spinach", "Garlic", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_french_onion_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "French Onion Veg Soup",
-  "description": "A savoury vegetarian onion soup with slow-cooked onions and aromatic herbs.",
-  "price": 140,
-  "image": "assets/Chinese Soups/french onion soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 110, "protein": 3, "carbs": 15, "fat": 4, "fiber": 2 },
-  "ingredients": ["Onions", "Vegetable Stock", "Herbs", "Seasonings"]
-},
-{
-  "id": "ss_wonton_clear_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Wonton Clear Soup",
-  "description": "Delicate wontons served in a light, clear Chinese-style vegetable broth.",
-  "price": 140,
-  "image": "assets/Chinese Soups/wonton clear soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 120, "protein": 4, "carbs": 17, "fat": 4, "fiber": 2 },
-  "ingredients": ["Vegetable Wontons", "Vegetable Stock", "Spring Onions", "Seasonings"]
-},
-{
-  "id": "ss_wonton_veg_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Wonton Veg. Soup",
-  "description": "Vegetable wontons served with fresh vegetables in a comforting Chinese-style broth.",
-  "price": 125,
-  "image": "assets/Chinese Soups/wonton veg clear soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 115, "protein": 4, "carbs": 16, "fat": 3, "fiber": 2 },
-  "ingredients": ["Vegetable Wontons", "Mixed Vegetables", "Vegetable Stock", "Seasonings"]
-},
-{
-  "id": "ss_minestrone_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Minestrone Soup",
-  "description": "A hearty vegetable soup with tomatoes, beans, and herbs in a rich broth.",
-  "price": 160,
-  "image": "assets/Chinese Soups/minestrone soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": { "calories": 150, "protein": 5, "carbs": 23, "fat": 4, "fiber": 5 },
-  "ingredients": ["Tomatoes", "Beans", "Mixed Vegetables", "Herbs", "Vegetable Stock"]
-},
-{
-  "id": "ss_mulluk_dhani_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Mulluk Dhani Soup",
-  "description": "A mildly spiced vegetarian soup with a rich, savoury broth.",
-  "price": 145,
-  "image": "assets/Chinese Soups/mulluk dhani soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 115, "protein": 3, "carbs": 16, "fat": 4, "fiber": 2 },
-  "ingredients": ["Vegetable Stock", "Mixed Vegetables", "Spices", "Seasonings"]
-},
-{
-  "id": "ss_lemon_coriander_soup",
-  "categoryId": "cat_chinese_soups",
-  "name": "Lemon Coriander Soup",
-  "description": "A refreshing clear soup with lemon, fresh coriander, and vegetables.",
-  "price": 160,
-  "image": "assets/Chinese Soups/lemon coriander soup.jpg",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "10 mins",
-  "nutrition": { "calories": 95, "protein": 3, "carbs": 14, "fat": 2, "fiber": 3 },
-  "ingredients": ["Lemon", "Coriander", "Mixed Vegetables", "Vegetable Stock", "Seasonings"]
-},
+        "id": "ss_cheese_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Cheese Pasta",
+        "description": "Fettuccine pasta with spring onion and three types of cheese in white sauce.",
+        "price": 385,
+        "image": "assets/Pastas (Indian Style)/cheese pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 18,
+          "carbs": 50,
+          "fat": 23,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Spring Onion",
+          "Fettuccine Pasta",
+          "Three Types of Cheese",
+          "White Sauce"
+        ]
+      },
+      {
+        "id": "ss_deleacasa_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Deleacasa Pasta",
+        "description": "Penne pasta with beans, American corn, and carrots.",
+        "price": 425,
+        "image": "assets/Pastas (Indian Style)/deleacasa pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 410,
+          "protein": 13,
+          "carbs": 60,
+          "fat": 12,
+          "fiber": 7
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Beans",
+          "American Corn",
+          "Carrots",
+          "Penne Pasta"
+        ]
+      },
+      {
+        "id": "ss_italian_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Italian Pasta",
+        "description": "Farfalle pasta tossed with mixed vegetables and cheese.",
+        "price": 425,
+        "image": "assets/Pastas (Indian Style)/italian pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 15,
+          "carbs": 56,
+          "fat": 15,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Farfalle Pasta",
+          "Mixed Vegetables",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_washington_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Washington Pasta",
+        "description": "Shell pasta with Mexican sauce, mixed pasta sauce, American corn, and cheese.",
+        "price": 425,
+        "image": "assets/Pastas (Indian Style)/washington pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 450,
+          "protein": 15,
+          "carbs": 59,
+          "fat": 16,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Shell Pasta",
+          "Mexican Sauce",
+          "Mixed Pasta Sauce",
+          "American Corn",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_veryveg_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Veryveg Pasta",
+        "description": "Mixed pasta with paneer, green peas, carrots, beans, and mushrooms.",
+        "price": 430,
+        "image": "assets/Pastas (Indian Style)/very veg pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 440,
+          "protein": 17,
+          "carbs": 54,
+          "fat": 16,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mixed Pasta",
+          "Paneer",
+          "Green Peas",
+          "Carrots",
+          "Beans",
+          "Mushrooms"
+        ]
+      },
+      {
+        "id": "ss_corny_cheese_mushroom_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Corny Cheese Mushroom Pasta",
+        "description": "A hearty pasta with mushrooms, capsicum, paneer, spring onion, olives, spinach, kidney beans, and corn.",
+        "price": 440,
+        "image": "assets/Pastas (Indian Style)/corn cheese mushroom pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 470,
+          "protein": 19,
+          "carbs": 55,
+          "fat": 18,
+          "fiber": 8
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Mushroom",
+          "Capsicum",
+          "Paneer",
+          "Spring Onion",
+          "Green Olive",
+          "Spinach",
+          "Kidney Beans",
+          "Corn",
+          "Fusilli Pasta"
+        ]
+      },
+      {
+        "id": "ss_primavera_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Primavera Pasta",
+        "description": "Penne pasta with corn, capsicum, pineapple, paneer, and oregano.",
+        "price": 425,
+        "image": "assets/Pastas (Indian Style)/primavera pasta.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 15,
+          "carbs": 58,
+          "fat": 14,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Penne Pasta",
+          "Corn",
+          "Capsicum",
+          "Pineapple",
+          "Paneer",
+          "Oregano"
+        ]
+      },
+      {
+        "id": "ss_mexican_pasta_delight",
+        "categoryId": "cat_pastas",
+        "name": "Mexican Pasta Delight",
+        "description": "Spaghetti with mushrooms, kidney beans, and cheese in a Mexican-inspired style.",
+        "price": 440,
+        "image": "assets/Pastas (Indian Style)/mexicxan pasta delight.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 460,
+          "protein": 17,
+          "carbs": 57,
+          "fat": 17,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Spaghetti",
+          "Mushrooms",
+          "Kidney Beans",
+          "Cheese"
+        ]
+      },
+      {
+        "id": "ss_four_cheese_pasta",
+        "categoryId": "cat_pastas",
+        "name": "Four Cheese Pasta",
+        "description": "Pasta coated in a rich white cheese sauce.",
+        "price": 440,
+        "image": "assets/Pastas (Indian Style)/four-cheese-pasta-white-cheese-sauce.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 500,
+          "protein": 20,
+          "carbs": 48,
+          "fat": 25,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Pasta",
+          "Four Cheese Sauce"
+        ]
+      },
+      {
+        "id": "ss_sweet_corn_plain_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Sweet Corn Plain Soup",
+        "description": "A light, comforting soup with sweet corn kernels in a delicate savoury broth.",
+        "price": 150,
+        "image": "assets/Chinese Soups/sweet corn plain soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 120,
+          "protein": 3,
+          "carbs": 20,
+          "fat": 3,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Sweet Corn",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_sweet_corn_veg_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Sweet Corn Veg Soup",
+        "description": "Sweet corn simmered with finely chopped vegetables in a warm, flavourful broth.",
+        "price": 150,
+        "image": "assets/Chinese Soups/sweet corn soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 135,
+          "protein": 4,
+          "carbs": 21,
+          "fat": 3,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Sweet Corn",
+          "Mixed Vegetables",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_hot_sour_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Hot & Sour Soup",
+        "description": "A tangy, spicy Indo-Chinese soup with vegetables, pepper, and vinegar.",
+        "price": 150,
+        "image": "assets/Chinese Soups/hot and sour soup.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 110,
+          "protein": 3,
+          "carbs": 15,
+          "fat": 4,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Vinegar",
+          "Pepper",
+          "Soy Sauce",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_manchow_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Manchow Soup",
+        "description": "A rich Indo-Chinese vegetable soup with garlic, pepper, and a savoury finish.",
+        "price": 160,
+        "image": "assets/Chinese Soups/manchow soup.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 140,
+          "protein": 4,
+          "carbs": 18,
+          "fat": 5,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Garlic",
+          "Ginger",
+          "Pepper",
+          "Vegetable Stock"
+        ]
+      },
+      {
+        "id": "ss_talumein_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Talumein Soup",
+        "description": "A hearty Chinese-style soup with noodles, vegetables, and a seasoned broth.",
+        "price": 150,
+        "image": "assets/Chinese Soups/talumein soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 150,
+          "protein": 5,
+          "carbs": 22,
+          "fat": 4,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Noodles",
+          "Mixed Vegetables",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_lung_fung_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Lung Fung Soup",
+        "description": "A savoury Chinese-style soup with vegetables and a gently seasoned, rich broth.",
+        "price": 150,
+        "image": "assets/Chinese Soups/lung fung soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 130,
+          "protein": 4,
+          "carbs": 17,
+          "fat": 4,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Vegetable Stock",
+          "Ginger",
+          "Garlic",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_sweet_corn_mushroom_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Sweet Corn Mushroom Soup",
+        "description": "Sweet corn and mushrooms combined in a smooth, comforting savoury soup.",
+        "price": 150,
+        "image": "assets/Chinese Soups/sweet corn mushroom soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 145,
+          "protein": 5,
+          "carbs": 19,
+          "fat": 5,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Sweet Corn",
+          "Mushrooms",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_mixed_veg_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Mixed Veg Soup",
+        "description": "A simple, nourishing soup made with assorted fresh vegetables and herbs.",
+        "price": 140,
+        "image": "assets/Chinese Soups/mixed veg soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 100,
+          "protein": 3,
+          "carbs": 14,
+          "fat": 3,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Carrots",
+          "Cabbage",
+          "Beans",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_veg_clear_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Veg Clear Soup",
+        "description": "A light, clear vegetable broth with fresh vegetables and delicate seasonings.",
+        "price": 140,
+        "image": "assets/Chinese Soups/veg clear soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 75,
+          "protein": 2,
+          "carbs": 10,
+          "fat": 2,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Vegetable Stock",
+          "Mixed Vegetables",
+          "Ginger",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_veg_clear_noodle_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Veg Clear Noodle Soup",
+        "description": "Clear vegetable broth served with noodles and finely chopped vegetables.",
+        "price": 140,
+        "image": "assets/Chinese Soups/veg clear noodle soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 125,
+          "protein": 4,
+          "carbs": 20,
+          "fat": 3,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Noodles",
+          "Vegetable Stock",
+          "Carrots",
+          "Cabbage",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_spicy_green_peas_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Spicy Green Peas Soup",
+        "description": "A warming green pea soup with pepper, spices, and a gentle chilli kick.",
+        "price": 140,
+        "image": "assets/Chinese Soups/spicy green peas soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 125,
+          "protein": 6,
+          "carbs": 18,
+          "fat": 3,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Green Peas",
+          "Vegetable Stock",
+          "Pepper",
+          "Chilli",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_tomato_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Tomato Soup",
+        "description": "A classic tomato soup with a smooth texture and balanced tangy flavour.",
+        "price": 140,
+        "image": "assets/Chinese Soups/tomato soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 100,
+          "protein": 3,
+          "carbs": 15,
+          "fat": 3,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Tomatoes",
+          "Vegetable Stock",
+          "Garlic",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_cream_tomato_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Cream of Tomato Soup",
+        "description": "A creamy tomato soup with a smooth consistency and mild, savoury flavour.",
+        "price": 155,
+        "image": "assets/Chinese Soups/cream of tomato soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 165,
+          "protein": 4,
+          "carbs": 18,
+          "fat": 8,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Tomatoes",
+          "Cream",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_cream_mushroom_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Cream of Mushroom Soup",
+        "description": "A rich, velvety mushroom soup finished with cream and gentle seasoning.",
+        "price": 175,
+        "image": "assets/Chinese Soups/cream of mushroom soup.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 190,
+          "protein": 5,
+          "carbs": 15,
+          "fat": 12,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Mushrooms",
+          "Cream",
+          "Vegetable Stock",
+          "Garlic",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_cream_veg_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Cream of Veg Soup",
+        "description": "A smooth creamy soup prepared with vegetables and a mild savoury seasoning.",
+        "price": 150,
+        "image": "assets/Chinese Soups/cream of veg soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 170,
+          "protein": 4,
+          "carbs": 18,
+          "fat": 9,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Mixed Vegetables",
+          "Cream",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_palak_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Palak Soup",
+        "description": "A comforting spinach soup with a smooth texture and delicate seasoning.",
+        "price": 150,
+        "image": "assets/Chinese Soups/palak soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 115,
+          "protein": 4,
+          "carbs": 13,
+          "fat": 4,
+          "fiber": 4
+        },
+        "ingredients": [
+          "Spinach",
+          "Garlic",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_french_onion_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "French Onion Veg Soup",
+        "description": "A savoury vegetarian onion soup with slow-cooked onions and aromatic herbs.",
+        "price": 140,
+        "image": "assets/Chinese Soups/french onion soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 110,
+          "protein": 3,
+          "carbs": 15,
+          "fat": 4,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Onions",
+          "Vegetable Stock",
+          "Herbs",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_wonton_clear_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Wonton Clear Soup",
+        "description": "Delicate wontons served in a light, clear Chinese-style vegetable broth.",
+        "price": 140,
+        "image": "assets/Chinese Soups/wonton clear soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 120,
+          "protein": 4,
+          "carbs": 17,
+          "fat": 4,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Vegetable Wontons",
+          "Vegetable Stock",
+          "Spring Onions",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_wonton_veg_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Wonton Veg. Soup",
+        "description": "Vegetable wontons served with fresh vegetables in a comforting Chinese-style broth.",
+        "price": 125,
+        "image": "assets/Chinese Soups/wonton veg clear soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 115,
+          "protein": 4,
+          "carbs": 16,
+          "fat": 3,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Vegetable Wontons",
+          "Mixed Vegetables",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_minestrone_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Minestrone Soup",
+        "description": "A hearty vegetable soup with tomatoes, beans, and herbs in a rich broth.",
+        "price": 160,
+        "image": "assets/Chinese Soups/minestrone soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 150,
+          "protein": 5,
+          "carbs": 23,
+          "fat": 4,
+          "fiber": 5
+        },
+        "ingredients": [
+          "Tomatoes",
+          "Beans",
+          "Mixed Vegetables",
+          "Herbs",
+          "Vegetable Stock"
+        ]
+      },
+      {
+        "id": "ss_mulluk_dhani_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Mulluk Dhani Soup",
+        "description": "A mildly spiced vegetarian soup with a rich, savoury broth.",
+        "price": 145,
+        "image": "assets/Chinese Soups/mulluk dhani soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 115,
+          "protein": 3,
+          "carbs": 16,
+          "fat": 4,
+          "fiber": 2
+        },
+        "ingredients": [
+          "Vegetable Stock",
+          "Mixed Vegetables",
+          "Spices",
+          "Seasonings"
+        ]
+      },
+      {
+        "id": "ss_lemon_coriander_soup",
+        "categoryId": "cat_chinese_soups",
+        "name": "Lemon Coriander Soup",
+        "description": "A refreshing clear soup with lemon, fresh coriander, and vegetables.",
+        "price": 160,
+        "image": "assets/Chinese Soups/lemon coriander soup.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 95,
+          "protein": 3,
+          "carbs": 14,
+          "fat": 2,
+          "fiber": 3
+        },
+        "ingredients": [
+          "Lemon",
+          "Coriander",
+          "Mixed Vegetables",
+          "Vegetable Stock",
+          "Seasonings"
+        ]
+      },
       {
         "id": "ss_hakka_noodles",
         "categoryId": "cat_chinese_mains",
@@ -7135,10 +10770,10 @@ const INITIAL_DATA = {
         "prepTime": "10 mins",
         "nutrition": {
           "calories": 480,
-          "protein": 11.0,
-          "carbs": 76.0,
+          "protein": 11,
+          "carbs": 76,
           "fat": 14.5,
-          "fiber": 5.0,
+          "fiber": 5,
           "sodium": 660
         },
         "allergens": [
@@ -7169,9 +10804,9 @@ const INITIAL_DATA = {
         "nutrition": {
           "calories": 510,
           "protein": 11.5,
-          "carbs": 78.0,
-          "fat": 16.0,
-          "fiber": 5.0,
+          "carbs": 78,
+          "fat": 16,
+          "fiber": 5,
           "sodium": 780
         },
         "allergens": [
@@ -7187,660 +10822,1010 @@ const INITIAL_DATA = {
         ]
       },
       {
-  "id": "ss_kadhai_la_jawab",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai La-Jawab",
-  "description": "A rich Indian curry prepared with aromatic kadhai spices.",
-  "price": 275,
-  "image": "assets/Nawabi Kadhai/Kadhai La-Jawab.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 320, "protein": 8, "carbs": 18, "fat": 23, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mixed Vegetables", "Tomato", "Cream", "Kadhai Spices"]
-},
-{
-  "id": "ss_kadhai_mushroom_masala",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Mushroom Masala",
-  "description": "Mushrooms cooked in a flavourful kadhai masala gravy.",
-  "price": 270,
-  "image": "assets/Nawabi Kadhai/Kadhai Mushroom Masala.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 280, "protein": 8, "carbs": 16, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mushrooms", "Onions", "Tomatoes", "Cream", "Spices"]
-},
-{
-  "id": "ss_kadhai_mushroom_jalfrezi",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Mushroom Jalfrezi",
-  "description": "Mushrooms and vegetables tossed in a tangy, spiced gravy.",
-  "price": 270,
-  "image": "assets/Nawabi Kadhai/Kadhai Mushroom Jalfrezi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 270, "protein": 7, "carbs": 20, "fat": 17, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mushrooms", "Capsicum", "Onions", "Tomatoes", "Spices"]
-},
-{
-  "id": "ss_kadhai_vegetable",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Vegetable",
-  "description": "A colourful mix of vegetables cooked with traditional kadhai spices.",
-  "price": 245,
-  "image": "assets/Nawabi Kadhai/Kadhai Vegetable.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 260, "protein": 6, "carbs": 22, "fat": 16, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mixed Vegetables", "Capsicum", "Onions", "Tomatoes", "Spices"]
-},
-{
-  "id": "ss_kadhai_gobi",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Gobi",
-  "description": "Cauliflower florets cooked with onions, capsicum, and kadhai masala.",
-  "price": 220,
-  "image": "assets/Nawabi Kadhai/Kadhai Gobi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 230, "protein": 6, "carbs": 19, "fat": 14, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Cauliflower", "Capsicum", "Onions", "Tomatoes", "Spices"]
-},
-{
-  "id": "ss_kadhai_paneer",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Paneer",
-  "description": "Paneer cubes cooked in a rich tomato-based kadhai gravy.",
-  "price": 285,
-  "image": "assets/Nawabi Kadhai/Kadhai Paneer.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 340, "protein": 16, "carbs": 17, "fat": 23, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Paneer", "Capsicum", "Onions", "Tomatoes", "Kadhai Spices"]
-},
-{
-  "id": "ss_kadhai_dal_bukara",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Dal Bukara",
-  "description": "A hearty lentil preparation simmered with aromatic Indian spices.",
-  "price": 220,
-  "image": "assets/Nawabi Kadhai/Kadhai Dal Bukara.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 280, "protein": 12, "carbs": 35, "fat": 10, "fiber": 9 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Lentils", "Tomatoes", "Butter", "Cream", "Indian Spices"]
-},
-{
-  "id": "ss_kadhai_hyderabadi",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Hyderabadi",
-  "description": "A robust Indian curry featuring Hyderabadi-style spices.",
-  "price": 260,
-  "image": "assets/Nawabi Kadhai/Kadhai Hyderabadi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 300, "protein": 8, "carbs": 22, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mixed Vegetables", "Onions", "Tomatoes", "Cream", "Hyderabadi Spices"]
-},
-{
-  "id": "ss_kadhai_paneer_bhurji",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Paneer Bhurji",
-  "description": "Crumbled paneer sautéed with onions, tomatoes, capsicum, and spices.",
-  "price": 285,
-  "image": "assets/Nawabi Kadhai/Kadhai Paneer Bhurji.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 330, "protein": 17, "carbs": 15, "fat": 22, "fiber": 3 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Paneer", "Onions", "Tomatoes", "Capsicum", "Spices"]
-},
-{
-  "id": "ss_kadhai_kofta",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Kofta",
-  "description": "Soft vegetable koftas served in a rich, spiced curry.",
-  "price": 255,
-  "image": "assets/Nawabi Kadhai/Kadhai Kofta.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 350, "protein": 8, "carbs": 32, "fat": 21, "fiber": 5 },
-  "allergens": ["Dairy", "Gluten"],
-  "ingredients": ["Vegetable Koftas", "Tomatoes", "Cream", "Indian Spices"]
-},
-{
-  "id": "ss_kadhai_mutter",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Mutter",
-  "description": "Green peas cooked in a flavourful kadhai masala gravy.",
-  "price": 235,
-  "image": "assets/Nawabi Kadhai/Kadhai Mutter.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 260, "protein": 9, "carbs": 27, "fat": 13, "fiber": 7 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Green Peas", "Onions", "Tomatoes", "Cream", "Spices"]
-},
-{
-  "id": "ss_shiv_sagar_special_kadhai",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Shiv Sagar Special Kadhai",
-  "description": "A house-special kadhai curry prepared with a rich blend of vegetables and spices.",
-  "price": 300,
-  "image": "assets/Nawabi Kadhai/Shiv Sagar Special Kadhai.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "22 mins",
-  "nutrition": { "calories": 360, "protein": 10, "carbs": 25, "fat": 24, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mixed Vegetables", "Paneer", "Onions", "Tomatoes", "Special Spices"]
-},
-{
-  "id": "ss_kheema_kadhai",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kheema Kadhai",
-  "description": "A kheema-style curry cooked with aromatic kadhai spices.",
-  "price": 255,
-  "image": "assets/Nawabi Kadhai/Kheema Kadhai.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 310, "protein": 10, "carbs": 22, "fat": 19, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Vegetable Kheema", "Onions", "Tomatoes", "Kadhai Spices"]
-},
-{
-  "id": "ss_kadhai_mushroom_bhurji",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Mushroom Bhurji",
-  "description": "Chopped mushrooms sautéed with onions, tomatoes, and Indian spices.",
-  "price": 275,
-  "image": "assets/Nawabi Kadhai/Kadhai Mushroom Bhurji.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": { "calories": 260, "protein": 8, "carbs": 17, "fat": 16, "fiber": 4 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Mushrooms", "Onions", "Tomatoes", "Butter", "Spices"]
-},
-{
-  "id": "ss_kadhai_baby_corn_mushroom",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Baby Corn Mushroom",
-  "description": "Baby corn and mushrooms cooked together in a spiced kadhai gravy.",
-  "price": 280,
-  "image": "assets/Nawabi Kadhai/Kadhai Baby Corn Mushroom.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 290, "protein": 9, "carbs": 25, "fat": 17, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Baby Corn", "Mushrooms", "Onions", "Tomatoes", "Spices"]
-},
-{
-  "id": "ss_kadhai_baby_corn_masala",
-  "categoryId": "cat_nawabi_kadhai",
-  "name": "Kadhai Baby Corn Masala",
-  "description": "Tender baby corn simmered in a flavourful kadhai masala gravy.",
-  "price": 275,
-  "image": "assets/Nawabi Kadhai/Kadhai Baby Corn Masala.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "20 mins",
-  "nutrition": { "calories": 270, "protein": 7, "carbs": 28, "fat": 15, "fiber": 5 },
-  "allergens": ["Dairy"],
-  "ingredients": ["Baby Corn", "Onions", "Tomatoes", "Cream", "Kadhai Spices"]
-},
-          
-{
-  "id": "ss_cheese_pulav",
-  "categoryId": "cat_biryanis",
-  "name": "Cheese Pulav",
-  "description": "Fluffy basmati rice tossed with vegetables, aromatic spices, and melted cheese for a rich, comforting meal.",
-  "price": 310,
-  "image": "assets/Biryani/Cheese Pulav.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 460,
-    "protein": 12,
-    "carbs": 68,
-    "fat": 15,
-    "fiber": 4,
-    "sodium": 590
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Cheese", "Mixed Vegetables", "Spices"]
-},
-{
-  "id": "ss_curd_rice",
-  "categoryId": "cat_biryanis",
-  "name": "Curd Rice",
-  "description": "Cooling South Indian rice mixed with creamy yogurt and finished with a traditional mustard seed and curry leaf tempering.",
-  "price": 175,
-  "image": "assets/Biryani/Curd Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": {
-    "calories": 280,
-    "protein": 8,
-    "carbs": 43,
-    "fat": 8,
-    "fiber": 2,
-    "sodium": 350
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Rice", "Curd", "Mustard Seeds", "Curry Leaves"]
-},
-{
-  "id": "ss_dal_khichadi",
-  "categoryId": "cat_biryanis",
-  "name": "Dal Khichadi",
-  "description": "Comforting rice and lentil preparation seasoned with turmeric, cumin, and a fragrant ghee tempering.",
-  "price": 220,
-  "image": "assets/Biryani/Dal Khichadi.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 390,
-    "protein": 14,
-    "carbs": 64,
-    "fat": 9,
-    "fiber": 6,
-    "sodium": 480
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Rice", "Moong Dal", "Ghee", "Cumin", "Turmeric"]
-},
-{
-  "id": "ss_handi_dum_biryani",
-  "categoryId": "cat_biryanis",
-  "name": "Handi Dum Biryani",
-  "description": "Fragrant basmati rice layered with spiced vegetables, herbs, and fried onions, slow-cooked in a sealed handi.",
-  "price": 255,
-  "image": "assets/Biryani/Handi Dum Biryani.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15-18 mins",
-  "nutrition": {
-    "calories": 540,
-    "protein": 12,
-    "carbs": 84,
-    "fat": 17,
-    "fiber": 6.5,
-    "sodium": 640
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Mixed Vegetables", "Biryani Spices", "Fried Onions", "Ghee"]
-},
-{
-  "id": "ss_handi_hyderabadi_biryani",
-  "categoryId": "cat_biryanis",
-  "name": "Handi Hyderabadi Biryani",
-  "description": "Hyderabadi-style vegetable biryani with aromatic basmati rice, mint, coriander, fried onions, and traditional spices.",
-  "price": 275,
-  "image": "assets/Biryani/Handi Hyderabadi Biryani.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 3,
-  "prepTime": "18 mins",
-  "nutrition": {
-    "calories": 560,
-    "protein": 13,
-    "carbs": 86,
-    "fat": 18,
-    "fiber": 7,
-    "sodium": 680
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Vegetables", "Mint", "Coriander", "Biryani Masala"]
-},
-{
-  "id": "ss_jeera_rice",
-  "categoryId": "cat_biryanis",
-  "name": "Jeera Rice",
-  "description": "Steamed basmati rice tempered with roasted cumin seeds and aromatic spices.",
-  "price": 175,
-  "image": "assets/Biryani/Jeera Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "8 mins",
-  "nutrition": {
-    "calories": 320,
-    "protein": 6,
-    "carbs": 58,
-    "fat": 7,
-    "fiber": 2,
-    "sodium": 240
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Cumin Seeds", "Ghee", "Coriander"]
-},
-{
-  "id": "ss_kashmiri_pulav",
-  "categoryId": "cat_biryanis",
-  "name": "Kashmiri Pulav",
-  "description": "Aromatic rice prepared with mild spices, sweet dried fruits, nuts, and a delicate hint of saffron.",
-  "price": 265,
-  "image": "assets/Biryani/Kashmiri Pulav.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "12 mins",
-  "nutrition": {
-    "calories": 430,
-    "protein": 8,
-    "carbs": 70,
-    "fat": 13,
-    "fiber": 4,
-    "sodium": 310
-  },
-  "allergens": ["Nuts", "Dairy"],
-  "ingredients": ["Basmati Rice", "Dried Fruits", "Nuts", "Saffron", "Ghee"]
-},
-{
-  "id": "ss_mughlai_biryani",
-  "categoryId": "cat_biryanis",
-  "name": "Mughlai Biryani",
-  "description": "Rich, fragrant vegetable biryani with basmati rice, creamy spices, herbs, and caramelized onions.",
-  "price": 265,
-  "image": "assets/Biryani/Mughlai Biryani.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "18 mins",
-  "nutrition": {
-    "calories": 590,
-    "protein": 14,
-    "carbs": 82,
-    "fat": 22,
-    "fiber": 6,
-    "sodium": 650
-  },
-  "allergens": ["Dairy", "Nuts"],
-  "ingredients": ["Basmati Rice", "Vegetables", "Cashews", "Fried Onions", "Spices"]
-},
-{
-  "id": "ss_palak_rice",
-  "categoryId": "cat_biryanis",
-  "name": "Palak Rice",
-  "description": "Rice tossed with fresh spinach puree, garlic, cumin, and mild Indian spices.",
-  "price": 180,
-  "image": "assets/Biryani/Palak Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 350,
-    "protein": 8,
-    "carbs": 59,
-    "fat": 9,
-    "fiber": 5,
-    "sodium": 390
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Rice", "Spinach", "Garlic", "Cumin", "Spices"]
-},
-{
-  "id": "ss_paneer_biryani",
-  "categoryId": "cat_biryanis",
-  "name": "Paneer Biryani",
-  "description": "Spiced basmati rice layered with tender paneer cubes, herbs, fried onions, and fragrant biryani masala.",
-  "price": 275,
-  "image": "assets/Biryani/Paneer Biryani.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "16 mins",
-  "nutrition": {
-    "calories": 580,
-    "protein": 20,
-    "carbs": 78,
-    "fat": 20,
-    "fiber": 5,
-    "sodium": 620
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Paneer", "Basmati Rice", "Biryani Spices", "Mint", "Fried Onions"]
-},
-{
-  "id": "ss_paneer_tikka_biryani",
-  "categoryId": "cat_biryanis",
-  "name": "Paneer Tikka Biryani",
-  "description": "Smoky paneer tikka chunks combined with fragrant basmati rice, mint, saffron, and caramelized onions.",
-  "price": 300,
-  "image": "assets/Biryani/Paneer Tikka Biryani.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "16 mins",
-  "nutrition": {
-    "calories": 590,
-    "protein": 22,
-    "carbs": 82,
-    "fat": 20,
-    "fiber": 5.5,
-    "sodium": 680
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Paneer Tikka", "Basmati Rice", "Biryani Spices", "Mint", "Saffron"]
-},
-{
-  "id": "ss_peas_pulav",
-  "categoryId": "cat_biryanis",
-  "name": "Peas Pulav",
-  "description": "Lightly spiced basmati rice cooked with green peas, cumin, and whole aromatic spices.",
-  "price": 210,
-  "image": "assets/Biryani/Peas Pulav.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 340,
-    "protein": 8,
-    "carbs": 60,
-    "fat": 7,
-    "fiber": 4,
-    "sodium": 330
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Green Peas", "Cumin", "Ghee", "Whole Spices"]
-},
-{
-  "id": "ss_plain_rice",
-  "categoryId": "cat_biryanis",
-  "name": "Plain Rice",
-  "description": "Simply steamed rice, fluffy and light, ideal alongside your favourite curry or dal.",
-  "price": 110,
-  "image": "assets/Biryani/Plain Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 0,
-  "prepTime": "6 mins",
-  "nutrition": {
-    "calories": 260,
-    "protein": 5,
-    "carbs": 56,
-    "fat": 1,
-    "fiber": 1,
-    "sodium": 10
-  },
-  "allergens": [],
-  "ingredients": ["Rice", "Water"]
-},
-{
-  "id": "ss_tava_pulav",
-  "categoryId": "cat_biryanis",
-  "name": "Tava Pulav",
-  "description": "Mumbai-style rice tossed on a hot tava with pav bhaji masala, butter, tomatoes, capsicum, and peas.",
-  "price": 260,
-  "image": "assets/Biryani/Tava Pulav.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 520,
-    "protein": 10,
-    "carbs": 79,
-    "fat": 18,
-    "fiber": 5,
-    "sodium": 710
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Pav Bhaji Masala", "Butter", "Capsicum", "Green Peas", "Tomatoes"]
-},
-{
-  "id": "ss_tomato_rice",
-  "categoryId": "cat_biryanis",
-  "name": "Tomato Rice",
-  "description": "Tangy South Indian rice cooked with ripe tomatoes, curry leaves, mustard seeds, and warming spices.",
-  "price": 180,
-  "image": "assets/Biryani/Tomato Rice.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 330,
-    "protein": 6,
-    "carbs": 59,
-    "fat": 8,
-    "fiber": 4,
-    "sodium": 430
-  },
-  "allergens": [],
-  "ingredients": ["Rice", "Tomatoes", "Mustard Seeds", "Curry Leaves", "Spices"]
-},
-{
-  "id": "ss_veg_biryani",
-  "categoryId": "cat_biryanis",
-  "name": "Veg Biryani",
-  "description": "A colourful mix of seasonal vegetables and basmati rice cooked with mint, coriander, and aromatic biryani spices.",
-  "price": 220,
-  "image": "assets/Biryani/Veg Biryani.png",
-  "dietary": "veg",
-  "isFeatured": true,
-  "isAvailable": true,
-  "spicyLevel": 2,
-  "prepTime": "15 mins",
-  "nutrition": {
-    "calories": 510,
-    "protein": 11,
-    "carbs": 80,
-    "fat": 15,
-    "fiber": 7,
-    "sodium": 590
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Mixed Vegetables", "Mint", "Coriander", "Biryani Masala"]
-},
-{
-  "id": "ss_veg_pulav",
-  "categoryId": "cat_biryanis",
-  "name": "Veg Pulav",
-  "description": "Mildly spiced basmati rice cooked with mixed vegetables, whole spices, and fresh herbs.",
-  "price": 220,
-  "image": "assets/Biryani/Veg Pulav.png",
-  "dietary": "veg",
-  "isFeatured": false,
-  "isAvailable": true,
-  "spicyLevel": 1,
-  "prepTime": "10 mins",
-  "nutrition": {
-    "calories": 380,
-    "protein": 9,
-    "carbs": 66,
-    "fat": 10,
-    "fiber": 5,
-    "sodium": 420
-  },
-  "allergens": ["Dairy"],
-  "ingredients": ["Basmati Rice", "Mixed Vegetables", "Whole Spices", "Ghee", "Coriander"]
-},
+        "id": "ss_kadhai_la_jawab",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai La-Jawab",
+        "description": "A rich Indian curry prepared with aromatic kadhai spices.",
+        "price": 275,
+        "image": "assets/Nawabi Kadhai/Kadhai La-Jawab.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 8,
+          "carbs": 18,
+          "fat": 23,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Tomato",
+          "Cream",
+          "Kadhai Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_mushroom_masala",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Mushroom Masala",
+        "description": "Mushrooms cooked in a flavourful kadhai masala gravy.",
+        "price": 270,
+        "image": "assets/Nawabi Kadhai/Kadhai Mushroom Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 8,
+          "carbs": 16,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mushrooms",
+          "Onions",
+          "Tomatoes",
+          "Cream",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_mushroom_jalfrezi",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Mushroom Jalfrezi",
+        "description": "Mushrooms and vegetables tossed in a tangy, spiced gravy.",
+        "price": 270,
+        "image": "assets/Nawabi Kadhai/Kadhai Mushroom Jalfrezi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 7,
+          "carbs": 20,
+          "fat": 17,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mushrooms",
+          "Capsicum",
+          "Onions",
+          "Tomatoes",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_vegetable",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Vegetable",
+        "description": "A colourful mix of vegetables cooked with traditional kadhai spices.",
+        "price": 245,
+        "image": "assets/Nawabi Kadhai/Kadhai Vegetable.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 6,
+          "carbs": 22,
+          "fat": 16,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Capsicum",
+          "Onions",
+          "Tomatoes",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_gobi",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Gobi",
+        "description": "Cauliflower florets cooked with onions, capsicum, and kadhai masala.",
+        "price": 220,
+        "image": "assets/Nawabi Kadhai/Kadhai Gobi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 230,
+          "protein": 6,
+          "carbs": 19,
+          "fat": 14,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Cauliflower",
+          "Capsicum",
+          "Onions",
+          "Tomatoes",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_paneer",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Paneer",
+        "description": "Paneer cubes cooked in a rich tomato-based kadhai gravy.",
+        "price": 285,
+        "image": "assets/Nawabi Kadhai/Kadhai Paneer.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 16,
+          "carbs": 17,
+          "fat": 23,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Capsicum",
+          "Onions",
+          "Tomatoes",
+          "Kadhai Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_dal_bukara",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Dal Bukara",
+        "description": "A hearty lentil preparation simmered with aromatic Indian spices.",
+        "price": 220,
+        "image": "assets/Nawabi Kadhai/Kadhai Dal Bukara.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 12,
+          "carbs": 35,
+          "fat": 10,
+          "fiber": 9
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Lentils",
+          "Tomatoes",
+          "Butter",
+          "Cream",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_hyderabadi",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Hyderabadi",
+        "description": "A robust Indian curry featuring Hyderabadi-style spices.",
+        "price": 260,
+        "image": "assets/Nawabi Kadhai/Kadhai Hyderabadi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 300,
+          "protein": 8,
+          "carbs": 22,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Onions",
+          "Tomatoes",
+          "Cream",
+          "Hyderabadi Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_paneer_bhurji",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Paneer Bhurji",
+        "description": "Crumbled paneer sautéed with onions, tomatoes, capsicum, and spices.",
+        "price": 285,
+        "image": "assets/Nawabi Kadhai/Kadhai Paneer Bhurji.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 17,
+          "carbs": 15,
+          "fat": 22,
+          "fiber": 3
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Onions",
+          "Tomatoes",
+          "Capsicum",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_kofta",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Kofta",
+        "description": "Soft vegetable koftas served in a rich, spiced curry.",
+        "price": 255,
+        "image": "assets/Nawabi Kadhai/Kadhai Kofta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 8,
+          "carbs": 32,
+          "fat": 21,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy",
+          "Gluten"
+        ],
+        "ingredients": [
+          "Vegetable Koftas",
+          "Tomatoes",
+          "Cream",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_mutter",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Mutter",
+        "description": "Green peas cooked in a flavourful kadhai masala gravy.",
+        "price": 235,
+        "image": "assets/Nawabi Kadhai/Kadhai Mutter.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 9,
+          "carbs": 27,
+          "fat": 13,
+          "fiber": 7
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Green Peas",
+          "Onions",
+          "Tomatoes",
+          "Cream",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_shiv_sagar_special_kadhai",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Shiv Sagar Special Kadhai",
+        "description": "A house-special kadhai curry prepared with a rich blend of vegetables and spices.",
+        "price": 300,
+        "image": "assets/Nawabi Kadhai/Shiv Sagar Special Kadhai.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "22 mins",
+        "nutrition": {
+          "calories": 360,
+          "protein": 10,
+          "carbs": 25,
+          "fat": 24,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mixed Vegetables",
+          "Paneer",
+          "Onions",
+          "Tomatoes",
+          "Special Spices"
+        ]
+      },
+      {
+        "id": "ss_kheema_kadhai",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kheema Kadhai",
+        "description": "A kheema-style curry cooked with aromatic kadhai spices.",
+        "price": 255,
+        "image": "assets/Nawabi Kadhai/Kheema Kadhai.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 310,
+          "protein": 10,
+          "carbs": 22,
+          "fat": 19,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Vegetable Kheema",
+          "Onions",
+          "Tomatoes",
+          "Kadhai Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_mushroom_bhurji",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Mushroom Bhurji",
+        "description": "Chopped mushrooms sautéed with onions, tomatoes, and Indian spices.",
+        "price": 275,
+        "image": "assets/Nawabi Kadhai/Kadhai Mushroom Bhurji.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 8,
+          "carbs": 17,
+          "fat": 16,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Mushrooms",
+          "Onions",
+          "Tomatoes",
+          "Butter",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_baby_corn_mushroom",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Baby Corn Mushroom",
+        "description": "Baby corn and mushrooms cooked together in a spiced kadhai gravy.",
+        "price": 280,
+        "image": "assets/Nawabi Kadhai/Kadhai Baby Corn Mushroom.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 290,
+          "protein": 9,
+          "carbs": 25,
+          "fat": 17,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Baby Corn",
+          "Mushrooms",
+          "Onions",
+          "Tomatoes",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_kadhai_baby_corn_masala",
+        "categoryId": "cat_nawabi_kadhai",
+        "name": "Kadhai Baby Corn Masala",
+        "description": "Tender baby corn simmered in a flavourful kadhai masala gravy.",
+        "price": 275,
+        "image": "assets/Nawabi Kadhai/Kadhai Baby Corn Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "20 mins",
+        "nutrition": {
+          "calories": 270,
+          "protein": 7,
+          "carbs": 28,
+          "fat": 15,
+          "fiber": 5
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Baby Corn",
+          "Onions",
+          "Tomatoes",
+          "Cream",
+          "Kadhai Spices"
+        ]
+      },
+      {
+        "id": "ss_cheese_pulav",
+        "categoryId": "cat_biryanis",
+        "name": "Cheese Pulav",
+        "description": "Fluffy basmati rice tossed with vegetables, aromatic spices, and melted cheese for a rich, comforting meal.",
+        "price": 310,
+        "image": "assets/Biryani/Cheese Pulav.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 460,
+          "protein": 12,
+          "carbs": 68,
+          "fat": 15,
+          "fiber": 4,
+          "sodium": 590
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Cheese",
+          "Mixed Vegetables",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_curd_rice",
+        "categoryId": "cat_biryanis",
+        "name": "Curd Rice",
+        "description": "Cooling South Indian rice mixed with creamy yogurt and finished with a traditional mustard seed and curry leaf tempering.",
+        "price": 175,
+        "image": "assets/Biryani/Curd Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 8,
+          "carbs": 43,
+          "fat": 8,
+          "fiber": 2,
+          "sodium": 350
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Rice",
+          "Curd",
+          "Mustard Seeds",
+          "Curry Leaves"
+        ]
+      },
+      {
+        "id": "ss_dal_khichadi",
+        "categoryId": "cat_biryanis",
+        "name": "Dal Khichadi",
+        "description": "Comforting rice and lentil preparation seasoned with turmeric, cumin, and a fragrant ghee tempering.",
+        "price": 220,
+        "image": "assets/Biryani/Dal Khichadi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 390,
+          "protein": 14,
+          "carbs": 64,
+          "fat": 9,
+          "fiber": 6,
+          "sodium": 480
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Rice",
+          "Moong Dal",
+          "Ghee",
+          "Cumin",
+          "Turmeric"
+        ]
+      },
+      {
+        "id": "ss_handi_dum_biryani",
+        "categoryId": "cat_biryanis",
+        "name": "Handi Dum Biryani",
+        "description": "Fragrant basmati rice layered with spiced vegetables, herbs, and fried onions, slow-cooked in a sealed handi.",
+        "price": 255,
+        "image": "assets/Biryani/Handi Dum Biryani.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 540,
+          "protein": 12,
+          "carbs": 84,
+          "fat": 17,
+          "fiber": 6.5,
+          "sodium": 640
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Mixed Vegetables",
+          "Biryani Spices",
+          "Fried Onions",
+          "Ghee"
+        ]
+      },
+      {
+        "id": "ss_handi_hyderabadi_biryani",
+        "categoryId": "cat_biryanis",
+        "name": "Handi Hyderabadi Biryani",
+        "description": "Hyderabadi-style vegetable biryani with aromatic basmati rice, mint, coriander, fried onions, and traditional spices.",
+        "price": 275,
+        "image": "assets/Biryani/Handi Hyderabadi Biryani.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 560,
+          "protein": 13,
+          "carbs": 86,
+          "fat": 18,
+          "fiber": 7,
+          "sodium": 680
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Vegetables",
+          "Mint",
+          "Coriander",
+          "Biryani Masala"
+        ]
+      },
+      {
+        "id": "ss_jeera_rice",
+        "categoryId": "cat_biryanis",
+        "name": "Jeera Rice",
+        "description": "Steamed basmati rice tempered with roasted cumin seeds and aromatic spices.",
+        "price": 175,
+        "image": "assets/Biryani/Jeera Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "8 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 6,
+          "carbs": 58,
+          "fat": 7,
+          "fiber": 2,
+          "sodium": 240
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Cumin Seeds",
+          "Ghee",
+          "Coriander"
+        ]
+      },
+      {
+        "id": "ss_kashmiri_pulav",
+        "categoryId": "cat_biryanis",
+        "name": "Kashmiri Pulav",
+        "description": "Aromatic rice prepared with mild spices, sweet dried fruits, nuts, and a delicate hint of saffron.",
+        "price": 265,
+        "image": "assets/Biryani/Kashmiri Pulav.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "12 mins",
+        "nutrition": {
+          "calories": 430,
+          "protein": 8,
+          "carbs": 70,
+          "fat": 13,
+          "fiber": 4,
+          "sodium": 310
+        },
+        "allergens": [
+          "Nuts",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Dried Fruits",
+          "Nuts",
+          "Saffron",
+          "Ghee"
+        ]
+      },
+      {
+        "id": "ss_mughlai_biryani",
+        "categoryId": "cat_biryanis",
+        "name": "Mughlai Biryani",
+        "description": "Rich, fragrant vegetable biryani with basmati rice, creamy spices, herbs, and caramelized onions.",
+        "price": 265,
+        "image": "assets/Biryani/Mughlai Biryani.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "18 mins",
+        "nutrition": {
+          "calories": 590,
+          "protein": 14,
+          "carbs": 82,
+          "fat": 22,
+          "fiber": 6,
+          "sodium": 650
+        },
+        "allergens": [
+          "Dairy",
+          "Nuts"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Vegetables",
+          "Cashews",
+          "Fried Onions",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_palak_rice",
+        "categoryId": "cat_biryanis",
+        "name": "Palak Rice",
+        "description": "Rice tossed with fresh spinach puree, garlic, cumin, and mild Indian spices.",
+        "price": 180,
+        "image": "assets/Biryani/Palak Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 350,
+          "protein": 8,
+          "carbs": 59,
+          "fat": 9,
+          "fiber": 5,
+          "sodium": 390
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Rice",
+          "Spinach",
+          "Garlic",
+          "Cumin",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_paneer_biryani",
+        "categoryId": "cat_biryanis",
+        "name": "Paneer Biryani",
+        "description": "Spiced basmati rice layered with tender paneer cubes, herbs, fried onions, and fragrant biryani masala.",
+        "price": 275,
+        "image": "assets/Biryani/Paneer Biryani.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "16 mins",
+        "nutrition": {
+          "calories": 580,
+          "protein": 20,
+          "carbs": 78,
+          "fat": 20,
+          "fiber": 5,
+          "sodium": 620
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Paneer",
+          "Basmati Rice",
+          "Biryani Spices",
+          "Mint",
+          "Fried Onions"
+        ]
+      },
+      {
+        "id": "ss_paneer_tikka_biryani",
+        "categoryId": "cat_biryanis",
+        "name": "Paneer Tikka Biryani",
+        "description": "Smoky paneer tikka chunks combined with fragrant basmati rice, mint, saffron, and caramelized onions.",
+        "price": 300,
+        "image": "assets/Biryani/Paneer Tikka Biryani.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "16 mins",
+        "nutrition": {
+          "calories": 590,
+          "protein": 22,
+          "carbs": 82,
+          "fat": 20,
+          "fiber": 5.5,
+          "sodium": 680
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Paneer Tikka",
+          "Basmati Rice",
+          "Biryani Spices",
+          "Mint",
+          "Saffron"
+        ]
+      },
+      {
+        "id": "ss_peas_pulav",
+        "categoryId": "cat_biryanis",
+        "name": "Peas Pulav",
+        "description": "Lightly spiced basmati rice cooked with green peas, cumin, and whole aromatic spices.",
+        "price": 210,
+        "image": "assets/Biryani/Peas Pulav.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 60,
+          "fat": 7,
+          "fiber": 4,
+          "sodium": 330
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Green Peas",
+          "Cumin",
+          "Ghee",
+          "Whole Spices"
+        ]
+      },
+      {
+        "id": "ss_plain_rice",
+        "categoryId": "cat_biryanis",
+        "name": "Plain Rice",
+        "description": "Simply steamed rice, fluffy and light, ideal alongside your favourite curry or dal.",
+        "price": 110,
+        "image": "assets/Biryani/Plain Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 0,
+        "prepTime": "6 mins",
+        "nutrition": {
+          "calories": 260,
+          "protein": 5,
+          "carbs": 56,
+          "fat": 1,
+          "fiber": 1,
+          "sodium": 10
+        },
+        "allergens": [],
+        "ingredients": [
+          "Rice",
+          "Water"
+        ]
+      },
+      {
+        "id": "ss_tava_pulav",
+        "categoryId": "cat_biryanis",
+        "name": "Tava Pulav",
+        "description": "Mumbai-style rice tossed on a hot tava with pav bhaji masala, butter, tomatoes, capsicum, and peas.",
+        "price": 260,
+        "image": "assets/Biryani/Tava Pulav.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 520,
+          "protein": 10,
+          "carbs": 79,
+          "fat": 18,
+          "fiber": 5,
+          "sodium": 710
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Pav Bhaji Masala",
+          "Butter",
+          "Capsicum",
+          "Green Peas",
+          "Tomatoes"
+        ]
+      },
+      {
+        "id": "ss_tomato_rice",
+        "categoryId": "cat_biryanis",
+        "name": "Tomato Rice",
+        "description": "Tangy South Indian rice cooked with ripe tomatoes, curry leaves, mustard seeds, and warming spices.",
+        "price": 180,
+        "image": "assets/Biryani/Tomato Rice.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 330,
+          "protein": 6,
+          "carbs": 59,
+          "fat": 8,
+          "fiber": 4,
+          "sodium": 430
+        },
+        "allergens": [],
+        "ingredients": [
+          "Rice",
+          "Tomatoes",
+          "Mustard Seeds",
+          "Curry Leaves",
+          "Spices"
+        ]
+      },
+      {
+        "id": "ss_veg_biryani",
+        "categoryId": "cat_biryanis",
+        "name": "Veg Biryani",
+        "description": "A colourful mix of seasonal vegetables and basmati rice cooked with mint, coriander, and aromatic biryani spices.",
+        "price": 220,
+        "image": "assets/Biryani/Veg Biryani.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15 mins",
+        "nutrition": {
+          "calories": 510,
+          "protein": 11,
+          "carbs": 80,
+          "fat": 15,
+          "fiber": 7,
+          "sodium": 590
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Mixed Vegetables",
+          "Mint",
+          "Coriander",
+          "Biryani Masala"
+        ]
+      },
+      {
+        "id": "ss_veg_pulav",
+        "categoryId": "cat_biryanis",
+        "name": "Veg Pulav",
+        "description": "Mildly spiced basmati rice cooked with mixed vegetables, whole spices, and fresh herbs.",
+        "price": 220,
+        "image": "assets/Biryani/Veg Pulav.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10 mins",
+        "nutrition": {
+          "calories": 380,
+          "protein": 9,
+          "carbs": 66,
+          "fat": 10,
+          "fiber": 5,
+          "sodium": 420
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Basmati Rice",
+          "Mixed Vegetables",
+          "Whole Spices",
+          "Ghee",
+          "Coriander"
+        ]
+      },
       {
         "id": "ss_filter_coffee",
         "categoryId": "cat_hot_beverages",
         "name": "South Indian Filter Coffee",
         "description": "Authentic Chikmagalur chicory-infused decoction blended with hot frothy boiled milk, served steaming in traditional brass dabarah.",
         "price": 60,
-        "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Hot Beverages/Filter Coffee.png",
         "dietary": "veg",
         "isFeatured": true,
         "isAvailable": true,
@@ -7849,7 +11834,7 @@ const INITIAL_DATA = {
         "nutrition": {
           "calories": 95,
           "protein": 3.8,
-          "carbs": 12.0,
+          "carbs": 12,
           "fat": 3.5,
           "fiber": 0.5,
           "sodium": 65
@@ -7869,7 +11854,7 @@ const INITIAL_DATA = {
         "name": "Special Masala Tea",
         "description": "Freshly brewed Assam tea leaves simmered with milk, crushed ginger, cardamom, and aromatic warming spices.",
         "price": 50,
-        "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
+        "image": "assets/Hot Beverages/Tea.png",
         "dietary": "veg",
         "isFeatured": false,
         "isAvailable": true,
@@ -7877,8 +11862,8 @@ const INITIAL_DATA = {
         "prepTime": "4 mins",
         "nutrition": {
           "calories": 80,
-          "protein": 3.0,
-          "carbs": 11.0,
+          "protein": 3,
+          "carbs": 11,
           "fat": 2.8,
           "fiber": 0.2,
           "sodium": 45
@@ -7891,6 +11876,4166 @@ const INITIAL_DATA = {
           "Milk",
           "Ginger",
           "Cardamom"
+        ]
+      },
+      {
+        "id": "ss_dosa_baby_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Baby Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Baby Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 200,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 190,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese -Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 220,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Masala -Dosa.webp",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_mysore_dosa__green_chutney_",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Mysore Dosa (Green Chutney)",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 210,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Mysore -Dosa(Green Chutney).jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_mysore_masala_dosa__green_chutney_",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Mysore Masala Dosa (Green Chutney)",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 230,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Mysore Masala -Dosa        (Green Chutney).jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_onion_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Onion Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 200,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Onion -Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_paper_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Paper Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 420,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Paper Masala -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_paper_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Paper Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 385,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Paper- Dosa.webp",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_tomato_omlet",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Tomato Omlet",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 180,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Tomato Omlet.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_cheese_tomato_onion_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Cheese Tomato Onion Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 215,
+        "image": "assets/Crispy Dosas & Uttappas/Cheese Tomato Onion -Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_chop_suey_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Chop Suey Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 175,
+        "image": "assets/Crispy Dosas & Uttappas/Chop Suey -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_coconut_onion_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Coconut Onion Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Coconut Onion -Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_coconut_onion_rava_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Coconut Onion Rava Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 130,
+        "image": "assets/Crispy Dosas & Uttappas/Coconut Onion Rava -Dosa.webp",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_coconut_onion_rava_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Coconut Onion Rava Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Coconut Onion Rava Masala-dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_coconut_rava_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Coconut Rava Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Coconut Rava -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_coconut_rava_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Coconut Rava Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Coconut Rava Masala-dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_coconut_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Coconut Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Coconut Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Masala -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_mexican_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Mexican Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 180,
+        "image": "assets/Crispy Dosas & Uttappas/Mexican Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_mysore_dosa__green_chutney_",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Mysore Dosa (Green Chutney)",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Mysore -Dosa (Green Chutney).jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_mysore_masala_dosa__green_chutney_",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Mysore Masala Dosa (Green Chutney)",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Mysore Masala- Dosa(Green Chutney).jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_neer_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Neer Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Neer -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_onion_rava_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Onion Rava Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Onion Rava Masala-dosa.webp",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_onion_rava_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Onion Rava Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Onion Rava- Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_onion_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Onion Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Onion Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_palak_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Palak Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Palak -Dosa.webp",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_palak_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Palak Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 130,
+        "image": "assets/Crispy Dosas & Uttappas/Palak Masala- Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_paneer_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Paneer Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 190,
+        "image": "assets/Crispy Dosas & Uttappas/Paneer Masala Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_paneer_sada_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Paneer Sada Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 165,
+        "image": "assets/Crispy Dosas & Uttappas/Paneer Sada Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_paper_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Paper Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 240,
+        "image": "assets/Crispy Dosas & Uttappas/Paper -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_paper_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Paper Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 280,
+        "image": "assets/Crispy Dosas & Uttappas/Paper Masala Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_pav_bhaji_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Pav Bhaji Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 165,
+        "image": "assets/Crispy Dosas & Uttappas/Pav Bhaji -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_rava_cheese_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Rava Cheese Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Rava Cheese Masala-dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_rava_cheese_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Rava Cheese Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 220,
+        "image": "assets/Crispy Dosas & Uttappas/Rava Cheese- Dosa.webp",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_rava_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Rava Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 145,
+        "image": "assets/Crispy Dosas & Uttappas/Rava Masala - Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_rava_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Rava Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Rava- Dosa.webp",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_sada_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Sada Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 100,
+        "image": "assets/Crispy Dosas & Uttappas/Sada Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_schezwan_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Schezwan Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 130,
+        "image": "assets/Crispy Dosas & Uttappas/Schezwan -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_schezwan_cheese_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Schezwan Cheese Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 220,
+        "image": "assets/Crispy Dosas & Uttappas/Schezwan Cheese -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_schezwan_cheese_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Schezwan Cheese Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Schezwan Cheese Masala-dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 480,
+          "protein": 12,
+          "carbs": 58,
+          "fat": 20,
+          "fiber": 4
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_dosa_schezwan_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Schezwan Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 155,
+        "image": "assets/Crispy Dosas & Uttappas/Schezwan Masala -Dosa.webp",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_set_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Set Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Set -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_special_onion_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Special Onion Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 165,
+        "image": "assets/Crispy Dosas & Uttappas/Special Onion -Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_spring_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Spring Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 130,
+        "image": "assets/Crispy Dosas & Uttappas/Spring -Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_tomato_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Tomato Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 120,
+        "image": "assets/Crispy Dosas & Uttappas/Tomato -Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_tomato_omlet",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Tomato Omlet",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 140,
+        "image": "assets/Crispy Dosas & Uttappas/Tomato Omlet.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_tomato_onion_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Tomato Onion Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 130,
+        "image": "assets/Crispy Dosas & Uttappas/Tomato Onion -Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_topi_masala_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Topi Masala Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 135,
+        "image": "assets/Crispy Dosas & Uttappas/Topi Masala-dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_topi_dosa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Topi Dosa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 105,
+        "image": "assets/Crispy Dosas & Uttappas/Topi- Dosa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_dosa_uttappa",
+        "categoryId": "cat_dosa_uttappa",
+        "name": "Uttappa",
+        "description": "Authentic Shiv Sagar pure vegetarian delicacy, freshly prepared and served with hot sambar and fresh coconut chutney.",
+        "price": 100,
+        "image": "assets/Crispy Dosas & Uttappas/Uttappa.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "12-15 mins",
+        "nutrition": {
+          "calories": 340,
+          "protein": 8,
+          "carbs": 58,
+          "fat": 8,
+          "fiber": 4
+        },
+        "allergens": [],
+        "ingredients": [
+          "Fermented Rice & Urad Dal Batter",
+          "Sambar",
+          "Coconut Chutney"
+        ]
+      },
+      {
+        "id": "ss_sandwich_alu_mutter_toast_sandwich__grilled_",
+        "categoryId": "cat_sandwiches",
+        "name": "Alu Mutter Toast Sandwich (Grilled)",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 115,
+        "image": "assets/Sandwiches & Grilled Toasts/Alu Mutter Toast Sandwich (Grilled).jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_bread_butter",
+        "categoryId": "cat_sandwiches",
+        "name": "Bread Butter",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 55,
+        "image": "assets/Sandwiches & Grilled Toasts/Bread Butter.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_chatni_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Chatni Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 55,
+        "image": "assets/Sandwiches & Grilled Toasts/Chatni Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_chatni_toast_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Chatni Toast Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 80,
+        "image": "assets/Sandwiches & Grilled Toasts/Chatni Toast Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_cheese_cherry_pineapple",
+        "categoryId": "cat_sandwiches",
+        "name": "Cheese Cherry Pineapple",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 240,
+        "image": "assets/Sandwiches & Grilled Toasts/Cheese Cherry Pineapple.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_cheese_chilly_toast__grilled_",
+        "categoryId": "cat_sandwiches",
+        "name": "Cheese Chilly Toast (Grilled)",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 190,
+        "image": "assets/Sandwiches & Grilled Toasts/Cheese Chilly Toast (Grilled),jpg.webp",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_cheese_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Cheese Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 130,
+        "image": "assets/Sandwiches & Grilled Toasts/Cheese Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_cheese_toast_sandwich__grilled_",
+        "categoryId": "cat_sandwiches",
+        "name": "Cheese Toast Sandwich (Grilled)",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 115,
+        "image": "assets/Sandwiches & Grilled Toasts/Cheese Toast Sandwich (Grilled),jpg.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_club_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Club Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 170,
+        "image": "assets/Sandwiches & Grilled Toasts/Club Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_itallian_sandwich_with_cheese",
+        "categoryId": "cat_sandwiches",
+        "name": "Itallian Sandwich With Cheese",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 155,
+        "image": "assets/Sandwiches & Grilled Toasts/Itallian Sandwich with Cheese.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_itallian_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Itallian Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 110,
+        "image": "assets/Sandwiches & Grilled Toasts/Itallian Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_jam_bread_butter",
+        "categoryId": "cat_sandwiches",
+        "name": "Jam Bread Butter",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 70,
+        "image": "assets/Sandwiches & Grilled Toasts/Jam Bread Butter.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_jam_toast_butter",
+        "categoryId": "cat_sandwiches",
+        "name": "Jam Toast Butter",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 100,
+        "image": "assets/Sandwiches & Grilled Toasts/Jam Toast Butter.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_russian_sandwich_with_cheese",
+        "categoryId": "cat_sandwiches",
+        "name": "Russian Sandwich With Cheese",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 150,
+        "image": "assets/Sandwiches & Grilled Toasts/Russian Sandwich with Cheese.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_russian_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Russian Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 110,
+        "image": "assets/Sandwiches & Grilled Toasts/Russian Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_toast_butter",
+        "categoryId": "cat_sandwiches",
+        "name": "Toast Butter",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 80,
+        "image": "assets/Sandwiches & Grilled Toasts/Toast Butter.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_toast_tomato_omlet_sandwich__grilled_",
+        "categoryId": "cat_sandwiches",
+        "name": "Toast Tomato Omlet Sandwich (Grilled)",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 140,
+        "image": "assets/Sandwiches & Grilled Toasts/Toast Tomato Omlet Sandwich (Grilled).jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_tomato_omlet_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Tomato Omlet Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 110,
+        "image": "assets/Sandwiches & Grilled Toasts/Tomato Omlet Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_veg_cheese_toast__grilled_",
+        "categoryId": "cat_sandwiches",
+        "name": "Veg Cheese Toast (Grilled)",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 175,
+        "image": "assets/Sandwiches & Grilled Toasts/Veg Cheese Toast (Grilled),jpg.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_veg__cheese_sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Veg. Cheese Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 145,
+        "image": "assets/Sandwiches & Grilled Toasts/Veg. Cheese Sandwichjpp.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 420,
+          "protein": 14,
+          "carbs": 46,
+          "fat": 18,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten",
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings",
+          "Amul Cheese"
+        ]
+      },
+      {
+        "id": "ss_sandwich_veg__sandwich",
+        "categoryId": "cat_sandwiches",
+        "name": "Veg. Sandwich",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 90,
+        "image": "assets/Sandwiches & Grilled Toasts/Veg. Sandwich.jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_sandwich_veg__toast_sandwich__grilled_",
+        "categoryId": "cat_sandwiches",
+        "name": "Veg. Toast Sandwich (Grilled)",
+        "description": "Freshly prepared Shiv Sagar toast sandwich with crisp golden crust, savory spiced filling, and seasoned herbs.",
+        "price": 150,
+        "image": "assets/Sandwiches & Grilled Toasts/Veg. Toast Sandwich (Grilled).jpg",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "10-12 mins",
+        "nutrition": {
+          "calories": 280,
+          "protein": 7,
+          "carbs": 46,
+          "fat": 6,
+          "fiber": 4
+        },
+        "allergens": [
+          "Gluten"
+        ],
+        "ingredients": [
+          "Fresh Bread",
+          "Spiced Veg Fillings"
+        ]
+      },
+      {
+        "id": "ss_gravy_alu_gobi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Alu Gobi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Alu Gobi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_alu_methi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Alu Methi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Alu Methi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_alu_mutter",
+        "categoryId": "cat_indian_gravy",
+        "name": "Alu Mutter",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Alu Mutter.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_alu_palak",
+        "categoryId": "cat_indian_gravy",
+        "name": "Alu Palak",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 205,
+        "image": "assets/Indian Gravy/Alu Palak.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_baingan_bharta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Baingan Bharta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 115,
+        "image": "assets/Indian Gravy/Baingan Bharta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_baked_vegetables",
+        "categoryId": "cat_indian_gravy",
+        "name": "Baked Vegetables",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 320,
+        "image": "assets/Indian Gravy/Baked Vegetables.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_baranvanki_kofta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Baranvanki Kofta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 275,
+        "image": "assets/Indian Gravy/Baranvanki Kofta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_bhendi_fry",
+        "categoryId": "cat_indian_gravy",
+        "name": "Bhendi Fry",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 230,
+        "image": "assets/Indian Gravy/Bhendi Fry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_bhendi_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Bhendi Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Bhendi Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_boiled_vegetables",
+        "categoryId": "cat_indian_gravy",
+        "name": "Boiled Vegetables",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 190,
+        "image": "assets/Indian Gravy/Boiled Vegetables.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_chana_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Chana Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 210,
+        "image": "assets/Indian Gravy/Chana Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_chana_peshawari",
+        "categoryId": "cat_indian_gravy",
+        "name": "Chana Peshawari",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Chana Peshawari.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_cheese_angoori",
+        "categoryId": "cat_indian_gravy",
+        "name": "Cheese Angoori",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 300,
+        "image": "assets/Indian Gravy/Cheese Angoori.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_cheese_peas_curry",
+        "categoryId": "cat_indian_gravy",
+        "name": "Cheese Peas Curry",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 315,
+        "image": "assets/Indian Gravy/Cheese Peas Curry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_chole_bhatura",
+        "categoryId": "cat_indian_gravy",
+        "name": "Chole Bhatura",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Chole Bhatura.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_dal_fry",
+        "categoryId": "cat_indian_gravy",
+        "name": "Dal Fry",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 180,
+        "image": "assets/Indian Gravy/Dal Fry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_dal_makhani",
+        "categoryId": "cat_indian_gravy",
+        "name": "Dal Makhani",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Dal Makhani.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_dal_surthi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Dal Surthi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 200,
+        "image": "assets/Indian Gravy/Dal Surthi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_dal_tadka",
+        "categoryId": "cat_indian_gravy",
+        "name": "Dal Tadka",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 200,
+        "image": "assets/Indian Gravy/Dal Tadka.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_dum_alu_punjabi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Dum Alu Punjabi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 245,
+        "image": "assets/Indian Gravy/Dum Alu Punjabi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_gobi_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Gobi Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 200,
+        "image": "assets/Indian Gravy/Gobi Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_green_peas_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Green Peas Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Green Peas Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_jeera_alu",
+        "categoryId": "cat_indian_gravy",
+        "name": "Jeera Alu",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 195,
+        "image": "assets/Indian Gravy/Jeera Alu.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_kaju_curry",
+        "categoryId": "cat_indian_gravy",
+        "name": "Kaju Curry",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 320,
+        "image": "assets/Indian Gravy/Kaju Curry.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Nuts"
+        ],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_kaju_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Kaju Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 320,
+        "image": "assets/Indian Gravy/Kaju Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Nuts"
+        ],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_kaju_mushroom_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Kaju Mushroom Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 320,
+        "image": "assets/Indian Gravy/Kaju Mushroom Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Nuts"
+        ],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_kashmiri_dum_alu",
+        "categoryId": "cat_indian_gravy",
+        "name": "Kashmiri Dum Alu",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Kashmiri Dum Alu.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_kashmiri_kofta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Kashmiri Kofta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 300,
+        "image": "assets/Indian Gravy/Kashmiri Kofta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_lasuni_methi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Lasuni Methi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Lasuni Methi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_lasuni_palak",
+        "categoryId": "cat_indian_gravy",
+        "name": "Lasuni Palak",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 200,
+        "image": "assets/Indian Gravy/Lasuni Palak.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_macaroni_mushroom",
+        "categoryId": "cat_indian_gravy",
+        "name": "Macaroni Mushroom",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 245,
+        "image": "assets/Indian Gravy/Macaroni Mushroom.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_malai_kofta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Malai Kofta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 310,
+        "image": "assets/Indian Gravy/Malai Kofta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_methi_mutter_malai",
+        "categoryId": "cat_indian_gravy",
+        "name": "Methi Mutter Malai",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 310,
+        "image": "assets/Indian Gravy/Methi Mutter Malai.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_methi_mutter",
+        "categoryId": "cat_indian_gravy",
+        "name": "Methi Mutter",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 245,
+        "image": "assets/Indian Gravy/Methi Mutter.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_methi_palak",
+        "categoryId": "cat_indian_gravy",
+        "name": "Methi Palak",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Methi Palak.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_mix_vegetable",
+        "categoryId": "cat_indian_gravy",
+        "name": "Mix Vegetable",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 230,
+        "image": "assets/Indian Gravy/Mix Vegetable.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_mushroom_saag",
+        "categoryId": "cat_indian_gravy",
+        "name": "Mushroom Saag",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 230,
+        "image": "assets/Indian Gravy/Mushroom Saag.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_nargeese_kofta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Nargeese Kofta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Nargeese Kofta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_navrattan_kurma",
+        "categoryId": "cat_indian_gravy",
+        "name": "Navrattan Kurma",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 265,
+        "image": "assets/Indian Gravy/Navrattan Kurma.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_pahadi_alu",
+        "categoryId": "cat_indian_gravy",
+        "name": "Pahadi Alu",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 205,
+        "image": "assets/Indian Gravy/Pahadi Alu.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_palak_mutter",
+        "categoryId": "cat_indian_gravy",
+        "name": "Palak Mutter",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 215,
+        "image": "assets/Indian Gravy/Palak Mutter.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_butter_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Butter Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 300,
+        "image": "assets/Indian Gravy/Paneer Butter Masala.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_dharwari",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Dharwari",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 300,
+        "image": "assets/Indian Gravy/Paneer Dharwari.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_do_pyaza",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Do Pyaza",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 305,
+        "image": "assets/Indian Gravy/Paneer Do Pyaza.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_handi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Handi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 275,
+        "image": "assets/Indian Gravy/Paneer Handi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_kaju_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Kaju Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 320,
+        "image": "assets/Indian Gravy/Paneer Kaju Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_kofta_sweet_gravy_",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Kofta(sweet Gravy)",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 305,
+        "image": "assets/Indian Gravy/Paneer Kofta(sweet gravy).png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_makhanwala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Makhanwala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 300,
+        "image": "assets/Indian Gravy/Paneer Makhanwala.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_mumtaz",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Mumtaz",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 300,
+        "image": "assets/Indian Gravy/Paneer Mumtaz.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_mushroom_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Mushroom Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 285,
+        "image": "assets/Indian Gravy/Paneer Mushroom Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_mussallam",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Mussallam",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 285,
+        "image": "assets/Indian Gravy/Paneer Mussallam.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_mutter",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Mutter",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 275,
+        "image": "assets/Indian Gravy/Paneer Mutter.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 1,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_palak",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Palak",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 265,
+        "image": "assets/Indian Gravy/Paneer Palak.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_pasanda",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Pasanda",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 305,
+        "image": "assets/Indian Gravy/Paneer Pasanda.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_peshawari",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Peshawari",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 290,
+        "image": "assets/Indian Gravy/Paneer Peshawari.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_tikka_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Tikka Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 295,
+        "image": "assets/Indian Gravy/Paneer Tikka Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_tomato_bharta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Tomato Bharta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 275,
+        "image": "assets/Indian Gravy/Paneer Tomato Bharta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_paneer_toofani",
+        "categoryId": "cat_indian_gravy",
+        "name": "Paneer Toofani",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 285,
+        "image": "assets/Indian Gravy/Paneer Toofani.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 490,
+          "protein": 18,
+          "carbs": 26,
+          "fat": 24,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Fresh Cottage Cheese",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_peshawari_kofta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Peshawari Kofta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 265,
+        "image": "assets/Indian Gravy/Peshawari Kofta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_plain_palak",
+        "categoryId": "cat_indian_gravy",
+        "name": "Plain Palak",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 191,
+        "image": "assets/Indian Gravy/Plain Palak.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_sarsonka_saag",
+        "categoryId": "cat_indian_gravy",
+        "name": "Sarsonka Saag",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Sarsonka Saag.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_singapore_kurma",
+        "categoryId": "cat_indian_gravy",
+        "name": "Singapore Kurma",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 230,
+        "image": "assets/Indian Gravy/Singapore Kurma.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_stuffed_alu",
+        "categoryId": "cat_indian_gravy",
+        "name": "Stuffed Alu",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 240,
+        "image": "assets/Indian Gravy/Stuffed Alu.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_stuffed_capsicum",
+        "categoryId": "cat_indian_gravy",
+        "name": "Stuffed Capsicum",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 230,
+        "image": "assets/Indian Gravy/Stuffed Capsicum.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_stuffed_tomato",
+        "categoryId": "cat_indian_gravy",
+        "name": "Stuffed Tomato",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 230,
+        "image": "assets/Indian Gravy/Stuffed Tomato.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_bhoona",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Bhoona",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Veg Bhoona.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_chlli_milli",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Chlli Milli",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 245,
+        "image": "assets/Indian Gravy/Veg Chlli Milli.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_chop_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Chop Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 245,
+        "image": "assets/Indian Gravy/Veg Chop Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_dil_bar",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Dil Bar",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 220,
+        "image": "assets/Indian Gravy/Veg Dil Bar.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_jalfrezi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Jalfrezi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Veg Jalfrezi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_kofta",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Kofta",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Veg Kofta.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_kolhapuri",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Kolhapuri",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 245,
+        "image": "assets/Indian Gravy/Veg Kolhapuri.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 3,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_lorry_masala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Lorry Masala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Veg Lorry Masala.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_maratha",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Maratha",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 265,
+        "image": "assets/Indian Gravy/Veg Maratha.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_veg_tawa",
+        "categoryId": "cat_indian_gravy",
+        "name": "Veg Tawa",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 230,
+        "image": "assets/Indian Gravy/Veg Tawa.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_vegetable_afgani",
+        "categoryId": "cat_indian_gravy",
+        "name": "Vegetable Afgani",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Vegetable Afgani.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_vegetable_handi",
+        "categoryId": "cat_indian_gravy",
+        "name": "Vegetable Handi",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Vegetable Handi.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_vegetable_hariyali",
+        "categoryId": "cat_indian_gravy",
+        "name": "Vegetable Hariyali",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 255,
+        "image": "assets/Indian Gravy/Vegetable Hariyali.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_vegetable_jaipuri",
+        "categoryId": "cat_indian_gravy",
+        "name": "Vegetable Jaipuri",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 265,
+        "image": "assets/Indian Gravy/Vegetable Jaipuri.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_vegetable_kashmiri",
+        "categoryId": "cat_indian_gravy",
+        "name": "Vegetable Kashmiri",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 275,
+        "image": "assets/Indian Gravy/Vegetable Kashmiri.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_vegetable_khaas",
+        "categoryId": "cat_indian_gravy",
+        "name": "Vegetable Khaas",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 245,
+        "image": "assets/Indian Gravy/Vegetable Khaas.png",
+        "dietary": "veg",
+        "isFeatured": false,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
+        ]
+      },
+      {
+        "id": "ss_gravy_vegetable_makhanwala",
+        "categoryId": "cat_indian_gravy",
+        "name": "Vegetable Makhanwala",
+        "description": "Traditional North Indian culinary specialty slow-simmered in aromatic spices, cashew-tomato gravy, and fresh cream.",
+        "price": 265,
+        "image": "assets/Indian Gravy/Vegetable Makhanwala.png",
+        "dietary": "veg",
+        "isFeatured": true,
+        "isAvailable": true,
+        "spicyLevel": 2,
+        "prepTime": "15-18 mins",
+        "nutrition": {
+          "calories": 320,
+          "protein": 10,
+          "carbs": 26,
+          "fat": 12,
+          "fiber": 6
+        },
+        "allergens": [
+          "Dairy"
+        ],
+        "ingredients": [
+          "Farm Fresh Vegetables",
+          "Onion-Tomato Masala",
+          "Indian Spices"
         ]
       }
     ],
@@ -7909,10 +16054,10 @@ const INITIAL_DATA = {
         "prepTime": "20-25 mins",
         "nutrition": {
           "calories": 740,
-          "protein": 38.0,
-          "carbs": 76.0,
-          "fat": 32.0,
-          "fiber": 4.0,
+          "protein": 38,
+          "carbs": 76,
+          "fat": 32,
+          "fiber": 4,
           "sodium": 680
         },
         "allergens": [
@@ -7939,10 +16084,10 @@ const INITIAL_DATA = {
         "prepTime": "10 mins",
         "nutrition": {
           "calories": 410,
-          "protein": 18.0,
-          "carbs": 45.0,
+          "protein": 18,
+          "carbs": 45,
           "fat": 18.5,
-          "fiber": 9.0,
+          "fiber": 9,
           "sodium": 490
         },
         "allergens": [

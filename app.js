@@ -287,7 +287,7 @@ class SynexaApp {
 
         card.innerHTML = `
           <div class="dish-media-container">
-            <img src="${item.image}" alt="${item.name}" class="dish-image" loading="lazy">
+            <img src="${item.image}" alt="${item.name}" class="dish-image" loading="lazy" onerror="this.onerror=null; this.src='assets/pav_bhaji/Pav-bhaji.jpg';">
             <div class="diet-dot-badge">
               <span class="diet-dot ${dietClass}"></span>
             </div>
@@ -529,7 +529,9 @@ class SynexaApp {
     if (!item) return;
 
     this.activeModalDish = item;
-    document.getElementById('modalDishImg').src = item.image;
+    const modalImg = document.getElementById('modalDishImg');
+    modalImg.onerror = () => { modalImg.src = 'assets/pav_bhaji/Pav-bhaji.jpg'; };
+    modalImg.src = item.image;
     document.getElementById('modalDishTitle').textContent = item.name;
     document.getElementById('modalDishPrice').textContent = `₹${item.price}`;
     document.getElementById('modalDishDesc').textContent = item.description;
